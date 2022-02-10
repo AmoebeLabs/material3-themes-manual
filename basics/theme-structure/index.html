@@ -77,7 +77,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#the-swiss-army-knife-yaml-structure" class="md-skip">
+        <a href="#home-assistant-theme-structure" class="md-skip">
           Skip to content
         </a>
       
@@ -615,8 +615,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#the-swiss-army-knife-yaml-structure" class="md-nav__link">
-     The Swiss Army Knife YAML structure
+  <a href="#home-assistant-theme-structure" class="md-nav__link">
+     Home Assistant Theme Structure
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#m3-theme-structure" class="md-nav__link">
+     M3 Theme Structure
   </a>
   
 </li>
@@ -897,8 +904,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#the-swiss-army-knife-yaml-structure" class="md-nav__link">
-     The Swiss Army Knife YAML structure
+  <a href="#home-assistant-theme-structure" class="md-nav__link">
+     Home Assistant Theme Structure
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#m3-theme-structure" class="md-nav__link">
+     M3 Theme Structure
   </a>
   
 </li>
@@ -918,8 +932,40 @@
 
   <h1>Theme structure</h1>
 
-<h2 id="the-swiss-army-knife-yaml-structure"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 3 10 9h-3v8H5v-8H2l10-9m3 8.5V10a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5z"/></svg></span> The Swiss Army Knife YAML structure<a class="headerlink" href="#the-swiss-army-knife-yaml-structure" title="Permanent link">&para;</a></h2>
-<p>The main aspects of a SAK Card are shown below using yellow lines.</p>
+<h2 id="home-assistant-theme-structure"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 3 10 9h-3v8H5v-8H2l10-9m3 8.5V10a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5z"/></svg></span> Home Assistant Theme Structure<a class="headerlink" href="#home-assistant-theme-structure" title="Permanent link">&para;</a></h2>
+<p>Every Home Assistant Theme follows the same structure:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="hll"><span class="w">  </span><span class="nt">Theme Name</span><span class="p">:</span><span class="w"></span>
+</span><span class="w">    </span><span class="c1">#</span><span class="w"></span>
+<span class="w">    </span><span class="c1"># Generic definitions</span><span class="w"></span>
+<span class="w">    </span><span class="c1">#</span><span class="w"></span>
+<span class="w">    </span><span class="nt">css-var-1</span><span class="p">:</span><span class="w"> </span><span class="c1">#123456</span><span class="w"></span>
+<span class="w">    </span><span class="nt">css-var-2</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--css-var-1)</span><span class="w"></span>
+
+<span class="w">    </span><span class="c1">#</span><span class="w"></span>
+<span class="w">    </span><span class="c1"># Light and Dark specific definitions</span><span class="w"></span>
+<span class="w">    </span><span class="c1">#</span><span class="w"></span>
+<span class="hll"><span class="w">    </span><span class="nt">modes</span><span class="p">:</span><span class="w"></span>
+</span><span class="w">      </span><span class="nt">light</span><span class="p">:</span><span class="w"></span>
+<span class="w">        </span><span class="nt">css-text-color</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">black</span><span class="w"></span>
+<span class="w">      </span><span class="nt">dark</span><span class="p">:</span><span class="w"></span>
+<span class="w">        </span><span class="nt">css-text-color</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">white</span><span class="w"></span>
+</code></pre></div>
+</td></tr></table>
+<h2 id="m3-theme-structure"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 3 10 9h-3v8H5v-8H2l10-9m3 8.5V10a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5z"/></svg></span> M3 Theme Structure<a class="headerlink" href="#m3-theme-structure" title="Permanent link">&para;</a></h2>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -957,122 +1003,44 @@
 <span class="normal">35</span>
 <span class="normal">36</span>
 <span class="normal">37</span>
-<span class="normal">38</span>
-<span class="normal">39</span>
-<span class="normal">40</span>
-<span class="normal">41</span>
-<span class="normal">42</span>
-<span class="normal">43</span>
-<span class="normal">44</span>
-<span class="normal">45</span>
-<span class="normal">46</span>
-<span class="normal">47</span>
-<span class="normal">48</span>
-<span class="normal">49</span>
-<span class="normal">50</span>
-<span class="normal">51</span>
-<span class="normal">52</span>
-<span class="normal">53</span>
-<span class="normal">54</span>
-<span class="normal">55</span>
-<span class="normal">56</span>
-<span class="normal">57</span>
-<span class="normal">58</span>
-<span class="normal">59</span>
-<span class="normal">60</span>
-<span class="normal">61</span>
-<span class="normal">62</span>
-<span class="normal">63</span>
-<span class="normal">64</span>
-<span class="normal">65</span>
-<span class="normal">66</span>
-<span class="normal">67</span>
-<span class="normal">68</span>
-<span class="normal">69</span>
-<span class="normal">70</span>
-<span class="normal">71</span>
-<span class="normal">72</span>
-<span class="normal">73</span>
-<span class="normal">74</span>
-<span class="normal">75</span>
-<span class="normal">76</span>
-<span class="normal">77</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="w">  </span><span class="c1"># Define the type of the card to use.</span><span class="w"></span>
-<span class="w">  </span><span class="c1">#</span><span class="w"></span>
-<span class="w">  </span><span class="c1"># This is normally part of a &quot;cards&quot; section from a horizontal or vertical Lovelace stack</span><span class="w"></span>
-<span class="w">  </span><span class="c1"># -----</span><span class="w"></span>
-<span class="hll"><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;custom:dev-swiss-army-knife-card&#39;</span><span class="w"></span>
-</span><span class="w">  </span><span class="c1"># Define the entities</span><span class="w"></span>
-<span class="hll"><span class="w">  </span><span class="nt">entities</span><span class="p">:</span><span class="w"></span>
-</span><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;list of entities&gt;</span><span class="w"></span>
-
-<span class="w">  </span><span class="c1">#</span><span class="w"></span>
-<span class="w">  </span><span class="c1"># Define aspect ratio and size of card.</span><span class="w"></span>
-<span class="w">  </span><span class="c1"># - In this case the card is square and has a size of 100x100</span><span class="w"></span>
-<span class="w">  </span><span class="c1"># - A 2/1 ratio would have a size of 200x100</span><span class="w"></span>
-<span class="w">  </span><span class="c1"># - etc.</span><span class="w"></span>
-<span class="w">  </span><span class="c1">#</span><span class="w"></span>
-<span class="w">  </span><span class="c1"># Odd values like 1/0.05 are also possible. Size is 100x5</span><span class="w"></span>
-<span class="w">  </span><span class="c1"># This is used for instance to just draw a line/separator</span><span class="w"></span>
-<span class="w">  </span><span class="c1">#</span><span class="w"></span>
-<span class="w">  </span><span class="c1"># Specification:</span><span class="w"></span>
-<span class="w">  </span><span class="c1"># - aspectratio (string)</span><span class="w"></span>
-<span class="w">  </span><span class="c1"># -----</span><span class="w"></span>
-<span class="hll"><span class="w">  </span><span class="nt">aspectratio</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1/1</span><span class="w"></span>
-</span>
-<span class="w">  </span><span class="c1">#</span><span class="w"></span>
-<span class="w">  </span><span class="c1"># Display the card or not.</span><span class="w"></span>
-<span class="w">  </span><span class="c1"># - default false. Card is displayed.</span><span class="w"></span>
-<span class="w">  </span><span class="c1"># - use true to just draw header text or a separator.</span><span class="w"></span>
-<span class="w">  </span><span class="c1"># -----</span><span class="w"></span>
-<span class="hll"><span class="w">  </span><span class="nt">disable_card</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span><span class="w"></span>
-</span>
-<span class="w">  </span><span class="c1">#</span><span class="w"></span>
-<span class="w">  </span><span class="c1"># ***** card/layout section *****</span><span class="w"></span>
-<span class="w">  </span><span class="c1">#</span><span class="w"></span>
-<span class="w">  </span><span class="c1"># Specification:</span><span class="w"></span>
-<span class="w">  </span><span class="c1"># - layout (map)</span><span class="w"></span>
-<span class="w">  </span><span class="c1"># -----</span><span class="w"></span>
-<span class="hll"><span class="w">  </span><span class="nt">layout</span><span class="p">:</span><span class="w"></span>
-</span>
-<span class="w">    </span><span class="c1"># ***** card/layout/styles section *****</span><span class="w"></span>
+<span class="normal">38</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="hll"><span class="w">  </span><span class="nt">Theme Name</span><span class="p">:</span><span class="w"></span>
+</span><span class="w">    </span><span class="c1">#</span><span class="w"></span>
+<span class="w">    </span><span class="c1"># M3 Theme generated definitions</span><span class="w"></span>
 <span class="w">    </span><span class="c1">#</span><span class="w"></span>
-<span class="w">    </span><span class="c1"># Overall styles for the card and toolsets. Mainly used for defining filters!</span><span class="w"></span>
+<span class="w">    </span><span class="c1"># This is the ONLY part of the theme that is changed</span><span class="w"></span>
+<span class="w">    </span><span class="c1"># The rest of the theme definition is GENERIC!!!!!!!</span><span class="w"></span>
 <span class="w">    </span><span class="c1">#</span><span class="w"></span>
-<span class="w">    </span><span class="c1"># Specification:</span><span class="w"></span>
-<span class="w">    </span><span class="c1"># - styles (map)</span><span class="w"></span>
-<span class="w">    </span><span class="c1"># -----</span><span class="w"></span>
-<span class="hll"><span class="w">    </span><span class="nt">styles</span><span class="p">:</span><span class="w"></span>
-</span><span class="w">      </span><span class="nt">card</span><span class="p">:</span><span class="w"></span>
-<span class="w">      </span><span class="nt">toolsets</span><span class="p">:</span><span class="w"></span>
-<span class="w">        </span><span class="c1"># Define Neumorphic filter over the full toolset.</span><span class="w"></span>
-<span class="w">        </span><span class="nt">filter</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">url(#sak-nm-default)</span><span class="w"></span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">theme-ref-palette-* light and dark definitions</span><span class="w"></span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">theme-ref-elevation-* light and dark definitions</span><span class="w"></span>
 
-<span class="w">        </span><span class="c1"># Define material shadow filter over the full toolset</span><span class="w"></span>
-<span class="w">        </span><span class="c1"># filter: url(#ds-1)</span><span class="w"></span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">#</span><span class="w"></span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain"># Light and Dark specific definitions</span><span class="w"></span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain"># Derived from theme-ref-palette-* definitions</span><span class="w"></span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">#</span><span class="w"></span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain"># NOT to be changed on a per theme basis.</span><span class="w"></span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain"># The Light and Dark modes map a M3 reference color</span><span class="w"></span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain"># to a M3 system color!</span><span class="w"></span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">#</span><span class="w"></span>
+<span class="hll"><span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">modes</span><span class="p p-Indicator">:</span><span class="w"></span>
+</span><span class="w">      </span><span class="nt">light</span><span class="p">:</span><span class="w"></span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">theme-sys-color-* light theme definitions</span><span class="w"></span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">theme-sys-palette-* light theme definitions</span><span class="w"></span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">theme-sys-elevation-* light theme definitions</span><span class="w"></span>
+
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">theme-* definitions for use with Material 2 / HA</span><span class="w"></span>
+<span class="w">      </span><span class="nt">dark</span><span class="p">:</span><span class="w"></span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">theme-sys-color-* dark theme definitions</span><span class="w"></span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">theme-sys-palette-* dark theme definitions</span><span class="w"></span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">theme-sys-elevation-* dark theme definitions</span><span class="w"></span>
+
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">theme-* definitions for use with Material 2 / HA</span><span class="w"></span>
 
 <span class="w">    </span><span class="c1">#</span><span class="w"></span>
-<span class="w">    </span><span class="c1"># ***** card/layout/toolsets section *****</span><span class="w"></span>
+<span class="w">    </span><span class="c1"># Generic CSS Material 2 / Home Assistant definitions using</span><span class="w"></span>
+<span class="w">    </span><span class="c1"># definitions from the light or dark mode colors</span><span class="w"></span>
 <span class="w">    </span><span class="c1">#</span><span class="w"></span>
-<span class="w">    </span><span class="c1"># Define the list of toolsets from here</span><span class="w"></span>
-<span class="w">    </span><span class="c1">#</span><span class="w"></span>
-<span class="w">    </span><span class="c1"># Specification:</span><span class="w"></span>
-<span class="w">    </span><span class="c1"># - toolsets (list of toolset configs)</span><span class="w"></span>
-<span class="w">    </span><span class="c1"># -----</span><span class="w"></span>
-<span class="hll"><span class="w">    </span><span class="nt">toolsets</span><span class="p">:</span><span class="w"></span>
-</span><span class="w">      </span><span class="c1"># define list of toolsets with its tools</span><span class="w"></span>
-<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">toolset</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">background</span><span class="w"></span>
-<span class="w">        </span><span class="c1">#</span><span class="w"></span>
-<span class="w">        </span><span class="c1"># define list of tools within toolset</span><span class="w"></span>
-<span class="w">        </span><span class="c1">#</span><span class="w"></span>
-<span class="w">        </span><span class="c1"># Specification:</span><span class="w"></span>
-<span class="w">        </span><span class="c1"># - tools (list of tool configs)</span><span class="w"></span>
-<span class="w">        </span><span class="c1">#</span><span class="w"></span>
-<span class="hll"><span class="w">        </span><span class="nt">tools</span><span class="p">:</span><span class="w"></span>
-</span><span class="w">          </span><span class="c1">#</span><span class="w"></span>
-<span class="w">          </span><span class="c1"># define the tools</span><span class="w"></span>
-<span class="w">          </span><span class="c1">#</span><span class="w"></span>
-<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;usersvg&#39;</span><span class="w"></span>
-<span class="w">          </span><span class="l l-Scalar l-Scalar-Plain">&lt;...etc...&gt;</span><span class="w"></span>
+<span class="w">    </span><span class="nt">primary-color</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-sys-color-primary)</span><span class="w"></span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">...</span><span class="w"></span>
 </code></pre></div>
 </td></tr></table>
 
