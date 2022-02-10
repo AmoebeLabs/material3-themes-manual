@@ -1,0 +1,123 @@
+
+# Project information
+site_name: Material 3 Themes for Home Assistant
+site_url: https://ha-m3-themes.docs.amoebelabs.com/
+site_author: Marco
+site_description: >-
+  Material 3 themes for Home Assistant lets you create wonderful dark / light themes
+  without changes in your views and cards
+
+# Repository
+repo_name: amoebelabs/ha-m3-themes
+repo_url: https://github.com/amoebelabs/ha-m3-themes
+edit_uri: ""
+
+copyright: Copyright &copy; 2021 - 2022 Marco @AmoebeLabs
+
+theme:
+  name: material
+  palette:
+    primary: blue grey
+  logo: assets/logo/m3-logo.svg
+  custom_dir: docs
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.expand
+    - navigation.top   
+    - search.suggest
+    - search.highlight
+
+plugins:
+  - search
+  
+extra_css:
+  - overrides/assets/stylesheets/extra.css
+  
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/amoebelabs  
+    - icon: fontawesome/brands/instagram
+      link: https://instagram.com/amoebelabs  
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/amoebelabs  
+
+  # analytics:
+    # provider: google
+    # property: G-YH4P44GYYJ
+
+markdown_extensions:
+  - admonition
+  - abbr
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      options:
+        custom_icons:
+          - docs/overrides/.icons
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid-experimental
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  
+  
+# Page tree
+nav:
+  - Home: index.md
+  - Getting started:
+    - Introduction: start/introduction.md
+    - Installation: start/installation.md
+    - Changelog: changelog/changelog.md
+  - Basics:
+    - Material 3 Basics:
+      - M3 Color System: basics/m3-color-system.md
+      - M3 Dynamic Color: basics/m3-dynamic-color.md
+    - HA M3 Implementation:
+      - Overview: basics/ha-m3-overview.md
+      - HA M3 Color System: basics/ha-m3-color-system.md
+      - HA M3 Dynamic Color: basics/ha-m3-dynamic-color.md
+    - Theme structure: basics/theme-structure.md
+    - Theme Template: basics/theme-template.md
+  - Design your OWN:
+    - Introduction: design/introduction.md
+    - Create a M3 Theme: design/create-m3-theme.md
+    - Covert to HA Theme: design/convert-ha-theme.md
+  - Examples:
+    - Introduction: examples/introduction.md
+    - 1. Theme 01 - Unknown: examples/example-1.md
+    - 2. Theme 02 - CadmiumGreen: examples/example-2.md
+    - 3. Theme 03 - Porcupine: examples/example-3.md
+    - 4. Theme 04 - Magenta: examples/example-4.md
+    - 5. Theme 05 - Brown: examples/example-5.md
+    - 6. Theme 06 - TealBlue: examples/example-6.md
+    - 7. Theme 07 - DarkOliveGreen: examples/example-7.md

@@ -1,0 +1,58 @@
+---
+template: overrides/main.html
+---
+
+##:material-home-floor-3: The HA implementation
+
+The M3 series themes for Home Assistant have some differences compared to the original Material 3, which makes it more usable in views/cards:
+
+| What | Material 3 | HA M3 implementation |
+| ---- | ---------- |  ------------------- |
+| Palettes | 13 colors per palette | 24 colors per palette showing more usable gradient colors |
+| Surfaces | 2 surfaces, neutral and primary based for light and dark themes with 5 elevation levels | 5 surfaces, neutral, primary, secondary, tertiary and error with 10 elevation levels giving more flexibility and choice |
+| Reference | Reference colors are uniquely defined for both dark and light mode palettes | Same, but extended for surfaces |
+| System | Light and Dark theme system colors mapping reference colors to the theme mode | Same, but extended for surfaces and palette colors. The palette colors are reversed for the Dark mode: this prevents any change in the view/card | 
+
+##:material-home-floor-3: The resulting theme colors
+
+The resulting theme colors are shown below. The theme is shown using a Swiss Army Knife cards. The example uses the `M3-07-DarkOliveGreen` theme. This theme is generated from the AmoebeLabs logo :smile:
+
+[![M3 Palettes]][M3 Palettes]
+_Primary, secondary, tertiary and error pallettes ranging from white (100) to black (0)_
+
+
+<br>[![M3 Surfaces]][M3 Surfaces]
+_The 5 surfaces with 10 elevation levels each_
+
+
+<br>[![M3 Light]][M3 Light]
+_The resulting light theme color selection_
+
+<br>[![M3 Dark]][M3 Dark]
+_The resulting dark theme color selection_
+
+  [M3 Palettes]: ../assets/screenshots/m3-theme-07-palettes.png
+  [M3 Surfaces]: ../assets/screenshots/m3-theme-07-surfaces.png
+  [M3 Light]: ../assets/screenshots/m3-theme-07-light.png
+  [M3 Dark]: ../assets/screenshots/m3-theme-07-dark.png
+  
+
+##:material-home-floor-3: Examples
+The dark and light examples show the Swiss Army Knife example \#12 using the above theme colors.
+
+You see the following aspects of the theme:
+- The 'Primary' Dark Olive Green color in several shade/tints
+- The 'Tertiary Container' and 'On Tertiary Container' colors and on the first row with the battery and linkquality
+- Some 'Neutral' surface colors on the third (Hall), fourth (Bedroom) and sixth (Poseidon) rows
+- The background of the segmented arcs (the circles) are also using a 'Neutral' surface color.
+
+All the above colors adapt to the theme mode. The only exception is visible in the last row: in that case reference colors are used, which are the same in dark and light mode.
+
+[![M3 Example Light]][M3 Example Light]
+_A light theme example card_
+
+<br>[![M3 Example Dark]][M3 Example Dark]
+_A dark theme example card_
+
+  [M3 Example Light]: ../assets/screenshots/m3-example-07-light.png
+  [M3 Example Dark]: ../assets/screenshots/m3-example-07-dark.png
