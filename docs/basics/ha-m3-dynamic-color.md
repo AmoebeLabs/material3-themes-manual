@@ -8,21 +8,23 @@ The M3 series themes for Home Assistant have some differences compared to the or
 
 | What | Material 3 | HA M3 implementation |
 | ---- | ---------- |  ------------------- |
-| Palettes | 13 colors per palette | 24 colors per palette showing more usable gradient colors |
+| Palettes | 13 colors per palette | 100% M3 compliant for these 13 colors. <br>Extended with 11 more colors, giving a total of 24 colors per palette showing more usable gradient colors with 12 shades and 12 tints |
 | Surfaces | 2 surfaces, neutral and primary based for light and dark themes with 5 elevation levels | 5 surfaces, neutral, primary, secondary, tertiary and error with 10 elevation levels giving more flexibility and choice |
-| Reference | Reference colors are uniquely defined for both dark and light mode palettes | Same, but extended for surfaces |
-| System | Light and Dark theme system colors mapping reference colors to the theme mode | Same, but extended for surfaces and palette colors. The palette colors are reversed for the Dark mode: this prevents any change in the view/card | 
+| Reference | Reference colors are uniquely defined for both dark and light mode palettes | 100% M3 compliant. <br>Extended for surfaces |
+| System | Light and Dark theme system colors mapping reference colors to the theme mode | 100% M3 compliant. <br>Extended for surfaces and palette colors. The palette colors are reversed for the Dark mode: this prevents any change in the view/card |
+| Light Theme | Yes | 100% M3 compliant | 
+| Dark Theme | Yes | 100% M3 compliant | 
 
 ##:material-home-floor-3: The resulting theme colors
 
-The resulting theme colors are shown below. The theme is shown using a Swiss Army Knife cards. The example uses the `M3-07-DarkOliveGreen` theme. This theme is generated from the AmoebeLabs logo :smile:
+The resulting theme colors are shown below. The theme is shown using several Swiss Army Knife cards and templates. The example uses the `M3-07-DarkOliveGreen` theme. This theme is generated from the AmoebeLabs logo :smile:
 
 [![M3 Palettes]][M3 Palettes]
 _Primary, secondary, tertiary and error pallettes ranging from white (100) to black (0)_
 
 
 <br>[![M3 Surfaces]][M3 Surfaces]
-_The 5 surfaces with 10 elevation levels each_
+_The 5 light and dark surfaces with 10 elevation levels each_
 
 
 <br>[![M3 Light]][M3 Light]
@@ -41,10 +43,11 @@ _The resulting dark theme color selection_
 The dark and light examples show the Swiss Army Knife example \#12 using the above theme colors.
 
 You see the following aspects of the theme:
+
 - The 'Primary' Dark Olive Green color in several shade/tints
-- The 'Tertiary Container' and 'On Tertiary Container' colors and on the first row with the battery and linkquality
-- Some 'Neutral' surface colors on the third (Hall), fourth (Bedroom) and sixth (Poseidon) rows
-- The background of the segmented arcs (the circles) are also using a 'Neutral' surface color.
+- The 'Tertiary Container' and 'On Tertiary Container' colors on the first row with the battery and linkquality
+- Some 'Neutral' surface colors on the Hall, Bedroom and Poseidon rows
+- The background of the segmented arcs (the circles) are also using a 'Neutral' surface elevation color.
 
 All the above colors adapt to the theme mode. The only exception is visible in the last row: in that case reference colors are used, which are the same in dark and light mode.
 

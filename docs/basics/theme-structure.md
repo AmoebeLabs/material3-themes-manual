@@ -2,86 +2,67 @@
 template: overrides/main.html
 ---
 
-##:material-home-floor-3: The Swiss Army Knife YAML structure
-The main aspects of a SAK Card are shown below using yellow lines.
+##:material-home-floor-3: Home Assistant Theme Structure
 
-```yaml linenums="1" hl_lines="5 7 22 29 37 46 63 72"
-  # Define the type of the card to use.
-  #
-  # This is normally part of a "cards" section from a horizontal or vertical Lovelace stack
-  # -----
-- type: 'custom:dev-swiss-army-knife-card'
-  # Define the entities
-  entities:
-    - <list of entities>
+Every Home Assistant Theme follows the same structure:
 
-  #
-  # Define aspect ratio and size of card.
-  # - In this case the card is square and has a size of 100x100
-  # - A 2/1 ratio would have a size of 200x100
-  # - etc.
-  #
-  # Odd values like 1/0.05 are also possible. Size is 100x5
-  # This is used for instance to just draw a line/separator
-  #
-  # Specification:
-  # - aspectratio (string)
-  # -----
-  aspectratio: 1/1
+```yaml linenums="1" hl_lines="1 11"
+  Theme Name:
+    #
+    # Generic definitions
+    #
+    css-var-1: #123456
+    css-var-2: var(--css-var-1)
 
-  #
-  # Display the card or not.
-  # - default false. Card is displayed.
-  # - use true to just draw header text or a separator.
-  # -----
-  disable_card: false
+    #
+    # Light and Dark specific definitions
+    #
+    modes:
+      light:
+        css-text-color: black
+      dark:
+        css-text-color: white
+```
 
-  #
-  # ***** card/layout section *****
-  #
-  # Specification:
-  # - layout (map)
-  # -----
-  layout:
+##:material-home-floor-3: M3 Theme Structure
 
-    # ***** card/layout/styles section *****
+```yaml linenums="1" hl_lines="1 19"
+  Theme Name:
     #
-    # Overall styles for the card and toolsets. Mainly used for defining filters!
+    # M3 Theme generated definitions
     #
-    # Specification:
-    # - styles (map)
-    # -----
-    styles:
-      card:
-      toolsets:
-        # Define Neumorphic filter over the full toolset.
-        filter: url(#sak-nm-default)
-        
-        # Define material shadow filter over the full toolset
-        # filter: url(#ds-1)
-      
+    # This is the ONLY part of the theme that is changed
+    # The rest of the theme definition is GENERIC!!!!!!!
     #
-    # ***** card/layout/toolsets section *****
+    theme-ref-palette-* light and dark definitions
+    theme-ref-elevation-* light and dark definitions
+
     #
-    # Define the list of toolsets from here
+    # Light and Dark specific definitions
+    # Derived from theme-ref-palette-* definitions
     #
-    # Specification:
-    # - toolsets (list of toolset configs)
-    # -----
-    toolsets:
-      # define list of toolsets with its tools
-      - toolset: background
-        #
-        # define list of tools within toolset
-        #
-        # Specification:
-        # - tools (list of tool configs)
-        #
-        tools:
-          #
-          # define the tools
-          #
-          - type: 'usersvg'
-          <...etc...>
-            
+    # NOT to be changed on a per theme basis.
+    # The Light and Dark modes map a M3 reference color
+    # to a M3 system color!
+    #
+    modes:
+      light:
+        theme-sys-color-* light theme definitions
+        theme-sys-palette-* light theme definitions
+        theme-sys-elevation-* light theme definitions
+
+        theme-* definitions for use with Material 2 / HA
+      dark:
+        theme-sys-color-* dark theme definitions
+        theme-sys-palette-* dark theme definitions
+        theme-sys-elevation-* dark theme definitions
+
+        theme-* definitions for use with Material 2 / HA
+
+    #
+    # Generic CSS Material 2 / Home Assistant definitions using
+    # definitions from the light or dark mode colors
+    #
+    primary-color: var(--theme-sys-color-primary)
+    ...
 ```
