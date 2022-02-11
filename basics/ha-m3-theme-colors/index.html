@@ -1,0 +1,2300 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Material 3 themes for Home Assistant lets you create wonderful dark / light themes with minimal work and great results">
+      
+      
+        <meta name="author" content="Marco">
+      
+      
+        <link rel="canonical" href="https://ha-m3-themes.docs.amoebelabs.com/basics/ha-m3-theme-colors/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.10">
+    
+    
+      
+        <title>Theme colors - Material 3 Themes for Home Assistant</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.d6be258b.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#546d78">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../overrides/assets/stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+
+  <!-- Extra style sheets (can't be set in mkdocs.yml due to content hash) -->
+  <!-- <link -->
+    <!-- rel="stylesheet" -->
+    <!-- href="../../overrides/assets/stylesheets/main.scss" -->
+  <!-- /> -->
+
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="blue-grey" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ha-m3-theme-colors" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+  <!-- Add announcement here, including arbitrary HTML -->
+  <a style="color:white;opacity:.9;" onmouseover="this.style.color='white';this.style.fontSize=''";" onmouseout="this.style.color='white';;this.style.fontSize=''">
+    <span style="font-size:16px;">Note:</span> This is <strong>preliminary work-in-progress</strong> documentation for the not yet released Material 3 Themes for Home Assistant!
+  </a>
+
+
+          </div>
+        </aside>
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Material 3 Themes for Home Assistant" class="md-header__button md-logo" aria-label="Material 3 Themes for Home Assistant" data-md-component="logo">
+      
+  <img src="../../assets/logo/m3-logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Material 3 Themes for Home Assistant
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Theme colors
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/amoebelabs/ha-m3-themes" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    amoebelabs/ha-m3-themes
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../start/introduction/" class="md-tabs__link">
+        Getting started
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../using/with-home-assistant/" class="md-tabs__link">
+        Using M3
+      </a>
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../m3-color-system/" class="md-tabs__link md-tabs__link--active">
+        Basics
+      </a>
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../design/introduction/" class="md-tabs__link">
+        Design your OWN
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../examples/introduction/" class="md-tabs__link">
+        Examples
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Material 3 Themes for Home Assistant" class="md-nav__button md-logo" aria-label="Material 3 Themes for Home Assistant" data-md-component="logo">
+      
+  <img src="../../assets/logo/m3-logo.svg" alt="logo">
+
+    </a>
+    Material 3 Themes for Home Assistant
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/amoebelabs/ha-m3-themes" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    amoebelabs/ha-m3-themes
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" data-md-state="indeterminate" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Getting started
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Getting started" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Getting started
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../start/introduction/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../start/installation/" class="md-nav__link">
+        Installation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../changelog/changelog/" class="md-nav__link">
+        Changelog
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" data-md-state="indeterminate" type="checkbox" id="__nav_3" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Using M3
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Using M3" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Using M3
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1" data-md-state="indeterminate" type="checkbox" id="__nav_3_1" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_1">
+          Compatibility
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Compatibility" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_1">
+          <span class="md-nav__icon md-icon"></span>
+          Compatibility
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../using/with-home-assistant/" class="md-nav__link">
+        With Home Assistant
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../using/with-custom-cards/" class="md-nav__link">
+        With Custom cards
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" data-md-state="indeterminate" type="checkbox" id="__nav_3_2" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_2">
+          Use
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Use" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          Use
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../using/prerequisites/" class="md-nav__link">
+        Prerequisites
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../using/in-cards/" class="md-nav__link">
+        In cards
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Basics
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Basics" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Basics
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_1" data-md-state="indeterminate" type="checkbox" id="__nav_4_1" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_1">
+          Material 3 Basics
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Material 3 Basics" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_1">
+          <span class="md-nav__icon md-icon"></span>
+          Material 3 Basics
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../m3-color-system/" class="md-nav__link">
+        M3 Color System
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../m3-dynamic-color/" class="md-nav__link">
+        M3 Dynamic Color
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_2" type="checkbox" id="__nav_4_2" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_2">
+          HA M3 Implementation
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="HA M3 Implementation" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_2">
+          <span class="md-nav__icon md-icon"></span>
+          HA M3 Implementation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ha-m3-overview/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ha-m3-color-system/" class="md-nav__link">
+        HA M3 Color System
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ha-m3-dynamic-color/" class="md-nav__link">
+        HA M3 Dynamic Color
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ha-m3-theme-structure/" class="md-nav__link">
+        Theme structure
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Theme colors
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Theme colors
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ha-m3-theme-colors" class="md-nav__link">
+     HA M3 Theme colors
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference-colors" class="md-nav__link">
+     Reference colors
+  </a>
+  
+    <nav class="md-nav" aria-label=" Reference colors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#palette-reference-colors" class="md-nav__link">
+     Palette Reference colors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#elevation-surface-reference-colors" class="md-nav__link">
+     Elevation surface Reference colors
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#system-colors" class="md-nav__link">
+     System colors
+  </a>
+  
+    <nav class="md-nav" aria-label=" System colors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#standard-m3-light-and-dark-system-colors" class="md-nav__link">
+     Standard M3 light and dark system colors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standard-m3-elevation-surface-light-and-dark-colors" class="md-nav__link">
+     Standard M3 elevation surface light and dark colors
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#m3-mapping-to-hamaterial-2-color-names" class="md-nav__link">
+     M3 Mapping to HA/Material 2 color names
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" data-md-state="indeterminate" type="checkbox" id="__nav_5" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Design your OWN
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Design your OWN" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Design your OWN
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../design/introduction/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../design/create-m3-theme/" class="md-nav__link">
+        Create a M3 Theme
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../design/convert-ha-theme/" class="md-nav__link">
+        Covert to HA Theme
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" data-md-state="indeterminate" type="checkbox" id="__nav_6" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          Examples
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Examples" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Examples
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../examples/introduction/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../examples/example-1/" class="md-nav__link">
+        1. Theme 01 - Unknown
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../examples/example-2/" class="md-nav__link">
+        2. Theme 02 - CadmiumGreen
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../examples/example-3/" class="md-nav__link">
+        3. Theme 03 - Porcupine
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../examples/example-4/" class="md-nav__link">
+        4. Theme 04 - Magenta
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../examples/example-5/" class="md-nav__link">
+        5. Theme 05 - Brown
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../examples/example-6/" class="md-nav__link">
+        6. Theme 06 - TealBlue
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../examples/example-7/" class="md-nav__link">
+        7. Theme 07 - DarkOliveGreen
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ha-m3-theme-colors" class="md-nav__link">
+     HA M3 Theme colors
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference-colors" class="md-nav__link">
+     Reference colors
+  </a>
+  
+    <nav class="md-nav" aria-label=" Reference colors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#palette-reference-colors" class="md-nav__link">
+     Palette Reference colors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#elevation-surface-reference-colors" class="md-nav__link">
+     Elevation surface Reference colors
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#system-colors" class="md-nav__link">
+     System colors
+  </a>
+  
+    <nav class="md-nav" aria-label=" System colors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#standard-m3-light-and-dark-system-colors" class="md-nav__link">
+     Standard M3 light and dark system colors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standard-m3-elevation-surface-light-and-dark-colors" class="md-nav__link">
+     Standard M3 elevation surface light and dark colors
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#m3-mapping-to-hamaterial-2-color-names" class="md-nav__link">
+     M3 Mapping to HA/Material 2 color names
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+  <h1>Theme colors</h1>
+
+<h2 id="ha-m3-theme-colors"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 3 10 9h-3v8H5v-8H2l10-9m3 8.5V10a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5z"/></svg></span> HA M3 Theme colors<a class="headerlink" href="#ha-m3-theme-colors" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Palettes</li>
+<li>Surfaces</li>
+<li>Light theme color mapping</li>
+<li>Dark theme color mapping</li>
+</ul>
+<h2 id="reference-colors"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 3 10 9h-3v8H5v-8H2l10-9m3 8.5V10a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5z"/></svg></span> Reference colors<a class="headerlink" href="#reference-colors" title="Permanent link">&para;</a></h2>
+<p>The HA M3 implementation defines no less than <strong>244</strong> reference colors. Some are theme mode independent, others are specific for light or dark modes.</p>
+<h3 id="palette-reference-colors"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 3 10 9h-3v8H5v-8H2l10-9m3 8.5V10a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5z"/></svg></span> Palette Reference colors<a class="headerlink" href="#palette-reference-colors" title="Permanent link">&para;</a></h3>
+<p>Reference palette colors use the <code>theme-ref-palette-</code> naming scheme and are theme mode independent.</p>
+<p>Palette color schemes use 24 colors per palette and are available for:</p>
+<ul>
+<li>Neutral colors</li>
+<li>Neutral variant colors</li>
+<li>Primary colors</li>
+<li>Secondary colors</li>
+<li>Tertiary colors</li>
+<li>Error colors</li>
+</ul>
+<details>
+<summary>M3 Reference palette colors (from example theme 07):</summary>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">  1</span>
+<span class="normal">  2</span>
+<span class="normal">  3</span>
+<span class="normal">  4</span>
+<span class="normal">  5</span>
+<span class="normal">  6</span>
+<span class="normal">  7</span>
+<span class="normal">  8</span>
+<span class="normal">  9</span>
+<span class="normal"> 10</span>
+<span class="normal"> 11</span>
+<span class="normal"> 12</span>
+<span class="normal"> 13</span>
+<span class="normal"> 14</span>
+<span class="normal"> 15</span>
+<span class="normal"> 16</span>
+<span class="normal"> 17</span>
+<span class="normal"> 18</span>
+<span class="normal"> 19</span>
+<span class="normal"> 20</span>
+<span class="normal"> 21</span>
+<span class="normal"> 22</span>
+<span class="normal"> 23</span>
+<span class="normal"> 24</span>
+<span class="normal"> 25</span>
+<span class="normal"> 26</span>
+<span class="normal"> 27</span>
+<span class="normal"> 28</span>
+<span class="normal"> 29</span>
+<span class="normal"> 30</span>
+<span class="normal"> 31</span>
+<span class="normal"> 32</span>
+<span class="normal"> 33</span>
+<span class="normal"> 34</span>
+<span class="normal"> 35</span>
+<span class="normal"> 36</span>
+<span class="normal"> 37</span>
+<span class="normal"> 38</span>
+<span class="normal"> 39</span>
+<span class="normal"> 40</span>
+<span class="normal"> 41</span>
+<span class="normal"> 42</span>
+<span class="normal"> 43</span>
+<span class="normal"> 44</span>
+<span class="normal"> 45</span>
+<span class="normal"> 46</span>
+<span class="normal"> 47</span>
+<span class="normal"> 48</span>
+<span class="normal"> 49</span>
+<span class="normal"> 50</span>
+<span class="normal"> 51</span>
+<span class="normal"> 52</span>
+<span class="normal"> 53</span>
+<span class="normal"> 54</span>
+<span class="normal"> 55</span>
+<span class="normal"> 56</span>
+<span class="normal"> 57</span>
+<span class="normal"> 58</span>
+<span class="normal"> 59</span>
+<span class="normal"> 60</span>
+<span class="normal"> 61</span>
+<span class="normal"> 62</span>
+<span class="normal"> 63</span>
+<span class="normal"> 64</span>
+<span class="normal"> 65</span>
+<span class="normal"> 66</span>
+<span class="normal"> 67</span>
+<span class="normal"> 68</span>
+<span class="normal"> 69</span>
+<span class="normal"> 70</span>
+<span class="normal"> 71</span>
+<span class="normal"> 72</span>
+<span class="normal"> 73</span>
+<span class="normal"> 74</span>
+<span class="normal"> 75</span>
+<span class="normal"> 76</span>
+<span class="normal"> 77</span>
+<span class="normal"> 78</span>
+<span class="normal"> 79</span>
+<span class="normal"> 80</span>
+<span class="normal"> 81</span>
+<span class="normal"> 82</span>
+<span class="normal"> 83</span>
+<span class="normal"> 84</span>
+<span class="normal"> 85</span>
+<span class="normal"> 86</span>
+<span class="normal"> 87</span>
+<span class="normal"> 88</span>
+<span class="normal"> 89</span>
+<span class="normal"> 90</span>
+<span class="normal"> 91</span>
+<span class="normal"> 92</span>
+<span class="normal"> 93</span>
+<span class="normal"> 94</span>
+<span class="normal"> 95</span>
+<span class="normal"> 96</span>
+<span class="normal"> 97</span>
+<span class="normal"> 98</span>
+<span class="normal"> 99</span>
+<span class="normal">100</span>
+<span class="normal">101</span>
+<span class="normal">102</span>
+<span class="normal">103</span>
+<span class="normal">104</span>
+<span class="normal">105</span>
+<span class="normal">106</span>
+<span class="normal">107</span>
+<span class="normal">108</span>
+<span class="normal">109</span>
+<span class="normal">110</span>
+<span class="normal">111</span>
+<span class="normal">112</span>
+<span class="normal">113</span>
+<span class="normal">114</span>
+<span class="normal">115</span>
+<span class="normal">116</span>
+<span class="normal">117</span>
+<span class="normal">118</span>
+<span class="normal">119</span>
+<span class="normal">120</span>
+<span class="normal">121</span>
+<span class="normal">122</span>
+<span class="normal">123</span>
+<span class="normal">124</span>
+<span class="normal">125</span>
+<span class="normal">126</span>
+<span class="normal">127</span>
+<span class="normal">128</span>
+<span class="normal">129</span>
+<span class="normal">130</span>
+<span class="normal">131</span>
+<span class="normal">132</span>
+<span class="normal">133</span>
+<span class="normal">134</span>
+<span class="normal">135</span>
+<span class="normal">136</span>
+<span class="normal">137</span>
+<span class="normal">138</span>
+<span class="normal">139</span>
+<span class="normal">140</span>
+<span class="normal">141</span>
+<span class="normal">142</span>
+<span class="normal">143</span>
+<span class="normal">144</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="w">  </span><span class="nt">theme-ref-palette-primary100</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#ffffff&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-primary99</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#fbffda&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-primary95</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#e2fc8c&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-primary90</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#d4ee7f&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-primary80</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#b8d166&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-primary70</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#9db54e&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-primary60</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#839a36&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-primary50</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#697f1c&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-primary40</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#526600&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-primary30</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#3c4d00&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-primary20</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#283500&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-primary10</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#161f00&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-primary0</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#000000&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-secondary100</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#ffffff&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-secondary99</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#faffdd&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-secondary95</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#eef4d1&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-secondary90</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#e0e6c3&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-secondary80</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#c4caa9&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-secondary70</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#a8ae8e&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-secondary60</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#8e9476&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-secondary50</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#747a5d&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-secondary40</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#5b6146&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-secondary30</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#444930&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-secondary20</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#2e331c&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-secondary10</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#191d08&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-secondary0</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#000000&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-tertiary100</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#ffffff&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-tertiary99</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#f0fffb&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-tertiary95</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#cafaef&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-tertiary90</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#bdece1&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-tertiary80</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#a1d0c5&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-tertiary70</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#86b4aa&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-tertiary60</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#6c9a90&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-tertiary50</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#527f76&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-tertiary40</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#3a665e&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-tertiary30</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#214e46&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-tertiary20</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#033730&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-tertiary10</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#00201b&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-tertiary0</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#000000&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-neutral100</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#ffffff&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-neutral99</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#fefcf4&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-neutral95</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#f3f1e9&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-neutral90</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#e5e3db&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-neutral80</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#c8c7bf&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-neutral70</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#acaba4&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-neutral60</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#92918a&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-neutral50</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#787771&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-neutral40</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#5f5f59&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-neutral30</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#474742&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-neutral20</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#30312b&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-neutral10</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#1b1c17&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-neutral0</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#000000&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-neutral-variant100</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#ffffff&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-neutral-variant99</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#fdfeec&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-neutral-variant95</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#f1f2e1&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-neutral-variant90</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#e3e4d3&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-neutral-variant80</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#c7c8b8&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-neutral-variant70</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#abac9d&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-neutral-variant60</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#909283&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-neutral-variant50</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#77786b&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-neutral-variant40</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#5e6053&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-neutral-variant30</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#46483c&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-neutral-variant20</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#2f3126&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-neutral-variant10</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#1a1d12&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-neutral-variant0</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#000000&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-error100</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#ffffff&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-error99</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#fcfcfc&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-error95</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#ffede9&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-error90</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#ffdad4&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-error80</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#ffb4a9&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-error70</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#ff897a&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-error60</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#ff5449&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-error50</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#dd3730&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-error40</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#ba1b1b&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-error30</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#930006&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-error20</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#680003&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-error10</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#410001&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-error0</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#000000&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-primary5</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#0b0f00ff&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-primary15</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#1f2a00ff&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-primary25</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#324100ff&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-primary35</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#475900ff&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-primary45</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#5d720eff&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-primary65</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#90a742ff&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-primary75</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#aac35aff&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-primary85</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#c6df72ff&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-primary7</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#101700ff&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-primary92</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#dbf585ff&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-primary97</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#eefdb3ff&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-secondary5</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#0c0e04ff&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-secondary15</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#232812ff&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-secondary25</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#393e26ff&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-secondary35</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#4f553bff&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-secondary45</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#676d51ff&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-secondary65</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#9ba182ff&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-secondary75</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#b6bc9bff&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-secondary85</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#d2d8b6ff&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-secondary7</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#121506ff&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-secondary92</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#e7edcaff&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-secondary97</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#f4f9d7ff&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-tertiary5</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#00100dff&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-tertiary15</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#012b25ff&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-tertiary25</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#12423bff&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-tertiary35</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#2d5a52ff&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-tertiary45</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#46726aff&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-tertiary65</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#79a79dff&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-tertiary75</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#93c2b7ff&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-tertiary85</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#afded3ff&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-tertiary7</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#001814ff&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-tertiary92</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#c3f3e8ff&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-tertiary97</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#ddfcf5ff&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-error5</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#200000ff&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-error15</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#540002ff&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-error25</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#7d0004ff&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-error35</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#a60d10ff&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-error45</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#cb2925ff&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-error65</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#ff6e61ff&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-error75</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#ff9e91ff&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-error85</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#ffc7beff&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-error7</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#300000ff&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-error92</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#ffe3deff&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-error97</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#fdf4f2ff&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-neutral5</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#0d0e0bff&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-neutral15</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#252621ff&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-neutral25</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#3b3c36ff&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-neutral35</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#53534dff&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-neutral45</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#6b6b65ff&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-neutral65</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#9f9e97ff&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-neutral75</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#bab9b1ff&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-neutral85</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#d6d5cdff&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-neutral7</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#141511ff&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-neutral92</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#eceae2ff&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-neutral97</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#f8f6eeff&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-neutral-variant5</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#0d0e09ff&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-neutral-variant15</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#24271cff&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-neutral-variant25</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#3a3c31ff&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-neutral-variant35</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#525447ff&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-neutral-variant45</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#6a6c5fff&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-neutral-variant65</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#9d9f90ff&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-neutral-variant75</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#b9baaaff&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-neutral-variant85</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#d5d6c5ff&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-neutral-variant7</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#13150dff&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-neutral-variant92</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#eaebdaff&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-palette-neutral-variant97</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#f7f8e6ff&#39;</span><span class="w"></span>
+</code></pre></div>
+</td></tr></table>
+</details>
+<h3 id="elevation-surface-reference-colors"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 3 10 9h-3v8H5v-8H2l10-9m3 8.5V10a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5z"/></svg></span> Elevation surface Reference colors<a class="headerlink" href="#elevation-surface-reference-colors" title="Permanent link">&para;</a></h3>
+<p>Reference elevation surface colors use the <code>theme-ref-elevation-surface-</code> naming scheme and are specific per theme mode by using <code>-light</code> and <code>-dark</code> suffixes in the name.</p>
+<p>Surface color schemes are available for:</p>
+<ul>
+<li>Neutral colors</li>
+<li>Neutral base color mixed with the primary color</li>
+<li>Neutral base color mixed with the secundary color</li>
+<li>Neutral base color mixed with the tertiary color</li>
+<li>Neutral base color mixed with the error color</li>
+</ul>
+<details>
+<summary>M3 Reference elevation surface colors (from example theme 07):</summary>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">  1</span>
+<span class="normal">  2</span>
+<span class="normal">  3</span>
+<span class="normal">  4</span>
+<span class="normal">  5</span>
+<span class="normal">  6</span>
+<span class="normal">  7</span>
+<span class="normal">  8</span>
+<span class="normal">  9</span>
+<span class="normal"> 10</span>
+<span class="normal"> 11</span>
+<span class="normal"> 12</span>
+<span class="normal"> 13</span>
+<span class="normal"> 14</span>
+<span class="normal"> 15</span>
+<span class="normal"> 16</span>
+<span class="normal"> 17</span>
+<span class="normal"> 18</span>
+<span class="normal"> 19</span>
+<span class="normal"> 20</span>
+<span class="normal"> 21</span>
+<span class="normal"> 22</span>
+<span class="normal"> 23</span>
+<span class="normal"> 24</span>
+<span class="normal"> 25</span>
+<span class="normal"> 26</span>
+<span class="normal"> 27</span>
+<span class="normal"> 28</span>
+<span class="normal"> 29</span>
+<span class="normal"> 30</span>
+<span class="normal"> 31</span>
+<span class="normal"> 32</span>
+<span class="normal"> 33</span>
+<span class="normal"> 34</span>
+<span class="normal"> 35</span>
+<span class="normal"> 36</span>
+<span class="normal"> 37</span>
+<span class="normal"> 38</span>
+<span class="normal"> 39</span>
+<span class="normal"> 40</span>
+<span class="normal"> 41</span>
+<span class="normal"> 42</span>
+<span class="normal"> 43</span>
+<span class="normal"> 44</span>
+<span class="normal"> 45</span>
+<span class="normal"> 46</span>
+<span class="normal"> 47</span>
+<span class="normal"> 48</span>
+<span class="normal"> 49</span>
+<span class="normal"> 50</span>
+<span class="normal"> 51</span>
+<span class="normal"> 52</span>
+<span class="normal"> 53</span>
+<span class="normal"> 54</span>
+<span class="normal"> 55</span>
+<span class="normal"> 56</span>
+<span class="normal"> 57</span>
+<span class="normal"> 58</span>
+<span class="normal"> 59</span>
+<span class="normal"> 60</span>
+<span class="normal"> 61</span>
+<span class="normal"> 62</span>
+<span class="normal"> 63</span>
+<span class="normal"> 64</span>
+<span class="normal"> 65</span>
+<span class="normal"> 66</span>
+<span class="normal"> 67</span>
+<span class="normal"> 68</span>
+<span class="normal"> 69</span>
+<span class="normal"> 70</span>
+<span class="normal"> 71</span>
+<span class="normal"> 72</span>
+<span class="normal"> 73</span>
+<span class="normal"> 74</span>
+<span class="normal"> 75</span>
+<span class="normal"> 76</span>
+<span class="normal"> 77</span>
+<span class="normal"> 78</span>
+<span class="normal"> 79</span>
+<span class="normal"> 80</span>
+<span class="normal"> 81</span>
+<span class="normal"> 82</span>
+<span class="normal"> 83</span>
+<span class="normal"> 84</span>
+<span class="normal"> 85</span>
+<span class="normal"> 86</span>
+<span class="normal"> 87</span>
+<span class="normal"> 88</span>
+<span class="normal"> 89</span>
+<span class="normal"> 90</span>
+<span class="normal"> 91</span>
+<span class="normal"> 92</span>
+<span class="normal"> 93</span>
+<span class="normal"> 94</span>
+<span class="normal"> 95</span>
+<span class="normal"> 96</span>
+<span class="normal"> 97</span>
+<span class="normal"> 98</span>
+<span class="normal"> 99</span>
+<span class="normal">100</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="w">  </span><span class="nt">theme-ref-elevation-surface-neutral1-light</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(249,247,239)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-neutral2-light</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(246,244,236)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-neutral3-light</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(241,239,232)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-neutral4-light</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(237,235,227)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-neutral5-light</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(230,228,221)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-neutral6-light</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(224,222,215)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-neutral7-light</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(216,214,207)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-neutral8-light</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(208,206,199)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-neutral9-light</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(198,197,190)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-neutral10-light</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(190,189,182)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-primary1-light</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(249,248,237)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-primary2-light</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(245,244,232)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-primary3-light</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(240,240,224)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-primary4-light</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(235,236,217)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-primary5-light</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(228,230,207)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-primary6-light</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(221,224,198)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-primary7-light</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(213,216,185)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-primary8-light</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(204,209,173)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-primary9-light</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(194,200,159)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-primary10-light</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(185,192,146)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-secondary1-light</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(249,247,239)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-secondary2-light</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(246,244,235)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-secondary3-light</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(241,240,230)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-secondary4-light</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(236,235,225)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-secondary5-light</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(230,229,218)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-secondary6-light</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(223,223,211)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-secondary7-light</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(215,215,202)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-secondary8-light</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(207,207,194)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-secondary9-light</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(197,198,183)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-secondary10-light</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(189,190,174)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-tertiary1-light</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(248,248,240)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-tertiary2-light</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(244,244,236)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-tertiary3-light</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(238,240,232)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-tertiary4-light</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(232,236,228)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-tertiary5-light</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(225,230,222)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-tertiary6-light</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(217,224,216)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-tertiary7-light</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(207,216,208)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-tertiary8-light</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(197,209,200)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-tertiary9-light</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(185,200,192)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-tertiary10-light</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(176,192,184)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-error1-light</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(252,245,237)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-error2-light</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(251,241,233)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-error3-light</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(249,234,227)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-error4-light</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(247,227,220)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-error5-light</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(244,218,211)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-error6-light</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(241,209,203)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-error7-light</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(238,198,192)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-error8-light</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(234,187,181)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-error9-light</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(230,173,168)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-error10-light</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(227,162,157)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-neutral1-dark</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(36,37,31)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-neutral2-dark</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(41,42,36)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-neutral3-dark</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(46,47,41)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-neutral4-dark</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(53,54,48)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-neutral5-dark</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(60,60,55)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-neutral6-dark</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(69,69,63)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-neutral7-dark</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(77,78,72)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-neutral8-dark</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(88,88,82)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-neutral9-dark</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(96,96,90)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-neutral10-dark</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(105,105,99)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-primary1-dark</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(35,37,27)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-primary2-dark</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(40,42,29)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-primary3-dark</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(44,48,32)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-primary4-dark</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(51,55,35)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-primary5-dark</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(57,62,38)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-primary6-dark</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(65,71,42)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-primary7-dark</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(73,80,46)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-primary8-dark</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(82,91,51)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-primary9-dark</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(90,100,55)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-primary10-dark</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(98,109,59)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-secondary1-dark</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(35,37,30)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-secondary2-dark</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(41,42,35)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-secondary3-dark</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(46,47,39)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-secondary4-dark</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(52,54,45)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-secondary5-dark</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(59,61,51)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-secondary6-dark</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(68,70,58)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-secondary7-dark</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(76,78,65)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-secondary8-dark</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(86,89,74)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-secondary9-dark</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(95,98,81)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-secondary10-dark</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(103,106,89)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-tertiary1-dark</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(34,37,32)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-tertiary2-dark</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(38,42,37)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-tertiary3-dark</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(42,48,42)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-tertiary4-dark</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(47,55,49)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-tertiary5-dark</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(52,62,56)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-tertiary6-dark</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(59,71,65)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-tertiary7-dark</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(66,80,73)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-tertiary8-dark</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(74,91,84)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-tertiary9-dark</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(81,100,93)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-tertiary10-dark</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(87,109,101)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-error1-dark</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(38,36,30)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-error2-dark</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(45,40,35)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-error3-dark</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(52,45,39)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-error4-dark</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(61,51,45)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-error5-dark</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(70,57,51)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-error6-dark</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(82,64,58)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-error7-dark</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(93,72,65)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-error8-dark</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(107,81,74)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-error9-dark</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(118,89,81)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-ref-elevation-surface-error10-dark</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rgb(130,96,89)</span><span class="w"></span>
+</code></pre></div>
+</td></tr></table>
+</details>
+<h2 id="system-colors"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 3 10 9h-3v8H5v-8H2l10-9m3 8.5V10a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5z"/></svg></span> System colors<a class="headerlink" href="#system-colors" title="Permanent link">&para;</a></h2>
+<p>M3 System colors are by definition <strong>independent</strong> of the theme mode. Their actual value adapts to the light or dark mode.</p>
+<h3 id="standard-m3-light-and-dark-system-colors"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 3 10 9h-3v8H5v-8H2l10-9m3 8.5V10a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5z"/></svg></span> Standard M3 light and dark system colors<a class="headerlink" href="#standard-m3-light-and-dark-system-colors" title="Permanent link">&para;</a></h3>
+<details>
+<summary>M3 System colors mapping for LIGHT mode</summary>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c1"># light theme...</span><span class="w"></span>
+<span class="c1">#</span><span class="w"></span>
+<span class="c1"># --------------------------------------------------------------------------</span><span class="w"></span>
+<span class="nt">light</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-color-primary</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-palette-primary40)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-color-on-primary</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-palette-primary100)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-color-primary-container</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-palette-primary90)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-color-on-primary-container</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-palette-primary10)</span><span class="w"></span>
+
+<span class="w">  </span><span class="nt">theme-sys-color-secondary</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-palette-secondary40)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-color-on-secondary</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-palette-secondary100)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-color-secondary-container</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-palette-secondary90)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-color-on-secondary-container</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-palette-secondary10)</span><span class="w"></span>
+
+<span class="w">  </span><span class="nt">theme-sys-color-tertiary</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-palette-tertiary40)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-color-on-tertiary</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-palette-tertiary100)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-color-tertiary-container</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-palette-tertiary90)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-color-on-tertiary-container</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-palette-tertiary10)</span><span class="w"></span>
+
+<span class="w">  </span><span class="nt">theme-sys-color-error</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-palette-error40)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-color-on-error</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-palette-error100)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-color-error-container</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-palette-error90)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-color-on-error-container</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-palette-error10)</span><span class="w"></span>
+
+<span class="w">  </span><span class="nt">theme-sys-color-background</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-palette-neutral99)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-color-on-background</span><span class="p">:</span><span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-palette-neutral20)</span><span class="w"></span>
+
+<span class="w">  </span><span class="nt">theme-sys-color-surface</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-palette-neutral99)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-color-on-surface</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-palette-neutral10)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-color-surface-variant</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-palette-neutral-variant90)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-color-on-surface-variant</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-palette-neutral-variant30)</span><span class="w"></span>
+
+<span class="w">  </span><span class="nt">theme-sys-color-outline</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-palette-neutral-variant50)</span><span class="w"></span>
+
+<span class="w">  </span><span class="c1"># Guessing for these 3</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-color-inverse-surface</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-palette-neutral10)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-color-inverse-on-surface</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-palette-neutral99)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-color-inverse-primary</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-palette-primary100)</span><span class="w"></span>
+
+<span class="w">  </span><span class="c1"># No idea with this one...</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-color-shadow</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">black</span><span class="w"></span>
+</code></pre></div>
+</td></tr></table>
+</details>
+<details>
+<summary>M3 System colors mapping for DARK mode</summary>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c1"># dark theme...</span><span class="w"></span>
+<span class="c1">#</span><span class="w"></span>
+<span class="c1"># --------------------------------------------------------------------------</span><span class="w"></span>
+<span class="nt">dark</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="c1"># Start with the M3 generated colors for dark mode...</span><span class="w"></span>
+<span class="w">  </span><span class="c1">#</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-color-primary</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-palette-primary80)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-color-on-primary</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-palette-primary20)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-color-primary-container</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-palette-primary30)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-color-on-primary-container</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-palette-primary90)</span><span class="w"></span>
+
+<span class="w">  </span><span class="nt">theme-sys-color-secondary</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-palette-secondary80)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-color-on-secondary</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-palette-secondary20)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-color-secondary-container</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-palette-secondary30)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-color-on-secondary-container</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-palette-secondary90)</span><span class="w"></span>
+
+<span class="w">  </span><span class="nt">theme-sys-color-tertiary</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-palette-tertiary80)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-color-on-tertiary</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-palette-tertiary20)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-color-tertiary-container</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-palette-tertiary30)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-color-on-tertiary-container</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-palette-tertiary90)</span><span class="w"></span>
+
+<span class="w">  </span><span class="nt">theme-sys-color-error</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-palette-error80)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-color-on-error</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-palette-error20)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-color-error-container</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-palette-error30)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-color-on-error-container</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-palette-error90)</span><span class="w"></span>
+
+<span class="w">  </span><span class="nt">theme-sys-color-background</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-palette-neutral10)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-color-on-background</span><span class="p">:</span><span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-palette-neutral90)</span><span class="w"></span>
+
+<span class="w">  </span><span class="nt">theme-sys-color-surface</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-palette-neutral10)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-color-on-surface</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-palette-neutral80)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-color-surface-variant</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-palette-neutral-variant30)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-color-on-surface-variant</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-palette-neutral-variant80)</span><span class="w"></span>
+
+<span class="w">  </span><span class="nt">theme-sys-color-outline</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-palette-neutral-variant60)</span><span class="w"></span>
+
+<span class="w">  </span><span class="c1"># Guessing for these 3</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-color-inverse-surface</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-palette-neutral80)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-color-inverse-on-surface</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-palette-neutral10)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-color-inverse-primary</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-palette-primary80)</span><span class="w"></span>
+
+<span class="w">  </span><span class="c1"># No idea with this one...</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-color-shadow</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">black</span><span class="w"></span>
+</code></pre></div>
+</td></tr></table>
+</details>
+<h3 id="standard-m3-elevation-surface-light-and-dark-colors"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 3 10 9h-3v8H5v-8H2l10-9m3 8.5V10a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5z"/></svg></span> Standard M3 elevation surface light and dark colors<a class="headerlink" href="#standard-m3-elevation-surface-light-and-dark-colors" title="Permanent link">&para;</a></h3>
+<details>
+<summary>M3 elevation surface color mapping for LIGHT mode</summary>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span>
+<span class="normal">53</span>
+<span class="normal">54</span>
+<span class="normal">55</span>
+<span class="normal">56</span>
+<span class="normal">57</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="w">  </span><span class="c1"># Surfaces</span><span class="w"></span>
+<span class="w">  </span><span class="c1"># -----------------------------------------------------------------------</span><span class="w"></span>
+
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-neutral1</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-neutral1-light)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-neutral2</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-neutral2-light)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-neutral3</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-neutral3-light)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-neutral4</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-neutral4-light)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-neutral5</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-neutral5-light)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-neutral6</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-neutral6-light)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-neutral7</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-neutral7-light)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-neutral8</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-neutral8-light)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-neutral9</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-neutral9-light)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-neutral10</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-neutral10-light)</span><span class="w"></span>
+
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-primary1</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-primary1-light)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-primary2</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-primary2-light)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-primary3</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-primary3-light)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-primary4</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-primary4-light)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-primary5</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-primary5-light)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-primary6</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-primary6-light)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-primary7</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-primary7-light)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-primary8</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-primary8-light)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-primary9</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-primary9-light)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-primary10</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-primary10-light)</span><span class="w"></span>
+
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-secondary1</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-secondary1-light)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-secondary2</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-secondary2-light)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-secondary3</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-secondary3-light)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-secondary4</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-secondary4-light)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-secondary5</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-secondary5-light)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-secondary6</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-secondary6-light)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-secondary7</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-secondary7-light)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-secondary8</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-secondary8-light)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-secondary9</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-secondary9-light)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-secondary10</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-secondary10-light)</span><span class="w"></span>
+
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-tertiary1</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-tertiary1-light)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-tertiary2</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-tertiary2-light)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-tertiary3</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-tertiary3-light)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-tertiary4</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-tertiary4-light)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-tertiary5</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-tertiary5-light)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-tertiary6</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-tertiary6-light)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-tertiary7</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-tertiary7-light)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-tertiary8</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-tertiary8-light)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-tertiary9</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-tertiary9-light)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-tertiary10</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-tertiary10-light)</span><span class="w"></span>
+
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-error1</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-error1-light)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-error2</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-error2-light)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-error3</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-error3-light)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-error4</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-error4-light)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-error5</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-error5-light)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-error6</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-error6-light)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-error7</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-error7-light)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-error8</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-error8-light)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-error9</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-error9-light)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-error10</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-error10-light)</span><span class="w"></span>
+</code></pre></div>
+</td></tr></table>
+</details>
+<details>
+<summary>M3 elevation surface color mapping for DARK mode</summary>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span>
+<span class="normal">53</span>
+<span class="normal">54</span>
+<span class="normal">55</span>
+<span class="normal">56</span>
+<span class="normal">57</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="w">  </span><span class="c1"># Surfaces</span><span class="w"></span>
+<span class="w">  </span><span class="c1"># -----------------------------------------------------------------------</span><span class="w"></span>
+
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-neutral1</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-neutral1-dark)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-neutral2</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-neutral2-dark)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-neutral3</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-neutral3-dark)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-neutral4</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-neutral4-dark)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-neutral5</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-neutral5-dark)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-neutral6</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-neutral6-dark)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-neutral7</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-neutral7-dark)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-neutral8</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-neutral8-dark)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-neutral9</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-neutral9-dark)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-neutral10</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-neutral10-dark)</span><span class="w"></span>
+
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-primary1</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-primary1-dark)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-primary2</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-primary2-dark)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-primary3</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-primary3-dark)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-primary4</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-primary4-dark)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-primary5</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-primary5-dark)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-primary6</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-primary6-dark)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-primary7</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-primary7-dark)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-primary8</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-primary8-dark)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-primary9</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-primary9-dark)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-primary10</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-primary10-dark)</span><span class="w"></span>
+
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-secondary1</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-secondary1-dark)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-secondary2</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-secondary2-dark)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-secondary3</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-secondary3-dark)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-secondary4</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-secondary4-dark)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-secondary5</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-secondary5-dark)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-secondary6</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-secondary6-dark)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-secondary7</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-secondary7-dark)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-secondary8</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-secondary8-dark)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-secondary9</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-secondary9-dark)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-secondary10</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-secondary10-dark)</span><span class="w"></span>
+
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-tertiary1</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-tertiary1-dark)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-tertiary2</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-tertiary2-dark)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-tertiary3</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-tertiary3-dark)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-tertiary4</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-tertiary4-dark)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-tertiary5</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-tertiary5-dark)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-tertiary6</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-tertiary6-dark)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-tertiary7</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-tertiary7-dark)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-tertiary8</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-tertiary8-dark)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-tertiary9</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-tertiary9-dark)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-tertiary10</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-tertiary10-dark)</span><span class="w"></span>
+
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-error1</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-error1-dark)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-error2</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-error2-dark)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-error3</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-error3-dark)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-error4</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-error4-dark)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-error5</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-error5-dark)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-error6</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-error6-dark)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-error7</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-error7-dark)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-error8</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-error8-dark)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-error9</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-error9-dark)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">theme-sys-elevation-color-error10</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">var(--theme-ref-elevation-surface-error10-dark)</span><span class="w"></span>
+</code></pre></div>
+</td></tr></table>
+</details>
+<h2 id="m3-mapping-to-hamaterial-2-color-names"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 3 10 9h-3v8H5v-8H2l10-9m3 8.5V10a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5z"/></svg></span> M3 Mapping to HA/Material 2 color names<a class="headerlink" href="#m3-mapping-to-hamaterial-2-color-names" title="Permanent link">&para;</a></h2>
+<p>TBD.</p>
+<p>Color mappings :</p>
+<ul>
+<li>primary-background-color</li>
+<li>secondary-background-color</li>
+<li>...</li>
+<li>primary-color</li>
+<li>secondary-color</li>
+<li>accent-color</li>
+<li>...</li>
+<li>primary-text-color</li>
+<li>secondary-text-color</li>
+<li>card-background-color</li>
+<li>box-shadow-light/dark-color</li>
+</ul>
+<p>And more, like icon, switch, label stuff too??</p>
+
+              
+            </article>
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../ha-m3-theme-structure/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Theme structure" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Theme structure
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../../design/introduction/" class="md-footer__link md-footer__link--next" aria-label="Next: Introduction" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Introduction
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2021 - 2022 Marco @AmoebeLabs
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+      
+      
+    
+    <a href="https://github.com/amoebelabs" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://instagram.com/amoebelabs" target="_blank" rel="noopener" title="instagram.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/amoebelabs" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.expand", "navigation.top", "search.suggest", "search.highlight"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.092fa1f6.min.js"}</script>
+    
+    
+  
+      <script src="../../assets/javascripts/bundle.e3b2bf44.min.js"></script>
+      
+    
+
+  <!-- Extra JavaScript (can't be set in mkdocs.yml due to content hash) -->
+  <!-- <script src="../../overrides/assets/javascripts/bundle.js"></script> -->
+
+  </body>
+</html>
