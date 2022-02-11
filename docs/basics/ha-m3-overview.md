@@ -10,3 +10,5 @@ Material 3 for Home Assistant integrates M3 color definitions with the Home Assi
 
 M3 Themes for Home Assistant extends and adapts the color definitions with more palettes, more surfaces, more color steps and reference color mapping to the dark and light themes without any changes in the cards.
 
+Of course, your cards must use CSS theme variables and not fixed colors to get compliant light and dark color modes!
+

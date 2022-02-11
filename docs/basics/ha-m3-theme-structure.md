@@ -24,7 +24,7 @@ Every Home Assistant Theme follows the same structure:
         css-text-color: white
 ```
 
-##:material-home-floor-3: M3 Theme Structure
+##:material-home-floor-3: HA M3 Theme Structure
 
 ```yaml linenums="1" hl_lines="1 19"
   Theme Name:
@@ -66,3 +66,8 @@ Every Home Assistant Theme follows the same structure:
     primary-color: var(--theme-sys-color-primary)
     ...
 ```
+
+##:material-home-floor-3: HA M3 Theme Template
+As the HA M3 Theme structure is mainly mapping M3 reference colors to system (light/dark independant) and existing Home Assistant theme settings, it is very easy to use an M3 theme template and only add the generated M3 reference color definitions.
+
+!!! Warning "To keep compatibility between HA M3 themes, it is strongly advised NOT to change theme definitions!"

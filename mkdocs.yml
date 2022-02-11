@@ -5,7 +5,7 @@ site_url: https://ha-m3-themes.docs.amoebelabs.com/
 site_author: Marco
 site_description: >-
   Material 3 themes for Home Assistant lets you create wonderful dark / light themes
-  without changes in your views and cards
+  with minimal work and great results
 
 # Repository
 repo_name: amoebelabs/ha-m3-themes
@@ -98,6 +98,13 @@ nav:
     - Introduction: start/introduction.md
     - Installation: start/installation.md
     - Changelog: changelog/changelog.md
+  - Using M3:
+      - Compatibility:
+        - With Home Assistant: using/with-home-assistant.md
+        - With Custom cards: using/with-custom-cards.md
+      - Use:
+        - Prerequisites: using/prerequisites.md
+        - In cards: using/in-cards.md
   - Basics:
     - Material 3 Basics:
       - M3 Color System: basics/m3-color-system.md
@@ -106,8 +113,8 @@ nav:
       - Overview: basics/ha-m3-overview.md
       - HA M3 Color System: basics/ha-m3-color-system.md
       - HA M3 Dynamic Color: basics/ha-m3-dynamic-color.md
-    - Theme structure: basics/theme-structure.md
-    - Theme Template: basics/theme-template.md
+      - Theme structure: basics/ha-m3-theme-structure.md
+      - Theme colors: basics/ha-m3-theme-colors.md
   - Design your OWN:
     - Introduction: design/introduction.md
     - Create a M3 Theme: design/create-m3-theme.md

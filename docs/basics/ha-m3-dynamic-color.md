@@ -2,16 +2,20 @@
 template: overrides/main.html
 ---
 
+User-generated color schemes are an important feature of the M3 color system. The Home Assistant implementation makes full use of all the possibilities and even extends some of the features. To manifest all features in the HA UI, the cards must be compliant and use the M3 color system too.
+
 ##:material-home-floor-3: The HA implementation
 
-The M3 series themes for Home Assistant have some differences compared to the original Material 3, which makes it more usable in views/cards:
+The M3 series themes for Home Assistant are mostly 100% M3 compliant. On top of that, it extends the M3 color system to make it more usable in views/cards. 
+
+!!! Note "The main driver (for me) is the Swiss Army Knife custom card, which allows for extensive styling and can therefore use all the M3 color system features and extensions"
 
 | What | Material 3 | HA M3 implementation |
 | ---- | ---------- |  ------------------- |
 | Palettes | 13 colors per palette | 100% M3 compliant for these 13 colors. <br>Extended with 11 more colors, giving a total of 24 colors per palette showing more usable gradient colors with 12 shades and 12 tints |
 | Surfaces | 2 surfaces, neutral and primary based for light and dark themes with 5 elevation levels | 5 surfaces, neutral, primary, secondary, tertiary and error with 10 elevation levels giving more flexibility and choice |
 | Reference | Reference colors are uniquely defined for both dark and light mode palettes | 100% M3 compliant. <br>Extended for surfaces |
-| System | Light and Dark theme system colors mapping reference colors to the theme mode | 100% M3 compliant. <br>Extended for surfaces and palette colors. The palette colors are reversed for the Dark mode: this prevents any change in the view/card |
+| System | Light and Dark theme system colors mapping reference colors to the theme mode | 100% M3 compliant. <br>Extended for surfaces and palette colors. The system palette colors are reversed for the Dark mode to maintain color contrast standards |
 | Light Theme | Yes | 100% M3 compliant | 
 | Dark Theme | Yes | 100% M3 compliant | 
 

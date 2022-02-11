@@ -4,7 +4,7 @@ template: overrides/main.html
 
 This theme uses an TODO color as the primary color.
 
-##:material-home-floor-3: Theme Definition
+##:material-home-floor-3: Theme Colors
 
 
 [![M3 Palettes]][M3 Palettes]

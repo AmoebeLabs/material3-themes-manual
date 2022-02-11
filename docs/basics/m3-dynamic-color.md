@@ -8,7 +8,7 @@ template: overrides/main.html
 
 ##:material-home-floor-3: Material 3 dynamic colors...
 
-User-generated color schemes integrate with Android apps that use the M3 color system. The example below demonstrates how user-generated colors can be created and then manifest in a UI.
+User-generated color schemes are an important feature of the M3 color system. The example below demonstrates how user-generated colors can be created and then manifest in a UI.
 
 ###:material-home-floor-3: Color from user wallpaper
 A user’s wallpaper selection is the basis for the color extraction algorithm to build a color scheme that’s applied across a user's device and any apps that accept dynamic color.
