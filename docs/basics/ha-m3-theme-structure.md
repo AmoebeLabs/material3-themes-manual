@@ -68,6 +68,8 @@ Every Home Assistant Theme follows the same structure:
 ```
 
 ##:material-home-floor-3: HA M3 Theme Template
-As the HA M3 Theme structure is mainly mapping M3 reference colors to system (light/dark independant) and existing Home Assistant theme settings, it is very easy to use an M3 theme template and only add the generated M3 reference color definitions.
+As the HA M3 Theme structure is mainly mapping M3 reference colors to system (light/dark independent) colors and existing Home Assistant theme settings, it is very easy to use an M3 theme template and only add the generated M3 reference color definitions to create a whole new theme.
 
-!!! Warning "To keep compatibility between HA M3 themes, it is strongly advised NOT to change theme definitions!"
+The use of a generic theme part where you only have to insert the M3 reference colors has proven to be very effective: The 7 theme examples where created within one hour and used a picture to generate the M3 color definition.
+
+!!! Warning "To keep compatibility between HA M3 themes, it is strongly advised NOT to change generic theme parts!"

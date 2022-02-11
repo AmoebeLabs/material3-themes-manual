@@ -110,15 +110,14 @@ nav:
       - M3 Color System: basics/m3-color-system.md
       - M3 Dynamic Color: basics/m3-dynamic-color.md
     - HA M3 Implementation:
-      - Overview: basics/ha-m3-overview.md
-      - HA M3 Color System: basics/ha-m3-color-system.md
-      - HA M3 Dynamic Color: basics/ha-m3-dynamic-color.md
+      - Introduction: basics/ha-m3-introduction.md
+      - Implementation: basics/ha-m3-implementation.md
       - Theme structure: basics/ha-m3-theme-structure.md
       - Theme colors: basics/ha-m3-theme-colors.md
   - Design your OWN:
     - Introduction: design/introduction.md
-    - Create a M3 Theme: design/create-m3-theme.md
-    - Covert to HA Theme: design/convert-ha-theme.md
+    - Create an M3 Theme: design/create-m3-theme.md
+    - Convert to HA Theme: design/convert-ha-theme.md
   - Examples:
     - Introduction: examples/introduction.md
     - 1. Theme 01 - Unknown: examples/example-1.md

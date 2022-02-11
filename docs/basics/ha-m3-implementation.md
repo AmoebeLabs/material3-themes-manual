@@ -2,13 +2,13 @@
 template: overrides/main.html
 ---
 
-User-generated color schemes are an important feature of the M3 color system. The Home Assistant implementation makes full use of all the possibilities and even extends some of the features. To manifest all features in the HA UI, the cards must be compliant and use the M3 color system too.
-
-##:material-home-floor-3: The HA implementation
-
 The M3 series themes for Home Assistant are mostly 100% M3 compliant. On top of that, it extends the M3 color system to make it more usable in views/cards. 
 
 !!! Note "The main driver (for me) is the Swiss Army Knife custom card, which allows for extensive styling and can therefore use all the M3 color system features and extensions"
+
+Below an overview of the features and extensions offered by the HA M3 theme implementation.
+
+##:material-home-floor-3: The HA implementation
 
 | What | Material 3 | HA M3 implementation |
 | ---- | ---------- |  ------------------- |
