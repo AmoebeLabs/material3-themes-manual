@@ -8,7 +8,7 @@ Welcome to the Material 3 Themes for Home Assistant documentation!
 
 [Material 3](https://m3.material.io/) is the latest and greatest version of the Material Design language from Google:
 
-!!! Important "Make personal devices feel personal with Material Design 3, Google’s most expressive and adaptable design system yet!"
+!!! quote "Make personal devices feel personal with Material Design 3, Google’s most expressive and adaptable design system yet!"
 
 ##:material-home-floor-3: M3 or Material YOU
 
