@@ -2,7 +2,7 @@
 template: overrides/main.html
 ---
 
-This theme uses a Cadmium Green color as the primary color.
+This theme uses Cadmium Green as the primary color.
 
 ##:material-home-floor-3: Theme Colors
 

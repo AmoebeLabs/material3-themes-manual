@@ -4,7 +4,7 @@ template: overrides/main.html
 
 ##:material-home-floor-3: Theme mode compatible custom cards
 
-If the custom cards is already fully compatible with dark and light theme modes, I would expect, just as with Home Assistant itself and the built-in cards, no problems with the HA M3 Themes.
+If the custom card is already fully compatible with dark and light theme modes, then, as with Home Assistant itself and the built-in cards, I wouldn't expect any problems with the HA M3 themes, unless the custom card requires its own dedicated theme.
 
 ##:material-home-floor-3: Any other case...
 

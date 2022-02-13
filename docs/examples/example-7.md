@@ -2,7 +2,7 @@
 template: overrides/main.html
 ---
 
-This theme uses an Olive Green color as the primary color.
+This theme uses Dark Olive Green as the primary color.
 
 :material-github: [Github repository][m3-theme-github-url]
 
@@ -46,7 +46,7 @@ This theme uses an Olive Green color as the primary color.
 
 <!-- Badges -->
 
-[hacs-url]: https://github.com/custom-components/hacs
+[hacs-url]: https://github.com/hacs/default
 [hacs-badge]: https://img.shields.io/badge/HACS-Default-41BDF5.svg?style=for-the-badge
 [release-badge]: https://img.shields.io/github/v/release/AmoebeLabs/HA-Theme_M3-07-DarkOliveGreen?style=for-the-badge
 [downloads-badge]: https://img.shields.io/github/downloads/AmoebeLabs/HA-Theme_M3-07-DarkOliveGreen/total?style=for-the-badge

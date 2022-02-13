@@ -3,14 +3,14 @@ template: overrides/main.html
 ---
 The installation can be done in two ways:
 
-- automatic install using HACS
-- manual install
+- Install using HACS
+- Manual install
 
 ## Installation via HACS
-TODO
+Go to the HACS panel in your Home Assistant installation, choose frontend / themes, and search for the Material 3 themes, and install the one you want.
 
 ## Manual Installation
-Get the theme yaml file from the `themes` folder in Github and put int into your Home Assistant `themes` folder.
+Get the Material 3 theme yaml file from the `themes` folder in Github and put it into your Home Assistant `themes` folder.
 
 If you have the following in your `configuration.yaml`:
 ```yaml
@@ -18,6 +18,6 @@ frontend:
   themes: !include_dir_merge_named themes/
 ```
 
-The theme will be automatically available once you have reloaded the themes using the Home Assistant 'Developer Tools' > 'Services' > 'frontend.reload_themes' service.
+The theme will be available automatically once you reload the themes with the Home Assistant 'Developer Tools' > 'Services' > 'frontend.reload_themes' service.
 
 Or just restart Home Assistant!

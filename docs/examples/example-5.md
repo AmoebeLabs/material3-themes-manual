@@ -2,7 +2,7 @@
 template: overrides/main.html
 ---
 
-This theme uses a Brown color as the primary color.
+This theme uses Brown as the primary color.
 
 ##:material-home-floor-3: Theme Colors
 

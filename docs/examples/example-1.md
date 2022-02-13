@@ -2,7 +2,7 @@
 template: overrides/main.html
 ---
 
-This theme uses an TODO color as the primary color.
+This theme uses Purple as the primary color.
 
 ##:material-home-floor-3: Theme Colors
 
