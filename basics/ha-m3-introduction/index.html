@@ -665,7 +665,7 @@
   
     <li class="md-nav__item">
       <a href="../m3-color-system/" class="md-nav__link">
-        M3 Color System
+        The Color System
       </a>
     </li>
   
@@ -679,7 +679,7 @@
   
     <li class="md-nav__item">
       <a href="../m3-dynamic-color/" class="md-nav__link">
-        M3 Dynamic Color
+        Dynamic Color aka You!
       </a>
     </li>
   
@@ -1124,10 +1124,12 @@
   <h1>Introduction</h1>
 
 <h2 id="m3-and-ha"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 3 10 9h-3v8H5v-8H2l10-9m3 8.5V10a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5z"/></svg></span> M3 and HA<a class="headerlink" href="#m3-and-ha" title="Permanent link">&para;</a></h2>
-<p>Material 3 for Home Assistant integrates M3 color definitions with the Home Assistant themes in a way that Home Assistant still uses the Material 2 definitions, including the dark and light theme modes, but where cards can use all the possibilities M3 offers.</p>
+<p>As already mentioned before, Home Assistant has no idea that a Material 3 theme is used.</p>
+<p>Material 3 for Home Assistant integrates M3 color definitions with the Home Assistant themes by mapping the Material 2 and Home Assistant CSS definitions to the Material 3 definitions.</p>
+<p>However, cards are not limited to the Material 2 color system and can take full advantage of the possibilities that Material 3 offers, if these cards can be styled by the user.</p>
 <h2 id="translating-material-3-color-concepts"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 3 10 9h-3v8H5v-8H2l10-9m3 8.5V10a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5z"/></svg></span> Translating Material 3 color concepts...<a class="headerlink" href="#translating-material-3-color-concepts" title="Permanent link">&para;</a></h2>
-<p>The M3 Themes for Home Assistant makes explicit use of some great design considerations of the Material 3 color system.</p>
-<p>The most important aspects are described below.</p>
+<p>The M3 themes for Home Assistant make explicit use of some great design considerations of the Material 3 color system.</p>
+<p>The main aspects are described below.</p>
 <table>
 <thead>
 <tr>
@@ -1140,12 +1142,12 @@
 <tr>
 <td>Material 3</td>
 <td></td>
-<td>Home Assistant</td>
+<td>M3 Themes for HA</td>
 </tr>
 <tr>
 <td>The color system in M3 enables user preferences and needs to interact with an app’s colors. <br><br>Dynamic color specifically describes the convergence of user settings with the system UI and in-app color experiences</td>
 <td><img alt="dynamic color" src="https://lh3.googleusercontent.com/NGUL0eR9CX4ztNMVnfEoDODDlNqWKc0SzdKBIyzVNmPwmqwSRJj0gXXiM8f0TwUfnmWZiVreM9Vy-p_r8ThO2ThXVH1DJr_5s6L1V1J3pEnA=s0" /></td>
-<td>One of the nicest things is that dynamic color allows the user to use a photo or background as the basis for a Theme: M3 generates a compatible theme out of this. So just (as we see later) upload a photo, and a theme is created!</td>
+<td>One of the nicest things is that dynamic color allows the user to use a photo or background as the basis for a theme: M3 generates a compatible theme from this. So just upload (as we'll see later) a photo and a theme is created!</td>
 </tr>
 <tr>
 <td><strong>Design tokens &amp; tool</strong></td>
@@ -1155,12 +1157,12 @@
 <tr>
 <td>Material 3</td>
 <td></td>
-<td>Home Assistant</td>
+<td>M3 Themes for HA</td>
 </tr>
 <tr>
 <td>Design tokens enable flexibility and consistency across a product by allowing designers to assign an element's color role in a UI, rather than a set value.<br><br>Tokens act as a bridge between an element's assigned role and the chosen color value for a role. With the addition of tokens, designing for relationships of elements is more fundamental than selecting specific colors</td>
 <td><img alt="tokens" src="https://lh3.googleusercontent.com/6AeOFxLCf_u2S5X9xTe7BjB7f7-b8FN4ypCMoJKBO7eUTHjSkXqc0F1kykSBYwze9Rdn9-dggVszNj68iyciGH6z9qLXZbYF5gsDXUCncOfA=s0" /></td>
-<td>The Design tokens are used to generate the CSS color variables for the HA theme.<br><br>As long as you use these CSS color variables in your cards, colors follow the Theme colors and behave as expected when switching between dark and light mode.<br><br>The M3 colors are mapped to the existing M2 color names that Home Assistant is using in order to have the M3 theme displayed by HA</td>
+<td>The Design tokens are used to generate the CSS color variables for the HA theme.<br><br>As long as you use these CSS color variables in your cards, colors will follow the theme colors and behave as expected when switching between dark and light modes.<br><br>The M3 colors are mapped to the existing M2 color names that Home Assistant uses to render the M3 theme by HA</td>
 </tr>
 <tr>
 <td><strong>Accessibility</strong></td>
@@ -1175,12 +1177,12 @@
 <tr>
 <td>Dynamic color is designed to meet accessibility standards for color contrast. The system of tonal palettes is central to making any color scheme accessible by default. <br><br>Combining color based on tonality, rather than hex value or hue, is one of the key systems that make any color output accessible. Products using dynamic color will meet requirements because the algorithmic combinations that an end-user can experience are designed to meet accessibility standards.</td>
 <td><img alt="access" src="https://lh3.googleusercontent.com/aF8CvgyX659D64Wim3zFsTgd63wXh1HBQ_XTyaMX6lARG7VEDkH-0KhmQmPgBOpqOwS6RMQZHRXUQ8qZITmaI4hF7vfexRA7kZhAAE61nd1Mxg=s0" /></td>
-<td>The fact that dynamic color is designed to meet accessibility standards for color contrast is a very nice feature. This means that even when you switch to another theme, or switch between dark and light mode, everything is still readable. No more fiddling with this in the views/cards! <br><br>Because of this, so far any M3 theme will work with HA! This saves a lot of time designing a theme.</td>
+<td>The fact that dynamic color is designed to meet accessibility standards for color contrast is a really nice feature. This means that even when you switch to a different M3 theme, or switch between dark and light modes, everything is still readable. No more fiddling with the views/cards! <br><br>Because of this, every M3 example theme I made works with HA! This saves a lot of time when designing a theme.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="and-extending-the-possibilities"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 3 10 9h-3v8H5v-8H2l10-9m3 8.5V10a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5z"/></svg></span> ...and extending the possibilities<a class="headerlink" href="#and-extending-the-possibilities" title="Permanent link">&para;</a></h2>
-<p>M3 Themes for Home Assistant not only tries to be 100% compliant, but extends and adapts the color definitions with more palettes, more surfaces, more color steps and reference color mapping to the dark and light themes without any required changes in the cards.</p>
+<p>M3 Themes for Home Assistant not only tries to be 100% compliant, but extends and adapts the color definitions with more palettes, more surfaces, more color steps and reference color mapping to the dark and light themes without the need for changes to the M3 compatible styled cards.</p>
 <ul>
 <li>Seemless compatibility between M3 themes by mapping dark and light colors</li>
 <li>Keeping readability between dark and light modes</li>
@@ -1204,7 +1206,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../m3-dynamic-color/" class="md-footer__link md-footer__link--prev" aria-label="Previous: M3 Dynamic Color" rel="prev">
+        <a href="../m3-dynamic-color/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Dynamic Color aka You!" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1213,7 +1215,7 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              M3 Dynamic Color
+              Dynamic Color aka You!
             </div>
           </div>
         </a>
