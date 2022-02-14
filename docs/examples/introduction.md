@@ -19,6 +19,9 @@ All examples show [example view \#12][sak-example-12-url] of the Swiss Army Knif
 | **[Example 5, Brown Light][example-5-md]:** [![m3-example-05-light-png]][example-5-md]  | **[Example 5, Brown Dark][example-5-md]:** [![m3-example-05-dark-png]][example-5-md] |
 | **[Example 6, Teal Blue Light][example-6-md]:** [![m3-example-06-light-png]][example-6-md]  | **[Example 6, Teal Blue Dark][example-6-md]:** [![m3-example-06-dark-png]][example-6-md] |
 | **[Example 7, Dark Olive Green Light][example-7-md]:** [![m3-example-07-light-png]][example-7-md] | **[Example 7, Dark Olive Green Dark][example-7-md]:** [![m3-example-07-dark-png]][example-7-md] |
+| **[Example 8, Red Light][example-8-md]:** [![m3-example-08-light-png]][example-8-md] | **[Example 8, Red Dark][example-8-md]:** [![m3-example-08-dark-png]][example-8-md] |
+| **[Example 9, Indigo Light][example-9-md]:** [![m3-example-09-light-png]][example-9-md] | **[Example 9, Indigo Dark][example-9-md]:** [![m3-example-09-dark-png]][example-9-md] |
+| **[Example 10, Green Light][example-10-md]:** [![m3-example-10-light-png]][example-10-md] | **[Example 10, Green Dark][example-10-md]:** [![m3-example-10-dark-png]][example-10-md] |
 
 <!--- References to pictures... --->
 
@@ -29,6 +32,9 @@ All examples show [example view \#12][sak-example-12-url] of the Swiss Army Knif
 [m3-example-05-light-png]: ../assets/screenshots/m3-example-05-light.png
 [m3-example-06-light-png]: ../assets/screenshots/m3-example-06-light.png
 [m3-example-07-light-png]: ../assets/screenshots/m3-example-07-light.png
+[m3-example-08-light-png]: ../assets/screenshots/m3-example-08-light.png
+[m3-example-09-light-png]: ../assets/screenshots/m3-example-09-light.png
+[m3-example-10-light-png]: ../assets/screenshots/m3-example-10-light.png
 
 [m3-example-01-dark-png]: ../assets/screenshots/m3-example-01-dark.png
 [m3-example-02-dark-png]: ../assets/screenshots/m3-example-02-dark.png
@@ -37,6 +43,9 @@ All examples show [example view \#12][sak-example-12-url] of the Swiss Army Knif
 [m3-example-05-dark-png]: ../assets/screenshots/m3-example-05-dark.png
 [m3-example-06-dark-png]: ../assets/screenshots/m3-example-06-dark.png
 [m3-example-07-dark-png]: ../assets/screenshots/m3-example-07-dark.png
+[m3-example-08-dark-png]: ../assets/screenshots/m3-example-08-dark.png
+[m3-example-09-dark-png]: ../assets/screenshots/m3-example-09-dark.png
+[m3-example-10-dark-png]: ../assets/screenshots/m3-example-10-dark.png
 
 <!--- References to internal links... --->
 
@@ -47,6 +56,9 @@ All examples show [example view \#12][sak-example-12-url] of the Swiss Army Knif
 [example-5-md]: ../examples/example-5.md
 [example-6-md]: ../examples/example-6.md
 [example-7-md]: ../examples/example-7.md
+[example-8-md]: ../examples/example-8.md
+[example-9-md]: ../examples/example-9.md
+[example-10-md]: ../examples/example-10.md
 
 <!--- References to external links... --->
 
