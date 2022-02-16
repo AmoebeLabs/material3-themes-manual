@@ -98,7 +98,7 @@ You just might see some similarities with the above examples as a result of the 
 [m3-example-c09-dark-png]: ../assets/screenshots/m3-example-c09-dark.png
 [m3-example-c10-dark-png]: ../assets/screenshots/m3-example-c10-dark.png
 [m3-example-c11-dark-png]: ../assets/screenshots/m3-example-c11-dark.png
-[m3-example-c11-dark-png]: ../assets/screenshots/m3-example-c12-dark.png
+[m3-example-c12-dark-png]: ../assets/screenshots/m3-example-c12-dark.png
 
 [cielab-io-colors-png]: ../assets/screenshots/cielab-io-colors.png
 
@@ -114,6 +114,19 @@ You just might see some similarities with the above examples as a result of the 
 [example-8-md]: ../examples/example-8.md
 [example-9-md]: ../examples/example-9.md
 [example-10-md]: ../examples/example-10.md
+
+[example-c1-md]: ../examples/example-c1.md
+[example-c2-md]: ../examples/example-c2.md
+[example-c3-md]: ../examples/example-c3.md
+[example-c4-md]: ../examples/example-c4.md
+[example-c5-md]: ../examples/example-c5.md
+[example-c6-md]: ../examples/example-c6.md
+[example-c7-md]: ../examples/example-c7.md
+[example-c8-md]: ../examples/example-c8.md
+[example-c9-md]: ../examples/example-c9.md
+[example-c10-md]: ../examples/example-c10.md
+[example-c11-md]: ../examples/example-c11.md
+[example-c12-md]: ../examples/example-c12.md
 
 <!--- References to external links... --->
 
