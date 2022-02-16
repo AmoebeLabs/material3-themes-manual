@@ -186,22 +186,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://ha-m3-themes.docs.amoebelabs.com/using/compatibility/</loc>
+         <lastmod>2022-02-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://ha-m3-themes.docs.amoebelabs.com/using/in-cards/</loc>
-         <lastmod>2022-02-16</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://ha-m3-themes.docs.amoebelabs.com/using/prerequisites/</loc>
-         <lastmod>2022-02-16</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://ha-m3-themes.docs.amoebelabs.com/using/with-custom-cards/</loc>
-         <lastmod>2022-02-16</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://ha-m3-themes.docs.amoebelabs.com/using/with-home-assistant/</loc>
          <lastmod>2022-02-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
