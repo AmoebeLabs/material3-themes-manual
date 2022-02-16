@@ -99,12 +99,8 @@ nav:
     - Installation: start/installation.md
     - Changelog: changelog/changelog.md
   - Using M3:
-      - Compatibility:
-        - With Home Assistant: using/with-home-assistant.md
-        - With Custom cards: using/with-custom-cards.md
-      - Use:
-        - Prerequisites: using/prerequisites.md
-        - In cards: using/in-cards.md
+      - Compatibility: using/compatibility.md
+      - Use in Cards: using/in-cards.md
   - Basics:
     - Material 3 Basics:
       - The Color System: basics/m3-color-system.md
