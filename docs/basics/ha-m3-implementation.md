@@ -22,7 +22,7 @@ Below is an overview of the features and extensions that the HA M3 theme impleme
 
 ##:material-home-floor-3: The resulting theme colors
 
-The resulting theme colors are shown below. The theme is rendered using several [Swiss Army Knife][sak-docs-url] cards and templates. The example uses the [`M3-07-DarkOliveGreen`][example-7-md] theme. This theme is generated from the AmoebeLabs logo :smile:
+The resulting theme colors are shown below. The theme is rendered using several [Swiss Army Knife][sak-docs-url] cards and templates. The example uses the dynamic [`M3-07-DarkOliveGreen`][example-d7-md] theme. This theme is generated from the AmoebeLabs logo :smile:
 
 [![M3 Palettes]][M3 Palettes]
 _Primary, secondary, tertiary and error pallettes ranging from white (100) to black (0)_
@@ -52,20 +52,20 @@ You see the following aspects of the theme:
 All the above colors adapt to the theme mode. The only exception is (barely) visible in the last row: in that case reference colors are used, which are the same in dark and light mode.
 
 [![M3 Example Light]][M3 Example Light]
-_A light theme example card_
+_A light theme example card (d07)_
 
 <br>[![M3 Example Dark]][M3 Example Dark]
-_A dark theme example card_
+_A dark theme example card (d07)_
 
 
-[M3 Palettes]: ../assets/screenshots/m3-theme-07-palettes.png
-[M3 Surfaces]: ../assets/screenshots/m3-theme-07-surfaces.png
-[M3 Light]: ../assets/screenshots/m3-theme-07-light.png
-[M3 Dark]: ../assets/screenshots/m3-theme-07-dark.png
+[M3 Palettes]: ../assets/screenshots/m3-theme-d07-palettes.png
+[M3 Surfaces]: ../assets/screenshots/m3-theme-d07-surfaces.png
+[M3 Light]: ../assets/screenshots/m3-theme-d07-light.png
+[M3 Dark]: ../assets/screenshots/m3-theme-d07-dark.png
 
-[M3 Example Light]: ../assets/screenshots/m3-example-07-light.png
-[M3 Example Dark]: ../assets/screenshots/m3-example-07-dark.png
+[M3 Example Light]: ../assets/screenshots/m3-example-d07-light.png
+[M3 Example Dark]: ../assets/screenshots/m3-example-d07-dark.png
 
 [sak-docs-url]: https://swiss-army-knife.docs.amoebelabs.com
 [sak-docs-example-12-url]: https://swiss-army-knife.docs.amoebelabs.com/examples/example-12/
-[example-7-md]: ../examples/example-7.md
+[example-d7-md]: ../examples/example-d7.md

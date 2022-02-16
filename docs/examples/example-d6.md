@@ -30,13 +30,13 @@ This theme uses Teal Blue as the primary color.
   References to pictures...
 --->
 
-[M3 Example Light]: ../assets/screenshots/m3-example-06-light.png
-[M3 Example Dark]: ../assets/screenshots/m3-example-06-dark.png
+[M3 Example Light]: ../assets/screenshots/m3-example-d06-light.png
+[M3 Example Dark]: ../assets/screenshots/m3-example-d06-dark.png
 
-[M3 Palettes]: ../assets/screenshots/m3-theme-06-palettes.png
-[M3 Surfaces]: ../assets/screenshots/m3-theme-06-surfaces.png
-[M3 Light]: ../assets/screenshots/m3-theme-06-light.png
-[M3 Dark]: ../assets/screenshots/m3-theme-06-dark.png
+[M3 Palettes]: ../assets/screenshots/m3-theme-d06-palettes.png
+[M3 Surfaces]: ../assets/screenshots/m3-theme-d06-surfaces.png
+[M3 Light]: ../assets/screenshots/m3-theme-d06-light.png
+[M3 Dark]: ../assets/screenshots/m3-theme-d06-dark.png
 
 <!---
   References to external links...

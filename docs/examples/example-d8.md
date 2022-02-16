@@ -29,13 +29,13 @@ This theme uses Red as the primary color.
   References to pictures...
 --->
 
-[M3 Palettes]: ../assets/screenshots/m3-theme-08-palettes.png
-[M3 Surfaces]: ../assets/screenshots/m3-theme-08-surfaces.png
-[M3 Light]: ../assets/screenshots/m3-theme-08-light.png
-[M3 Dark]: ../assets/screenshots/m3-theme-08-dark.png
+[M3 Palettes]: ../assets/screenshots/m3-theme-d08-palettes.png
+[M3 Surfaces]: ../assets/screenshots/m3-theme-d08-surfaces.png
+[M3 Light]: ../assets/screenshots/m3-theme-d08-light.png
+[M3 Dark]: ../assets/screenshots/m3-theme-d08-dark.png
 
-[M3 Example Light]: ../assets/screenshots/m3-example-08-light.png
-[M3 Example Dark]: ../assets/screenshots/m3-example-08-dark.png
+[M3 Example Light]: ../assets/screenshots/m3-example-d08-light.png
+[M3 Example Dark]: ../assets/screenshots/m3-example-d08-dark.png
 
 <!---
   References to external links...

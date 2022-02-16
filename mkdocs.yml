@@ -118,16 +118,16 @@ nav:
   - Examples:
     - Introduction: examples/introduction.md
     - Examples from picture:
-      - Theme 01 - Purple: examples/example-1.md
-      - Theme 02 - CadmiumGreen: examples/example-2.md
-      - Theme 03 - Porcupine: examples/example-3.md
-      - Theme 04 - Magenta: examples/example-4.md
-      - Theme 05 - Brown: examples/example-5.md
-      - Theme 06 - TealBlue: examples/example-6.md
-      - Theme 07 - DarkOliveGreen: examples/example-7.md
-      - Theme 08 - Red: examples/example-8.md
-      - Theme 09 - Indigo Blue: examples/example-9.md
-      - Theme 10 - Green: examples/example-10.md
+      - Theme D01 - Purple: examples/example-d1.md
+      - Theme D02 - CadmiumGreen: examples/example-d2.md
+      - Theme D03 - Porcupine: examples/example-d3.md
+      - Theme D04 - Magenta: examples/example-d4.md
+      - Theme D05 - Brown: examples/example-d5.md
+      - Theme D06 - TealBlue: examples/example-d6.md
+      - Theme D07 - DarkOliveGreen: examples/example-d7.md
+      - Theme D08 - Red: examples/example-d8.md
+      - Theme D09 - Indigo Blue: examples/example-d9.md
+      - Theme D10 - Green: examples/example-d10.md
     - Examples from CIElab colors:
       - Theme C01 - Red: examples/example-c1.md
       - Theme C02 - Volcano: examples/example-c2.md
