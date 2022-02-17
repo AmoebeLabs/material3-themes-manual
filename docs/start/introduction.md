@@ -10,7 +10,7 @@ Welcome to the Material 3 Themes for Home Assistant documentation!
 
 !!! quote "Make personal devices feel personal with Material Design 3, Google’s most expressive and adaptable design system yet!"
 
-##:material-home-floor-3: M3 or Material YOU
+##:material-home-floor-3: M3 or Material You
 
 Material 3 is a common design language, with colors, typography, and UI elements for websites and Android.
 
@@ -20,7 +20,7 @@ The Material 3 Themes for Home Assistant will only use the color section and ext
 
 ##:material-home-floor-3: How to proceed
 
-If you only want to use one of the available sample themes, go to Installation. You can check out the [examples section][examples-section-md] for the existing M3 themes.
+If you only want to use one of the available sample themes, go to Installation. You can check out the [examples section][examples-section-md] with 22 pre-made M3 based themes.
 
 If you want to learn more, even design your own Material 3 themes and how to use them in Home Assistant, read more at [Basics][basics-section-md] and [Design Your Own Theme][design-section-md].
 

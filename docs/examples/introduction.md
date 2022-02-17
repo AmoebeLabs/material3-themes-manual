@@ -2,33 +2,30 @@
 template: overrides/main.html
 ---
 
-I have made several example themes to give you an idea of ​​the looks & possibilities.
+I have made several example themes to give you an idea of ​​the looks & possibilities:
 
-10 examples are made using the "Dynamic" feature of the Figma Material Theme Builder: this uses a picture to determine the colors. The 12 other colors are made using custom primary colors for which I used colors from [CIElab.io][cielab-io-url] website.
-
-The 12 colors (excluding grey) from the CIELab site:
-![cielab-io-colors-png]
+- 10 examples are made using the 'Dynamic' feature of the Figma Material Theme Builder: this uses a picture to determine the colors.
+- The 12 other colors are made using the 'Custom' feature of the Figma Material Theme Builder where I specified the primary color. I used the colors from the [CIElab.io][cielab-io-url] website.
+<br><br>The 12 colors (excluding grey) from the CIELab site:
+  ![cielab-io-colors-png]
 
 All these examples are available on Github and HACS. Each example contains a link to the sources.
-
-I did put all the colors in order of the colorwheel to make it easier to compare!
-
 
 ##:material-home-floor-3: Examples in order of the colorwheel
 
 All examples show [example view \#12][sak-example-12-url] of the Swiss Army Knife custom card.
 
-Examples using the "Dynamic" feature have the prefix "D", and examples using the "Custom" feature the prefix "C".
+Examples created with the 'Dynamic' theme builder feature have the prefix 'D' and examples created with the 'Custom' theme builder feature have the prefix 'C'.
 
-You just might see some similarities between the examples as a result of the Material 3 calculations :smile:
+You may see some similarities between the examples below as a result of the Material 3 calculations :smile:
 
 | **Light variant** | **Dark variant**|
 | ------------ | ---------------- |
 | **[Example c1, Red Light][example-c1-md]:** [![m3-example-c01-light-png]][example-c1-md] | **[Example c1, Red Dark][example-c1-md]:** [![m3-example-c01-dark-png]][example-c1-md] |
 | **[Example d8, Red Light][example-d8-md]:** [![m3-example-d08-light-png]][example-d8-md] | **[Example d8, Red Dark][example-d8-md]:** [![m3-example-d08-dark-png]][example-d8-md] |
 | **[Example c2, Volcano Light][example-c2-md]:** [![m3-example-c02-light-png]][example-c2-md] | **[Example c2, Volcano Dark][example-c2-md]:** [![m3-example-c02-dark-png]][example-c2-md] |
-| **[Example c3, Orange Light][example-c3-md]:** [![m3-example-c03-light-png]][example-c3-md] | **[Example c3, Orange Dark][example-c3-md]:** [![m3-example-c03-dark-png]][example-c3-md]|
 | **[Example d5, Brown Light][example-d5-md]:** [![m3-example-d05-light-png]][example-d5-md] | **[Example d5, Brown Dark][example-d5-md]:** [![m3-example-d05-dark-png]][example-d5-md] |
+| **[Example c3, Orange Light][example-c3-md]:** [![m3-example-c03-light-png]][example-c3-md] | **[Example c3, Orange Dark][example-c3-md]:** [![m3-example-c03-dark-png]][example-c3-md]|
 | **[Example c4, Gold Light][example-c4-md]:** [![m3-example-c04-light-png]][example-c4-md] | **[Example c4, Gold Dark][example-c4-md]:** [![m3-example-c04-dark-png]][example-c4-md] |
 | **[Example d3, Porcupine Light][example-d3-md]:** [![m3-example-d03-light-png]][example-d3-md] | **[Example d3, Porcupine Dark][example-d3-md]:** [![m3-example-d03-dark-png]][example-d3-md] |
 | **[Example c5, Yellow Light][example-c5-md]:** [![m3-example-c05-light-png]][example-c5-md] | **[Example c5, Yellow Dark][example-c5-md]:** [![m3-example-c05-dark-png]][example-c5-md] |

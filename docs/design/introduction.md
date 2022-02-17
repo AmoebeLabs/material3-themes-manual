@@ -15,6 +15,30 @@ So, you came here to read how to design your own theme. That's good!
 
 <!---
 
+r-y = 24 - 90 = 66
+y-g = 90 - 153 =  63
+g-b = 153 - 252 = 99
+b-v = 252 - 310 = 58
+
+Als bij elke tertiary een stap wordt gemaakt, dan is dit dus afhankelijk van de primary kleur om te zeggen zoveel % van het verschil...
+bij rood zie ik bijv. een verschil van 50. Magenta 60.
+rood gaat naar geel/oranje achtig. 50/66 = 0.75
+magenta gaat naar oranje/bruin. 66 + 24 = 60/90 = 0.67. Begint wel in de richting te komen... Zal per stap zijn berekend wat het bereik is, en hoeveel procent je dus moet meenemen per stap om deze breuk te kunnen berekenen... Zou M3 75% van een kleurenstap doen?
+van blauw naar violet is dan .75 * 58 = 43.5. Dan zou een blauwe kleur dus daar ergens op moeten uitkomen in lch verschil??
+
+wow! klopt dus. zie hieronder. 
+en voor secundary kleur. Verschil 8. dat is dus 8/58 = 0.137.
+
+0.137 * 90 = 12.41
+0.137 * 6.7 = 0.9179
+verschil hieronder is van 6.7 naar 5.86 = 0.84. hmm. Toeval of ben ik gewoon ernaartoe aan het rekenen... Laatste denk ik.
+
+blauw:
+primary is #0062a1, hsl(203.48, 100%, 31.57%), 40.09, 40.72, 270.55
+secondary is #526070, hsl(212, 15.46%, 38.04%), 40.13, 10.91, 262.82 (8)
+tertiary is #695779, hsl(271.76, 16.35%, 40.78%), 39.91, 21.96, 311.33 (41)
+
+
 https://ninedegreesbelow.com/photography/lch-vs-hsv-for-picking-colors.html
 
 colorfulness = chroma / lightness. Denk dat google dat ook doet om dingen te bepalen...

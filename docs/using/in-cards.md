@@ -1,6 +1,8 @@
 ---
 template: overrides/main.html
 ---
+\#TODO
+
 ##:material-home-floor-3: Use the Theme!
 The most important point in using all the features of the HA M3 themes is to _use_ the theme color definitions, and never to use fixed colors!
 
@@ -21,7 +23,7 @@ It can't get any easier :smile:
 
 
 ##:material-home-floor-3: Using material colors
-Primary and secundary colors
+Primary and secondary colors
 
 ##:material-home-floor-3: Using dedicated colors
 
@@ -29,7 +31,7 @@ Traffic light.
 
 
 ##:material-home-floor-3: Using M3 colors
-The M3 primary, secundary, tertiary and error reference and system color palettes and surface elevation colors.
+The M3 primary, secondary, tertiary and error reference and system color palettes and surface elevation colors.
 
 ###:material-home-floor-3: Reference colors
 

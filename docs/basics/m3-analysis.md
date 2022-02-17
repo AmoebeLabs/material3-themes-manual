@@ -2,6 +2,7 @@
 template: overrides/main.html
 ---
 
+\#TODO
 
 ##:material-home-floor-3: Material 3 analyzed...
 Short analysis based on own knowledge, playing with Figma plugin and creating 22 examples using Material 3.
@@ -9,6 +10,38 @@ Short analysis based on own knowledge, playing with Figma plugin and creating 22
 ###:material-home-floor-3: Dynamic color
 
 Picking a color from a picture is not that much of a deal. But calculating all the colors from one color is a very nice one. Altough from the examples and exeperiments the colors seem limited due to Accessibility standards.
+
+Take the next example. I dragged three different bluish pictures from the internet containing a single color. And as you see, the resulting Source Color - the extracted Hue by Material 3 - is **exactly** the same (\#4285f4) :confused:.
+
+| Dynamic example |||
+|---|---|---|
+|![mtb-blue-1-png]|![mtb-blue-2-png]|![mtb-blue-3-png]|
+
+If I translate the hex RGB colors to HSL (Hue, Saturation, Lightness) colors I do get from left to right:
+
+| Position | hex | hsl | hue | M3 hex | M3 hue |
+| -------- | --- | --- | --- | ------ | ------ |
+| left | \#cbd5e1 | hsl(212.73, 26.83%, 83.92%) | 212.73 | \#4285f4 | 217.42 |
+| middle | \#2d3945 | hsl(210, 21.05%, 22.35%) | 210 | \#4285f4 | 217.42 |
+| right | \#aaadb2 | hsl(217.5, 4.94%, 68.24%) | 217.5 | \#4285f4 | 217.42 |
+
+So, slightly different hues (212, 210 and 217), give the exact same Material 3 hue!
+
+Converting the colors to CIE-Lch (Lightness, Chroma, Hue) using [ColorMine][colormine-url] also results in different hues for the three input images with again a different Material 3 hue:
+
+| Position | hex | L | c | h | M3 h |
+| -------- | --- | - | - | - | ---- |
+| left | \#cbd5e1 | 84,85 | 7,15 | 261,54 | 284,36 |
+| middle| \#2d3945 | 23,38 | 9,14 | 260,29 | 284,36 |
+| left | \#aaadb2 | 70,63 | 2,93 | 268,29 | 284,36 |
+
+So there is definately some secret color-fu going on with Material 3!
+
+###:material-home-floor-3: Custom color
+red: \#ff4d4f,       hsl(359.33, 100%, 65.1%),    lch(59.10, 77.18, 29.93), lab(59.09, 66.88, 38.51)
+theme p40: \#bb1826, hsl(354.85, 77.25%, 41.37%), lch(40.17, 71.32, 31.31), lab(40.17, 60.94, 27.06)
+
+CIE-Lch Hue 29.93 vs 31.31.
 
 ###:material-home-floor-3: Design Tokens
 Nice to introduce for Android.
@@ -25,4 +58,52 @@ LCH is meant for computer screens??
 
 Checking the tonal palettes from 0 to 100% --> percentage equals "L" from CIELab/Lch profiles!
 
+##:material-home-floor-3: ...with this result!
 
+From the above I'm certain that Material 3 is using CIE-Lch colorspace as the basis for Material 3 calculations:
+
+- CIE-Lch is meant for computer screens
+- CIE-Lch's Lightness part corresponds exactly with the value of the tonal palettes 0..100% lightness values
+- CIE-Lch's colorwheel is nonlinear, which explains the non fixed hue angle differences between secondary and tertiary hues.
+
+For the last point, the [ninedegreesbelow][ndb-lch-colors-url] website has some nice pictures for us.
+
+At first why 30 degree steps don't work in both the sRGB and Lch colorspace:
+
+![ndb-HSV-LCh-max-sat-color-palettes-png]
+
+Then an adapted Lch color palette with 24 colors:
+
+![ndb-color-names-LCh-hues-png]
+
+With the corresponding 24 colorsteps in the colorwheel:
+
+![ndb-saturation-0_dot_8]
+
+from the examples we can deduce that the difference between primary and tertiary colors is about 4 steps in the colorwheel:
+
+- Red becomes yellow/brown (4 steps)
+- Orange becomes green (4 steps)
+- Green becomes blue (4 steps)
+- Cyan becomes blue/purple (4 steps)
+- Purple becomes magenta of some kind (4 steps)
+
+
+
+<!--- References to pictures... --->
+
+[mtb-blue-1-png]: ../assets/screenshots/material-theme-builder-blue.png
+[mtb-blue-2-png]: ../assets/screenshots/material-theme-builder-blue2.png
+[mtb-blue-3-png]: ../assets/screenshots/material-theme-builder-blue3.png
+
+[ndb-HSV-LCh-max-sat-color-palettes-png]: ../assets/screenshots/HSV-LCh-max-sat-color-palettes.png
+[ndb-color-names-LCh-hues-png]: ../assets/screenshots/color-names-LCh-hues.png
+[ndb-saturation-0_dot_8]: ../assets/screenshots/saturation-0_dot_8.png
+
+
+<!--- External links... --->
+
+[colormine-url]: http://colormine.org/color-converter
+[css-land-lch-color-picker-url]: https://css.land/lch/
+[lea-verou-lch-colors-in-css-url]: https://lea.verou.me/2020/04/lch-colors-in-css-what-why-and-how/
+[ndb-lch-colors-url]: https://ninedegreesbelow.com/photography/gimp-srgb-lch-color-palettes.html
