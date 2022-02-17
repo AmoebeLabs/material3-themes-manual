@@ -4,21 +4,21 @@ template: overrides/main.html
 
 I have made several example themes to give you an idea of ​​the looks & possibilities.
 
-10 examples are made using the "Dynamic" feature of the Figma Material Them Builder: this uses a picture to determine the colors. The 12 other colors are made using custom colors for which I used colors from [CIElab.io][cielab-io-url] website as the basis for the primary color.
+10 examples are made using the "Dynamic" feature of the Figma Material Theme Builder: this uses a picture to determine the colors. The 12 other colors are made using custom primary colors for which I used colors from [CIElab.io][cielab-io-url] website.
 
-
-Colors are taken from the CIELab site:
+The 12 colors (excluding grey) from the CIELab site:
 ![cielab-io-colors-png]
 
 All these examples are available on Github and HACS. Each example contains a link to the sources.
 
 I did put all the colors in order of the colorwheel to make it easier to compare!
 
-Examples using the "Dynamic" feature have the prefix "D", and examples using the "Custom" feature the prefix "C".
 
 ##:material-home-floor-3: Examples in order of the colorwheel
 
 All examples show [example view \#12][sak-example-12-url] of the Swiss Army Knife custom card.
+
+Examples using the "Dynamic" feature have the prefix "D", and examples using the "Custom" feature the prefix "C".
 
 You just might see some similarities between the examples as a result of the Material 3 calculations :smile:
 
