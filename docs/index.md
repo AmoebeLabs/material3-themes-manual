@@ -7,8 +7,4 @@ template: overrides/home-m3.html
 
 The Material 3 Themes...
 
-!!! danger "This card is not yet released. Documentation is for testing purposes!"
-
-[![M3 Example Main]][M3 Example Main]
-
-  [M3 Example Main]: assets/screenshots/SAK-double-example-transparent-v2.png
+Dummy page. Overrulled by above template...

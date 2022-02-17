@@ -27,6 +27,6 @@ If you want to learn more, even design your own Material 3 themes and how to use
 Happy Theming!
 
 [examples-section-md]: ../examples/introduction.md
-[basics-section-md]: ../basics/md-color-system.md
+[basics-section-md]: ../basics/m3-color-system.md
 [design-section-md]: ../design/introduction.md
 
