@@ -643,6 +643,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#custom-color" class="md-nav__link">
+     Custom color
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#design-tokens" class="md-nav__link">
      Design Tokens
   </a>
@@ -658,6 +665,13 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#with-this-result" class="md-nav__link">
+     ...with this result!
+  </a>
   
 </li>
       
@@ -1303,6 +1317,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#custom-color" class="md-nav__link">
+     Custom color
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#design-tokens" class="md-nav__link">
      Design Tokens
   </a>
@@ -1321,6 +1342,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#with-this-result" class="md-nav__link">
+     ...with this result!
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1336,10 +1364,112 @@
 
   <h1>Material 3 Analysis</h1>
 
+<p>#TODO</p>
 <h2 id="material-3-analyzed"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 3 10 9h-3v8H5v-8H2l10-9m3 8.5V10a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5z"/></svg></span> Material 3 analyzed...<a class="headerlink" href="#material-3-analyzed" title="Permanent link">&para;</a></h2>
 <p>Short analysis based on own knowledge, playing with Figma plugin and creating 22 examples using Material 3.</p>
 <h3 id="dynamic-color"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 3 10 9h-3v8H5v-8H2l10-9m3 8.5V10a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5z"/></svg></span> Dynamic color<a class="headerlink" href="#dynamic-color" title="Permanent link">&para;</a></h3>
 <p>Picking a color from a picture is not that much of a deal. But calculating all the colors from one color is a very nice one. Altough from the examples and exeperiments the colors seem limited due to Accessibility standards.</p>
+<p>Take the next example. I dragged three different bluish pictures from the internet containing a single color. And as you see, the resulting Source Color - the extracted Hue by Material 3 - is <strong>exactly</strong> the same (#4285f4) <img alt="😕" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f615.svg" title=":confused:" />.</p>
+<table>
+<thead>
+<tr>
+<th>Dynamic example</th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="mtb-blue-1-png" src="../../assets/screenshots/material-theme-builder-blue.png" /></td>
+<td><img alt="mtb-blue-2-png" src="../../assets/screenshots/material-theme-builder-blue2.png" /></td>
+<td><img alt="mtb-blue-3-png" src="../../assets/screenshots/material-theme-builder-blue3.png" /></td>
+</tr>
+</tbody>
+</table>
+<p>If I translate the hex RGB colors to HSL (Hue, Saturation, Lightness) colors I do get from left to right:</p>
+<table>
+<thead>
+<tr>
+<th>Position</th>
+<th>hex</th>
+<th>hsl</th>
+<th>hue</th>
+<th>M3 hex</th>
+<th>M3 hue</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>left</td>
+<td>#cbd5e1</td>
+<td>hsl(212.73, 26.83%, 83.92%)</td>
+<td>212.73</td>
+<td>#4285f4</td>
+<td>217.42</td>
+</tr>
+<tr>
+<td>middle</td>
+<td>#2d3945</td>
+<td>hsl(210, 21.05%, 22.35%)</td>
+<td>210</td>
+<td>#4285f4</td>
+<td>217.42</td>
+</tr>
+<tr>
+<td>right</td>
+<td>#aaadb2</td>
+<td>hsl(217.5, 4.94%, 68.24%)</td>
+<td>217.5</td>
+<td>#4285f4</td>
+<td>217.42</td>
+</tr>
+</tbody>
+</table>
+<p>So, slightly different hues (212, 210 and 217), give the exact same Material 3 hue!</p>
+<p>Converting the colors to CIE-Lch (Lightness, Chroma, Hue) using <a href="http://colormine.org/color-converter">ColorMine</a> also results in different hues for the three input images with again a different Material 3 hue:</p>
+<table>
+<thead>
+<tr>
+<th>Position</th>
+<th>hex</th>
+<th>L</th>
+<th>c</th>
+<th>h</th>
+<th>M3 h</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>left</td>
+<td>#cbd5e1</td>
+<td>84,85</td>
+<td>7,15</td>
+<td>261,54</td>
+<td>284,36</td>
+</tr>
+<tr>
+<td>middle</td>
+<td>#2d3945</td>
+<td>23,38</td>
+<td>9,14</td>
+<td>260,29</td>
+<td>284,36</td>
+</tr>
+<tr>
+<td>left</td>
+<td>#aaadb2</td>
+<td>70,63</td>
+<td>2,93</td>
+<td>268,29</td>
+<td>284,36</td>
+</tr>
+</tbody>
+</table>
+<p>So there is definately some secret color-fu going on with Material 3!</p>
+<h3 id="custom-color"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 3 10 9h-3v8H5v-8H2l10-9m3 8.5V10a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5z"/></svg></span> Custom color<a class="headerlink" href="#custom-color" title="Permanent link">&para;</a></h3>
+<p>red: #ff4d4f,       hsl(359.33, 100%, 65.1%),    lch(59.10, 77.18, 29.93), lab(59.09, 66.88, 38.51)
+theme p40: #bb1826, hsl(354.85, 77.25%, 41.37%), lch(40.17, 71.32, 31.31), lab(40.17, 60.94, 27.06)</p>
+<p>CIE-Lch Hue 29.93 vs 31.31.</p>
 <h3 id="design-tokens"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 3 10 9h-3v8H5v-8H2l10-9m3 8.5V10a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5z"/></svg></span> Design Tokens<a class="headerlink" href="#design-tokens" title="Permanent link">&para;</a></h3>
 <p>Nice to introduce for Android.</p>
 <p>Design tokens resemble CSS Variables. So really ease to implement using web standards...</p>
@@ -1348,6 +1478,31 @@
 <p>Unclear how secondary and tertiary colors are calculated. Not a fixed value along the HSV colorwheel. So I guess that that one also comes from LAB colorspace...</p>
 <p>LCH is meant for computer screens??</p>
 <p>Checking the tonal palettes from 0 to 100% &rarr; percentage equals "L" from CIELab/Lch profiles!</p>
+<h2 id="with-this-result"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 3 10 9h-3v8H5v-8H2l10-9m3 8.5V10a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5z"/></svg></span> ...with this result!<a class="headerlink" href="#with-this-result" title="Permanent link">&para;</a></h2>
+<p>From the above I'm certain that Material 3 is using CIE-Lch colorspace as the basis for Material 3 calculations:</p>
+<ul>
+<li>CIE-Lch is meant for computer screens</li>
+<li>CIE-Lch's Lightness part corresponds exactly with the value of the tonal palettes 0..100% lightness values</li>
+<li>CIE-Lch's colorwheel is nonlinear, which explains the non fixed hue angle differences between secondary and tertiary hues.</li>
+</ul>
+<p>For the last point, the <a href="https://ninedegreesbelow.com/photography/gimp-srgb-lch-color-palettes.html">ninedegreesbelow</a> website has some nice pictures for us.</p>
+<p>At first why 30 degree steps don't work in both the sRGB and Lch colorspace:</p>
+<p><img alt="ndb-HSV-LCh-max-sat-color-palettes-png" src="../../assets/screenshots/HSV-LCh-max-sat-color-palettes.png" /></p>
+<p>Then an adapted Lch color palette with 24 colors:</p>
+<p><img alt="ndb-color-names-LCh-hues-png" src="../../assets/screenshots/color-names-LCh-hues.png" /></p>
+<p>With the corresponding 24 colorsteps in the colorwheel:</p>
+<p><img alt="ndb-saturation-0_dot_8" src="../../assets/screenshots/saturation-0_dot_8.png" /></p>
+<p>from the examples we can deduce that the difference between primary and tertiary colors is about 4 steps in the colorwheel:</p>
+<ul>
+<li>Red becomes yellow/brown (4 steps)</li>
+<li>Orange becomes green (4 steps)</li>
+<li>Green becomes blue (4 steps)</li>
+<li>Cyan becomes blue/purple (4 steps)</li>
+<li>Purple becomes magenta of some kind (4 steps)</li>
+</ul>
+<!--- References to pictures... --->
+
+<!--- External links... --->
 
               
             </article>
