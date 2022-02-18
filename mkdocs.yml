@@ -105,7 +105,10 @@ nav:
     - Material 3 Basics:
       - The Color System: basics/m3-color-system.md
       - Dynamic Color aka You!: basics/m3-dynamic-color.md
-    - Material 3 Analysis: basics/m3-analysis.md
+    - Material 3 Analysis:
+      - Introduction: basics/m3-analysis-introduction.md
+      - Hue Picker: basics/m3-analysis-hue-picker.md
+      - Palettes: basics/m3-analysis-palettes.md
     - HA M3 Implementation:
       - Introduction: basics/ha-m3-introduction.md
       - Implementation: basics/ha-m3-implementation.md
