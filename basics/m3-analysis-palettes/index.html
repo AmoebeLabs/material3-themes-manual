@@ -691,8 +691,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#cie-colorspaces" class="md-nav__link">
-     CIE colorspaces...
+  <a href="#cie-l-colorspaces" class="md-nav__link">
+     CIE L* colorspaces...
   </a>
   
 </li>
@@ -721,15 +721,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#first-experiment-calculate-hues-in-srgbhsl-and-cie-lch-space" class="md-nav__link">
-    First experiment: calculate Hues in sRGB/hsl and CIE-Lch space
+  <a href="#first-experiment-calculate-hues-in-srgbhsl-and-cie-lchab-space" class="md-nav__link">
+    First experiment: calculate Hues in sRGB/hsl and CIE-Lch(ab) space
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#second-experiment-use-a-cie-lch-space-colorwheel" class="md-nav__link">
-    Second experiment: use a CIE-Lch space colorwheel
+  <a href="#second-experiment-use-an-adjusted-cie-lchab-space-colorwheel" class="md-nav__link">
+    Second experiment: use an adjusted CIE-Lch(ab) space colorwheel
   </a>
   
 </li>
@@ -1392,8 +1392,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#cie-colorspaces" class="md-nav__link">
-     CIE colorspaces...
+  <a href="#cie-l-colorspaces" class="md-nav__link">
+     CIE L* colorspaces...
   </a>
   
 </li>
@@ -1422,15 +1422,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#first-experiment-calculate-hues-in-srgbhsl-and-cie-lch-space" class="md-nav__link">
-    First experiment: calculate Hues in sRGB/hsl and CIE-Lch space
+  <a href="#first-experiment-calculate-hues-in-srgbhsl-and-cie-lchab-space" class="md-nav__link">
+    First experiment: calculate Hues in sRGB/hsl and CIE-Lch(ab) space
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#second-experiment-use-a-cie-lch-space-colorwheel" class="md-nav__link">
-    Second experiment: use a CIE-Lch space colorwheel
+  <a href="#second-experiment-use-an-adjusted-cie-lchab-space-colorwheel" class="md-nav__link">
+    Second experiment: use an adjusted CIE-Lch(ab) space colorwheel
   </a>
   
 </li>
@@ -1477,11 +1477,14 @@
 </div>
 <p>So, if Material 3 emphasizes that it is using tonality, in other words <em>lightness</em> as the key value to create a tonal palette, it is clear that Material 3 is NOT using sRGB or sRGB hsl for that matter to calculate the tonal steps.</p>
 <p>But what then?</p>
-<p>Enter the CIE-Lab colorspace!</p>
-<h2 id="cie-colorspaces"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 3 10 9h-3v8H5v-8H2l10-9m3 8.5V10a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5z"/></svg></span> CIE colorspaces...<a class="headerlink" href="#cie-colorspaces" title="Permanent link">&para;</a></h2>
-<p>The CIE colorspace aims to show colors as the human eye perceives colors and lightness. Within that space, there are different methods like CIE-Lab and CIE-Lch.</p>
-<p>Both use the same colorspace, but use different parameters to calculate the colors.</p>
-<p>So, lets take some samples from the C1 example and check the lightness values:</p>
+<p>Enter the CIE-L* colorspace!</p>
+<h2 id="cie-l-colorspaces"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 3 10 9h-3v8H5v-8H2l10-9m3 8.5V10a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5z"/></svg></span> CIE L* colorspaces...<a class="headerlink" href="#cie-l-colorspaces" title="Permanent link">&para;</a></h2>
+<p>The CIE L* colorspace aims to show colors as the human eye perceives colors and lightness. Within that space, there are different methods like CIE-Lab + CIE-Lch(ab) and CIE-Lcv + CIE-Lch(cv).</p>
+<p>The CIE-Lab and CIE-Lch(ab) use the same colorspace, but use different parameters to calculate the colors. The CIE-lch(*) method is the easiest one to understand, as it uses degrees for the Hue (0..360 degrees), just as the sRGB(hsl) does.</p>
+<p>Both CIE-Lab and CIE-Lch use the same Lightness, so we can use either of them to determine the lightness values.</p>
+<p>So, lets take some samples from the C1 example and check the lightness values.</p>
+<p><img alt="m3-theme-c01-palettes-png" src="../../assets/screenshots/m3-theme-c01-palettes.png" /></p>
+<p><em>Color conversion using CIE-Lab</em></p>
 <table>
 <thead>
 <tr>
@@ -1489,7 +1492,7 @@
 <th>hex</th>
 <th>m3</th>
 <th>Lightness (sRGB-hsl)</th>
-<th>Lightness (CIE-Lch)</th>
+<th>Lightness (CIE-Lch(ab))</th>
 </tr>
 </thead>
 <tbody>
@@ -1544,27 +1547,28 @@
 </tr>
 </tbody>
 </table>
-<p>We see an exact match between the Material 3 lightness and the CIE-Lch lightness value for primary, secondary and tertiary color palettes.</p>
+<p>We see an exact match between the Material 3 lightness and the CIE-Lch(ab) lightness value for primary, secondary and tertiary color palettes.</p>
 <div class="admonition success">
-<p class="admonition-title">Material 3 is using the CIE-Lch colorspace to determine tonal palettes</p>
+<p class="admonition-title">Material 3 is using the CIE-L* colorspace to determine tonal palettes</p>
 </div>
-<p>On top of the match, there are more CIE-Lch points that make sense to use:</p>
+<p>But which one to use? According to the specifications, CIE-Lch(cv) is much more suitable for our situation, as it:</p>
 <ul>
-<li>CIE-Lch is meant for computer screens</li>
-<li>CIE-Lch's colorwheel is nonlinear, which explains the non fixed hue angle differences between secondary and tertiary hues (see next paragraph).</li>
+<li>CIE-Lch(cv) is meant for computer screens</li>
+<li>CIE-Lch(cv)'s colorwheel is better distributed than CIE-Lch(ab) for colors.</li>
 </ul>
 <h2 id="primary-secondary-and-tertiary-palettes"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 3 10 9h-3v8H5v-8H2l10-9m3 8.5V10a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5z"/></svg></span> Primary, Secondary and Tertiary palettes<a class="headerlink" href="#primary-secondary-and-tertiary-palettes" title="Permanent link">&para;</a></h2>
 <p>So. Lets take a look at the primary, secondary and tertiary palettes. Can we make sense of them?</p>
 <h3 id="primary-palette"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 3 10 9h-3v8H5v-8H2l10-9m3 8.5V10a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5z"/></svg></span> Primary palette<a class="headerlink" href="#primary-palette" title="Permanent link">&para;</a></h3>
 <p>If we look at the next table, we can see that Material 3 is not only varying lightness for the tonal palette, but also varying both chroma and hue.</p>
+<p><em>Color conversion using CIE-L*</em></p>
 <table>
 <thead>
 <tr>
 <th>color</th>
 <th>hex</th>
 <th>m3</th>
-<th>Lightness (hsl)</th>
-<th>Lightness (CIE-Lch)</th>
+<th>Lightness (CIE-Lch(ab))</th>
+<th>Lightness (CIE-Lch(cv))</th>
 </tr>
 </thead>
 <tbody>
@@ -1572,40 +1576,41 @@
 <td>Primary20</td>
 <td>#68000a</td>
 <td>20%</td>
-<td>hsl(<strong>354.23</strong>, 100%, 20.39%)</td>
 <td>lch(19.9%, 49.32, <strong>32.31</strong>)</td>
+<td>lch( 19.9%, 64.81, <strong>10.53</strong>)</td>
 </tr>
 <tr>
 <td>Primary40</td>
 <td>#bb1826</td>
 <td>40%</td>
-<td>hsl(<strong>354.85</strong>, 77.25%, 41.37%)</td>
 <td>lch(40.17%, 71.32, <strong>31.31</strong>)</td>
+<td>lch(40.18%, 119.53, <strong>10.59</strong>)</td>
 </tr>
 <tr>
 <td>Primary60</td>
 <td>#ff5354</td>
 <td>60%</td>
-<td>hsl(<strong>359.65</strong>, 100%, 66.27%)</td>
 <td>lch(59.96%, 74.62, <strong>29.51</strong>)</td>
+<td>lch(59.97%  134.35, <strong>11.99</strong>)</td>
 </tr>
 <tr>
 <td>Primary80</td>
 <td>#ffb3ac</td>
 <td>80%</td>
-<td>hsl(<strong>5.06</strong>, 100%, 83.73%)</td>
 <td>lch(79.89%, 30.53, <strong>28.75</strong>)</td>
+<td>lch(79.88%, 52.92, <strong>17.20</strong>)</td>
 </tr>
 <tr>
 <td>Primary99</td>
 <td>#fcfcfc</td>
 <td>99%</td>
-<td>hsl(<strong>0</strong>, 0%, 98.82%)</td>
 <td>lch(98.96%, 0.01, <strong>296.81</strong>)</td>
+<td>lch(98.96%, 0.01, <strong>247.09</strong>)</td>
 </tr>
 </tbody>
 </table>
-<p>However, the hsl values ​​of the sRGB space show 100% saturation on three of the 5 tones, which may indicate some sort of clipping while calculating the sRGB color from the CIE-Lch space, which gives a much wider color gamut. And since I calculated the CIE-Lch colors from the sRGB hsl colors, the CIE-Lch colors may not be that accurate with regard to hue and chroma!</p>
+<p>However, the hsl values ​​of the sRGB space show 100% saturation on three of the 5 tones, which may indicate some sort of clipping while calculating the sRGB color from the CIE-Lch(*) space, which gives a much wider color gamut.</p>
+<p>And since I calculated the CIE-Lch(*) colors from the sRGB hsl colors, the CIE-Lch(*) colors may not be that accurate with regard to hue and chroma!</p>
 <p>Looking at the remarks at the <a href="https://cielab.io/">CIELab site</a>, the relation between hue/chroma and luminance means that you can't have all the three parameters at its "best" value, and you have to balance all three:</p>
 <div class="admonition quote">
 <p class="admonition-title">From CIELab.io: Oftentimes, you can sacrifice chroma to make luminance and hue work</p>
@@ -1614,20 +1619,22 @@
 <p class="admonition-title">From CIELab.io: Usually, you want shades to have roughly the same hue. That way, shades don't seem to "drift" into a different color</p>
 </div>
 <div class="admonition success">
-<p class="admonition-title">Material 3 is palette calculations are probably in the CIE-Lch colorspace, balancing all three parameters</p>
-<p>This also means that the real calculations are hard to reverse engineer in the sRGB colorspace.</p>
+<p class="admonition-title">Material 3 is palette calculations are probably in the CIE-Lch(*) colorspace, balancing all three parameters</p>
+<p>But which one? Lab is hue stable for 4 hues, where Luv only for the first three...</p>
 </div>
 <h3 id="secondary-and-tertiary-palette"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 3 10 9h-3v8H5v-8H2l10-9m3 8.5V10a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5z"/></svg></span> Secondary and Tertiary palette<a class="headerlink" href="#secondary-and-tertiary-palette" title="Permanent link">&para;</a></h3>
 <p>For starters, the "normal" way to choose a secondary or tertiary color is to move the color wheel a few degrees. However, since the human eye is non-linear and Google makes a point about accessibility standards, a standard color wheel probably isn't what Material 3 uses.</p>
-<h4 id="first-experiment-calculate-hues-in-srgbhsl-and-cie-lch-space">First experiment: calculate Hues in sRGB/hsl and CIE-Lch space<a class="headerlink" href="#first-experiment-calculate-hues-in-srgbhsl-and-cie-lch-space" title="Permanent link">&para;</a></h4>
+<h4 id="first-experiment-calculate-hues-in-srgbhsl-and-cie-lchab-space">First experiment: calculate Hues in sRGB/hsl and CIE-Lch(ab) space<a class="headerlink" href="#first-experiment-calculate-hues-in-srgbhsl-and-cie-lchab-space" title="Permanent link">&para;</a></h4>
 <p>The table below shows colors from 4 examples and the difference in degrees for the hues.</p>
+<p><em>Color conversion using CIE-Lab</em> (conversions using <a href="https://www.easyrgb.com/en/convert.php#inputFORM">https://www.easyrgb.com/en/convert.php#inputFORM</a>)</p>
 <table>
 <thead>
 <tr>
 <th>What</th>
 <th>hex</th>
-<th>H (hsl)</th>
-<th>H (CIE-Lch)</th>
+<th>H (CIE-Lch(ab))</th>
+<th>H diff</th>
+<th>H (CIE-Lch(cv)</th>
 <th>H diff</th>
 </tr>
 </thead>
@@ -1638,30 +1645,35 @@
 <td></td>
 <td></td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td>Primary</td>
 <td>#bb1826</td>
-<td>hsl(<strong>354.85</strong>, 77.25%, 41.37%)</td>
-<td>lch(40.17, 71.32, <strong>31.31</strong>)</td>
+<td><strong>31.31</strong></td>
+<td></td>
+<td><strong>10.59</strong></td>
 <td></td>
 </tr>
 <tr>
 <td>Secondary</td>
-<td><a class="magiclink magiclink-github magiclink-issue" href="https://github.com/squidfunk/mkdocs-material/issues/775654" title="GitHub Issue: squidfunk/mkdocs-material #775654">#775654</a></td>
-<td>hsl(<strong>3.43</strong>, 17.24%, 39.8%)</td>
-<td>lch(39.94, 14.89, <strong>26.09</strong>)</td>
+<td>#775654</td>
+<td><strong>26.09</strong></td>
 <td>-5.22</td>
+<td><strong>15.68</strong></td>
+<td>5.09</td>
 </tr>
 <tr>
 <td>Tertiary</td>
 <td>#735b2e</td>
-<td>hsl(<strong>39.13</strong>, 42.86%, 31.57%)</td>
-<td>lch(40.12, 29.59, <strong>82.25</strong>)</td>
+<td><strong>82.25</strong></td>
 <td>50.94</td>
+<td><strong>58.38</strong></td>
+<td>47.79</td>
 </tr>
 <tr>
 <td><strong>C5, Yellow</strong></td>
+<td></td>
 <td></td>
 <td></td>
 <td></td>
@@ -1670,26 +1682,30 @@
 <tr>
 <td>Primary</td>
 <td>#695f00</td>
-<td>hsl(<strong>54.29</strong>), 100%, 20.59%)</td>
-<td>lch(39.90, 47.34, <strong>96.71</strong>))</td>
+<td><strong>96.71</strong></td>
+<td></td>
+<td><strong>76.85</strong></td>
 <td></td>
 </tr>
 <tr>
 <td>Secondary</td>
 <td>#635f41</td>
-<td>hsl(<strong>52.94</strong>), 20.73%, 32.16%)</td>
-<td>lch(39.95, 18.14, <strong>101.46</strong>))</td>
+<td><strong>101.46</strong></td>
 <td>4.75</td>
+<td><strong>79.30</strong></td>
+<td>2.45</td>
 </tr>
 <tr>
 <td>Tertiary</td>
-<td><a class="magiclink magiclink-github magiclink-issue" href="https://github.com/squidfunk/mkdocs-material/issues/406652" title="GitHub Issue: squidfunk/mkdocs-material #406652">#406652</a></td>
-<td>hsl(<strong>148.42</strong>), 22.89%, 32.55%)</td>
-<td>lch(39.92, 19.7, <strong>158.97</strong>))</td>
+<td>#406652</td>
+<td><strong>158.97</strong></td>
 <td>62.26</td>
+<td><strong>147.29</strong></td>
+<td>70.44</td>
 </tr>
 <tr>
 <td><strong>C7, Green</strong></td>
+<td></td>
 <td></td>
 <td></td>
 <td></td>
@@ -1698,26 +1714,30 @@
 <tr>
 <td>Primary</td>
 <td>#276c00</td>
-<td>hsl(<strong>98.33</strong>, 100%, 21.18%)</td>
-<td>lch(39.85, 59.90, <strong>131.18</strong>)</td>
+<td><strong>131.18</strong></td>
+<td></td>
+<td><strong>122.67</strong></td>
 <td></td>
 </tr>
 <tr>
 <td>Secondary</td>
 <td>#55624b</td>
-<td>hsl(<strong>93.91</strong>, 13.29%, 33.92%)</td>
-<td>lch(39.87, 15.04, <strong>130.34</strong>)</td>
+<td><strong>130.34</strong></td>
 <td>-0.84</td>
+<td><strong>112.00</strong></td>
+<td>-10.67</td>
 </tr>
 <tr>
 <td>Tertiary</td>
 <td><a class="magiclink magiclink-github magiclink-issue" href="https://github.com/squidfunk/mkdocs-material/issues/386666" title="GitHub Issue: squidfunk/mkdocs-material #386666">#386666</a></td>
-<td>hsl(<strong>180</strong>, 29.11%, 30.98%)</td>
-<td>lch(40.08, 16.47, <strong>197.43</strong>)</td>
+<td><strong>197.43</strong></td>
 <td>66.25</td>
+<td><strong>192.17</strong></td>
+<td>69.5</td>
 </tr>
 <tr>
 <td><strong>C9, Blue</strong></td>
+<td></td>
 <td></td>
 <td></td>
 <td></td>
@@ -1726,23 +1746,26 @@
 <tr>
 <td>Primary</td>
 <td>#0062a1</td>
-<td>hsl(<strong>203.48</strong>, 100%, 31.57%)</td>
-<td>lch(40.09, 40.72, <strong>270.55</strong>)</td>
+<td><strong>270.55</strong></td>
+<td></td>
+<td><strong>247.40</strong></td>
 <td></td>
 </tr>
 <tr>
 <td>Secondary</td>
-<td><a class="magiclink magiclink-github magiclink-issue" href="https://github.com/squidfunk/mkdocs-material/issues/526070" title="GitHub Issue: squidfunk/mkdocs-material #526070">#526070</a></td>
-<td>hsl(<strong>212</strong>, 15.46%, 38.04%)</td>
-<td>lch(40.13, 10.91, <strong>262.82</strong>)</td>
+<td>#526070</td>
+<td><strong>262.82</strong></td>
 <td>-7.73</td>
+<td><strong>241.81</strong></td>
+<td>-5.59</td>
 </tr>
 <tr>
 <td>Tertiary</td>
-<td><a class="magiclink magiclink-github magiclink-issue" href="https://github.com/squidfunk/mkdocs-material/issues/695779" title="GitHub Issue: squidfunk/mkdocs-material #695779">#695779</a></td>
-<td>hsl(<strong>271.76</strong>, 16.35%, 40.78%)</td>
-<td>lch(39.91, 21.96, <strong>311.33</strong>)</td>
+<td>#695779</td>
+<td><strong>311.33</strong></td>
 <td>40.78</td>
+<td><strong>286.56</strong></td>
+<td>39.16</td>
 </tr>
 </tbody>
 </table>
@@ -1757,14 +1780,21 @@
 <li>The direction on the colorwheel is always to the right</li>
 </ul>
 <div class="admonition success">
-<p class="admonition-title">Material 3 is using some special CIE-Lch calculation to determine secondary and tertiary tonal palettes</p>
+<p class="admonition-title">Material 3 is using some special CIE-Lch(*) calculation to determine secondary and tertiary tonal palettes</p>
 <p>The secondary color shows that especially with its right/left direction. The tertiary color is always to the right. Both secondary and tertiary colors show a nonlinear difference though!</p>
 </div>
-<h4 id="second-experiment-use-a-cie-lch-space-colorwheel">Second experiment: use a CIE-Lch space colorwheel<a class="headerlink" href="#second-experiment-use-a-cie-lch-space-colorwheel" title="Permanent link">&para;</a></h4>
+<div class="admonition fail">
+<p class="admonition-title">Even CIE-Lch(cv) shows different Hue differences, altough this wheel should have evenly distributed colors</p>
+</div>
+<h4 id="second-experiment-use-an-adjusted-cie-lchab-space-colorwheel">Second experiment: use an adjusted CIE-Lch(ab) space colorwheel<a class="headerlink" href="#second-experiment-use-an-adjusted-cie-lchab-space-colorwheel" title="Permanent link">&para;</a></h4>
 <p>The website <a href="https://ninedegreesbelow.com/photography/gimp-srgb-lch-color-palettes.html">Nine Degrees Below</a> has done a lot of work in this part, including some nice pictures.</p>
-<p>At first it shows "Why 30 degree steps don't work" in both the sRGB and CIE-Lch colorspace. Apart from the fact that they don't match, you see a lot of green colors in the sRGB space, and a lot of blue colors in the CIE-Lch space with even a missing yellow, true green and purple block.</p>
+<p>At first it shows "Why 30 degree steps don't work" in both the sRGB and CIE-Lch(ab) colorspace. Apart from the fact that they don't match, you see a lot of green colors in the sRGB space, and a lot of blue colors in the CIE-Lch(ab) space with even a missing yellow, true green and purple block.</p>
 <p><img alt="ndb-HSV-LCh-max-sat-color-palettes-png" src="../../assets/screenshots/HSV-LCh-max-sat-color-palettes.png" /></p>
-<p>So, they created an adapted CIE-Lch color palette with 24 colors:</p>
+<p>And if you look at both the HSV and CIE-Lch(ab) color distribution wheels, you understand why: the color distribution is totally different. You also see that purple and blue are very close in the Lab space: so no surpise it is missing from the above palettes at 30 degree intervals.
+<img alt="hsv-lch-colorwheel-jpg" src="../../assets/screenshots/hsv-lch-colorwheel.jpg" /></p>
+<p>This gives the following colorwheel for CIE-Lab space:
+<img alt="cielab-colorwheel-png" src="../../assets/screenshots/cielab-colorwheel.png" /></p>
+<p>So, they created an adapted CIE-Lch(ab) color palette with 24 colors:</p>
 <p><img alt="ndb-color-names-LCh-hues-png" src="../../assets/screenshots/color-names-LCh-hues.png" /></p>
 <p>With the corresponding 24 colorsteps in the colorwheel:</p>
 <p><img alt="ndb-saturation-0_dot_8" src="../../assets/screenshots/saturation-0_dot_8.png" /></p>
@@ -1783,11 +1813,11 @@
 <tbody>
 <tr>
 <td>C1, Red</td>
-<td>R/RO(24/38)</td>
+<td>RO(38)</td>
 <td>R(24)</td>
-<td>0</td>
+<td>-1</td>
 <td>OY(80)</td>
-<td>4</td>
+<td>3</td>
 </tr>
 <tr>
 <td>C5, Yellow</td>
@@ -2025,7 +2055,7 @@
 </tbody>
 </table>
 <p>Now use the real primary and tertiary values ​​and use the normalized size (each part is 4.2% in the color wheel) to calculate the real "distance" between the primary and tertiary color.</p>
-<p>The tables shows the CIE-Lch Hue difference as the "Abs Diff". </p>
+<p>The tables shows the CIE-Lch(ab) Hue difference as the "Abs Diff". </p>
 <table>
 <thead>
 <tr>
@@ -2040,10 +2070,10 @@
 <tbody>
 <tr>
 <td>C1, Red</td>
-<td>R/RO(24/38)</td>
+<td>RO(38)</td>
 <td>OY(80)</td>
 <td>50.94</td>
-<td>4</td>
+<td>3</td>
 <td>15.7%</td>
 </tr>
 <tr>
@@ -2072,10 +2102,10 @@
 </tr>
 </tbody>
 </table>
-<p>The percentages are pretty close together, with an exception again for the blue part. Of course I don't know how accurate Nine Degrees Below's CIE-Lch color wheel is, meaning there are differences where expected. Material may use a 15% color wheel shift in the CIE-Lch domain for the tertiary color.</p>
+<p>The percentages are pretty close together, with an exception again for the blue part. Of course I don't know how accurate Nine Degrees Below's CIE-Lch(ab) color wheel is, meaning there are differences where expected. Material may use a 15% color wheel shift in the CIE-Lch(ab) domain for the tertiary color.</p>
 <p>For the secondary color I have no idea, because the direction is to the right in some cases and left in other cases.</p>
 <div class="admonition fail">
-<p class="admonition-title">It remains unknown how Material 3 is calculating secondary and tertiary colors on the CIE-Lch colorwheel</p>
+<p class="admonition-title">It remains unknown how Material 3 is calculating secondary and tertiary colors on the CIE-Lch(ab) colorwheel</p>
 </div>
 <!--- References to pictures... --->
 
