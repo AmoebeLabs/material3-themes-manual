@@ -26,7 +26,7 @@ If I translate the hex RGB colors to HSL (Hue, Saturation, Lightness) colors I d
 
 So, slightly different hues (212, 210 and 217), give the exact same Material 3 hue!
 
-Converting the colors to CIE-Lch (Lightness, Chroma, Hue) using [ColorMine][colormine-url] also results in different hues for the three input images with again a different Material 3 hue:
+Converting the colors to CIE-Lch(ab) (Lightness, Chroma, Hue) using [ColorMine][colormine-url] also results in different hues for the three input images with again a different Material 3 hue:
 
 | Position | hex | L | c | h | M3 h |
 | -------- | --- | - | - | - | ---- |
@@ -41,14 +41,25 @@ Converting the colors to CIE-Lch (Lightness, Chroma, Hue) using [ColorMine][colo
 
 Okay, so Material 3 uses some calculations to extract the hue from an image. I'm okay with that. But what about the Material Theme Builder's "Custom Color" option? It has to use YOUR color, yes?
 
-| Theme | Custom | CIE-Lch | Primary | CIE-Lch|
+_Color conversion using CIE-Lab_
+
+| Theme | Custom | CIE-Lch(ab) | Primary | CIE-Lch(ab)|
 | ---- | --- | ------- | ----------- | ------ |
 | C1, Red | #ff4d4f <!--255,77,79-->| lch(59.10, 77.17, **29.93**) | #bb1826 | lch(40.17, 71.32, **31.31**) |
 | C5, Yellow| #ffec3d <!--255,236,61-->| lch(92.40, 81.33, **97.95**) | #695f00 | lch(39.90, 47.34, **96.71**) |
 | C7, Green | #73d13d <!--115,209,61--> | lch(75.81, 80.90, **130.59**)| #276c00 | lch(39.85, 59.90, **131.18**) |
 | C9, Blue | #40a9ff <!--64,169,255--> | lch(67.04, 51.18, **268.01**) | #0062a1 | lch(40.09, 40.72, **270.55**) |
 
-So, the short answer is NO: Material 3 is NOT using your custom color. On the other hand, the differences in CIE-Lch values seem small. But what if I keep the lc-part of the lch value and use the primary h-value to recalculate the input color?
+_Color conversion using CIE-Luv_
+
+| Theme | Custom | CIE-Lch(uv) | Primary | CIE-Lch(uv)|
+| ---- | --- | ------- | ----------- | ------ |
+| C1, Red | #ff4d4f <!--255,77,79-->| lch(59.10, 139.18, **11.85**) | #bb1826 | lch(40.18, 119.53, **10.60**) |
+| C5, Yellow| #ffec3d <!--255,236,61-->| lch(92.39, 95.30, **77.98**) | #695f00 | lch(39.89, 44.17, **76.85**) |
+| C7, Green | #73d13d <!--115,209,61--> | lch(75.81, 92.48, **119.67**)| #276c00 | lch( 39.84, 56.92, **122.67**) |
+| C9, Blue | #40a9ff <!--64,169,255--> | lch(67.03, 90.63, **245.90**) | #0062a1 | lch(40.09, 63.78, **247.40**) |
+
+So, the short answer is NO: Material 3 is NOT using your custom color. On the other hand, the differences in CIE-Lch(ab) and CIE-Lch(uv) values seem small. But what if I keep the lc-part of the lch value and use the primary h-value to recalculate the input color?
 
 Taking the last example: Blue with `rgb(64, 169, 255)` becomes `rgb(76, 168, 255)`: In other words, MORE red, slightly less green, and no difference in blue.
 
