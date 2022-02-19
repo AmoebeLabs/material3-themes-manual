@@ -1361,7 +1361,7 @@
 
 <p>The Figma Material Theme Builder offers both dynamic color based primary color picking as custom color picking. So let's see what they do!</p>
 <h3 id="dynamic-color"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 3 10 9h-3v8H5v-8H2l10-9m3 8.5V10a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5z"/></svg></span> Dynamic color<a class="headerlink" href="#dynamic-color" title="Permanent link">&para;</a></h3>
-<p>I started my experiments with Google to find some random images for me, drag them into the Material Theme Builder and see what primary color (and secondary/tertiary colors of course) material 3 appears with.</p>
+<p>I started my experiments with Google to find some random images for me, drag them into the Material Theme Builder and see what primary color (and secondary/tertiary colors of course) Material 3 appears with.</p>
 <p>In doing so, I sometimes got confused because the theme didn't always really change. So I had to look more closely.</p>
 <p>Take the following example. I dragged three different bluish images from the internet with a single color. And as you can see, the resulting source color - the extracted shade of Material 3 - is <strong>exactly</strong> the same (#4285f4) <img alt="😕" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f615.svg" title=":confused:" />.</p>
 <table>
@@ -1380,7 +1380,7 @@
 </tr>
 </tbody>
 </table>
-<p>If I translate the hex RGB colors to HSL (Hue, Saturation, Lightness) colors I do get from left to right:</p>
+<p>If I translate the hex RGB colors to HSL colors (Hue, Saturation, Lightness) I get from left to right:</p>
 <table>
 <thead>
 <tr>
@@ -1416,7 +1416,7 @@
 </tbody>
 </table>
 <p>So, slightly different hues (212, 210 and 217), give the exact same Material 3 hue!</p>
-<p>Converting the colors to CIE-Lch(ab) (Lightness, Chroma, Hue) using <a href="http://colormine.org/color-converter">ColorMine</a> also results in different hues for the three input images with again a different Material 3 hue:</p>
+<p>Converting the colors to CIE-Lch(ab) (Lightness, Chroma, Hue) using <a href="http://colormine.org/color-converter">ColorMine</a> also results in different hues for the three input images with yet another Material 3 hue:</p>
 <table>
 <thead>
 <tr>
@@ -1545,7 +1545,7 @@
 </tr>
 </tbody>
 </table>
-<p>So, the short answer is NO: Material 3 is NOT using your custom color. On the other hand, the differences in CIE-Lch(ab) and CIE-Lch(uv) values seem small. But what if I keep the lc-part of the lch value and use the primary h-value to recalculate the input color?</p>
+<p>So the short answer is NO: Material 3 does NOT use its own color. On the other hand, the differences in CIE-Lch(ab) and CIE-Lch(uv) values ​​seem small. But what if I keep the lc part of the lch value and use the primary h value to recalculate the input color?</p>
 <p>Taking the last example: Blue with <code>rgb(64, 169, 255)</code> becomes <code>rgb(76, 168, 255)</code>: In other words, MORE red, slightly less green, and no difference in blue.</p>
 <p>On the left, the custom color, and on the right the extracted source color:</p>
 <p><svg viewBox="0 0 400 100" xmlns="http://www.w3.org/2000/svg" width="600px">

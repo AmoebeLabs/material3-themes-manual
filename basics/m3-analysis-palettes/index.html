@@ -721,8 +721,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#first-experiment-calculate-hues-in-srgbhsl-and-cie-lchab-space" class="md-nav__link">
-    First experiment: calculate Hues in sRGB/hsl and CIE-Lch(ab) space
+  <a href="#first-experiment-calculate-hues-in-cie-lchab-and-cie-lchcv-space" class="md-nav__link">
+    First experiment: calculate Hues in CIE-Lch(ab) and CIE-Lch(cv) space
   </a>
   
 </li>
@@ -1422,8 +1422,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#first-experiment-calculate-hues-in-srgbhsl-and-cie-lchab-space" class="md-nav__link">
-    First experiment: calculate Hues in sRGB/hsl and CIE-Lch(ab) space
+  <a href="#first-experiment-calculate-hues-in-cie-lchab-and-cie-lchcv-space" class="md-nav__link">
+    First experiment: calculate Hues in CIE-Lch(ab) and CIE-Lch(cv) space
   </a>
   
 </li>
@@ -1467,7 +1467,6 @@
 
   <h1>Palettes</h1>
 
-<p>#TODO</p>
 <h2 id="m3-palettes"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 3 10 9h-3v8H5v-8H2l10-9m3 8.5V10a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5z"/></svg></span> M3 Palettes...<a class="headerlink" href="#m3-palettes" title="Permanent link">&para;</a></h2>
 <p>One of the main highlights of Material 3 are the tonal palettes that should meet WCGA standards.</p>
 <p>As Google says:</p>
@@ -1475,11 +1474,11 @@
 <p class="admonition-title">Dynamic color is designed to meet accessibility standards for color contrast. The system of tonal palettes is central to making any color scheme accessible by default.</p>
 <p>Combining color based on tonality, rather than hex value or hue, is one of the key systems that make any color output accessible. Products using dynamic color will meet requirements because the algorithmic combinations that an end-user can experience are designed to meet accessibility standards.</p>
 </div>
-<p>So, if Material 3 emphasizes that it is using tonality, in other words <em>lightness</em> as the key value to create a tonal palette, it is clear that Material 3 is NOT using sRGB or sRGB hsl for that matter to calculate the tonal steps.</p>
+<p>So if Material 3 emphasizes that it uses tonality, in other words <em>lightness</em> as the key value to create a tone palette, it is clear that Material 3 does NOT use sRGB or sRGB-hsl to calculate the tonal steps.</p>
 <p>But what then?</p>
 <p>Enter the CIE-L* colorspace!</p>
 <h2 id="cie-l-colorspaces"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 3 10 9h-3v8H5v-8H2l10-9m3 8.5V10a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5z"/></svg></span> CIE L* colorspaces...<a class="headerlink" href="#cie-l-colorspaces" title="Permanent link">&para;</a></h2>
-<p>The CIE L* colorspace aims to show colors as the human eye perceives colors and lightness. Within that space, there are different methods like CIE-Lab + CIE-Lch(ab) and CIE-Lcv + CIE-Lch(cv).</p>
+<p>The CIE L* colorspace aims to show colors as the human eye perceives colors and lightness. Within that space, there are different methods like CIE-Lab + CIE-Lch(ab) and CIE-Luv + CIE-Lch(cv).</p>
 <p>The CIE-Lab and CIE-Lch(ab) use the same colorspace, but use different parameters to calculate the colors. The CIE-lch(*) method is the easiest one to understand, as it uses degrees for the Hue (0..360 degrees), just as the sRGB(hsl) does.</p>
 <p>Both CIE-Lab and CIE-Lch use the same Lightness, so we can use either of them to determine the lightness values.</p>
 <p>So, lets take some samples from the C1 example and check the lightness values.</p>
@@ -1512,7 +1511,7 @@
 </tr>
 <tr>
 <td>Secondary40</td>
-<td><a class="magiclink magiclink-github magiclink-issue" href="https://github.com/squidfunk/mkdocs-material/issues/775654" title="GitHub Issue: squidfunk/mkdocs-material #775654">#775654</a></td>
+<td>#775654</td>
 <td>40%</td>
 <td>hsl(3.43, 17.24%, <strong>39.8%</strong>)</td>
 <td>lch(<strong>39.94%</strong>, 14.89, 26.09)</td>
@@ -1624,8 +1623,8 @@
 </div>
 <h3 id="secondary-and-tertiary-palette"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 3 10 9h-3v8H5v-8H2l10-9m3 8.5V10a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5z"/></svg></span> Secondary and Tertiary palette<a class="headerlink" href="#secondary-and-tertiary-palette" title="Permanent link">&para;</a></h3>
 <p>For starters, the "normal" way to choose a secondary or tertiary color is to move the color wheel a few degrees. However, since the human eye is non-linear and Google makes a point about accessibility standards, a standard color wheel probably isn't what Material 3 uses.</p>
-<h4 id="first-experiment-calculate-hues-in-srgbhsl-and-cie-lchab-space">First experiment: calculate Hues in sRGB/hsl and CIE-Lch(ab) space<a class="headerlink" href="#first-experiment-calculate-hues-in-srgbhsl-and-cie-lchab-space" title="Permanent link">&para;</a></h4>
-<p>The table below shows colors from 4 examples and the difference in degrees for the hues.</p>
+<h4 id="first-experiment-calculate-hues-in-cie-lchab-and-cie-lchcv-space">First experiment: calculate Hues in CIE-Lch(ab) and CIE-Lch(cv) space<a class="headerlink" href="#first-experiment-calculate-hues-in-cie-lchab-and-cie-lchcv-space" title="Permanent link">&para;</a></h4>
+<p>The table below shows colors from 6 examples and the difference in degrees for the hues.</p>
 <p><em>Color conversion using CIE-Lab</em> (conversions using <a href="https://www.easyrgb.com/en/convert.php#inputFORM">https://www.easyrgb.com/en/convert.php#inputFORM</a>)</p>
 <table>
 <thead>
@@ -1766,6 +1765,70 @@
 <td>40.78</td>
 <td><strong>286.56</strong></td>
 <td>39.16</td>
+</tr>
+<tr>
+<td><strong>C11, Purple</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Primary</td>
+<td>#7a3ac5</td>
+<td><strong>311.37</strong></td>
+<td></td>
+<td><strong>278.45</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Secondary</td>
+<td>#655a70</td>
+<td><strong>309.93</strong></td>
+<td>-1.44</td>
+<td><strong>286.00</strong></td>
+<td>7.55</td>
+</tr>
+<tr>
+<td>Tertiary</td>
+<td>#80525a</td>
+<td><strong>9.27</strong></td>
+<td>57.9</td>
+<td><strong>1.64</strong></td>
+<td>83.19</td>
+</tr>
+<tr>
+<td><strong>C12, Magenta</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Primary</td>
+<td>#b01a72</td>
+<td><strong>349.87</strong></td>
+<td></td>
+<td><strong>342.77</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Secondary</td>
+<td>#735762</td>
+<td><strong>352.16</strong></td>
+<td>2.29</td>
+<td><strong>344.33</strong></td>
+<td>1.56</td>
+</tr>
+<tr>
+<td>Tertiary</td>
+<td>#7e5538</td>
+<td><strong>60.19</strong></td>
+<td>70.32</td>
+<td><strong>38.04</strong></td>
+<td>55.27</td>
 </tr>
 </tbody>
 </table>
@@ -2110,6 +2173,20 @@
 <!--- References to pictures... --->
 
 <!--- External links... --->
+
+<!--
+
+cie2000
+red
+primary40 en sec = 14.4576
+primary40 en tert = 50
+
+yellow
+primary 695f00, hsl(54.29, 100%, 20.59%)
+secondary hsl(52.94, 20.73%, 32.16%), de2000 = 12.87
+406652 , hsl(148.42, 22.89%, 32.55%), de2000 = 31.6654
+
+-->
 
               
             </article>
