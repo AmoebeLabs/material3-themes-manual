@@ -2,8 +2,6 @@
 template: overrides/main.html
 ---
 
-\#TODO
-
 ##:material-home-floor-3: M3 Palettes...
 
 One of the main highlights of Material 3 are the tonal palettes that should meet WCGA standards.
@@ -14,7 +12,7 @@ As Google says:
 
     Combining color based on tonality, rather than hex value or hue, is one of the key systems that make any color output accessible. Products using dynamic color will meet requirements because the algorithmic combinations that an end-user can experience are designed to meet accessibility standards.
 
-So, if Material 3 emphasizes that it is using tonality, in other words _lightness_ as the key value to create a tonal palette, it is clear that Material 3 is NOT using sRGB or sRGB hsl for that matter to calculate the tonal steps.
+So if Material 3 emphasizes that it uses tonality, in other words _lightness_ as the key value to create a tone palette, it is clear that Material 3 does NOT use sRGB or sRGB-hsl to calculate the tonal steps.
 
 But what then?
 
@@ -22,7 +20,7 @@ Enter the CIE-L* colorspace!
 
 ##:material-home-floor-3: CIE L* colorspaces...
 
-The CIE L\* colorspace aims to show colors as the human eye perceives colors and lightness. Within that space, there are different methods like CIE-Lab + CIE-Lch(ab) and CIE-Lcv + CIE-Lch(cv).
+The CIE L\* colorspace aims to show colors as the human eye perceives colors and lightness. Within that space, there are different methods like CIE-Lab + CIE-Lch(ab) and CIE-Luv + CIE-Lch(cv).
 
 The CIE-Lab and CIE-Lch(ab) use the same colorspace, but use different parameters to calculate the colors. The CIE-lch(\*) method is the easiest one to understand, as it uses degrees for the Hue (0..360 degrees), just as the sRGB(hsl) does.
 
@@ -38,7 +36,7 @@ _Color conversion using CIE-Lab_
 | ---- | --- | ------- | --| ----------- |
 | Primary20 | #68000a | 20% | hsl(354.23, 100%, **20.39%**) | lch(**19.9%**, 49.32, 32.31) |
 | Primary40 | #bb1826 | 40% | hsl(354.85, 77.25%, **41.37%**) | lch(**40.17%**, 71.32, 31.31) |
-| Secondary40 | #775654 | 40% | hsl(3.43, 17.24%, **39.8%**) | lch(**39.94%**, 14.89, 26.09) |
+| Secondary40 | \#775654 | 40% | hsl(3.43, 17.24%, **39.8%**) | lch(**39.94%**, 14.89, 26.09) |
 | Tertiary40 | #735b2e | 40% | hsl(39.13, 42.86%, **31.57%**) | lch(**40.12%**, 29.59, 82.25) |
 | Primary60 | #ff5354 | 60% | hsl(359.65, 100%, **66.27%**) | lch(**59.96%**, 74.62, 29.51) |
 | Primary80 | #ffb3ac | 80% | hsl(5.06, 100%, **83.73%**) | lch(**79.89%**, 30.53, 28.75) |
@@ -88,9 +86,9 @@ Looking at the remarks at the [CIELab site][cielab-io-url], the relation between
 
 For starters, the "normal" way to choose a secondary or tertiary color is to move the color wheel a few degrees. However, since the human eye is non-linear and Google makes a point about accessibility standards, a standard color wheel probably isn't what Material 3 uses.
 
-#### First experiment: calculate Hues in sRGB/hsl and CIE-Lch(ab) space
+#### First experiment: calculate Hues in CIE-Lch(ab) and CIE-Lch(cv) space
 
-The table below shows colors from 4 examples and the difference in degrees for the hues.
+The table below shows colors from 6 examples and the difference in degrees for the hues.
 
 _Color conversion using CIE-Lab_ (conversions using https://www.easyrgb.com/en/convert.php#inputFORM)
 
@@ -112,6 +110,14 @@ _Color conversion using CIE-Lab_ (conversions using https://www.easyrgb.com/en/c
 | Primary | #0062a1 | **270.55** |  | **247.40** | |
 | Secondary | \#526070 | **262.82** | -7.73 | **241.81** | -5.59 |
 | Tertiary | \#695779 | **311.33** | 40.78 | **286.56** | 39.16 |
+| **C11, Purple** |||||
+| Primary | #7a3ac5 | **311.37** |  | **278.45** | |
+| Secondary | #655a70 | **309.93** | -1.44 | **286.00** | 7.55 |
+| Tertiary | #80525a | **9.27** | 57.9 | **1.64** | 83.19 |
+| **C12, Magenta** |||||
+| Primary | #b01a72 | **349.87** |  | **342.77** | |
+| Secondary | \#735762 | **352.16** | 2.29 | **344.33** | 1.56 |
+| Tertiary | #7e5538 | **60.19** | 70.32 | **38.04** | 55.27 |
 
 
 Primary to secondary color:
@@ -231,3 +237,17 @@ For the secondary color I have no idea, because the direction is to the right in
 [lea-verou-lch-colors-in-css-url]: https://lea.verou.me/2020/04/lch-colors-in-css-what-why-and-how/
 [ndb-lch-colors-url]: https://ninedegreesbelow.com/photography/gimp-srgb-lch-color-palettes.html
 [cielab-io-url]: https://cielab.io/
+
+<!--
+
+cie2000
+red
+primary40 en sec = 14.4576
+primary40 en tert = 50
+
+yellow
+primary 695f00, hsl(54.29, 100%, 20.59%)
+secondary hsl(52.94, 20.73%, 32.16%), de2000 = 12.87
+406652 , hsl(148.42, 22.89%, 32.55%), de2000 = 31.6654
+
+-->

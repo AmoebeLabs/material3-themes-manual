@@ -6,7 +6,7 @@ The Figma Material Theme Builder offers both dynamic color based primary color p
 
 ###:material-home-floor-3: Dynamic color
 
-I started my experiments with Google to find some random images for me, drag them into the Material Theme Builder and see what primary color (and secondary/tertiary colors of course) material 3 appears with.
+I started my experiments with Google to find some random images for me, drag them into the Material Theme Builder and see what primary color (and secondary/tertiary colors of course) Material 3 appears with.
 
 In doing so, I sometimes got confused because the theme didn't always really change. So I had to look more closely.
 
@@ -16,7 +16,7 @@ Take the following example. I dragged three different bluish images from the int
 |---|---|---|
 |![mtb-blue-1-png]|![mtb-blue-2-png]|![mtb-blue-3-png]|
 
-If I translate the hex RGB colors to HSL (Hue, Saturation, Lightness) colors I do get from left to right:
+If I translate the hex RGB colors to HSL colors (Hue, Saturation, Lightness) I get from left to right:
 
 | Position | hex | hsl | M3 hex | M3 hue |
 | -------- | --- | --- | ------ | ------ |
@@ -26,7 +26,7 @@ If I translate the hex RGB colors to HSL (Hue, Saturation, Lightness) colors I d
 
 So, slightly different hues (212, 210 and 217), give the exact same Material 3 hue!
 
-Converting the colors to CIE-Lch(ab) (Lightness, Chroma, Hue) using [ColorMine][colormine-url] also results in different hues for the three input images with again a different Material 3 hue:
+Converting the colors to CIE-Lch(ab) (Lightness, Chroma, Hue) using [ColorMine][colormine-url] also results in different hues for the three input images with yet another Material 3 hue:
 
 | Position | hex | L | c | h | M3 h |
 | -------- | --- | - | - | - | ---- |
@@ -59,7 +59,7 @@ _Color conversion using CIE-Luv_
 | C7, Green | #73d13d <!--115,209,61--> | lch(75.81, 92.48, **119.67**)| #276c00 | lch( 39.84, 56.92, **122.67**) |
 | C9, Blue | #40a9ff <!--64,169,255--> | lch(67.03, 90.63, **245.90**) | #0062a1 | lch(40.09, 63.78, **247.40**) |
 
-So, the short answer is NO: Material 3 is NOT using your custom color. On the other hand, the differences in CIE-Lch(ab) and CIE-Lch(uv) values seem small. But what if I keep the lc-part of the lch value and use the primary h-value to recalculate the input color?
+So the short answer is NO: Material 3 does NOT use its own color. On the other hand, the differences in CIE-Lch(ab) and CIE-Lch(uv) values ​​seem small. But what if I keep the lc part of the lch value and use the primary h value to recalculate the input color?
 
 Taking the last example: Blue with `rgb(64, 169, 255)` becomes `rgb(76, 168, 255)`: In other words, MORE red, slightly less green, and no difference in blue.
 
