@@ -2,7 +2,8 @@
 template: overrides/main.html
 ---
 
-The Figma Material Theme Builder offers both dynamic color based primary color picking as custom color picking. So let's see what they do!
+Google offers the free Material Theme Builder plugin on its Figma platform.
+<br>This builder offers both dynamic color based primary color picking as custom color picking. So let's see what they do!
 
 ###:material-home-floor-3: Dynamic color
 
@@ -34,7 +35,7 @@ Converting the colors to CIE-Lch(ab) (Lightness, Chroma, Hue) using [ColorMine][
 | middle| \#2d3945 | 23,38 | 9,14 | **260,29** | **284,36** |
 | left | \#aaadb2 | 70,63 | 2,93 | **268,29** | **284,36** |
 
-!!! Success "Material 3 is NOT using the exact hue from the example, but definately using some secret color-fu"
+!!! Success "Material 3 is NOT using the exact hue from the example, but definately using some HCT-fu here"
     This at least explains the fact that I was sometimes not seeing any change in the color palettes!
 
 ###:material-home-floor-3: Custom color
@@ -59,7 +60,7 @@ _Color conversion using CIE-Luv_
 | C7, Green | #73d13d <!--115,209,61--> | lch(75.81, 92.48, **119.67**)| #276c00 | lch( 39.84, 56.92, **122.67**) |
 | C9, Blue | #40a9ff <!--64,169,255--> | lch(67.03, 90.63, **245.90**) | #0062a1 | lch(40.09, 63.78, **247.40**) |
 
-So the short answer is NO: Material 3 does NOT use its own color. On the other hand, the differences in CIE-Lch(ab) and CIE-Lch(uv) values ​​seem small. But what if I keep the lc part of the lch value and use the primary h value to recalculate the input color?
+So the short answer is NO: Material 3 does NOT exactly use YOUR custom color. On the other hand, the differences in CIE-Lch(ab) and CIE-Lch(uv) values ​​seem small. But what if I keep the lc part of the lch value and use the primary h value to recalculate the input color?
 
 Taking the last example: Blue with `rgb(64, 169, 255)` becomes `rgb(76, 168, 255)`: In other words, MORE red, slightly less green, and no difference in blue.
 
@@ -70,8 +71,9 @@ On the left, the custom color, and on the right the extracted source color:
   <rect x="200" y="10"height="80" width="150" rx="0" fill="rgb(76, 168, 255)" stroke="var(--md-primary-fg-color--dark)" stroke-width="2"/>
 </svg>
 
-!!! Success "Material 3 is NOT using the exact hue from your custom color input, but again some secret color-fu"
-    The WHY remains unknown, but the difference is not that noticable...
+!!! Success "Material 3 is NOT using the exact hue from your custom color input, but again some HCT-fu"
+    The WHY remains unknown (haven't checked the sources at this moment), but the difference is not that noticable...
+
 <!--- References to pictures... --->
 
 [mtb-blue-1-png]: ../assets/screenshots/material-theme-builder-blue.png

@@ -12,13 +12,9 @@ As Google says:
 
     Combining color based on tonality, rather than hex value or hue, is one of the key systems that make any color output accessible. Products using dynamic color will meet requirements because the algorithmic combinations that an end-user can experience are designed to meet accessibility standards.
 
-So if Material 3 emphasizes that it uses tonality, in other words _lightness_ as the key value to create a tone palette, it is clear that Material 3 does NOT use sRGB or sRGB-hsl to calculate the tonal steps.
+As HCT uses the CIE-L\* colorspace for lightness, lets see if what that does with a generated tonal palette.
 
-But what then?
-
-Enter the CIE-L* colorspace!
-
-##:material-home-floor-3: CIE L* colorspaces...
+##:material-home-floor-3: CIE L* lightness check...
 
 The CIE L\* colorspace aims to show colors as the human eye perceives colors and lightness. Within that space, there are different methods like CIE-Lab + CIE-Lch(ab) and CIE-Luv + CIE-Lch(cv).
 
@@ -44,12 +40,7 @@ _Color conversion using CIE-Lab_
 
 We see an exact match between the Material 3 lightness and the CIE-Lch(ab) lightness value for primary, secondary and tertiary color palettes.
 
-!!! Success "Material 3 is using the CIE-L* colorspace to determine tonal palettes"
-
-But which one to use? According to the specifications, CIE-Lch(uv) is much more suitable for our situation, as it:
-
-- CIE-Lch(uv) is meant for computer screens
-- CIE-Lch(uv)'s color wheel is better distributed than CIE-Lch(ab) for colors.
+!!! Success "Material 3 is using the CIE-L* colorspace to determine the lightness for tonal palettes"
 
 So. Lets take a look at the primary, secondary and tertiary palettes. Can we make sense of them?
 
@@ -61,8 +52,9 @@ Lets do some observations, and look at the primary palette first!
 
 Below you can see all primary pallets from the "custom" color examples. Please note that all x2%, x5% (except 95%) and x7% values ​​do not belong to the original Material 3 palette, but were added by me to have more tonal steps to work with.
 
-Some noticable things:
+Some noticable things from right to left:
 
+- Some colors have less color in the darker area's than other colors: the red/blue/magenta show more color in darker tones than yellow/lime/green/cyan.
 - There is a clear "break" visible at the 50%/60% tones: exactly the boundary between the dark and the light tones
 - Another "break" is visible in many of the palettes between 80% and 90% (85% was added by me). 
 - Some of the colors are very colorfull in the high lightness parts (say above 90%), and other are not. Especially the yellow, limegreen/green and cyan stand out.
@@ -72,14 +64,18 @@ Some noticable things:
 
 And that is to be expected, as these colors can have more color with high lightness values in the sRGB space when translated from CIE-L\* space than the others. 
 
-The following example from the hsluv site shows this effect: just look at the H (hue) slider: yellow, green and cyan are clearly more colorful than any other color at 100% saturation! Blue, purple and magenta are much more subdued.
+The following example shows this effect: yellow, green and cyan are clearly more colorful than any other color at higher lightness! Blue, purple, magenta and red are much more subdued. The reverse is also valid: blue, purple, magenta and red are much more vibrant in darker tones.
+<br>Notice that dark orange with high color doesn't exist: it turns into brown!
 
-![hsluv-l90-example-png]
+![lch-lightness-examples-png]
 
 !!! Success "Material 3 is palette calculations are again clearly using CIE-L*, but does NOT compensate for the colorful colors in the high lightness parts"
 
 
 ###:material-home-floor-3: Experiment 2: what about palette hue?
+
+As I couldn't find an CAM16 table, I'm using CIE-Lch(ab) and CIE-Lch(uv) to check the hue values with different lightness.
+
 If we look at the next table, we can see that Material 3 is not only varying lightness for the tonal palette, but also varying both chroma and hue. As we have learnt from the above observation, keeping hue stable in the high lightness parts is difficult.
 
 _Color conversion using CIE-L*_
@@ -102,8 +98,8 @@ Looking at the remarks at the [CIELab site][cielab-io-url], the relation between
 
 !!! Quote "Usually, you want shades to have roughly the same hue. That way, shades don't seem to "drift" into a different color"
 
-!!! Success "Material 3 is palette calculations are doing their best to balance hue, lightness and colorfulness"
-    It remains unknown to me (with my knowledge) if Material is using CIE-Lab or CIE-Luv to create the palettes...
+!!! Success "Material 3 HCT palette calculations are doing their best to balance hue, lightness and colorfulness"
+    CAM16 seems to do a wonderful job!
 
 ##:material-home-floor-3: Secondary and Tertiary palette
 
@@ -111,6 +107,7 @@ For starters, the "normal" way to choose a secondary or tertiary color is to mov
 
 ###:material-home-floor-3: Experiment 3: Can we make sense of secondary and tertiary colors?
 
+<!--
 The table below shows colors from 6 examples and the difference in degrees for the hues in both CIE-Lch(ab) and CIE-Lch(uv) space
 
 _Color conversion using CIE-Lab_ (conversions using https://www.easyrgb.com/en/convert.php#inputFORM)
@@ -197,7 +194,7 @@ Hmmm. Not more than an indication that there is a certain consistancy in the "di
 
 !!! Fail "It remains unknown how Material 3 is calculating secondary and tertiary colors on the CIE-Lch(\*) color wheel"
     Other people wil do this in the future I guess, as that happened also for Material 2!
-
+-->
 <!--
 #### Last experiment
 The steps are only a rough approximation, so let's calculate the size and percentage for each part of the color wheel using the min/max values ​​of each part:
@@ -257,7 +254,9 @@ For the secondary color I have no idea, because the direction is to the right in
 
 [all-primary-palettes-png]: ../assets/screenshots/all-primary-palettes.png
 
-[hsluv-l90-example-png]: ..//assets/screenshots/hsluv-l90-example.png
+[hsluv-l90-example-png]: ../assets/screenshots/hsluv-l90-example.png
+
+[lch-lightness-examples-png]: ../assets/screenshots/lch-lightness-examples.png
 
 [ndb-HSV-LCh-max-sat-color-palettes-png]: ../assets/screenshots/HSV-LCh-max-sat-color-palettes.png
 [ndb-color-names-LCh-hues-png]: ../assets/screenshots/color-names-LCh-hues.png

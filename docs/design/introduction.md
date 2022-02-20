@@ -1,9 +1,14 @@
 ---
 template: overrides/main.html
 ---
+\#TODO
 
 ##:material-home-floor-3: Where to start?
 So, you came here to read how to design your own theme. That's good!
+
+- Free Figma account
+- Install Material Theme Builder plugin
+
 
 <!---
 
