@@ -5,6 +5,8 @@ template: overrides/main.html
 ##:material-home-floor-3: Where to start?
 So, you came here to read how to design your own theme. That's good!
 
+<!---
+
 | Theme | primary | secondary | diff | tertiary | diffp | diffs | neutral | diff | variant | diff |
 | ----- |----- |----- |----- |----- |----- |----- |----- |----- |-----|-----
 | Cadmium Green | 160| 147 | -13 | 196 | 36 | 49 | 120 | 40 | 135 | 25 |
@@ -12,8 +14,6 @@ So, you came here to read how to design your own theme. That's good!
 | Magenta | 344 | 348 | 4 | 30 | 46 | 42 | 353 | 9 | 352 | 8 |
 | Red | 358 | 6 | 8 | 41 | 43 | 35 | 5 | 7 | 6 | 8 |
 | Indigo | 221 | 225 | 4 | 304 | 83 | 79 ||||
-
-<!---
 
 r-y = 24 - 90 = 66
 y-g = 90 - 153 =  63

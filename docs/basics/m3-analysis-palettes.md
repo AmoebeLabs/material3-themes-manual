@@ -46,22 +46,45 @@ We see an exact match between the Material 3 lightness and the CIE-Lch(ab) light
 
 !!! Success "Material 3 is using the CIE-L* colorspace to determine tonal palettes"
 
-But which one to use? According to the specifications, CIE-Lch(cv) is much more suitable for our situation, as it:
+But which one to use? According to the specifications, CIE-Lch(uv) is much more suitable for our situation, as it:
 
-- CIE-Lch(cv) is meant for computer screens
-- CIE-Lch(cv)'s colorwheel is better distributed than CIE-Lch(ab) for colors.
-
-##:material-home-floor-3: Primary, Secondary and Tertiary palettes
+- CIE-Lch(uv) is meant for computer screens
+- CIE-Lch(uv)'s color wheel is better distributed than CIE-Lch(ab) for colors.
 
 So. Lets take a look at the primary, secondary and tertiary palettes. Can we make sense of them?
 
-###:material-home-floor-3: Primary palette
+##:material-home-floor-3: Primary palette
 
-If we look at the next table, we can see that Material 3 is not only varying lightness for the tonal palette, but also varying both chroma and hue.
+Lets do some observations, and look at the primary palette first!
+
+###:material-home-floor-3: Experiment 1: how do primary palettes compare?
+
+Below you can see all primary pallets from the "custom" color examples. Please note that all x2%, x5% (except 95%) and x7% values ​​do not belong to the original Material 3 palette, but were added by me to have more tonal steps to work with.
+
+Some noticable things:
+
+- There is a clear "break" visible at the 50%/60% tones: exactly the boundary between the dark and the light tones
+- Another "break" is visible in many of the palettes between 80% and 90% (85% was added by me). 
+- Some of the colors are very colorfull in the high lightness parts (say above 90%), and other are not. Especially the yellow, limegreen/green and cyan stand out.
+<br><br>This is especially visible in the 99% lightness blocks. The above colors are visible, others are barely distinguishable.
+
+![all-primary-palettes-png]
+
+And that is to be expected, as these colors can have more color with high lightness values in the sRGB space when translated from CIE-L\* space than the others. 
+
+The following example from the hsluv site shows this effect: just look at the H (hue) slider: yellow, green and cyan are clearly more colorful than any other color at 100% saturation! Blue, purple and magenta are much more subdued.
+
+![hsluv-l90-example-png]
+
+!!! Success "Material 3 is palette calculations are again clearly using CIE-L*, but does NOT compensate for the colorful colors in the high lightness parts"
+
+
+###:material-home-floor-3: Experiment 2: what about palette hue?
+If we look at the next table, we can see that Material 3 is not only varying lightness for the tonal palette, but also varying both chroma and hue. As we have learnt from the above observation, keeping hue stable in the high lightness parts is difficult.
 
 _Color conversion using CIE-L*_
 
-| color | hex | m3 | Lightness (CIE-Lch(ab)) | Lightness (CIE-Lch(cv)) |
+| color | hex | m3 | Lightness (CIE-Lch(ab)) | Lightness (CIE-Lch(uv)) |
 | ---- | --- | ------- | --| ----------- |
 | Primary20 | #68000a | 20% | lch(19.9%, 49.32, **32.31**) | lch( 19.9%, 64.81, **10.53**) |
 | Primary40 | #bb1826 | 40% | lch(40.17%, 71.32, **31.31**) | lch(40.18%, 119.53, **10.59**) |
@@ -75,24 +98,24 @@ And since I calculated the CIE-Lch(\*) colors from the sRGB hsl colors, the CIE-
 
 Looking at the remarks at the [CIELab site][cielab-io-url], the relation between hue/chroma and luminance means that you can't have all the three parameters at its "best" value, and you have to balance all three:
 
-!!! Quote "From CIELab.io: Oftentimes, you can sacrifice chroma to make luminance and hue work"
+!!! Quote "Oftentimes, you can sacrifice chroma to make luminance and hue work"
 
-!!! Quote "From CIELab.io: Usually, you want shades to have roughly the same hue. That way, shades don't seem to "drift" into a different color"
+!!! Quote "Usually, you want shades to have roughly the same hue. That way, shades don't seem to "drift" into a different color"
 
-!!! Success "Material 3 is palette calculations are probably in the CIE-Lch(\*) colorspace, balancing all three parameters"
-    But which one? Lab is hue stable for 4 hues, where Luv only for the first three...
+!!! Success "Material 3 is palette calculations are doing their best to balance hue, lightness and colorfulness"
+    It remains unknown to me (with my knowledge) if Material is using CIE-Lab or CIE-Luv to create the palettes...
 
-###:material-home-floor-3: Secondary and Tertiary palette
+##:material-home-floor-3: Secondary and Tertiary palette
 
 For starters, the "normal" way to choose a secondary or tertiary color is to move the color wheel a few degrees. However, since the human eye is non-linear and Google makes a point about accessibility standards, a standard color wheel probably isn't what Material 3 uses.
 
-#### First experiment: calculate Hues in CIE-Lch(ab) and CIE-Lch(cv) space
+###:material-home-floor-3: Experiment 3: Can we make sense of secondary and tertiary colors?
 
-The table below shows colors from 6 examples and the difference in degrees for the hues.
+The table below shows colors from 6 examples and the difference in degrees for the hues in both CIE-Lch(ab) and CIE-Lch(uv) space
 
 _Color conversion using CIE-Lab_ (conversions using https://www.easyrgb.com/en/convert.php#inputFORM)
 
-| What | hex | H (CIE-Lch(ab)) | H diff | H (CIE-Lch(cv) | H diff |
+| What | hex | H (CIE-Lch(ab)) | H diff | H (CIE-Lch(uv) | H diff |
 | ---- | --- | ----------- | ------ | - | - |
 | **C1, Red** |||||
 | Primary | #bb1826  | **31.31** |  | **10.59** | | 
@@ -123,42 +146,42 @@ _Color conversion using CIE-Lab_ (conversions using https://www.easyrgb.com/en/c
 Primary to secondary color:
 
 - The difference is small and not equal for all colors
-- The direction on the colorwheel is sometimes to the left, sometimes to the right
+- The direction on the color wheel is sometimes to the left, sometimes to the right
 
 Primary to tertiary color:
 
 - The difference is fairly large and not equal for all colors
-- The direction on the colorwheel is always to the right
+- The direction on the color wheel is always to the right
 
 !!! Success "Material 3 is using some special CIE-Lch(\*) calculation to determine secondary and tertiary tonal palettes"
     The secondary color shows that especially with its right/left direction. The tertiary color is always to the right. Both secondary and tertiary colors show a nonlinear difference though!
 
-!!! Fail "Even CIE-Lch(cv) shows different Hue differences, altough this wheel should have evenly distributed colors"
+!!! Fail "Even CIE-Lch(uv) shows different Hue differences, altough this wheel should have evenly distributed colors"
 
-#### Second experiment: use an adjusted CIE-Lch(ab) space colorwheel
+###:material-home-floor-3: Experiment 4: do color wheels show something?
 
 The website [Nine Degrees Below][ndb-lch-colors-url] has done a lot of work in this part, including some nice pictures.
 
-At first it shows "Why 30 degree steps don't work" in both the sRGB and CIE-Lch(ab) colorspace. Apart from the fact that they don't match, you see a lot of green colors in the sRGB space, and a lot of blue colors in the CIE-Lch(ab) space with even a missing yellow, true green and purple block.
+At first it shows "Why 30 degree steps don't work" in both the sRGB and CIE-Lch(ab) colorspace to determine secondary and tertiary colors. Apart from the fact that they don't match, you see a lot of green colors in the sRGB space, and a lot of blue colors in the CIE-Lch(ab) space with even a missing yellow, true green and purple block.
 
 ![ndb-HSV-LCh-max-sat-color-palettes-png]
 
 
 And if you look at both the HSV and CIE-Lch(ab) color distribution wheels, you understand why: the color distribution is totally different. You also see that purple and blue are very close in the Lab space: so no surpise it is missing from the above palettes at 30 degree intervals.
-![hsv-lch-colorwheel-jpg]
+![hsv-lch-color wheel-jpg]
 
-This gives the following colorwheel for CIE-Lab space:
-![cielab-colorwheel-png]
+This gives the following color wheel for CIE-Lab space:
+![cielab-color wheel-png]
 
 So, they created an adapted CIE-Lch(ab) color palette with 24 colors:
 
 ![ndb-color-names-LCh-hues-png]
 
-With the corresponding 24 colorsteps in the colorwheel:
+With the corresponding 24 colorsteps in the color wheel:
 
 ![ndb-saturation-0_dot_8]
 
-If we use this color wheel to roughly determine the 'steps' between the primary and secondary/tertiary colors, we see the following:
+If I use this color wheel to roughly determine the 'steps' between the primary and secondary/tertiary colors, I get the following:
 
 | Theme | Primary | Secondary | Steps | Tertiary | Steps |
 | -|-|-|-|-|-|
@@ -166,9 +189,16 @@ If we use this color wheel to roughly determine the 'steps' between the primary 
 | C5, Yellow | GY(100) | GY(100) | 0 | G(162) | 4 |
 | C7, Green | YG(130) | YG(130) | 0 | BG(204) | 4 |
 | C9, Blue | VB(270) | B(260) | -1 | V(310) | 3 |
+| C11, Purple | V(310) | V(310) | 0 | VR(0) | 3 |
+| C12, Magenta | VR(342) | VR(0) | 0-1 | YO(65) | 4-5 |
 
-Except for blue, this looks much more consistent than the value of the degrees alone!
+Hmmm. Not more than an indication that there is a certain consistancy in the "distance" between the primary, secondary and tertiary colors, which seem to depend on the primary colors position in the color space.
 
+
+!!! Fail "It remains unknown how Material 3 is calculating secondary and tertiary colors on the CIE-Lch(\*) color wheel"
+    Other people wil do this in the future I guess, as that happened also for Material 2!
+
+<!--
 #### Last experiment
 The steps are only a rough approximation, so let's calculate the size and percentage for each part of the color wheel using the min/max values ​​of each part:
 
@@ -214,7 +244,8 @@ The percentages are pretty close together, with an exception again for the blue 
 
 For the secondary color I have no idea, because the direction is to the right in some cases and left in other cases.
 
-!!! Fail "It remains unknown how Material 3 is calculating secondary and tertiary colors on the CIE-Lch(ab) colorwheel"
+!!! Fail "It remains unknown how Material 3 is calculating secondary and tertiary colors on the CIE-Lch(ab) color wheel"
+-->
 
 <!--- References to pictures... --->
 
@@ -224,12 +255,17 @@ For the secondary color I have no idea, because the direction is to the right in
 
 [m3-theme-c01-palettes-png]: ../assets/screenshots/m3-theme-c01-palettes.png
 
+[all-primary-palettes-png]: ../assets/screenshots/all-primary-palettes.png
+
+[hsluv-l90-example-png]: ..//assets/screenshots/hsluv-l90-example.png
+
 [ndb-HSV-LCh-max-sat-color-palettes-png]: ../assets/screenshots/HSV-LCh-max-sat-color-palettes.png
 [ndb-color-names-LCh-hues-png]: ../assets/screenshots/color-names-LCh-hues.png
 [ndb-saturation-0_dot_8]: ../assets/screenshots/saturation-0_dot_8.png
 
 [hsv-lch-colorwheel-jpg]: ../assets/screenshots/hsv-lch-colorwheel.jpg
 [cielab-colorwheel-png]:  ../assets/screenshots/cielab-colorwheel.png
+
 <!--- External links... --->
 
 [colormine-url]: http://colormine.org/color-converter
@@ -247,7 +283,22 @@ primary40 en tert = 50
 
 yellow
 primary 695f00, hsl(54.29, 100%, 20.59%)
-secondary hsl(52.94, 20.73%, 32.16%), de2000 = 12.87
+secondary #636341, rgb 99,95,65 hsl(52.94, 20.73%, 32.16%), de2000 = 12.87
 406652 , hsl(148.42, 22.89%, 32.55%), de2000 = 31.6654
+
+https://convertingcolors.com/hex-color-636341.html
+
+
+2022.02.20
+Test met rood in de hoek, c50001.
+p40=#c00000, 80=#ffb4a7, 90=#ffdad3, 99=#fcfcfc, luv40=39.932  131.267   28.319  (134), lchuv= 39.932  134.287   12.174°
+s40=#775752, 80=#e7bdb6, 90=#ffdad3, 99=#fcfcfc, luv40=40.161   20.643    7.849 (22.08), 40.161   22.085   20.819°
+t40=#705c2e, 80=#dec48c, 90=#fbdfa5, 99=#fffbf8, luv40=40.076   15.726   30.441
+
+00fbff
+p40=#00696c, 80=#02dce0, 90=#02fbff, 99=#efffff, luv40=39.890  -30.547   -9.129 (31.88), 39.890   31.882  196.638°
+s40=#4a6393, 80=#b0cccc, 90=#cce8e8, 99=#efffff, luv40=41.977  -12.795  -42.562 (44.44), 41.977   44.444  253.268°
+t40=#4c5f7c, 80=#b4c8e9, 90=#d3e3ff, 99=#fdfcff, luv40=39.875  -10.150  -25.817
+
 
 -->
