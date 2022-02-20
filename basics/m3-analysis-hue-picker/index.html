@@ -1359,7 +1359,8 @@
 
   <h1>Hue Picker</h1>
 
-<p>The Figma Material Theme Builder offers both dynamic color based primary color picking as custom color picking. So let's see what they do!</p>
+<p>Google offers the free Material Theme Builder plugin on its Figma platform.
+<br>This builder offers both dynamic color based primary color picking as custom color picking. So let's see what they do!</p>
 <h3 id="dynamic-color"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 3 10 9h-3v8H5v-8H2l10-9m3 8.5V10a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5z"/></svg></span> Dynamic color<a class="headerlink" href="#dynamic-color" title="Permanent link">&para;</a></h3>
 <p>I started my experiments with Google to find some random images for me, drag them into the Material Theme Builder and see what primary color (and secondary/tertiary colors of course) Material 3 appears with.</p>
 <p>In doing so, I sometimes got confused because the theme didn't always really change. So I had to look more closely.</p>
@@ -1456,7 +1457,7 @@
 </tbody>
 </table>
 <div class="admonition success">
-<p class="admonition-title">Material 3 is NOT using the exact hue from the example, but definately using some secret color-fu</p>
+<p class="admonition-title">Material 3 is NOT using the exact hue from the example, but definately using some HCT-fu here</p>
 <p>This at least explains the fact that I was sometimes not seeing any change in the color palettes!</p>
 </div>
 <h3 id="custom-color"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 3 10 9h-3v8H5v-8H2l10-9m3 8.5V10a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5z"/></svg></span> Custom color<a class="headerlink" href="#custom-color" title="Permanent link">&para;</a></h3>
@@ -1545,7 +1546,7 @@
 </tr>
 </tbody>
 </table>
-<p>So the short answer is NO: Material 3 does NOT use its own color. On the other hand, the differences in CIE-Lch(ab) and CIE-Lch(uv) values ​​seem small. But what if I keep the lc part of the lch value and use the primary h value to recalculate the input color?</p>
+<p>So the short answer is NO: Material 3 does NOT exactly use YOUR custom color. On the other hand, the differences in CIE-Lch(ab) and CIE-Lch(uv) values ​​seem small. But what if I keep the lc part of the lch value and use the primary h value to recalculate the input color?</p>
 <p>Taking the last example: Blue with <code>rgb(64, 169, 255)</code> becomes <code>rgb(76, 168, 255)</code>: In other words, MORE red, slightly less green, and no difference in blue.</p>
 <p>On the left, the custom color, and on the right the extracted source color:</p>
 <p><svg viewBox="0 0 400 100" xmlns="http://www.w3.org/2000/svg" width="600px">
@@ -1553,8 +1554,8 @@
   <rect x="200" y="10"height="80" width="150" rx="0" fill="rgb(76, 168, 255)" stroke="var(--md-primary-fg-color--dark)" stroke-width="2"/>
 </svg></p>
 <div class="admonition success">
-<p class="admonition-title">Material 3 is NOT using the exact hue from your custom color input, but again some secret color-fu</p>
-<p>The WHY remains unknown, but the difference is not that noticable...</p>
+<p class="admonition-title">Material 3 is NOT using the exact hue from your custom color input, but again some HCT-fu</p>
+<p>The WHY remains unknown (haven't checked the sources at this moment), but the difference is not that noticable...</p>
 </div>
 <!--- References to pictures... --->
 

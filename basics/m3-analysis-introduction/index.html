@@ -657,7 +657,14 @@
       
         <li class="md-nav__item">
   <a href="#material-3-analyzed" class="md-nav__link">
-     Material 3 analyzed...
+     Material 3 analyzed!
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#but-before-that-the-basis-of-material-3" class="md-nav__link">
+     But before, that, the basis of Material 3...
   </a>
   
 </li>
@@ -1325,7 +1332,14 @@
       
         <li class="md-nav__item">
   <a href="#material-3-analyzed" class="md-nav__link">
-     Material 3 analyzed...
+     Material 3 analyzed!
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#but-before-that-the-basis-of-material-3" class="md-nav__link">
+     But before, that, the basis of Material 3...
   </a>
   
 </li>
@@ -1345,12 +1359,25 @@
 
   <h1>Introduction</h1>
 
-<h2 id="material-3-analyzed"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 3 10 9h-3v8H5v-8H2l10-9m3 8.5V10a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5z"/></svg></span> Material 3 analyzed...<a class="headerlink" href="#material-3-analyzed" title="Permanent link">&para;</a></h2>
+<h2 id="material-3-analyzed"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 3 10 9h-3v8H5v-8H2l10-9m3 8.5V10a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5z"/></svg></span> Material 3 analyzed!<a class="headerlink" href="#material-3-analyzed" title="Permanent link">&para;</a></h2>
 <p>This chapter is about some experiments to see if I can understand how Material 3 works and if it does what it promises.</p>
 <p>For this I used the 22 examples I created to analyze some of the Material 3 aspects.</p>
 <p>From the examples, I can definitely conclude that all themes with different colors give excellent displays with consistent readability and contrast.</p>
 <p>But then again, it raised enough questions about what Material 3 does in some cases.</p>
 <p>Read on, if you're interested <img alt="😄" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f604.svg" title=":smile:" /></p>
+<h2 id="but-before-that-the-basis-of-material-3"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 3 10 9h-3v8H5v-8H2l10-9m3 8.5V10a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5z"/></svg></span> But before, that, the basis of Material 3...<a class="headerlink" href="#but-before-that-the-basis-of-material-3" title="Permanent link">&para;</a></h2>
+<!-- https://bootcamp.uxdesign.cc/perception-based-color-palettes-for-customizable-ui-themes-33f596faf23d -->
+
+<p>With Material 3 for Android 12 a new color system, called <a href="https://github.com/material-foundation/material-color-utilities/blob/main/typescript/hct/hct.ts">HCT (hue, chroma (= colorfulness), tone)</a> is introduced. A color system system built using CAM16 hue and chroma, and L* from CIE-Lab.</p>
+<p>The lightness in CIE-Lab is in line with human perception. If L* is 0, the value corresponds to black and 100 to white, allowing for very accurate color tones. By using L*, a link is also made between the color system, the contrast and thus the accessibility. The difference in contrast between background and foreground is one of the most important factors in the <a href="https://www.w3.org/WAI/standards-guidelines/wcag/">WCAG guidelines</a>.</p>
+<p>Where the contrast ratio is non-linear, CIE-L* is. This means that HCT can simply use differences to guarantee the contrast ratio: a difference of 40 in HCT tone guarantees a contrast ratio &gt;= 3.0, and a difference of 50 guarantees a contrast ratio &gt;= 4.5.</p>
+<p>Below you see 2 examples on why CAM16 is such a great system regarding colors linearity and distribution:</p>
+<p><img alt="colorio-hue-linearity-ebner-fairchild-png" src="../../assets/screenshots/colorio-hue-linearity-ebner-fairchild.png" /></p>
+<p><img alt="colorio-munsell-lightness-png" src="../../assets/screenshots/colorio-munsell-lightness.png" /></p>
+<p>(screenshots taken from <a href="https://github.com/nschloe/colorio/blob/main/README.md">Colorio README</a>)</p>
+<!--- References to pictures... --->
+
+<!--- External links... --->
 
               
             </article>
