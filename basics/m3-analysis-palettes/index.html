@@ -1631,6 +1631,237 @@
 <h2 id="secondary-and-tertiary-palette"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 3 10 9h-3v8H5v-8H2l10-9m3 8.5V10a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5z"/></svg></span> Secondary and Tertiary palette<a class="headerlink" href="#secondary-and-tertiary-palette" title="Permanent link">&para;</a></h2>
 <p>For starters, the "normal" way to choose a secondary or tertiary color is to move the color wheel a few degrees. However, since the human eye is non-linear and Google makes a point about accessibility standards, a standard color wheel probably isn't what Material 3 uses.</p>
 <h3 id="experiment-3-can-we-make-sense-of-secondary-and-tertiary-colors"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 3 10 9h-3v8H5v-8H2l10-9m3 8.5V10a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5z"/></svg></span> Experiment 3: Can we make sense of secondary and tertiary colors?<a class="headerlink" href="#experiment-3-can-we-make-sense-of-secondary-and-tertiary-colors" title="Permanent link">&para;</a></h3>
+<p>Since I could not find a CAM16 converter online, I'm using CIE-LCh(uv) for this experiment. It is not so good in chroma and hue prediction, but maybe we can see something. Chroma is better than the hue prediction.</p>
+<p><strong>Secondary color palette:</strong></p>
+<ul>
+<li>The hue value varies but stays close to the primary hue value with an average difference of <strong>0.05°</strong> (so nearly the same!).</li>
+<li>The chroma value seems to be very constant: <strong>~20</strong> for red and yellow, and around <strong>~16</strong> for the other colors. The chroma for the primary color has all sorts of values, so this can't be a coincidence.</li>
+</ul>
+<p><strong>Tertiary color palette:</strong></p>
+<ul>
+<li>The hue value hovers between 39° and 83° with an average of <strong>61°</strong>.</li>
+<li>The chroma value hovers between 21 and 38 with an average of: <strong>28</strong>.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>What</th>
+<th>hex</th>
+<th>Lightness</th>
+<th>Chroma</th>
+<th>Hue</th>
+<th>H Diff</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>C1, Red</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Primary</td>
+<td>#bb1826</td>
+<td>40.18</td>
+<td>119.54</td>
+<td>10.59°</td>
+<td></td>
+</tr>
+<tr>
+<td>Secondary</td>
+<td>#775654</td>
+<td>39.94</td>
+<td><strong>21.78</strong></td>
+<td>15.68°</td>
+<td>5.09°</td>
+</tr>
+<tr>
+<td>Tertiary</td>
+<td>#735b2e</td>
+<td>40.12</td>
+<td>35.43</td>
+<td>58.38°</td>
+<td>47.79°</td>
+</tr>
+<tr>
+<td><strong>C5, Yellow</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Primary</td>
+<td>#695f00</td>
+<td>39.89</td>
+<td>44.17</td>
+<td>76.85°</td>
+<td></td>
+</tr>
+<tr>
+<td>Secondary</td>
+<td>#635f41</td>
+<td>39.94</td>
+<td><strong>21.50</strong></td>
+<td>79.30°</td>
+<td>2.45°</td>
+</tr>
+<tr>
+<td>Tertiary</td>
+<td>#406652</td>
+<td>39.91</td>
+<td>21.32</td>
+<td>147.29°</td>
+<td>70.44°</td>
+</tr>
+<tr>
+<td><strong>C7, Green</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Primary</td>
+<td>#276c00</td>
+<td>39.84</td>
+<td>56.92</td>
+<td>122.67°</td>
+<td></td>
+</tr>
+<tr>
+<td>Secondary</td>
+<td>#55624b</td>
+<td>39.87</td>
+<td><strong>16.57</strong></td>
+<td>112.00°</td>
+<td>-10.67°</td>
+</tr>
+<tr>
+<td>Tertiary</td>
+<td><a class="magiclink magiclink-github magiclink-issue" href="https://github.com/squidfunk/mkdocs-material/issues/386666" title="GitHub Issue: squidfunk/mkdocs-material #386666">#386666</a></td>
+<td>40.08</td>
+<td>20.82</td>
+<td>192.17°</td>
+<td>69.5°</td>
+</tr>
+<tr>
+<td><strong>C9, Blue</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Primary</td>
+<td>#0062a1</td>
+<td>40.09</td>
+<td>63.78</td>
+<td>247.40°</td>
+<td></td>
+</tr>
+<tr>
+<td>Secondary</td>
+<td>#526070</td>
+<td>40.12</td>
+<td><strong>16.38</strong></td>
+<td>241.81°</td>
+<td>-5.59°</td>
+</tr>
+<tr>
+<td>Tertiary</td>
+<td>#695779</td>
+<td>39.91</td>
+<td>25.61</td>
+<td>286.56°</td>
+<td>39.16°</td>
+</tr>
+<tr>
+<td><strong>C11, Purple</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Primary</td>
+<td>#7a3ac5</td>
+<td>39.90</td>
+<td>94.37</td>
+<td>278.45°</td>
+<td></td>
+</tr>
+<tr>
+<td>Secondary</td>
+<td>#655a70</td>
+<td>39.99</td>
+<td><strong>16.55</strong></td>
+<td>286.00°</td>
+<td>7.55°</td>
+</tr>
+<tr>
+<td>Tertiary</td>
+<td>#80525a</td>
+<td>40.18</td>
+<td>28.83</td>
+<td>1.64°</td>
+<td>83.19°</td>
+</tr>
+<tr>
+<td><strong>C12, Magenta</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Primary</td>
+<td>#b01a72</td>
+<td>39.89</td>
+<td>85.46</td>
+<td>342.77°</td>
+<td></td>
+</tr>
+<tr>
+<td>Secondary</td>
+<td>#735762</td>
+<td>40.15</td>
+<td><strong>16.60</strong></td>
+<td>344.33°</td>
+<td>1.56°</td>
+</tr>
+<tr>
+<td>Tertiary</td>
+<td>#7e5538</td>
+<td>39.94</td>
+<td>38.16</td>
+<td>38.04°</td>
+<td>55.27°</td>
+</tr>
+</tbody>
+</table>
+<p>Although CIE-Lch(uv) is not as good as CAM16, they have similarities as the Material 3 HCT CAM16 values are <a href="https://github.com/material-foundation/material-color-utilities/blob/main/typescript/palettes/core_palette.ts">known for both palettes</a>:</p>
+<p><strong>Secondary color palette:</strong></p>
+<ul>
+<li>hue is the <strong>same</strong> as for the primary color palette</li>
+<li>chroma is fixed to <strong>16</strong>!</li>
+</ul>
+<p>And the <strong>tertiary palette:</strong></p>
+<ul>
+<li>hue is shifted <strong>60°</strong> from the primary color palette</li>
+<li>chroma is fixed to <strong>24</strong>!</li>
+</ul>
+<p>So, the average CIE-LCh(uv) values came close to the actual CAM16 settings, a nice result!</p>
+<!-- https://bottosson.github.io/posts/oklab/ -->
+
 <!--
 The table below shows colors from 6 examples and the difference in degrees for the hues in both CIE-Lch(ab) and CIE-Lch(uv) space
 

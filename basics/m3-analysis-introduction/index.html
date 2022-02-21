@@ -1371,6 +1371,7 @@
 <p>This chapter is about some experiments to see if I can understand how Material 3 works and if it does what it promises.</p>
 <p>For this I used the 22 examples I created to analyze some of the Material 3 aspects.</p>
 <p>From the examples, I can definitely conclude that all themes with different colors give excellent displays with consistent readability and contrast.</p>
+<p>That makes the 22 themes interchangeable without any change to the view and card configuration if you use theme colors of course!</p>
 <p>But then again, it raised enough questions about what Material 3 does in some cases.</p>
 <p>Read on, if you're interested <img alt="😄" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f604.svg" title=":smile:" /></p>
 <h2 id="but-before-that-the-basis-of-material-3"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 3 10 9h-3v8H5v-8H2l10-9m3 8.5V10a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5z"/></svg></span> But before, that, the basis of Material 3...<a class="headerlink" href="#but-before-that-the-basis-of-material-3" title="Permanent link">&para;</a></h2>
@@ -1382,6 +1383,12 @@
 <p>Below you see 2 examples on why CAM16 is such a great system regarding colors linearity and distribution:</p>
 <p><img alt="colorio-hue-linearity-ebner-fairchild-png" src="../../assets/screenshots/colorio-hue-linearity-ebner-fairchild.png" /></p>
 <p><img alt="colorio-munsell-lightness-png" src="../../assets/screenshots/colorio-munsell-lightness.png" /></p>
+<p>And the reason for Google to use CIELab as the method to calculate lightness:</p>
+<p><img alt="colorio-lightness-png" src="../../assets/screenshots/colorio-lightness.png" /></p>
+<div class="admonition success">
+<p class="admonition-title">The mix from CIELab and CAM16 seems to be a great choice for the new Material guidelines</p>
+<p>It uses the best from CIELab - Lightness, and the best from CAM16 - Hue and Chroma!</p>
+</div>
 <p>(screenshots taken from <a href="https://github.com/nschloe/colorio/blob/main/README.md">Colorio README</a>)</p>
 <!--- References to pictures... --->
 
