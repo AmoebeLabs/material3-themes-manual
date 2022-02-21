@@ -107,6 +107,62 @@ For starters, the "normal" way to choose a secondary or tertiary color is to mov
 
 ###:material-home-floor-3: Experiment 3: Can we make sense of secondary and tertiary colors?
 
+Since I could not find a CAM16 converter online, I'm using CIE-LCh(uv) for this experiment. It is not so good in chroma and hue prediction, but maybe we can see something. Chroma is better than the hue prediction.
+
+**Secondary color palette:**
+
+- The hue value varies but stays close to the primary hue value with an average difference of **0.05°** (so nearly the same!).
+- The chroma value seems to be very constant: **~20** for red and yellow, and around **~16** for the other colors. The chroma for the primary color has all sorts of values, so this can't be a coincidence.
+
+**Tertiary color palette:**
+
+- The hue value hovers between 39° and 83° with an average of **61°**.
+- The chroma value hovers between 21 and 38 with an average of: **28**.
+
+
+| What | hex | Lightness | Chroma | Hue | H Diff |
+| ---- | --- | --------- | ------ | - | - |
+| **C1, Red** |||||
+| Primary | #bb1826  | 40.18 | 119.54 | 10.59° ||
+| Secondary | \#775654 |  39.94 |  **21.78** |  15.68° | 5.09° |
+| Tertiary | #735b2e  | 40.12 |  35.43 |  58.38° | 47.79° |
+| **C5, Yellow** |||||
+| Primary | #695f00  |  39.89 | 44.17 |  76.85° | |
+| Secondary | #635f41  | 39.94 |  **21.50** |  79.30° | 2.45° |
+| Tertiary | \#406652  | 39.91 |  21.32 |  147.29° | 70.44° |
+| **C7, Green** |||||
+| Primary | #276c00  | 39.84 |  56.92 | 122.67° | |
+| Secondary | #55624b |  39.87 |  **16.57** | 112.00° | -10.67° |
+| Tertiary | #386666 |   40.08 |  20.82 | 192.17° | 69.5° |
+| **C9, Blue** |||||
+| Primary | #0062a1 |  40.09 |   63.78 | 247.40° | |
+| Secondary | \#526070 |  40.12 |   **16.38** | 241.81° | -5.59° |
+| Tertiary | \#695779 | 39.91 |  25.61 | 286.56° | 39.16° |
+| **C11, Purple** |||||
+| Primary | #7a3ac5 |  39.90 |   94.37 | 278.45° | |
+| Secondary | #655a70 |  39.99 |  **16.55** | 286.00° | 7.55° |
+| Tertiary | #80525a |  40.18 |   28.83 |   1.64° | 83.19° |
+| **C12, Magenta** |||||
+| Primary | #b01a72 |  39.89 |   85.46 |  342.77° | |
+| Secondary | \#735762 |  40.15 |  **16.60** | 344.33° | 1.56° |
+| Tertiary | #7e5538 |  39.94 | 38.16 |  38.04° | 55.27° |
+
+Although CIE-Lch(uv) is not as good as CAM16, they have similarities as the Material 3 HCT CAM16 values are [known for both palettes][m3-palettes-ts-url]:
+
+**Secondary color palette:**
+
+- hue is the **same** as for the primary color palette
+- chroma is fixed to **16**!
+
+And the **tertiary palette:**
+
+- hue is shifted **60°** from the primary color palette
+- chroma is fixed to **24**!
+
+So, the average CIE-LCh(uv) values came close to the actual CAM16 settings, a nice result!
+
+<!-- https://bottosson.github.io/posts/oklab/ -->
+
 <!--
 The table below shows colors from 6 examples and the difference in degrees for the hues in both CIE-Lch(ab) and CIE-Lch(uv) space
 
@@ -272,7 +328,7 @@ For the secondary color I have no idea, because the direction is to the right in
 [lea-verou-lch-colors-in-css-url]: https://lea.verou.me/2020/04/lch-colors-in-css-what-why-and-how/
 [ndb-lch-colors-url]: https://ninedegreesbelow.com/photography/gimp-srgb-lch-color-palettes.html
 [cielab-io-url]: https://cielab.io/
-
+[m3-palettes-ts-url]: https://github.com/material-foundation/material-color-utilities/blob/main/typescript/palettes/core_palette.ts
 <!--
 
 cie2000

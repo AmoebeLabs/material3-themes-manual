@@ -10,6 +10,8 @@ For this I used the 22 examples I created to analyze some of the Material 3 aspe
 
 From the examples, I can definitely conclude that all themes with different colors give excellent displays with consistent readability and contrast.
 
+That makes the 22 themes interchangeable without any change to the view and card configuration if you use theme colors of course!
+
 But then again, it raised enough questions about what Material 3 does in some cases.
 
 Read on, if you're interested :smile:
@@ -30,12 +32,20 @@ Below you see 2 examples on why CAM16 is such a great system regarding colors li
 
 ![colorio-munsell-lightness-png]
 
+And the reason for Google to use CIELab as the method to calculate lightness:
+
+![colorio-lightness-png]
+
+!!! Success "The mix from CIELab and CAM16 seems to be a great choice for the new Material guidelines"
+    It uses the best from CIELab - Lightness, and the best from CAM16 - Hue and Chroma!
+    
 (screenshots taken from [Colorio README][colorio-readme-url])
 
 <!--- References to pictures... --->
 
 [colorio-hue-linearity-ebner-fairchild-png]: ../assets/screenshots/colorio-hue-linearity-ebner-fairchild.png
 [colorio-munsell-lightness-png]: ../assets/screenshots/colorio-munsell-lightness.png
+[colorio-lightness-png]: ../assets/screenshots/colorio-lightness.png
 
 <!--- External links... --->
 
