@@ -16,7 +16,7 @@ As HCT uses the CIE-L\* colorspace for lightness, lets see if what that does wit
 
 ##:material-home-floor-3: CIE L* lightness check...
 
-The CIE L\* colorspace aims to show colors as the human eye perceives colors and lightness. Within that space, there are different methods like CIE-Lab + CIE-Lch(ab) and CIE-Luv + CIE-Lch(cv).
+The CIE L\* colorspace aims to show colors as the human eye perceives colors and lightness. Within that space, there are different methods like CIE-Lab + CIE-Lch(ab) and CIE-Luv + CIE-Lch(uv).
 
 The CIE-Lab and CIE-Lch(ab) use the same colorspace, but use different parameters to calculate the colors. The CIE-lch(\*) method is the easiest one to understand, as it uses degrees for the Hue (0..360 degrees), just as the sRGB(hsl) does.
 
@@ -65,7 +65,7 @@ Some noticable things from right to left:
 And that is to be expected, as these colors can have more color with high lightness values in the sRGB space when translated from CIE-L\* space than the others. 
 
 The following example shows this effect: yellow, green and cyan are clearly more colorful than any other color at higher lightness! Blue, purple, magenta and red are much more subdued. The reverse is also valid: blue, purple, magenta and red are much more vibrant in darker tones.
-<br>Notice that dark orange with high color doesn't exist: it turns into brown!
+<br>Notice that dark orange with high chroma doesn't exist: it turns into brown!
 
 ![lch-lightness-examples-png]
 
@@ -74,7 +74,7 @@ The following example shows this effect: yellow, green and cyan are clearly more
 
 ###:material-home-floor-3: Experiment 2: what about palette hue?
 
-As I couldn't find an CAM16 table, I'm using CIE-Lch(ab) and CIE-Lch(uv) to check the hue values with different lightness.
+As I couldn't find an CAM16 table, I'm using CIE-Lch(ab) and CIE-Lch(uv) to check the hue values with different lightness. Results are less accurate for that reason, but should be close compared to CAM16.
 
 If we look at the next table, we can see that Material 3 is not only varying lightness for the tonal palette, but also varying both chroma and hue. As we have learnt from the above observation, keeping hue stable in the high lightness parts is difficult.
 
@@ -107,7 +107,9 @@ For starters, the "normal" way to choose a secondary or tertiary color is to mov
 
 ###:material-home-floor-3: Experiment 3: Can we make sense of secondary and tertiary colors?
 
-Since I could not find a CAM16 converter online, I'm using CIE-LCh(uv) for this experiment. It is not so good in chroma and hue prediction, but maybe we can see something. Chroma is better than the hue prediction.
+Since I couldn't find a CAM16 converter online, I'm using CIE-LCh(uv) for this experiment. It's not very good at predicting chroma and hue, but maybe we can see something. Chroma is better than the Hue Prediction.
+
+Using the mean values ​​and differences, the variations between CAM16 and CIE-LCh(uv) can be smoothed out.
 
 **Secondary color palette:**
 
@@ -133,7 +135,7 @@ Since I could not find a CAM16 converter online, I'm using CIE-LCh(uv) for this 
 | **C7, Green** |||||
 | Primary | #276c00  | 39.84 |  56.92 | 122.67° | |
 | Secondary | #55624b |  39.87 |  **16.57** | 112.00° | -10.67° |
-| Tertiary | #386666 |   40.08 |  20.82 | 192.17° | 69.5° |
+| Tertiary | \#386666 |   40.08 |  20.82 | 192.17° | 69.5° |
 | **C9, Blue** |||||
 | Primary | #0062a1 |  40.09 |   63.78 | 247.40° | |
 | Secondary | \#526070 |  40.12 |   **16.38** | 241.81° | -5.59° |
@@ -147,19 +149,19 @@ Since I could not find a CAM16 converter online, I'm using CIE-LCh(uv) for this 
 | Secondary | \#735762 |  40.15 |  **16.60** | 344.33° | 1.56° |
 | Tertiary | #7e5538 |  39.94 | 38.16 |  38.04° | 55.27° |
 
-Although CIE-Lch(uv) is not as good as CAM16, they have similarities as the Material 3 HCT CAM16 values are [known for both palettes][m3-palettes-ts-url]:
+And finally, lets see how these observerations stack up against he real thing, as the calculations are [known for both palettes][m3-palettes-ts-url]:
 
 **Secondary color palette:**
 
-- hue is the **same** as for the primary color palette
-- chroma is fixed to **16**!
+- Hue is the **same** as for the primary color palette. Matches with the 0.05° difference.
+- Chroma is fixed to **16**! I got 2x20 and 4x16 (average of 18.2), so still a good match for some of the colors.
 
 And the **tertiary palette:**
 
-- hue is shifted **60°** from the primary color palette
-- chroma is fixed to **24**!
+- Hue is shifted **60°** from the primary color palette. The CIE-LCh(uv) averaged at 61°. Again pretty close!
+- Chroma is fixed to **24**! I got 28 from CIE-LCh(uv). CAM16 is much better for chroma.
 
-So, the average CIE-LCh(uv) values came close to the actual CAM16 settings, a nice result!
+!!! Success "The average CIE-LCh(uv) values and differences are close to the actual CAM16 settings, a nice result!"
 
 <!-- https://bottosson.github.io/posts/oklab/ -->
 
