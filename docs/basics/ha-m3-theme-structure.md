@@ -71,7 +71,7 @@ _Block with the M3 Theme definitions_
 ```
 _Block with the Dark/Light mode mappings, including dark mode modifications for some HA colors_
 
-```yaml title="Block 3 - Mapping of Material 2 and Home Assistant CSS variables" linenums="1" hl_lines=""
+```yaml title="Block 3 - Mapping of Material 2 and Home Assistant CSS variables" linenums="1"
     #
     # Generic CSS Material 2 / Home Assistant definitions using
     # definitions from the light or dark mode colors
