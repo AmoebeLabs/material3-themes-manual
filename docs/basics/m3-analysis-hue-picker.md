@@ -1,13 +1,14 @@
 ---
 template: overrides/main.html
 ---
+<!-- GT/GMY -->
 
 Google offers the free Material Theme Builder plugin on its Figma platform.
-<br>This builder offers both dynamic color based primary color picking as custom color picking. So let's see what they do!
+<br>This builder provides both dynamic color-based primary color selection and custom color selection. So let's see what they do!
 
 ###:material-home-floor-3: Dynamic color
 
-I started my experiments with Google to find some random images for me, drag them into the Material Theme Builder and see what primary color (and secondary/tertiary colors of course) Material 3 appears with.
+I started my experiments with Google to find some random images for me, drag them into the Material Theme Builder, and see what primary color (and secondary/tertiary colors of course) Material 3 appears with.
 
 In doing so, I sometimes got confused because the theme didn't always really change. So I had to look more closely.
 

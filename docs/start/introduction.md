@@ -1,10 +1,11 @@
 ---
 template: overrides/main.html
 ---
+<!-- GT/GMY -->
 
 #Getting started
 
-Welcome to the Material 3 Themes for Home Assistant documentation!
+Welcome to HAM3, the Material 3 Themes for Home Assistant documentation!
 
 [Material 3](https://m3.material.io/) is the latest and greatest version of the Material Design language from Google:
 
@@ -20,7 +21,7 @@ The Material 3 Themes for Home Assistant will only use the color section and ext
 
 ##:material-home-floor-3: How to proceed
 
-If you only want to use one of the available sample themes, go to Installation. You can check out the [examples section][examples-section-md] with 22 pre-made M3 based themes.
+If you only want to use one of the available sample themes, go to Installation. You can check out the [examples section][examples-section-md] with 22 pre-made Material 3 based themes.
 
 If you want to learn more, even design your own Material 3 themes and how to use them in Home Assistant, read more at [Basics][basics-section-md] and [Design Your Own Theme][design-section-md].
 

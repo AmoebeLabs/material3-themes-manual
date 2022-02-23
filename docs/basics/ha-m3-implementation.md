@@ -2,16 +2,17 @@
 template: overrides/main.html
 ---
 
+<!-- GT/GML -->
 
-The M3 series for Home Assistant themes are usually 100% M3 compatible. In addition, it extends the M3 color system to make it more usable in views/cards. 
+HAM3 series themes are usually 100% Material 3 compatible. In addition, it extends the Material 3 color system to make it more usable in views/cards. 
 
 !!! Note "The main driver (for me) is the Swiss Army Knife custom card, which allows for extensive styling and can therefore use all the M3 color system features and extensions"
 
-Below is an overview of the features and extensions that the HA M3 theme implementation provides.
+Below is an overview of the features and extensions that HAM3 provides for Home Assistant themes.
 
 ##:material-home-floor-3: The HA implementation
 
-| What | Material 3 | HA M3 implementation |
+| What | Material 3 | HAM3 implementation |
 | ---- | ---------- |  ------------------- |
 | Palettes | 13 colors per palette | 100% M3 compliant for these 13 colors. <br>Extended with 11 more colors, giving a total of 24 colors per palette showing more usable gradient colors with 12 shades and 12 tints |
 | Surfaces | 2 surfaces, neutral and primary based for light and dark themes with 5 elevation levels | 5 surfaces, neutral, primary, secondary, tertiary and error with 10 elevation levels giving more flexibility and choice |
@@ -49,7 +50,7 @@ You see the following aspects of the theme:
 - Some 'Neutral' surface colors on the Hall, Bedroom and Poseidon rows
 - The background of the segmented arcs (the circles) are also using a 'Neutral' surface elevation color.
 
-All the above colors adapt to the theme mode. The only exception is (barely) visible in the last row: in that case reference colors are used, which are the same in dark and light mode.
+All the above colors adapt to the theme mode. The only exception is (barely) visible in the last row: that row uses reference colors that are the same in dark and light mode.
 
 [![M3 Example Light]][M3 Example Light]
 _A light theme example card (d07)_

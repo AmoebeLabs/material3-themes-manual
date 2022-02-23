@@ -1,10 +1,11 @@
 ---
 template: overrides/main.html
 ---
+<!-- GT/GMY -->
 
 ##:material-home-floor-3: M3 Palettes...
 
-One of the main highlights of Material 3 are the tonal palettes that should meet WCGA standards.
+One of the main highlights of Material 3 is the tonal palettes that should meet WCGA standards.
 
 As Google says:
 
@@ -22,7 +23,7 @@ The CIE-Lab and CIE-Lch(ab) use the same colorspace, but use different parameter
 
 Both CIE-Lab and CIE-Lch use the same Lightness, so we can use either of them to determine the lightness values.
 
-So, lets take some samples from the C1 example and check the lightness values.
+So let's take some examples from the C1 example and check the lightness values.
 
 ![m3-theme-c01-palettes-png]
 
@@ -50,22 +51,23 @@ Lets do some observations, and look at the primary palette first!
 
 ###:material-home-floor-3: Experiment 1: how do primary palettes compare?
 
-Below you can see all primary pallets from the "custom" color examples. Please note that all x2%, x5% (except 95%) and x7% values ​​do not belong to the original Material 3 palette, but were added by me to have more tonal steps to work with.
+Below you can see all primary pallets from the "custom" color examples. Please note that all x2%, x5% (except 95%), and x7% values ​​do not belong to the original Material 3 palette, but were added by me to have more tonal steps to work with.
 
-Some noticable things from right to left:
+Some noticeable things from right to left:
 
-- Some colors have less color in the darker area's than other colors: the red/blue/magenta show more color in darker tones than yellow/lime/green/cyan.
+- Some colors have less color in the darker areas than other colors: the red/blue/magenta show more color in darker tones than yellow/lime/green/cyan.
 - There is a clear "break" visible at the 50%/60% tones: exactly the boundary between the dark and the light tones
 - Another "break" is visible in many of the palettes between 80% and 90% (85% was added by me). 
-- Some of the colors are very colorfull in the high lightness parts (say above 90%), and other are not. Especially the yellow, limegreen/green and cyan stand out.
+- Some of the colors are very colorful in the high lightness parts (say above 90%), and others are not. Especially the yellow, lime green/green, and cyan stand out.
 <br><br>This is especially visible in the 99% lightness blocks. The above colors are visible, others are barely distinguishable.
 
 ![all-primary-palettes-png]
 
 And that is to be expected, as these colors can have more color with high lightness values in the sRGB space when translated from CIE-L\* space than the others. 
 
-The following example shows this effect: yellow, green and cyan are clearly more colorful than any other color at higher lightness! Blue, purple, magenta and red are much more subdued. The reverse is also valid: blue, purple, magenta and red are much more vibrant in darker tones.
-<br>Notice that dark orange with high chroma doesn't exist: it turns into brown!
+The following example shows this effect: yellow, green, and cyan are more colorful than any other color at higher lightness! Blue, purple, magenta, and red are much more subdued. The reverse is also valid: blue, purple, magenta, and red are more vibrant in darker tones.
+
+<br>Note that dark orange with high chroma does not exist: it turns brown!
 
 ![lch-lightness-examples-png]
 
@@ -74,9 +76,9 @@ The following example shows this effect: yellow, green and cyan are clearly more
 
 ###:material-home-floor-3: Experiment 2: what about palette hue?
 
-As I couldn't find an CAM16 table, I'm using CIE-Lch(ab) and CIE-Lch(uv) to check the hue values with different lightness. Results are less accurate for that reason, but should be close compared to CAM16.
+Since I couldn't find a CAM16 table, I use CIE-Lch(ab) and CIE-Lch(uv) to check the tint values ​​with different lightness. The results are therefore less accurate but should be closely compared to CAM16.
 
-If we look at the next table, we can see that Material 3 is not only varying lightness for the tonal palette, but also varying both chroma and hue. As we have learnt from the above observation, keeping hue stable in the high lightness parts is difficult.
+If we look at the next table, we can see that Material 3 is not only varying lightness for the tonal palette but also varying both chroma and hue. As we have learned from the above observation, keeping the hue stable in the high lightness parts is difficult.
 
 _Color conversion using CIE-L*_
 

@@ -1,6 +1,7 @@
 ---
 template: overrides/main.html
 ---
+<!-- GT/GMY -->
 
 ##:material-home-floor-3: Home Assistant Theme Structure
 
@@ -44,7 +45,7 @@ An M3 theme is divided into 3 blocks:
 ```
 _Block with the M3 Theme definitions_
 
-```yaml title="Block 2 - Generic Dark/Light mappings of the reference colors using Material 3 guidelines" linenums="1" hl_lines="1 19"
+```yaml title="Block 2 - Generic Dark/Light mappings of the reference colors using Material 3 guidelines" linenums="1" hl_lines="10 16"
     #
     # Light and Dark specific definitions
     # Derived from theme-ref-palette-* definitions
@@ -70,7 +71,7 @@ _Block with the M3 Theme definitions_
 ```
 _Block with the Dark/Light mode mappings, including dark mode modifications for some HA colors_
 
-```yaml title="Block 3 - Mapping of Material 2 and Home Assistant CSS variables" linenums="1" hl_lines="1 19"
+```yaml title="Block 3 - Mapping of Material 2 and Home Assistant CSS variables" linenums="1" hl_lines=""
     #
     # Generic CSS Material 2 / Home Assistant definitions using
     # definitions from the light or dark mode colors
@@ -85,9 +86,9 @@ _Block with the Material 2 and Home Assistant color mappings._
 
 :material-github: [Github repository][ha-m3-template-url]
 
-Since the HA M3 theme mainly maps M3 reference colors to system colors (light/dark independent) and existing Home Assistant theme settings, it is very easy to use an M3 theme template and add only the generated M3 reference color definitions on an entirely new theme.
+Since the HAM3 theme mainly maps Material 3 reference colors to system colors (light/dark independent) and existing Home Assistant theme settings, it is very easy to use a HAM3 theme template and only assign the generated Material 3 reference color definitions to add to an entirely new theme.
 
-Using a generic theme section where you only need to enter the M3 reference colors has proven to be very effective: the 7 theme examples were created within an hour and used an image from my own picture library to generate the M3 color definition.
+Using a generic theme section where you just need to enter the Material 3 reference colors has proven to be very effective: I created the 7 dynamic theme samples in less than an hour. The primary colors are derived from an image from my image library to generate the M3 color definition.
 
 The following parts should be changed and filled in by you:
 
