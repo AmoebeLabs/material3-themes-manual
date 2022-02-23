@@ -43,11 +43,11 @@ We see an exact match between the Material 3 lightness and the CIE-Lch(ab) light
 
 !!! Success "Material 3 is using the CIE-L* colorspace to determine the lightness for tonal palettes"
 
-So. Lets take a look at the primary, secondary and tertiary palettes. Can we make sense of them?
+So. Let's take a look at the primary, secondary and tertiary palettes. Can we make sense of them?
 
 ##:material-home-floor-3: Primary palette
 
-Lets do some observations, and look at the primary palette first!
+Let's do some observations and look at the primary palette first!
 
 ###:material-home-floor-3: Experiment 1: how do primary palettes compare?
 
@@ -90,7 +90,7 @@ _Color conversion using CIE-L*_
 | Primary80 | #ffb3ac | 80% | lch(79.89%, 30.53, **28.75°**) | lch(79.88%, 52.92, **17.20°**) |
 | Primary99 | #fcfcfc | 99% | lch(98.96%, 0.01, **296.81°**) | lch(98.96%, 0.01, **247.09°**) |
 
-However, the hsl values ​​of the sRGB space show 100% saturation on three of the 5 tones, which may indicate some sort of clipping while calculating the sRGB color from the CIE-Lch(\*) space, which gives a much wider color gamut.
+However, the hsl values ​​of the sRGB space show 100% saturation on three of the 5 tones, which may indicate some sort of clipping while calculating the sRGB color from the CIE-Lch(\*) space, which has a much wider color gamut.
 
 And since I calculated the CIE-Lch(\*) colors from the sRGB hsl colors, the CIE-Lch(\*) colors may not be that accurate with regard to hue and chroma!
 
@@ -151,7 +151,7 @@ Using the mean values ​​and differences, the variations between CAM16 and CI
 | Secondary | \#735762 |  40.15% |  **16.60** | 344.33° | 1.56° |
 | Tertiary | #7e5538 |  39.94% | 38.16 |  38.04° | 55.27° |
 
-And finally, lets see how these observerations stack up against he real thing, as the calculations are [known for both palettes][m3-palettes-ts-url]:
+And finally, lets see how these observerations stack up against the real thing, as the calculations are [known for both palettes][m3-palettes-ts-url]:
 
 **Secondary color palette:**
 

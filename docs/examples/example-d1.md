@@ -14,8 +14,8 @@ This theme uses Purple as the primary color.
 
 <!--- References to pictures... -->
 
-[M3 Example Light]: ../assets/screenshots/m3-example-d01-light.png
-[M3 Example Dark]: ../assets/screenshots/m3-example-d01-dark.png
+[M3 Example Light]: ../assets/screenshots/m3-example-d01-light.webp
+[M3 Example Dark]: ../assets/screenshots/m3-example-d01-dark.webp
 
 [M3 Palettes]: ../assets/screenshots/m3-theme-d01-palettes.png
 [M3 Surfaces]: ../assets/screenshots/m3-theme-d01-surfaces.png
