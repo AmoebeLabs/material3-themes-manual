@@ -4,14 +4,16 @@ template: overrides/main.html
 
 I have made several example themes to give you an idea of ​​the looks & possibilities:
 
-- 10 examples are made using the 'Dynamic' feature of the Figma Material Theme Builder: this uses a picture to determine the colors.
-- The 12 other colors are made using the 'Custom' feature of the Figma Material Theme Builder where I specified the primary color. I used the colors from the [CIElab.io][cielab-io-url] website.
+- 10 examples are made with the 'Dynamic' feature of the Figma Material Theme Builder, which uses an image to determine the colors.
+- The other 12 colors were created using the 'Custom' function of the Figma Material Theme Builder, where I specified the primary color. I used the rainbow colors from the [CIElab.io][cielab-io-url] website: red, volcano, orange, gold, yellow, lime, green, cyan, blue, geekblue, purple and magenta.
+<!--
 <br><br>The 12 colors (excluding grey) from the CIELab site:
-  ![cielab-io-colors-png]
+  # ![cielab-io-colors-png]
+-->
 
-All these examples are available on Github and HACS. Each example contains a link to the sources.
+All these examples are available on Github and HACS. Each example contains a link to the resources.
 
-##:material-home-floor-3: Examples in order of the colorwheel
+##:material-home-floor-3: Examples in order of the color wheel
 
 All examples show [example view \#12][sak-example-12-url] of the Swiss Army Knife custom card.
 

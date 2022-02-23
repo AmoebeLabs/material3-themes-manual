@@ -30,13 +30,13 @@ _Color conversion using CIE-Lab_
 
 | color | hex | m3 | Lightness (sRGB-hsl) | Lightness (CIE-Lch(ab)) |
 | ---- | --- | ------- | --| ----------- |
-| Primary20 | #68000a | 20% | hsl(354.23, 100%, **20.39%**) | lch(**19.9%**, 49.32, 32.31) |
-| Primary40 | #bb1826 | 40% | hsl(354.85, 77.25%, **41.37%**) | lch(**40.17%**, 71.32, 31.31) |
-| Secondary40 | \#775654 | 40% | hsl(3.43, 17.24%, **39.8%**) | lch(**39.94%**, 14.89, 26.09) |
-| Tertiary40 | #735b2e | 40% | hsl(39.13, 42.86%, **31.57%**) | lch(**40.12%**, 29.59, 82.25) |
-| Primary60 | #ff5354 | 60% | hsl(359.65, 100%, **66.27%**) | lch(**59.96%**, 74.62, 29.51) |
-| Primary80 | #ffb3ac | 80% | hsl(5.06, 100%, **83.73%**) | lch(**79.89%**, 30.53, 28.75) |
-| Primary99 | #fcfcfc | 99% | hsl(0, 0%, **98.82%**) | lch(**98.96%**, 0.01, 296.81) |
+| Primary20 | #68000a | 20% | hsl(354.23°, 100%, **20.39%**) | lch(**19.9%**, 49.32, 32.31°) |
+| Primary40 | #bb1826 | 40% | hsl(354.85°, 77.25%, **41.37%**) | lch(**40.17%**, 71.32, 31.31°) |
+| Secondary40 | \#775654 | 40% | hsl(3.43°, 17.24%, **39.8%**) | lch(**39.94%**, 14.89, 26.09°) |
+| Tertiary40 | #735b2e | 40% | hsl(39.13°, 42.86%, **31.57%**) | lch(**40.12%**, 29.59, 82.25°) |
+| Primary60 | #ff5354 | 60% | hsl(359.65°, 100%, **66.27%**) | lch(**59.96%**, 74.62, 29.51°) |
+| Primary80 | #ffb3ac | 80% | hsl(5.06°, 100%, **83.73%**) | lch(**79.89%**, 30.53, 28.75°) |
+| Primary99 | #fcfcfc | 99% | hsl(0°, 0%, **98.82%**) | lch(**98.96%**, 0.01, 296.81°) |
 
 We see an exact match between the Material 3 lightness and the CIE-Lch(ab) lightness value for primary, secondary and tertiary color palettes.
 
@@ -82,11 +82,11 @@ _Color conversion using CIE-L*_
 
 | color | hex | m3 | Lightness (CIE-Lch(ab)) | Lightness (CIE-Lch(uv)) |
 | ---- | --- | ------- | --| ----------- |
-| Primary20 | #68000a | 20% | lch(19.9%, 49.32, **32.31**) | lch( 19.9%, 64.81, **10.53**) |
-| Primary40 | #bb1826 | 40% | lch(40.17%, 71.32, **31.31**) | lch(40.18%, 119.53, **10.59**) |
-| Primary60 | #ff5354 | 60% | lch(59.96%, 74.62, **29.51**) | lch(59.97%  134.35, **11.99**) |
-| Primary80 | #ffb3ac | 80% | lch(79.89%, 30.53, **28.75**) | lch(79.88%, 52.92, **17.20**) |
-| Primary99 | #fcfcfc | 99% | lch(98.96%, 0.01, **296.81**) | lch(98.96%, 0.01, **247.09**) |
+| Primary20 | #68000a | 20% | lch(19.9%, 49.32, **32.31°**) | lch( 19.9%, 64.81, **10.53°**) |
+| Primary40 | #bb1826 | 40% | lch(40.17%, 71.32, **31.31°**) | lch(40.18%, 119.53, **10.59°**) |
+| Primary60 | #ff5354 | 60% | lch(59.96%, 74.62, **29.51°**) | lch(59.97%  134.35, **11.99°**) |
+| Primary80 | #ffb3ac | 80% | lch(79.89%, 30.53, **28.75°**) | lch(79.88%, 52.92, **17.20°**) |
+| Primary99 | #fcfcfc | 99% | lch(98.96%, 0.01, **296.81°**) | lch(98.96%, 0.01, **247.09°**) |
 
 However, the hsl values ​​of the sRGB space show 100% saturation on three of the 5 tones, which may indicate some sort of clipping while calculating the sRGB color from the CIE-Lch(\*) space, which gives a much wider color gamut.
 
@@ -125,29 +125,29 @@ Using the mean values ​​and differences, the variations between CAM16 and CI
 | What | hex | Lightness | Chroma | Hue | H Diff |
 | ---- | --- | --------- | ------ | - | - |
 | **C1, Red** |||||
-| Primary | #bb1826  | 40.18 | 119.54 | 10.59° ||
-| Secondary | \#775654 |  39.94 |  **21.78** |  15.68° | 5.09° |
-| Tertiary | #735b2e  | 40.12 |  35.43 |  58.38° | 47.79° |
+| Primary | #bb1826  | 40.18% | 119.54 | 10.59° ||
+| Secondary | \#775654 |  39.94% |  **21.78** |  15.68° | 5.09° |
+| Tertiary | #735b2e  | 40.12% |  35.43 |  58.38° | 47.79° |
 | **C5, Yellow** |||||
-| Primary | #695f00  |  39.89 | 44.17 |  76.85° | |
-| Secondary | #635f41  | 39.94 |  **21.50** |  79.30° | 2.45° |
-| Tertiary | \#406652  | 39.91 |  21.32 |  147.29° | 70.44° |
+| Primary | #695f00  |  39.89% | 44.17 |  76.85° | |
+| Secondary | #635f41  | 39.94% |  **21.50** |  79.30° | 2.45° |
+| Tertiary | \#406652  | 39.91% |  21.32 |  147.29° | 70.44° |
 | **C7, Green** |||||
-| Primary | #276c00  | 39.84 |  56.92 | 122.67° | |
-| Secondary | #55624b |  39.87 |  **16.57** | 112.00° | -10.67° |
-| Tertiary | \#386666 |   40.08 |  20.82 | 192.17° | 69.5° |
+| Primary | #276c00  | 39.84% |  56.92 | 122.67° | |
+| Secondary | #55624b |  39.87% |  **16.57** | 112.00° | -10.67° |
+| Tertiary | \#386666 |   40.08% |  20.82 | 192.17° | 69.5° |
 | **C9, Blue** |||||
-| Primary | #0062a1 |  40.09 |   63.78 | 247.40° | |
-| Secondary | \#526070 |  40.12 |   **16.38** | 241.81° | -5.59° |
-| Tertiary | \#695779 | 39.91 |  25.61 | 286.56° | 39.16° |
+| Primary | #0062a1 |  40.09% |   63.78 | 247.40° | |
+| Secondary | \#526070 |  40.12% |   **16.38** | 241.81° | -5.59° |
+| Tertiary | \#695779 | 39.91% |  25.61 | 286.56° | 39.16° |
 | **C11, Purple** |||||
-| Primary | #7a3ac5 |  39.90 |   94.37 | 278.45° | |
-| Secondary | #655a70 |  39.99 |  **16.55** | 286.00° | 7.55° |
-| Tertiary | #80525a |  40.18 |   28.83 |   1.64° | 83.19° |
+| Primary | #7a3ac5 |  39.90% |   94.37 | 278.45° | |
+| Secondary | #655a70 |  39.99% |  **16.55** | 286.00° | 7.55° |
+| Tertiary | #80525a |  40.18% |   28.83 |   1.64° | 83.19° |
 | **C12, Magenta** |||||
-| Primary | #b01a72 |  39.89 |   85.46 |  342.77° | |
-| Secondary | \#735762 |  40.15 |  **16.60** | 344.33° | 1.56° |
-| Tertiary | #7e5538 |  39.94 | 38.16 |  38.04° | 55.27° |
+| Primary | #b01a72 |  39.89% |   85.46 |  342.77° | |
+| Secondary | \#735762 |  40.15% |  **16.60** | 344.33° | 1.56° |
+| Tertiary | #7e5538 |  39.94% | 38.16 |  38.04° | 55.27° |
 
 And finally, lets see how these observerations stack up against he real thing, as the calculations are [known for both palettes][m3-palettes-ts-url]:
 

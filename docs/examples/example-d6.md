@@ -10,25 +10,9 @@ This theme uses Teal Blue as the primary color.
 [![release][release-badge]][release-url]
 ![downloads][downloads-badge]
 
-##:material-home-floor-3: Theme Colors
+--8<-- "docs/examples/example-include.md"
 
-
-[![M3 Palettes]][M3 Palettes]
-
-[![M3 Surfaces]][M3 Surfaces]
-
-[![M3 Light]][M3 Light]
-
-[![M3 Dark]][M3 Dark]
-
-##:material-home-floor-3: Examples
-[![M3 Example Light]][M3 Example Light]
-[![M3 Example Dark]][M3 Example Dark]
-
-
-<!---
-  References to pictures...
---->
+<!--- References to pictures... -->
 
 [M3 Example Light]: ../assets/screenshots/m3-example-d06-light.png
 [M3 Example Dark]: ../assets/screenshots/m3-example-d06-dark.png
@@ -38,9 +22,7 @@ This theme uses Teal Blue as the primary color.
 [M3 Light]: ../assets/screenshots/m3-theme-d06-light.png
 [M3 Dark]: ../assets/screenshots/m3-theme-d06-dark.png
 
-<!---
-  References to external links...
---->
+<!--- References to external links... -->
 
 [sak-example-12-url]: https://swiss-army-knife.docs.amoebelabs.com/examples/example-12/
 [m3-theme-github-url]: https://github.com/AmoebeLabs/HA-Theme_M3-D06-TealBlue
