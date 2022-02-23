@@ -1544,9 +1544,9 @@
 <div class="admonition success">
 <p class="admonition-title">Material 3 is using the CIE-L* colorspace to determine the lightness for tonal palettes</p>
 </div>
-<p>So. Lets take a look at the primary, secondary and tertiary palettes. Can we make sense of them?</p>
+<p>So. Let's take a look at the primary, secondary and tertiary palettes. Can we make sense of them?</p>
 <h2 id="primary-palette"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 3 10 9h-3v8H5v-8H2l10-9m3 8.5V10a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5z"/></svg></span> Primary palette<a class="headerlink" href="#primary-palette" title="Permanent link">&para;</a></h2>
-<p>Lets do some observations, and look at the primary palette first!</p>
+<p>Let's do some observations and look at the primary palette first!</p>
 <h3 id="experiment-1-how-do-primary-palettes-compare"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 3 10 9h-3v8H5v-8H2l10-9m3 8.5V10a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5z"/></svg></span> Experiment 1: how do primary palettes compare?<a class="headerlink" href="#experiment-1-how-do-primary-palettes-compare" title="Permanent link">&para;</a></h3>
 <p>Below you can see all primary pallets from the "custom" color examples. Please note that all x2%, x5% (except 95%), and x7% values ​​do not belong to the original Material 3 palette, but were added by me to have more tonal steps to work with.</p>
 <p>Some noticeable things from right to left:</p>
@@ -1617,7 +1617,7 @@
 </tr>
 </tbody>
 </table>
-<p>However, the hsl values ​​of the sRGB space show 100% saturation on three of the 5 tones, which may indicate some sort of clipping while calculating the sRGB color from the CIE-Lch(*) space, which gives a much wider color gamut.</p>
+<p>However, the hsl values ​​of the sRGB space show 100% saturation on three of the 5 tones, which may indicate some sort of clipping while calculating the sRGB color from the CIE-Lch(*) space, which has a much wider color gamut.</p>
 <p>And since I calculated the CIE-Lch(*) colors from the sRGB hsl colors, the CIE-Lch(*) colors may not be that accurate with regard to hue and chroma!</p>
 <p>Looking at the remarks at the <a href="https://cielab.io/">CIELab site</a>, the relation between hue/chroma and luminance means that you can't have all the three parameters at its "best" value, and you have to balance all three:</p>
 <div class="admonition quote">
@@ -1851,7 +1851,7 @@
 </tr>
 </tbody>
 </table>
-<p>And finally, lets see how these observerations stack up against he real thing, as the calculations are <a href="https://github.com/material-foundation/material-color-utilities/blob/main/typescript/palettes/core_palette.ts">known for both palettes</a>:</p>
+<p>And finally, lets see how these observerations stack up against the real thing, as the calculations are <a href="https://github.com/material-foundation/material-color-utilities/blob/main/typescript/palettes/core_palette.ts">known for both palettes</a>:</p>
 <p><strong>Secondary color palette:</strong></p>
 <ul>
 <li>Hue is the <strong>same</strong> as for the primary color palette. Matches with the 0.05° difference.</li>
