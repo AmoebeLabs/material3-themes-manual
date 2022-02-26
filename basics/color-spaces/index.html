@@ -12,14 +12,14 @@
         <meta name="author" content="Marco">
       
       
-        <link rel="canonical" href="https://ha-m3-themes.docs.amoebelabs.com/basics/m3-color-system/">
+        <link rel="canonical" href="https://ha-m3-themes.docs.amoebelabs.com/basics/color-spaces/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.10">
     
     
       
-        <title>The Color System - Material 3 Themes for Home Assistant</title>
+        <title>Color Spaces - Material 3 Themes for Home Assistant</title>
       
     
     
@@ -87,7 +87,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#material-3-color-design-aspects" class="md-skip">
+        <a href="#an-introduction" class="md-skip">
           Skip to content
         </a>
       
@@ -141,7 +141,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              The Color System
+              Color Spaces
             
           </span>
         </div>
@@ -261,7 +261,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../color-spaces/" class="md-tabs__link md-tabs__link--active">
+      <a href="./" class="md-tabs__link md-tabs__link--active">
         Basics
       </a>
     </li>
@@ -536,11 +536,76 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../color-spaces/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Color Spaces
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Color Spaces
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#an-introduction" class="md-nav__link">
+     An introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cie-1931-xyz-the-mother-of-all-color-spaces" class="md-nav__link">
+     CIE 1931 xyz, The Mother of All Color Spaces
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rgb-the-color-space-everybody-knows" class="md-nav__link">
+     RGB, the color space everybody knows
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modeling-the-human-eye" class="md-nav__link">
+     Modeling the human eye
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+     Conclusion
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -550,14 +615,12 @@
               
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_2" type="checkbox" id="__nav_4_2" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_2" data-md-state="indeterminate" type="checkbox" id="__nav_4_2" checked>
       
       
       
@@ -578,48 +641,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          The Color System
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../m3-color-system/" class="md-nav__link">
         The Color System
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#material-3-color-design-aspects" class="md-nav__link">
-     Material 3 color design aspects...
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1339,8 +1365,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#material-3-color-design-aspects" class="md-nav__link">
-     Material 3 color design aspects...
+  <a href="#an-introduction" class="md-nav__link">
+     An introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cie-1931-xyz-the-mother-of-all-color-spaces" class="md-nav__link">
+     CIE 1931 xyz, The Mother of All Color Spaces
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rgb-the-color-space-everybody-knows" class="md-nav__link">
+     RGB, the color space everybody knows
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modeling-the-human-eye" class="md-nav__link">
+     Modeling the human eye
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+     Conclusion
   </a>
   
 </li>
@@ -1358,41 +1412,41 @@
               
                 
 
-  <h1>The Color System</h1>
+  <h1>Color Spaces</h1>
 
-<p>The Material 3 color system breaks with the previous Material Design version in many ways. It contains a number of important new features. All these features are described on the <a href="https://m3.material.io/styles/color/overview">m3 website.</a></p>
-<p>The most important aspects are described below.</p>
-<h2 id="material-3-color-design-aspects"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 3 10 9h-3v8H5v-8H2l10-9m3 8.5V10a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5z"/></svg></span> Material 3 color design aspects...<a class="headerlink" href="#material-3-color-design-aspects" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th><strong>Dynamic color</strong></th>
-<th>.</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>The color system in M3 enables user preferences and needs to interact with an app’s colors. <br><br>Dynamic color specifically describes the convergence of user settings with the system UI and in-app color experiences</td>
-<td><img alt="dynamic color" src="https://lh3.googleusercontent.com/NGUL0eR9CX4ztNMVnfEoDODDlNqWKc0SzdKBIyzVNmPwmqwSRJj0gXXiM8f0TwUfnmWZiVreM9Vy-p_r8ThO2ThXVH1DJr_5s6L1V1J3pEnA=s0" /></td>
-</tr>
-<tr>
-<td><strong>Design tokens &amp; tool</strong></td>
-<td></td>
-</tr>
-<tr>
-<td>Design tokens enable flexibility and consistency across a product by allowing designers to assign an element's color role in a UI, rather than a set value.<br><br>Tokens act as a bridge between an element's assigned role and the chosen color value for a role. With the addition of tokens, designing for relationships of elements is more fundamental than selecting specific colors</td>
-<td><img alt="tokens" src="https://lh3.googleusercontent.com/6AeOFxLCf_u2S5X9xTe7BjB7f7-b8FN4ypCMoJKBO7eUTHjSkXqc0F1kykSBYwze9Rdn9-dggVszNj68iyciGH6z9qLXZbYF5gsDXUCncOfA=s0" /></td>
-</tr>
-<tr>
-<td><strong>Accessibility</strong></td>
-<td></td>
-</tr>
-<tr>
-<td>Dynamic color is designed to meet accessibility standards for color contrast. The system of tonal palettes is central to making any color scheme accessible by default. <br><br>Combining color based on tonality, rather than hex value or hue, is one of the key systems that make any color output accessible. Products using dynamic color will meet requirements because the algorithmic combinations that an end-user can experience are designed to meet accessibility standards.</td>
-<td><img alt="access" src="https://lh3.googleusercontent.com/aF8CvgyX659D64Wim3zFsTgd63wXh1HBQ_XTyaMX6lARG7VEDkH-0KhmQmPgBOpqOwS6RMQZHRXUQ8qZITmaI4hF7vfexRA7kZhAAE61nd1Mxg=s0" /></td>
-</tr>
-</tbody>
-</table>
+<h2 id="an-introduction"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 3 10 9h-3v8H5v-8H2l10-9m3 8.5V10a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5z"/></svg></span> An introduction<a class="headerlink" href="#an-introduction" title="Permanent link">&para;</a></h2>
+<p>To ensure you understand what Material 3 is all about, it helps to understand how color spaces work, as these are a very important part of Material 3.</p>
+<p>Color spaces are mathematical models describing the way colors can be represented. The easiest way of visualising them is to think of a box containing all the possible colors that can be produced by mixing the three primary colors of light: red, green and blue.</p>
+<h2 id="cie-1931-xyz-the-mother-of-all-color-spaces"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 3 10 9h-3v8H5v-8H2l10-9m3 8.5V10a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5z"/></svg></span> CIE 1931 xyz, The Mother of All Color Spaces<a class="headerlink" href="#cie-1931-xyz-the-mother-of-all-color-spaces" title="Permanent link">&para;</a></h2>
+<p>The International Commission on Illumination (Commission Internationale de l'Éclairage or CIE) is the world’s authority on light. Under its auspices, a scheme was developed for modeling color, based upon human vision. The resulting CIE 1931 XYZ color space, an early attempt based on measurements of human color perception, is the basis for almost all other color spaces today.</p>
+<p>And that was in 1931 when there were no computers...</p>
+<p><img alt="cie-1931-diagram-img" src="../../assets/screenshots/cie-1931_diagram.jpg" /></p>
+<h2 id="rgb-the-color-space-everybody-knows"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 3 10 9h-3v8H5v-8H2l10-9m3 8.5V10a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5z"/></svg></span> RGB, the color space everybody knows<a class="headerlink" href="#rgb-the-color-space-everybody-knows" title="Permanent link">&para;</a></h2>
+<p>sRGB was created in 1996 by HP and Microsoft for use on monitors, printers and the Internet. It’s the default color space in all digital cameras and scanners as well as photo printing kiosk monitors, and may be the only color space supported by many of these devices.</p>
+<p>The RGB color space is normally shown graphically as RGB diagrams in which the amount of green is mapped along the one axis, the amount of red on another, and the amount of blue on a third, with saturation increasing outwards from the center. To fit three axes to a two-dimensional format, mathematicians have come up with a diagram that looks like the illustration below.</p>
+<p><img alt="color-spaces-img" src="../../assets/screenshots/color-spaces.jpg" /></p>
+<p>Working with RGB however is rather difficult: as it is an additive method, it is hard to see from the hexadecimal value which color it is, how bright it is, and the lightness value.</p>
+<p>HSB (Hue, Saturation, Brightness) and HSL (Hue, Saturation, Lightness/Luminance) are other methods to describe the color and are far easier to understand.</p>
+<h2 id="modeling-the-human-eye"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 3 10 9h-3v8H5v-8H2l10-9m3 8.5V10a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5z"/></svg></span> Modeling the human eye<a class="headerlink" href="#modeling-the-human-eye" title="Permanent link">&para;</a></h2>
+<p>sRGB is great for computers and photography, but it doesn't come close to predict how our eyes perceive hue, chroma and lightness.</p>
+<p>Don't use it for that!</p>
+<p>The CIE 1931 color model is from 1931, and was a first <em>attempt</em> to model the human color perception.</p>
+<p>Several models have replaced the original CIE xyz model to better model the human eyes. Different models are created for computers screens and things like print and paint.</p>
+<p>Our eyes are special. They can see many colors, but need a minimal color difference to recognize them as different colors. We also have different lightness and chroma (colorfulness) perception for different colors.</p>
+<p>All the newer models try to do a better job in modeling our eyes. CIELab, CIELuv and CAM16 are the best known among them. CIELuv is suited better for computers screens than CIELab, and CAM16 (from 2016) is the latest and greatest of the color space models.</p>
+<p>None of them is perfect in predicting how hue, chroma and lightness are percieved.</p>
+<p>To give you an idea how these modern models perform, I included some screenshots.</p>
+<p><img alt="colorio-hue-linearity-ebner-fairchild-img" src="../../assets/screenshots/colorio-hue-linearity-ebner-fairchild.png" />
+<em>Hue linearity: diagrams should be balanced</em></p>
+<p><br><img alt="colorio-munsell-lightness-img" src="../../assets/screenshots/colorio-munsell-lightness.png" />
+<em>Color prediction: diagrams should be circles at best</em></p>
+<p><br><img alt="colorio-lightness-img" src="../../assets/screenshots/colorio-lightness.png" />
+<em>Lightness prediction: diagrams should follow the Fairchild-Chen data</em></p>
+<h2 id="conclusion"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 3 10 9h-3v8H5v-8H2l10-9m3 8.5V10a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5z"/></svg></span> Conclusion<a class="headerlink" href="#conclusion" title="Permanent link">&para;</a></h2>
+<p>None of the models can predict how our eyes perceive colors.</p>
+<p>Now we know this, what is all the fuzz about Material 3? Why is Material 3 so different from Material 2?</p>
+<p>And why did I like it so much, that I wanted to use this for Home Assistant themes?</p>
+<!-- References to images -->
 
               
             </article>
@@ -1411,7 +1465,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../color-spaces/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Color Spaces" rel="prev">
+        <a href="../../using/in-cards/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Use in Cards" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1420,20 +1474,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Color Spaces
+              Use in Cards
             </div>
           </div>
         </a>
       
       
         
-        <a href="../m3-dynamic-color/" class="md-footer__link md-footer__link--next" aria-label="Next: Dynamic Color aka You!" rel="next">
+        <a href="../m3-color-system/" class="md-footer__link md-footer__link--next" aria-label="Next: The Color System" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Dynamic Color aka You!
+              The Color System
             </div>
           </div>
           <div class="md-footer__button md-icon">
