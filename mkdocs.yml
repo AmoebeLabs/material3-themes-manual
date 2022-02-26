@@ -37,6 +37,8 @@ extra_css:
   
 extra:
   social:
+    - icon: material/cup
+      link: https://www.buymeacoffee.com/amoebelabs 
     - icon: fontawesome/brands/github
       link: https://github.com/amoebelabs  
     - icon: fontawesome/brands/instagram
