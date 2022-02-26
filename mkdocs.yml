@@ -38,6 +38,7 @@ extra_css:
 extra:
   social:
     - icon: material/cup
+    # - icon: m3/m3-logo
       link: https://www.buymeacoffee.com/amoebelabs 
     - icon: fontawesome/brands/github
       link: https://github.com/amoebelabs  
@@ -71,7 +72,7 @@ markdown_extensions:
       emoji_generator: !!python/name:materialx.emoji.to_svg
       options:
         custom_icons:
-          - docs/overrides/.icons
+          - overrides/.icons
   - pymdownx.highlight
   - pymdownx.inlinehilite
   - pymdownx.keys
@@ -101,10 +102,11 @@ nav:
     - Introduction: start/introduction.md
     - Installation: start/installation.md
     - Changelog: changelog/changelog.md
-  - Using M3:
+  - Using HAM3:
       - Compatibility: using/compatibility.md
       - Use in Cards: using/in-cards.md
   - Basics:
+    - Color Spaces: basics/color-spaces.md
     - Material 3 Basics:
       - The Color System: basics/m3-color-system.md
       - Dynamic Color aka You!: basics/m3-dynamic-color.md
@@ -112,7 +114,7 @@ nav:
       - Introduction: basics/m3-analysis-introduction.md
       - Hue Picker: basics/m3-analysis-hue-picker.md
       - Palettes: basics/m3-analysis-palettes.md
-    - HA M3 Implementation:
+    - HAM3 Implementation:
       - Introduction: basics/ha-m3-introduction.md
       - Implementation: basics/ha-m3-implementation.md
       - Theme structure: basics/ha-m3-theme-structure.md

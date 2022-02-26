@@ -25,8 +25,8 @@ Each Home Assistant dark/light theme follows the same structure. It has definiti
         css-text-color: white
 ```
 
-##:material-home-floor-3: HA M3 Theme Structure
-The HA M3 theme structure is no different, it has to comply with the HA structure.
+##:material-home-floor-3: HAM3 Theme Structure
+The HAM3 theme structure is no different, it has to comply with the HA structure.
 
 An M3 theme is divided into 3 blocks:
 
@@ -82,7 +82,7 @@ _Block with the Dark/Light mode mappings, including dark mode modifications for 
 ```
 _Block with the Material 2 and Home Assistant color mappings._
 
-##:material-home-floor-3: HA M3 Theme Template
+##:material-home-floor-3: HAM3 Theme Template
 
 :material-github: [Github repository][ha-m3-template-url]
 
@@ -97,7 +97,7 @@ The following parts should be changed and filled in by you:
 - the READme
 - the main one: the `themes/m3-xx-yyyy.yaml` file. It should be renamed of course, and the generated m3 reference definitions should be inserted (see comments in that file where that should be done)
 
-!!! Warning "To keep compatibility between HA M3 themes, it is strongly advised NOT to change generic theme parts!"
+!!! Warning "To keep compatibility between HAM3 themes, it is strongly advised NOT to change generic theme parts!"
 
 
 

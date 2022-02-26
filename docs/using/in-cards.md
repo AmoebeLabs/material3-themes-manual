@@ -4,7 +4,7 @@ template: overrides/main.html
 \#TODO
 
 ##:material-home-floor-3: Use the Theme!
-The most important point in using all the features of the HA M3 themes is to _use_ the theme color definitions, and never to use fixed colors!
+The most important point in using all the features of the HAM3 themes is to _use_ the theme color definitions, and never to use fixed colors!
 
 === "Do"
     ```yaml

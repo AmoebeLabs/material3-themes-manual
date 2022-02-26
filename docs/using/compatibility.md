@@ -17,7 +17,7 @@ Since the introduction of light and dark theme modes, the Home Assistant UI take
 - The ability to create a theme from your favorite image
 
 ###:material-home-floor-3: Home Assistant built-in cards
-As with the main UI, the built-in cards should integrate seamlessly with any HA M3 Theme.
+As with the main UI, the built-in cards should integrate seamlessly with any HAM3 Theme.
 
 !!! Warning "I did not test ALL the built-in cards, so there might still be some bugs present!"
 
@@ -25,7 +25,7 @@ As with the main UI, the built-in cards should integrate seamlessly with any HA 
 
 ###:material-home-floor-3: Theme mode compatible custom cards
 
-If the custom card is already fully compatible with dark and light theme modes, then, as with Home Assistant itself and the built-in cards, I wouldn't expect any problems with the HA M3 themes, unless the custom card requires its own dedicated theme.
+If the custom card is already fully compatible with dark and light theme modes, then, as with Home Assistant itself and the built-in cards, I wouldn't expect any problems with the HAM3 themes, unless the custom card requires its own dedicated theme.
 
 ###:material-home-floor-3: Any other case...
 

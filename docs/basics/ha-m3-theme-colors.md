@@ -2,7 +2,7 @@
 template: overrides/main.html
 ---
 
-##:material-home-floor-3: HA M3 Theme colors
+##:material-home-floor-3: HAM3 Theme colors
 
 - Palettes
 - Surfaces
@@ -10,7 +10,7 @@ template: overrides/main.html
 - Dark theme color mapping
 
 ##:material-home-floor-3: Reference colors
-The HA M3 implementation defines no less than **264** reference colors. Some are theme mode independent, others are specific for light or dark modes.
+The HAM3 implementation defines no less than **264** reference colors. Some are theme mode independent, others are specific for light or dark modes.
 
 ###:material-home-floor-3: Palette Reference colors
 
