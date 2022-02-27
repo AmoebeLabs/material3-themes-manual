@@ -27,23 +27,24 @@ So let's take some examples from the C1 example and check the lightness values.
 
 ![m3-theme-c01-palettes-png]
 
-_Color conversion using CIE-Lab_
+_Color conversion using sRGB and CIE-Lab_
 
 | color | hex | m3 | Lightness (sRGB-hsl) | Lightness (CIE-Lch(ab)) |
 | ---- | --- | ------- | --| ----------- |
-| Primary20 | #68000a | 20% | hsl(354.23°, 100%, **20.39%**) | lch(**19.9%**, 49.32, 32.31°) |
-| Primary40 | #bb1826 | 40% | hsl(354.85°, 77.25%, **41.37%**) | lch(**40.17%**, 71.32, 31.31°) |
-| Secondary40 | \#775654 | 40% | hsl(3.43°, 17.24%, **39.8%**) | lch(**39.94%**, 14.89, 26.09°) |
-| Tertiary40 | #735b2e | 40% | hsl(39.13°, 42.86%, **31.57%**) | lch(**40.12%**, 29.59, 82.25°) |
-| Primary60 | #ff5354 | 60% | hsl(359.65°, 100%, **66.27%**) | lch(**59.96%**, 74.62, 29.51°) |
-| Primary80 | #ffb3ac | 80% | hsl(5.06°, 100%, **83.73%**) | lch(**79.89%**, 30.53, 28.75°) |
-| Primary99 | #fcfcfc | 99% | hsl(0°, 0%, **98.82%**) | lch(**98.96%**, 0.01, 296.81°) |
+| Primary20 | #68000a | 20% | hsl(354.2°, 100%, **20.3%**) | lch(**19.9%**, 49.3, 32.3°) |
+| Primary40 | #bb1826 | 40% | hsl(354.8°, 77.2%, **41.3%**) | lch(**40.1%**, 71.3, 31.3°) |
+| Secondary40 | \#775654 | 40% | hsl(3.4°, 17.2%, **39.8%**) | lch(**39.9%**, 14.8, 26.1°) |
+| Tertiary40 | #735b2e | 40% | hsl(39.1°, 42.8%, **31.5%**) | lch(**40.1%**, 29.5, 82.2°) |
+| Primary60 | #ff5354 | 60% | hsl(359.6°, 100%, **66.2%**) | lch(**59.9%**, 74.6, 29.5°) |
+| Primary80 | #ffb3ac | 80% | hsl(5.0°, 100%, **83.7%**) | lch(**79.9%**, 30.5, 28.7°) |
+| Primary99 | #fcfcfc | 99% | hsl(0°, 0%, **98.8%**) | lch(**98.9%**, 0.01, 296.8°) |
 
-We see an exact match between the Material 3 lightness and the CIE-Lch(ab) lightness value for primary, secondary and tertiary color palettes.
+We see an exact match between the Material 3 lightness and the CIE-Lch(ab) lightness value for primary, secondary, and tertiary color palettes.
+<br>You may also notice how the sRGB values ​​are sometimes close and sometimes very different from these CIE values, which is why sRGB is not suitable for this kind of calculation.
 
 !!! Success "Material 3 is using the CIE-L* colorspace to determine the lightness for tonal palettes"
 
-So. Let's take a look at the primary, secondary and tertiary palettes. Can we make sense of them?
+Now let's take a look at the primary, secondary and tertiary palettes. Can we make sense of them?
 
 ##:material-home-floor-3: Primary palette
 
@@ -67,7 +68,7 @@ And that is to be expected, as these colors can have more color with high lightn
 
 The following example shows this effect: yellow, green, and cyan are more colorful than any other color at higher lightness! Blue, purple, magenta, and red are much more subdued. The reverse is also valid: blue, purple, magenta, and red are more vibrant in darker tones.
 
-<br>Note that dark orange with high chroma does not exist: it turns brown!
+<br>Note that dark orange with high chroma does not exist: that is what we call brown! The same is valid for yellow: mixing that color with black also turns brownish.
 
 ![lch-lightness-examples-png]
 
@@ -84,11 +85,11 @@ _Color conversion using CIE-L*_
 
 | color | hex | m3 | Lightness (CIE-Lch(ab)) | Lightness (CIE-Lch(uv)) |
 | ---- | --- | ------- | --| ----------- |
-| Primary20 | #68000a | 20% | lch(19.9%, 49.32, **32.31°**) | lch( 19.9%, 64.81, **10.53°**) |
-| Primary40 | #bb1826 | 40% | lch(40.17%, 71.32, **31.31°**) | lch(40.18%, 119.53, **10.59°**) |
-| Primary60 | #ff5354 | 60% | lch(59.96%, 74.62, **29.51°**) | lch(59.97%  134.35, **11.99°**) |
-| Primary80 | #ffb3ac | 80% | lch(79.89%, 30.53, **28.75°**) | lch(79.88%, 52.92, **17.20°**) |
-| Primary99 | #fcfcfc | 99% | lch(98.96%, 0.01, **296.81°**) | lch(98.96%, 0.01, **247.09°**) |
+| Primary20 | #68000a | 20% | lch(19.9%, 49.3, **32.3°**) | lch( 19.9%, 64.8, **10.5°**) |
+| Primary40 | #bb1826 | 40% | lch(40.2%, 71.3, **31.3°**) | lch(40.2%, 119.5, **10.6°**) |
+| Primary60 | #ff5354 | 60% | lch(59.9%, 74.6, **29.5°**) | lch(59.9%  134.3, **11.9°**) |
+| Primary80 | #ffb3ac | 80% | lch(79.9%, 30.5, **28.7°**) | lch(79.9%, 52.9, **17.2°**) |
+| Primary99 | #fcfcfc | 99% | lch(98.9%, 0.01, **296.8°**) | lch(98.9%, 0.01, **247.1°**) |
 
 However, the hsl values ​​of the sRGB space show 100% saturation on three of the 5 tones, which may indicate some sort of clipping while calculating the sRGB color from the CIE-Lch(\*) space, which has a much wider color gamut.
 
@@ -127,29 +128,29 @@ Using the mean values ​​and differences, the variations between CAM16 and CI
 | What | hex | Lightness | Chroma | Hue | H Diff |
 | ---- | --- | --------- | ------ | - | - |
 | **C1, Red** |||||
-| Primary | #bb1826  | 40.18% | 119.54 | 10.59° ||
-| Secondary | \#775654 |  39.94% |  **21.78** |  15.68° | 5.09° |
-| Tertiary | #735b2e  | 40.12% |  35.43 |  58.38° | 47.79° |
+| Primary | #bb1826  | 40.2% | 119.5 | 10.6° ||
+| Secondary | \#775654 |  39.9% |  **21.8** |  15.68° | 5.1° |
+| Tertiary | #735b2e  | 40.1% |  35.4 |  58.4° | 47.8° |
 | **C5, Yellow** |||||
-| Primary | #695f00  |  39.89% | 44.17 |  76.85° | |
-| Secondary | #635f41  | 39.94% |  **21.50** |  79.30° | 2.45° |
-| Tertiary | \#406652  | 39.91% |  21.32 |  147.29° | 70.44° |
+| Primary | #695f00  |  39.9% | 44.2 |  76.9° | |
+| Secondary | #635f41  | 39.9% |  **21.5** |  79.3° | 2.5° |
+| Tertiary | \#406652  | 39.9% |  21.3 |  147.3° | 70.4° |
 | **C7, Green** |||||
-| Primary | #276c00  | 39.84% |  56.92 | 122.67° | |
-| Secondary | #55624b |  39.87% |  **16.57** | 112.00° | -10.67° |
-| Tertiary | \#386666 |   40.08% |  20.82 | 192.17° | 69.5° |
+| Primary | #276c00  | 39.8% |  56.2 | 122.7° | |
+| Secondary | #55624b |  39.9% |  **16.6** | 112.0° | -10.7° |
+| Tertiary | \#386666 |   40.1% |  20.8 | 192.2° | 69.5° |
 | **C9, Blue** |||||
-| Primary | #0062a1 |  40.09% |   63.78 | 247.40° | |
-| Secondary | \#526070 |  40.12% |   **16.38** | 241.81° | -5.59° |
-| Tertiary | \#695779 | 39.91% |  25.61 | 286.56° | 39.16° |
+| Primary | #0062a1 |  40.1% |   63.8 | 247.4° | |
+| Secondary | \#526070 |  40.1% |   **16.4** | 241.8° | -5.6° |
+| Tertiary | \#695779 | 39.9% |  25.61 | 286.6° | 39.2° |
 | **C11, Purple** |||||
-| Primary | #7a3ac5 |  39.90% |   94.37 | 278.45° | |
-| Secondary | #655a70 |  39.99% |  **16.55** | 286.00° | 7.55° |
-| Tertiary | #80525a |  40.18% |   28.83 |   1.64° | 83.19° |
+| Primary | #7a3ac5 |  39.9% |   94.4 | 278.5° | |
+| Secondary | #655a70 |  40.0% |  **16.6** | 286.0° | 7.6° |
+| Tertiary | #80525a |  40.2% |   28.8 |   1.6° | 83.2° |
 | **C12, Magenta** |||||
-| Primary | #b01a72 |  39.89% |   85.46 |  342.77° | |
-| Secondary | \#735762 |  40.15% |  **16.60** | 344.33° | 1.56° |
-| Tertiary | #7e5538 |  39.94% | 38.16 |  38.04° | 55.27° |
+| Primary | #b01a72 |  39.9% |   85.5 |  342.8° | |
+| Secondary | \#735762 |  40.1% |  **16.6** | 344.3° | 1.6° |
+| Tertiary | #7e5538 |  39.9% | 38.2 |  38.0° | 55.3° |
 
 And finally, lets see how these observerations stack up against the real thing, as the calculations are [known for both palettes][m3-palettes-ts-url]:
 
@@ -322,8 +323,8 @@ For the secondary color I have no idea, because the direction is to the right in
 [ndb-color-names-LCh-hues-png]: ../assets/screenshots/color-names-LCh-hues.png
 [ndb-saturation-0_dot_8]: ../assets/screenshots/saturation-0_dot_8.png
 
-[hsv-lch-colorwheel-jpg]: ../assets/screenshots/hsv-lch-colorwheel.jpg
-[cielab-colorwheel-png]:  ../assets/screenshots/cielab-colorwheel.png
+[hsv-lch-color wheel-jpg]: ../assets/screenshots/hsv-lch-color wheel.jpg
+[cielab-color wheel-png]:  ../assets/screenshots/cielab-color wheel.png
 
 <!--- External links... --->
 

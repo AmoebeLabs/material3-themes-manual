@@ -37,7 +37,7 @@ extra_css:
   
 extra:
   social:
-    - icon: m3/bmc-logo
+    - icon: bmc/bmc-logo
       link: https://www.buymeacoffee.com/amoebelabs 
     - icon: fontawesome/brands/github
       link: https://github.com/amoebelabs  

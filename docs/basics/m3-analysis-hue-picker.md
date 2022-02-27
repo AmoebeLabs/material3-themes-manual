@@ -22,19 +22,19 @@ If I translate the hex RGB colors to HSL colors (Hue, Saturation, Lightness) I g
 
 | Position | hex | hsl | M3 hex | M3 hue |
 | -------- | --- | --- | ------ | ------ |
-| left | \#cbd5e1 | hsl(**212.73**, 26.83%, 83.92%) | \#4285f4 | **217.42** |
-| middle | \#2d3945 | hsl(**210**, 21.05%, 22.35%) | \#4285f4 | **217.42** |
-| right | \#aaadb2 | hsl(**217.5**, 4.94%, 68.24%) | \#4285f4 | **217.42** |
+| left | \#cbd5e1 | hsl(**212.7°**, 26.83%, 83.92%) | \#4285f4 | **217.4°** |
+| middle | \#2d3945 | hsl(**210°**, 21.05%, 22.35%) | \#4285f4 | **217.4°** |
+| right | \#aaadb2 | hsl(**217.5°**, 4.94%, 68.24%) | \#4285f4 | **217.4°** |
 
-So, slightly different hues (212, 210 and 217), give the exact same Material 3 hue!
+So, slightly different hues (212°, 210° and 217°), give the exact same Material 3 hue!
 
 Converting the colors to CIE-Lch(ab) (Lightness, Chroma, Hue) using [ColorMine][colormine-url] also results in different hues for the three input images with yet another Material 3 hue:
 
 | Position | hex | L | c | h | M3 h |
 | -------- | --- | - | - | - | ---- |
-| left | \#cbd5e1 | 84,85 | 7,15 | **261,54** | **284,36** |
-| middle| \#2d3945 | 23,38 | 9,14 | **260,29** | **284,36** |
-| left | \#aaadb2 | 70,63 | 2,93 | **268,29** | **284,36** |
+| left | \#cbd5e1 | 84,8% | 7,15 | **261,5°** | **284,3°** |
+| middle| \#2d3945 | 23,3% | 9,14 | **260,2°** | **284,3°** |
+| left | \#aaadb2 | 70,3% | 2,93 | **268,2°** | **284,3°** |
 
 !!! Success "Material 3 is NOT using the exact hue from the example, but definately using some HCT-fu here"
     This at least explains the fact that I was sometimes not seeing any change in the color palettes!
@@ -47,19 +47,19 @@ _Color conversion using CIE-Lab_
 
 | Theme | Custom | CIE-Lch(ab) | Primary | CIE-Lch(ab)|
 | ---- | --- | ------- | ----------- | ------ |
-| C1, Red | #ff4d4f <!--255,77,79-->| lch(59.10, 77.17, **29.93**) | #bb1826 | lch(40.17, 71.32, **31.31**) |
-| C5, Yellow| #ffec3d <!--255,236,61-->| lch(92.40, 81.33, **97.95**) | #695f00 | lch(39.90, 47.34, **96.71**) |
-| C7, Green | #73d13d <!--115,209,61--> | lch(75.81, 80.90, **130.59**)| #276c00 | lch(39.85, 59.90, **131.18**) |
-| C9, Blue | #40a9ff <!--64,169,255--> | lch(67.04, 51.18, **268.01**) | #0062a1 | lch(40.09, 40.72, **270.55**) |
+| C1, Red | #ff4d4f <!--255,77,79-->| lch(59.1%, 77.17, **29.9°**) | #bb1826 | lch(40.1%, 71.3, **31.3**) |
+| C5, Yellow| #ffec3d <!--255,236,61-->| lch(92.4%, 81.33, **97.9°**) | #695f00 | lch(39.9%, 47.3, **96.7**) |
+| C7, Green | #73d13d <!--115,209,61--> | lch(75.8%, 80.90, **130.5°**)| #276c00 | lch(39.5%, 59.9, **131.1**) |
+| C9, Blue | #40a9ff <!--64,169,255--> | lch(67.0%, 51.18, **268.0°**) | #0062a1 | lch(40.0%, 40.7, **270.5**) |
 
 _Color conversion using CIE-Luv_
 
 | Theme | Custom | CIE-Lch(uv) | Primary | CIE-Lch(uv)|
 | ---- | --- | ------- | ----------- | ------ |
-| C1, Red | #ff4d4f <!--255,77,79-->| lch(59.10, 139.18, **11.85**) | #bb1826 | lch(40.18, 119.53, **10.60**) |
-| C5, Yellow| #ffec3d <!--255,236,61-->| lch(92.39, 95.30, **77.98**) | #695f00 | lch(39.89, 44.17, **76.85**) |
-| C7, Green | #73d13d <!--115,209,61--> | lch(75.81, 92.48, **119.67**)| #276c00 | lch( 39.84, 56.92, **122.67**) |
-| C9, Blue | #40a9ff <!--64,169,255--> | lch(67.03, 90.63, **245.90**) | #0062a1 | lch(40.09, 63.78, **247.40**) |
+| C1, Red | #ff4d4f <!--255,77,79-->| lch(59.1%, 139.1, **11.8°**) | #bb1826 | lch(40.1%, 119.5, **10.6°**) |
+| C5, Yellow| #ffec3d <!--255,236,61-->| lch(92.3%, 95.3, **77.9°**) | #695f00 | lch(39.8%, 44.1, **76.8°**) |
+| C7, Green | #73d13d <!--115,209,61--> | lch(75.8%, 92.4, **119.6°**)| #276c00 | lch( 39.8%, 56.9, **122.6°**) |
+| C9, Blue | #40a9ff <!--64,169,255--> | lch(67.0%, 90.6, **245.9°**) | #0062a1 | lch(40.0%, 63.7, **247.4°**) |
 
 So the short answer is NO: Material 3 does NOT exactly use YOUR custom color. On the other hand, the differences in CIE-Lch(ab) and CIE-Lch(uv) values ​​seem small. But what if I keep the lc part of the lch value and use the primary h value to recalculate the input color?
 

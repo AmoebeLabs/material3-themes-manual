@@ -8,7 +8,7 @@ As mentioned, Home Assistant has no idea that a Material 3 theme is being used.
 
 HAM3 integrates the Material 3 color definitions with the Home Assistant themes by mapping the Material 2 and Home Assistant CSS definitions to the Material 3 definitions.
 
-Cards are not limited to the Material 2 color system and can take full advantage of the possibilities offered by material 3. Of course, these cards must have the possibility to be styled by the user.
+Cards are not limited to the Material 2 color system and can take full advantage of the possibilities offered by Material 3. Of course, these cards must have the possibility to be styled by the user.
 
 
 ##:material-home-floor-3: Translating Material 3 color concepts...
