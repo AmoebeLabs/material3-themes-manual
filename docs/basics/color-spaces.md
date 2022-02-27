@@ -1,5 +1,5 @@
 ---
-template: overrides/main.html
+template: main.html
 ---
 ##:material-home-floor-3: An introduction
 
@@ -42,24 +42,22 @@ Our eyes are special. They can see many colors, but need a minimal color differe
 
 All the newer models try to do a better job in modeling our eyes. CIELab, CIELuv and CAM16 are the best known among them. CIELuv is suited better for computers screens than CIELab, and CAM16 (from 2016) is the latest and greatest of the color space models.
 
-None of them is perfect in predicting how hue, chroma and lightness are percieved.
+The CIEL* models also have a color wheel variant, comparable to HSB/HSL. It is called CIELch: Lightness, Chroma and Hue. Lightness is a percentage 0..100%, Chroma a variable number, and Hue the number of degrees (0..360°) in the color wheel.
 
 To give you an idea how these modern models perform, I included some screenshots.
 
 ![colorio-hue-linearity-ebner-fairchild-img]
-_Hue linearity: diagrams should be balanced_
+_Hue linearity: diagrams should be balanced. Winner: CAM16_
 
 <br>![colorio-munsell-lightness-img]
-_Color prediction: diagrams should be circles at best_
+_Color prediction: diagrams should be circles at best. Winner: CAM16_
 
 <br>![colorio-lightness-img]
-_Lightness prediction: diagrams should follow the Fairchild-Chen data_
-
-
+_Lightness prediction: diagrams should follow the Fairchild-Chen data. Winner: CIELAB_
 
 ##:material-home-floor-3: Conclusion
 
-None of the models can predict how our eyes perceive colors.
+So, none of them is perfect in predicting how hue, chroma and lightness are percieved.
 
 Now we know this, what is all the fuzz about Material 3? Why is Material 3 so different from Material 2?
 

@@ -1,5 +1,5 @@
 ---
-template: overrides/main.html
+template: main.html
 ---
 
 The Material 3 color system breaks with the previous Material Design version in many ways. It contains a number of important new features. All these features are described on the [m3 website.](https://m3.material.io/styles/color/overview)

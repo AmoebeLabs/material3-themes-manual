@@ -1,5 +1,5 @@
 ---
-template: overrides/main.html
+template: main.html
 ---
 
 This theme uses Dark Olive Green as the primary color.

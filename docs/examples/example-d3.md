@@ -1,5 +1,5 @@
 ---
-template: overrides/main.html
+template: main.html
 ---
 
 This theme uses Porcupine (Brown-Yellow) as the primary color.

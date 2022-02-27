@@ -1,5 +1,5 @@
 ---
-template: overrides/main.html
+template: main.html
 ---
 
 I have made several example themes to give you an idea of ​​the looks & possibilities:

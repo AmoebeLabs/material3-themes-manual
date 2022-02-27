@@ -1,5 +1,5 @@
 ---
-template: overrides/main.html
+template: main.html
 ---
 <!-- GT/GMY -->
 
@@ -17,7 +17,7 @@ Material 3 is a common design language, with colors, typography, and UI elements
 
 The _You_ part refers to the fact that _You_ can now use a photo to create a theme!
 
-The Material 3 Themes for Home Assistant will only use the color section and extend and adapt these guidelines to create themes for Home Assistant.
+The Material 3 Themes for Home Assistant or _HAM3_ will only use the color section and extend and adapt these guidelines to create themes for Home Assistant.
 
 ##:material-home-floor-3: How to proceed
 

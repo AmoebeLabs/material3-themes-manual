@@ -1,5 +1,5 @@
 ---
-template: overrides/main.html
+template: main.html
 ---
 
 ##:material-home-floor-3: Material 3 dynamic colors...
