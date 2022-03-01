@@ -13,6 +13,9 @@ I have made several example themes to give you an idea of ​​the looks & poss
 
 All these examples are available on Github and HACS. Each example contains a link to the resources.
 
+!!! warning "At this moment not all examples are already available in GitHub, nor in HACS"
+    You can see it on the example page where "No repository found" is displayed.
+
 ##:material-home-floor-3: Examples in order of the color wheel
 
 All examples show [example view \#12][sak-example-12-url] of the Swiss Army Knife custom card.
