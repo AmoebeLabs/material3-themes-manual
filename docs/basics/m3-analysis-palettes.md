@@ -17,13 +17,7 @@ As HCT uses the CIE-L\* colorspace for lightness, lets see if what that does wit
 
 ##:material-home-floor-3: CIE L* lightness check...
 
-The CIE L\* colorspace aims to show colors as the human eye perceives colors and lightness. Within that space, there are different methods like CIE-Lab + CIE-Lch(ab) and CIE-Luv + CIE-Lch(uv).
-
-The CIE-Lab and CIE-Lch(ab) use the same colorspace, but use different parameters to calculate the colors. The CIE-lch(\*) method is the easiest one to understand, as it uses degrees for the Hue (0..360 degrees), just as the sRGB(hsl) does.
-
-Both CIE-Lab and CIE-Lch use the same Lightness, so we can use either of them to determine the lightness values.
-
-So let's take some examples from the C1 example and check the lightness values.
+I took the C1 example and checked the lightness values.
 
 ![m3-theme-c01-palettes-png]
 
@@ -42,7 +36,7 @@ _Color conversion using sRGB and CIE-Lab_
 We see an exact match between the Material 3 lightness and the CIE-Lch(ab) lightness value for primary, secondary, and tertiary color palettes.
 <br>You may also notice how the sRGB values ​​are sometimes close and sometimes very different from these CIE values, which is why sRGB is not suitable for this kind of calculation.
 
-!!! Success "Material 3 is using the CIE-L* colorspace to determine the lightness for tonal palettes"
+!!! Success "Material 3 is indeed using the CIE-L* colorspace to determine the lightness for tonal palettes"
 
 Now let's take a look at the primary, secondary and tertiary palettes. Can we make sense of them?
 
@@ -56,7 +50,7 @@ Below you can see all primary pallets from the "custom" color examples. Please n
 
 Some noticeable things from right to left:
 
-- Some colors have less color in the darker areas than other colors: the red/blue/magenta show more color in darker tones than yellow/lime/green/cyan.
+- Some colors have less chroma/colorfulness in the darker areas than other colors: the red/blue/magenta show more chroma in darker tones than yellow/lime/green/cyan.
 - There is a clear "break" visible at the 50%/60% tones: exactly the boundary between the dark and the light tones
 - Another "break" is visible in many of the palettes between 80% and 90% (85% was added by me). 
 - Some of the colors are very colorful in the high lightness parts (say above 90%), and others are not. Especially the yellow, lime green/green, and cyan stand out.
@@ -64,7 +58,7 @@ Some noticeable things from right to left:
 
 ![all-primary-palettes-png]
 
-And that is to be expected, as these colors can have more color with high lightness values in the sRGB space when translated from CIE-L\* space than the others. 
+And that is to be expected, as these colors can have more chroma with high lightness values in the sRGB space when translated from CIE-L\* space than the others. 
 
 The following example shows this effect: yellow, green, and cyan are more colorful than any other color at higher lightness! Blue, purple, magenta, and red are much more subdued. The reverse is also valid: blue, purple, magenta, and red are more vibrant in darker tones.
 
@@ -77,7 +71,7 @@ The following example shows this effect: yellow, green, and cyan are more colorf
 
 ###:material-home-floor-3: Experiment 2: what about palette hue?
 
-Since I couldn't find a CAM16 table, I use CIE-Lch(ab) and CIE-Lch(uv) to check the tint values ​​with different lightness. The results are therefore less accurate but should be closely compared to CAM16.
+Since I couldn't find a CAM16 conversion table, I use CIE-Lch(ab) and CIE-Lch(uv) to check the tint values ​​with different lightness. The results are therefore less accurate but averaging the results should should make them usable compared to CAM16.
 
 If we look at the next table, we can see that Material 3 is not only varying lightness for the tonal palette but also varying both chroma and hue. As we have learned from the above observation, keeping the hue stable in the high lightness parts is difficult.
 
@@ -91,26 +85,16 @@ _Color conversion using CIE-L*_
 | Primary80 | #ffb3ac | 80% | lch(79.9%, 30.5, **28.7°**) | lch(79.9%, 52.9, **17.2°**) |
 | Primary99 | #fcfcfc | 99% | lch(98.9%, 0.01, **296.8°**) | lch(98.9%, 0.01, **247.1°**) |
 
-However, the hsl values ​​of the sRGB space show 100% saturation on three of the 5 tones, which may indicate some sort of clipping while calculating the sRGB color from the CIE-Lch(\*) space, which has a much wider color gamut.
-
-And since I calculated the CIE-Lch(\*) colors from the sRGB hsl colors, the CIE-Lch(\*) colors may not be that accurate with regard to hue and chroma!
-
-Looking at the remarks at the [CIELab site][cielab-io-url], the relation between hue/chroma and luminance means that you can't have all the three parameters at its "best" value, and you have to balance all three:
-
-!!! Quote "Oftentimes, you can sacrifice chroma to make luminance and hue work"
-
-!!! Quote "Usually, you want shades to have roughly the same hue. That way, shades don't seem to "drift" into a different color"
-
-!!! Success "Material 3 HCT palette calculations are doing their best to balance hue, lightness and colorfulness"
-    CAM16 seems to do a wonderful job!
+!!! Success "We see slight differences in Hue in lower lightness parts, and big differences in high lightness parts"
+    This was expected. The slight differences in the lower lightness parts might be absent in CAM16.
 
 ##:material-home-floor-3: Secondary and Tertiary palette
 
-For starters, the "normal" way to choose a secondary or tertiary color is to move the color wheel a few degrees. However, since the human eye is non-linear and Google makes a point about accessibility standards, a standard color wheel probably isn't what Material 3 uses.
+For starters, the "normal" way to choose a secondary or tertiary color is to move the color wheel a few degrees. The secondary color is usually a supporting color for the primary color, and the tertiary color more like an accent color.
 
 ###:material-home-floor-3: Experiment 3: Can we make sense of secondary and tertiary colors?
 
-Since I couldn't find a CAM16 converter online, I'm using CIE-LCh(uv) for this experiment. It's not very good at predicting chroma and hue, but maybe we can see something. Chroma is better than the Hue Prediction.
+I'm using CIE-LCh(uv) for this experiment. It's not very good at predicting chroma and hue, but maybe we can see something. Chroma is better than the Hue prediction.
 
 Using the mean values ​​and differences, the variations between CAM16 and CIE-LCh(uv) can be smoothed out.
 
@@ -154,17 +138,18 @@ Using the mean values ​​and differences, the variations between CAM16 and CI
 
 And finally, lets see how these observerations stack up against the real thing, as the calculations are [known for both palettes][m3-palettes-ts-url]:
 
-**Secondary color palette:**
+**HCT Secondary color palette calculation:**
 
 - Hue is the **same** as for the primary color palette. Matches with the 0.05° difference.
 - Chroma is fixed to **16**! I got 2x20 and 4x16 (average of 18.2), so still a good match for some of the colors.
 
-And the **tertiary palette:**
+And the **HCT tertiary palette calculation:**
 
 - Hue is shifted **60°** from the primary color palette. The CIE-LCh(uv) averaged at 61°. Again pretty close!
 - Chroma is fixed to **24**! I got 28 from CIE-LCh(uv). CAM16 is much better for chroma.
 
-!!! Success "The average CIE-LCh(uv) values and differences are close to the actual CAM16 settings, a nice result!"
+!!! Success "The _average_ CIE-LCh(uv) values and differences are close to the actual CAM16 settings"
+    But you can clearly see the differences between the two color spaces in the individual colors.
 
 <!-- https://bottosson.github.io/posts/oklab/ -->
 
@@ -323,8 +308,8 @@ For the secondary color I have no idea, because the direction is to the right in
 [ndb-color-names-LCh-hues-png]: ../assets/screenshots/color-names-LCh-hues.png
 [ndb-saturation-0_dot_8]: ../assets/screenshots/saturation-0_dot_8.png
 
-[hsv-lch-color wheel-jpg]: ../assets/screenshots/hsv-lch-color wheel.jpg
-[cielab-color wheel-png]:  ../assets/screenshots/cielab-color wheel.png
+[hsv-lch-colorwheel-jpg]: ../assets/screenshots/hsv-lch-colorwheel.jpg
+[cielab-colorwheel-png]:  ../assets/screenshots/cielab-colorwheel.png
 
 <!--- External links... --->
 

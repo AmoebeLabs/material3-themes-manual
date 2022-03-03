@@ -10,9 +10,10 @@ This chapter is about some experiments to see if I can understand how Material 3
 
 For this, I used the 22 examples I created to analyze some of the Material 3 aspects.
 
-From the examples, I can conclude that all themes with different colors give excellent displays with consistent readability and contrast.
-
-That makes the 22 themes interchangeable without any change to the view and card configuration if you use theme colors of course!
+**TL;DR**
+!!! Quote "From the examples, I can conclude that all themes with different colors give excellent displays with consistent readability and contrast."
+    That makes the 22 themes interchangeable without any change to the view and card configuration if you use theme colors of course!
+    <br><br>This, and the fact that I can almost generate a theme, makes me very happy with M3, as it also saves a _lot_ of time creating a theme.
 
 But then again, it raised enough questions about what Material 3 does in some cases.
 
@@ -22,28 +23,35 @@ Read on, if you're interested :smile:
 
 <!-- https://bootcamp.uxdesign.cc/perception-based-color-palettes-for-customizable-ui-themes-33f596faf23d -->
 
-With Material 3 for Android 12 a new color system, called [HCT][m3-hct-source-url] is introduced.
-<br>HCT is short for: <b>H</b>ue, <b>C</b>hroma (= colorfulness), and <b>T</b>one).
-<br>It is built using CAM16 hue and chroma, and Lightness (L\*) from CIE-Lab.
+With Material 3 for Android 12, Google introduces a new color system, called [HCT][m3-hct-source-url].
+<br>HCT is short for:
 
-The lightness in CIE-Lab is in line with human perception. If CIE-L\* is 0%, the value corresponds to black and 100% to white, allowing for very accurate color tones. Using CIE-L\* creates a link between the color system, the contrast, and thus the accessibility. The contrast difference between background and foreground is one of the most important factors in the [WCAG guidelines][wcag-guidelines-url].
+- <b>H</b>ue, ie the color in degrees (0..360)
+- <b>C</b>hroma, ie the colorfulness, and
+- <b>T</b>one, ie the lightness from white (100%)to black (0%).
+
+!!! Success "The HCT color system combines the best from CIE-Lab and CAM16 color spaces"
+    It is built using CAM16 for Hue and Chroma, and Lightness (L\*) from CIE-Lab.
+
+The lightness in CIE-Lab is in line with human perception, allowing for very accurate color tones. It is _the_ reason why Material 3 can guarantee contrast differences, and thus the accessibility. The contrast difference between background and foreground is one of the most important factors in the [WCAG guidelines][wcag-guidelines-url].
 
 Where the contrast ratio is non-linear, CIE-L\* is. It means that HCT can use differences to guarantee the contrast ratio. A difference of 40 in HCT tone guarantees a contrast ratio >= 3.0, and a difference of 50 guarantees a contrast ratio >= 4.5.
+<br>If you look at the light and dark themes, you see these differences in the background and foreground colors. Material 3 uses a minimum difference of 60 to accomplish a great contrast ratio.
 
-So, once again: Below you see the two examples as to why CAM16 is such a great system regarding colors linearity and distribution:
+So, once again: Below you see the two examples as to why the combination of CIE-Lab and CAM16 is such a great idea:
 
 ![colorio-hue-linearity-ebner-fairchild-png]
 
-CAM16 shows the best color circles and chroma lines:
+_CAM16 shows the best Hue linearity_
 
-![colorio-munsell-lightness-png]
+<br>![colorio-munsell-lightness-png]
 
-And the reason for Google to use CIELab as the method to calculate lightness:
+_CAM16 shows the best color circles and chroma lines_
 
-![colorio-lightness-png]
+<br>![colorio-lightness-png]
+_And the CIELab model with the best lightness prediction_
 
-!!! Success "The mix from CIELab and CAM16 seems to be a great choice for the new Material guidelines"
-    It uses the best from CIELab - Lightness, and the best from CAM16 - Hue and Chroma!
+
     
 (screenshots taken from [Colorio README][colorio-readme-url])
 

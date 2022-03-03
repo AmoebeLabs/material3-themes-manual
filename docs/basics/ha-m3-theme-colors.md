@@ -3,18 +3,21 @@ template: main.html
 ---
 
 ##:material-home-floor-3: HAM3 Theme colors
+HAM3 contains the same basic things as any Material 3 theme:
 
-- Palettes
+- Reference color palettes
 - Surfaces
-- Light theme color mapping
-- Dark theme color mapping
+- Light theme color mapping from the reference color palettes
+- Dark theme color mapping from the reference color palettes
+
+HAM3 follows the Material 3 naming scheme, but replaces the `md-` prefix with `theme-` to avoid clashes with other CSS variables that start with `md-`, and to make clear that the CSS variable is part of the theme.
 
 ##:material-home-floor-3: Reference colors
 The HAM3 implementation defines no less than **264** reference colors. Some are theme mode independent, others are specific for light or dark modes.
 
 ###:material-home-floor-3: Palette Reference colors
 
-Reference palette colors use the `theme-ref-palette-` naming scheme and are theme mode independent.
+Reference palette colors use the `theme-ref-palette-` naming scheme and are theme mode independent. 
 
 Palette color schemes use 24 colors per palette and are available for:
 
@@ -315,6 +318,8 @@ Surface color schemes are available for:
 ##:material-home-floor-3: System colors
 M3 System colors are by definition **independent** of the theme mode. Their actual value adapts to the light or dark mode.
 
+The `theme-sys-color-` definitions make up the theme.
+
 ###:material-home-floor-3: Standard M3 light and dark system colors
 
 ??? "M3 System colors mapping for LIGHT mode"
@@ -536,9 +541,11 @@ M3 System colors are by definition **independent** of the theme mode. Their actu
 
 ##:material-home-floor-3: M3 Mapping to HA/Material 2 color names
 
-TBD.
+Home Assistant uses both Material and dedicated CSS variables to define the used colors.
 
-Color mappings :
+HAM3 maps the M3 colors to these colors. This way, Home Assistant just works with these themes.
+
+Some examples of these color mappings are:
 
 - primary-background-color
 - secondary-background-color
@@ -552,4 +559,4 @@ Color mappings :
 - card-background-color
 - box-shadow-light/dark-color
 
-And more, like icon, switch, label stuff too??
+And more, like icons, switches, labels and the colors used by the energy dashboard: these are more subdued for the dark theme as advised by Material 3.
