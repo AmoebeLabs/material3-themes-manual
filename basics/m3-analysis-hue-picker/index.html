@@ -1381,7 +1381,7 @@
 <h3 id="dynamic-color"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 3 10 9h-3v8H5v-8H2l10-9m3 8.5V10a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5z"/></svg></span> Dynamic color<a class="headerlink" href="#dynamic-color" title="Permanent link">&para;</a></h3>
 <p>I started my experiments with Google to find some random images for me, drag them into the Material Theme Builder, and see what primary color (and secondary/tertiary colors of course) Material 3 appears with.</p>
 <p>In doing so, I sometimes got confused because the theme didn't always really change. So I had to look more closely.</p>
-<p>Take the following example. I dragged three different bluish images from the internet with a single color. And as you can see, the resulting source color - the extracted shade of Material 3 - is <strong>exactly</strong> the same (#4285f4) <img alt="😕" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f615.svg" title=":confused:" />.</p>
+<p>Take the following example. I dragged three different bluish images from the internet with a single color. And as you can see, the resulting source color - the extracted shade of Material 3 - is <strong>exactly</strong> the same (RGB color #4285f4) <img alt="😕" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f615.svg" title=":confused:" />.</p>
 <table>
 <thead>
 <tr>
@@ -1403,8 +1403,8 @@
 <thead>
 <tr>
 <th>Position</th>
-<th>hex</th>
-<th>hsl</th>
+<th>Image hex</th>
+<th>Image RGB-hsl</th>
 <th>M3 hex</th>
 <th>M3 hue</th>
 </tr>
@@ -1439,36 +1439,28 @@
 <thead>
 <tr>
 <th>Position</th>
-<th>hex</th>
-<th>L</th>
-<th>c</th>
-<th>h</th>
-<th>M3 h</th>
+<th>Image hex</th>
+<th>Image CIE-Lch</th>
+<th>M3 Hue</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>left</td>
 <td>#cbd5e1</td>
-<td>84,8%</td>
-<td>7,15</td>
-<td><strong>261,5°</strong></td>
+<td>lch(84,8%, 7,15, <strong>261,5°</strong>)</td>
 <td><strong>284,3°</strong></td>
 </tr>
 <tr>
 <td>middle</td>
 <td>#2d3945</td>
-<td>23,3%</td>
-<td>9,14</td>
-<td><strong>260,2°</strong></td>
+<td>lch(23,3%, 9,14, <strong>260,2°</strong>)</td>
 <td><strong>284,3°</strong></td>
 </tr>
 <tr>
 <td>left</td>
 <td>#aaadb2</td>
-<td>70,3%</td>
-<td>2,93</td>
-<td><strong>268,2°</strong></td>
+<td>lch(70,3%, 2,93, <strong>268,2°</strong>)</td>
 <td><strong>284,3°</strong></td>
 </tr>
 </tbody>
@@ -1479,6 +1471,7 @@
 </div>
 <h3 id="custom-color"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 3 10 9h-3v8H5v-8H2l10-9m3 8.5V10a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5z"/></svg></span> Custom color<a class="headerlink" href="#custom-color" title="Permanent link">&para;</a></h3>
 <p>Okay, so Material 3 uses some calculations to extract the hue from an image. I'm okay with that. But what about the Material Theme Builder's "Custom Color" option? It has to use YOUR color, yes?</p>
+<p>For this experiment, I took 4 colors from the cielab.io website and compared them with the Hue that HCT selected for the primary color.</p>
 <p><em>Color conversion using CIE-Lab</em></p>
 <table>
 <thead>
@@ -1496,28 +1489,28 @@
 <td>#ff4d4f <!--255,77,79--></td>
 <td>lch(59.1%, 77.17, <strong>29.9°</strong>)</td>
 <td>#bb1826</td>
-<td>lch(40.1%, 71.3, <strong>31.3</strong>)</td>
+<td>lch(40.1%, 71.3, <strong>31.3°</strong>)</td>
 </tr>
 <tr>
 <td>C5, Yellow</td>
 <td>#ffec3d <!--255,236,61--></td>
 <td>lch(92.4%, 81.33, <strong>97.9°</strong>)</td>
 <td>#695f00</td>
-<td>lch(39.9%, 47.3, <strong>96.7</strong>)</td>
+<td>lch(39.9%, 47.3, <strong>96.7°</strong>)</td>
 </tr>
 <tr>
 <td>C7, Green</td>
 <td>#73d13d <!--115,209,61--></td>
 <td>lch(75.8%, 80.90, <strong>130.5°</strong>)</td>
 <td>#276c00</td>
-<td>lch(39.5%, 59.9, <strong>131.1</strong>)</td>
+<td>lch(39.5%, 59.9, <strong>131.1°</strong>)</td>
 </tr>
 <tr>
 <td>C9, Blue</td>
 <td>#40a9ff <!--64,169,255--></td>
 <td>lch(67.0%, 51.18, <strong>268.0°</strong>)</td>
 <td>#0062a1</td>
-<td>lch(40.0%, 40.7, <strong>270.5</strong>)</td>
+<td>lch(40.0%, 40.7, <strong>270.5°</strong>)</td>
 </tr>
 </tbody>
 </table>
@@ -1563,9 +1556,9 @@
 </tr>
 </tbody>
 </table>
-<p>So the short answer is NO: Material 3 does NOT exactly use YOUR custom color. On the other hand, the differences in CIE-Lch(ab) and CIE-Lch(uv) values ​​seem small. But what if I keep the lc part of the lch value and use the primary h value to recalculate the input color?</p>
-<p>Taking the last example: Blue with <code>rgb(64, 169, 255)</code> becomes <code>rgb(76, 168, 255)</code>: In other words, MORE red, slightly less green, and no difference in blue.</p>
-<p>On the left, the custom color, and on the right the extracted source color:</p>
+<p>So the short answer is NO: Material 3 does NOT exactly use YOUR custom color. On the other hand, the differences in CIE-Lch(ab) and CIE-Lch(uv) values ​​are small. </p>
+<p>If I use the HCT result from the C9, Blue example and reverse the calculation to get an RGB color, I get a different kind of blue: where the custom color is <code>rgb(64, 169, 255)</code>, the selected primary color becomes <code>rgb(76, 168, 255)</code>: In other words, a bit more red, slightly less green, and no difference in blue.</p>
+<p>On the left, the custom color, and on the right the extracted source color by HCT:</p>
 <p><svg viewBox="0 0 400 100" xmlns="http://www.w3.org/2000/svg" width="600px">
   <rect x="10" y="10" height="80" width="150" rx="0" fill="rgb(64, 169, 255)" stroke="var(--md-primary-fg-color--dark)" stroke-width="2"/>
   <rect x="200" y="10"height="80" width="150" rx="0" fill="rgb(76, 168, 255)" stroke="var(--md-primary-fg-color--dark)" stroke-width="2"/>

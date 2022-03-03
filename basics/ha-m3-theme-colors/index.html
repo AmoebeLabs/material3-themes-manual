@@ -1483,16 +1483,18 @@
   <h1>Theme colors</h1>
 
 <h2 id="ham3-theme-colors"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 3 10 9h-3v8H5v-8H2l10-9m3 8.5V10a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5z"/></svg></span> HAM3 Theme colors<a class="headerlink" href="#ham3-theme-colors" title="Permanent link">&para;</a></h2>
+<p>HAM3 contains the same basic things as any Material 3 theme:</p>
 <ul>
-<li>Palettes</li>
+<li>Reference color palettes</li>
 <li>Surfaces</li>
-<li>Light theme color mapping</li>
-<li>Dark theme color mapping</li>
+<li>Light theme color mapping from the reference color palettes</li>
+<li>Dark theme color mapping from the reference color palettes</li>
 </ul>
+<p>HAM3 follows the Material 3 naming scheme, but replaces the <code>md-</code> prefix with <code>theme-</code> to avoid clashes with other CSS variables that start with <code>md-</code>, and to make clear that the CSS variable is part of the theme.</p>
 <h2 id="reference-colors"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 3 10 9h-3v8H5v-8H2l10-9m3 8.5V10a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5z"/></svg></span> Reference colors<a class="headerlink" href="#reference-colors" title="Permanent link">&para;</a></h2>
 <p>The HAM3 implementation defines no less than <strong>264</strong> reference colors. Some are theme mode independent, others are specific for light or dark modes.</p>
 <h3 id="palette-reference-colors"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 3 10 9h-3v8H5v-8H2l10-9m3 8.5V10a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5z"/></svg></span> Palette Reference colors<a class="headerlink" href="#palette-reference-colors" title="Permanent link">&para;</a></h3>
-<p>Reference palette colors use the <code>theme-ref-palette-</code> naming scheme and are theme mode independent.</p>
+<p>Reference palette colors use the <code>theme-ref-palette-</code> naming scheme and are theme mode independent. </p>
 <p>Palette color schemes use 24 colors per palette and are available for:</p>
 <ul>
 <li>Neutral colors</li>
@@ -2053,6 +2055,7 @@
 </details>
 <h2 id="system-colors"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 3 10 9h-3v8H5v-8H2l10-9m3 8.5V10a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5z"/></svg></span> System colors<a class="headerlink" href="#system-colors" title="Permanent link">&para;</a></h2>
 <p>M3 System colors are by definition <strong>independent</strong> of the theme mode. Their actual value adapts to the light or dark mode.</p>
+<p>The <code>theme-sys-color-</code> definitions make up the theme.</p>
 <h3 id="standard-m3-light-and-dark-system-colors"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 3 10 9h-3v8H5v-8H2l10-9m3 8.5V10a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5z"/></svg></span> Standard M3 light and dark system colors<a class="headerlink" href="#standard-m3-light-and-dark-system-colors" title="Permanent link">&para;</a></h3>
 <details>
 <summary>M3 System colors mapping for LIGHT mode</summary>
@@ -2468,8 +2471,9 @@
 </td></tr></table>
 </details>
 <h2 id="m3-mapping-to-hamaterial-2-color-names"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 3 10 9h-3v8H5v-8H2l10-9m3 8.5V10a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5z"/></svg></span> M3 Mapping to HA/Material 2 color names<a class="headerlink" href="#m3-mapping-to-hamaterial-2-color-names" title="Permanent link">&para;</a></h2>
-<p>TBD.</p>
-<p>Color mappings :</p>
+<p>Home Assistant uses both Material and dedicated CSS variables to define the used colors.</p>
+<p>HAM3 maps the M3 colors to these colors. This way, Home Assistant just works with these themes.</p>
+<p>Some examples of these color mappings are:</p>
 <ul>
 <li>primary-background-color</li>
 <li>secondary-background-color</li>
@@ -2483,7 +2487,7 @@
 <li>card-background-color</li>
 <li>box-shadow-light/dark-color</li>
 </ul>
-<p>And more, like icon, switch, label stuff too??</p>
+<p>And more, like icons, switches, labels and the colors used by the energy dashboard: these are more subdued for the dark theme as advised by Material 3.</p>
 
               
             </article>

@@ -1479,10 +1479,7 @@
 </div>
 <p>As HCT uses the CIE-L* colorspace for lightness, lets see if what that does with a generated tonal palette.</p>
 <h2 id="cie-l-lightness-check"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 3 10 9h-3v8H5v-8H2l10-9m3 8.5V10a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5z"/></svg></span> CIE L* lightness check...<a class="headerlink" href="#cie-l-lightness-check" title="Permanent link">&para;</a></h2>
-<p>The CIE L* colorspace aims to show colors as the human eye perceives colors and lightness. Within that space, there are different methods like CIE-Lab + CIE-Lch(ab) and CIE-Luv + CIE-Lch(uv).</p>
-<p>The CIE-Lab and CIE-Lch(ab) use the same colorspace, but use different parameters to calculate the colors. The CIE-lch(*) method is the easiest one to understand, as it uses degrees for the Hue (0..360 degrees), just as the sRGB(hsl) does.</p>
-<p>Both CIE-Lab and CIE-Lch use the same Lightness, so we can use either of them to determine the lightness values.</p>
-<p>So let's take some examples from the C1 example and check the lightness values.</p>
+<p>I took the C1 example and checked the lightness values.</p>
 <p><img alt="m3-theme-c01-palettes-png" src="../../assets/screenshots/m3-theme-c01-palettes.png" /></p>
 <p><em>Color conversion using sRGB and CIE-Lab</em></p>
 <table>
@@ -1550,7 +1547,7 @@
 <p>We see an exact match between the Material 3 lightness and the CIE-Lch(ab) lightness value for primary, secondary, and tertiary color palettes.
 <br>You may also notice how the sRGB values ​​are sometimes close and sometimes very different from these CIE values, which is why sRGB is not suitable for this kind of calculation.</p>
 <div class="admonition success">
-<p class="admonition-title">Material 3 is using the CIE-L* colorspace to determine the lightness for tonal palettes</p>
+<p class="admonition-title">Material 3 is indeed using the CIE-L* colorspace to determine the lightness for tonal palettes</p>
 </div>
 <p>Now let's take a look at the primary, secondary and tertiary palettes. Can we make sense of them?</p>
 <h2 id="primary-palette"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 3 10 9h-3v8H5v-8H2l10-9m3 8.5V10a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5z"/></svg></span> Primary palette<a class="headerlink" href="#primary-palette" title="Permanent link">&para;</a></h2>
@@ -1559,14 +1556,14 @@
 <p>Below you can see all primary pallets from the "custom" color examples. Please note that all x2%, x5% (except 95%), and x7% values ​​do not belong to the original Material 3 palette, but were added by me to have more tonal steps to work with.</p>
 <p>Some noticeable things from right to left:</p>
 <ul>
-<li>Some colors have less color in the darker areas than other colors: the red/blue/magenta show more color in darker tones than yellow/lime/green/cyan.</li>
+<li>Some colors have less chroma/colorfulness in the darker areas than other colors: the red/blue/magenta show more chroma in darker tones than yellow/lime/green/cyan.</li>
 <li>There is a clear "break" visible at the 50%/60% tones: exactly the boundary between the dark and the light tones</li>
 <li>Another "break" is visible in many of the palettes between 80% and 90% (85% was added by me). </li>
 <li>Some of the colors are very colorful in the high lightness parts (say above 90%), and others are not. Especially the yellow, lime green/green, and cyan stand out.
 <br><br>This is especially visible in the 99% lightness blocks. The above colors are visible, others are barely distinguishable.</li>
 </ul>
 <p><img alt="all-primary-palettes-png" src="../../assets/screenshots/all-primary-palettes.png" /></p>
-<p>And that is to be expected, as these colors can have more color with high lightness values in the sRGB space when translated from CIE-L* space than the others. </p>
+<p>And that is to be expected, as these colors can have more chroma with high lightness values in the sRGB space when translated from CIE-L* space than the others. </p>
 <p>The following example shows this effect: yellow, green, and cyan are more colorful than any other color at higher lightness! Blue, purple, magenta, and red are much more subdued. The reverse is also valid: blue, purple, magenta, and red are more vibrant in darker tones.</p>
 <p><br>Note that dark orange with high chroma does not exist: that is what we call brown! The same is valid for yellow: mixing that color with black also turns brownish.</p>
 <p><img alt="lch-lightness-examples-png" src="../../assets/screenshots/lch-lightness-examples.png" /></p>
@@ -1574,7 +1571,7 @@
 <p class="admonition-title">Material 3 is palette calculations are again clearly using CIE-L*, but does NOT compensate for the colorful colors in the high lightness parts</p>
 </div>
 <h3 id="experiment-2-what-about-palette-hue"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 3 10 9h-3v8H5v-8H2l10-9m3 8.5V10a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5z"/></svg></span> Experiment 2: what about palette hue?<a class="headerlink" href="#experiment-2-what-about-palette-hue" title="Permanent link">&para;</a></h3>
-<p>Since I couldn't find a CAM16 table, I use CIE-Lch(ab) and CIE-Lch(uv) to check the tint values ​​with different lightness. The results are therefore less accurate but should be closely compared to CAM16.</p>
+<p>Since I couldn't find a CAM16 conversion table, I use CIE-Lch(ab) and CIE-Lch(uv) to check the tint values ​​with different lightness. The results are therefore less accurate but averaging the results should should make them usable compared to CAM16.</p>
 <p>If we look at the next table, we can see that Material 3 is not only varying lightness for the tonal palette but also varying both chroma and hue. As we have learned from the above observation, keeping the hue stable in the high lightness parts is difficult.</p>
 <p><em>Color conversion using CIE-L*</em></p>
 <table>
@@ -1625,23 +1622,14 @@
 </tr>
 </tbody>
 </table>
-<p>However, the hsl values ​​of the sRGB space show 100% saturation on three of the 5 tones, which may indicate some sort of clipping while calculating the sRGB color from the CIE-Lch(*) space, which has a much wider color gamut.</p>
-<p>And since I calculated the CIE-Lch(*) colors from the sRGB hsl colors, the CIE-Lch(*) colors may not be that accurate with regard to hue and chroma!</p>
-<p>Looking at the remarks at the <a href="https://cielab.io/">CIELab site</a>, the relation between hue/chroma and luminance means that you can't have all the three parameters at its "best" value, and you have to balance all three:</p>
-<div class="admonition quote">
-<p class="admonition-title">Oftentimes, you can sacrifice chroma to make luminance and hue work</p>
-</div>
-<div class="admonition quote">
-<p class="admonition-title">Usually, you want shades to have roughly the same hue. That way, shades don't seem to "drift" into a different color</p>
-</div>
 <div class="admonition success">
-<p class="admonition-title">Material 3 HCT palette calculations are doing their best to balance hue, lightness and colorfulness</p>
-<p>CAM16 seems to do a wonderful job!</p>
+<p class="admonition-title">We see slight differences in Hue in lower lightness parts, and big differences in high lightness parts</p>
+<p>This was expected. The slight differences in the lower lightness parts might be absent in CAM16.</p>
 </div>
 <h2 id="secondary-and-tertiary-palette"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 3 10 9h-3v8H5v-8H2l10-9m3 8.5V10a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5z"/></svg></span> Secondary and Tertiary palette<a class="headerlink" href="#secondary-and-tertiary-palette" title="Permanent link">&para;</a></h2>
-<p>For starters, the "normal" way to choose a secondary or tertiary color is to move the color wheel a few degrees. However, since the human eye is non-linear and Google makes a point about accessibility standards, a standard color wheel probably isn't what Material 3 uses.</p>
+<p>For starters, the "normal" way to choose a secondary or tertiary color is to move the color wheel a few degrees. The secondary color is usually a supporting color for the primary color, and the tertiary color more like an accent color.</p>
 <h3 id="experiment-3-can-we-make-sense-of-secondary-and-tertiary-colors"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 3 10 9h-3v8H5v-8H2l10-9m3 8.5V10a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5z"/></svg></span> Experiment 3: Can we make sense of secondary and tertiary colors?<a class="headerlink" href="#experiment-3-can-we-make-sense-of-secondary-and-tertiary-colors" title="Permanent link">&para;</a></h3>
-<p>Since I couldn't find a CAM16 converter online, I'm using CIE-LCh(uv) for this experiment. It's not very good at predicting chroma and hue, but maybe we can see something. Chroma is better than the Hue Prediction.</p>
+<p>I'm using CIE-LCh(uv) for this experiment. It's not very good at predicting chroma and hue, but maybe we can see something. Chroma is better than the Hue prediction.</p>
 <p>Using the mean values ​​and differences, the variations between CAM16 and CIE-LCh(uv) can be smoothed out.</p>
 <p><strong>Secondary color palette:</strong></p>
 <ul>
@@ -1860,18 +1848,19 @@
 </tbody>
 </table>
 <p>And finally, lets see how these observerations stack up against the real thing, as the calculations are <a href="https://github.com/material-foundation/material-color-utilities/blob/main/typescript/palettes/core_palette.ts">known for both palettes</a>:</p>
-<p><strong>Secondary color palette:</strong></p>
+<p><strong>HCT Secondary color palette calculation:</strong></p>
 <ul>
 <li>Hue is the <strong>same</strong> as for the primary color palette. Matches with the 0.05° difference.</li>
 <li>Chroma is fixed to <strong>16</strong>! I got 2x20 and 4x16 (average of 18.2), so still a good match for some of the colors.</li>
 </ul>
-<p>And the <strong>tertiary palette:</strong></p>
+<p>And the <strong>HCT tertiary palette calculation:</strong></p>
 <ul>
 <li>Hue is shifted <strong>60°</strong> from the primary color palette. The CIE-LCh(uv) averaged at 61°. Again pretty close!</li>
 <li>Chroma is fixed to <strong>24</strong>! I got 28 from CIE-LCh(uv). CAM16 is much better for chroma.</li>
 </ul>
 <div class="admonition success">
-<p class="admonition-title">The average CIE-LCh(uv) values and differences are close to the actual CAM16 settings, a nice result!</p>
+<p class="admonition-title">The <em>average</em> CIE-LCh(uv) values and differences are close to the actual CAM16 settings</p>
+<p>But you can clearly see the differences between the two color spaces in the individual colors.</p>
 </div>
 <!-- https://bottosson.github.io/posts/oklab/ -->
 
@@ -2014,8 +2003,6 @@ For the secondary color I have no idea, because the direction is to the right in
 
 <!--- References to pictures... --->
 
-<p>[hsv-lch-color wheel-jpg]: ../assets/screenshots/hsv-lch-color wheel.jpg
-[cielab-color wheel-png]:  ../assets/screenshots/cielab-color wheel.png</p>
 <!--- External links... --->
 
 <!--

@@ -1379,28 +1379,38 @@
 <h2 id="material-3-analyzed"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 3 10 9h-3v8H5v-8H2l10-9m3 8.5V10a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5z"/></svg></span> Material 3 analyzed!<a class="headerlink" href="#material-3-analyzed" title="Permanent link">&para;</a></h2>
 <p>This chapter is about some experiments to see if I can understand how Material 3 works and if it does what it promises.</p>
 <p>For this, I used the 22 examples I created to analyze some of the Material 3 aspects.</p>
-<p>From the examples, I can conclude that all themes with different colors give excellent displays with consistent readability and contrast.</p>
-<p>That makes the 22 themes interchangeable without any change to the view and card configuration if you use theme colors of course!</p>
+<p><strong>TL;DR</strong></p>
+<div class="admonition quote">
+<p class="admonition-title">From the examples, I can conclude that all themes with different colors give excellent displays with consistent readability and contrast.</p>
+<p>That makes the 22 themes interchangeable without any change to the view and card configuration if you use theme colors of course!
+<br><br>This, and the fact that I can almost generate a theme, makes me very happy with M3, as it also saves a <em>lot</em> of time creating a theme.</p>
+</div>
 <p>But then again, it raised enough questions about what Material 3 does in some cases.</p>
 <p>Read on, if you're interested <img alt="😄" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f604.svg" title=":smile:" /></p>
 <h2 id="but-before-that-the-basis-of-material-3"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 3 10 9h-3v8H5v-8H2l10-9m3 8.5V10a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5z"/></svg></span> But before, that, the basis of Material 3...<a class="headerlink" href="#but-before-that-the-basis-of-material-3" title="Permanent link">&para;</a></h2>
 <!-- https://bootcamp.uxdesign.cc/perception-based-color-palettes-for-customizable-ui-themes-33f596faf23d -->
 
-<p>With Material 3 for Android 12 a new color system, called <a href="https://github.com/material-foundation/material-color-utilities/blob/main/typescript/hct/hct.ts">HCT</a> is introduced.
-<br>HCT is short for: <b>H</b>ue, <b>C</b>hroma (= colorfulness), and <b>T</b>one).
-<br>It is built using CAM16 hue and chroma, and Lightness (L*) from CIE-Lab.</p>
-<p>The lightness in CIE-Lab is in line with human perception. If CIE-L* is 0%, the value corresponds to black and 100% to white, allowing for very accurate color tones. Using CIE-L* creates a link between the color system, the contrast, and thus the accessibility. The contrast difference between background and foreground is one of the most important factors in the <a href="https://www.w3.org/WAI/standards-guidelines/wcag/">WCAG guidelines</a>.</p>
-<p>Where the contrast ratio is non-linear, CIE-L* is. It means that HCT can use differences to guarantee the contrast ratio. A difference of 40 in HCT tone guarantees a contrast ratio &gt;= 3.0, and a difference of 50 guarantees a contrast ratio &gt;= 4.5.</p>
-<p>So, once again: Below you see the two examples as to why CAM16 is such a great system regarding colors linearity and distribution:</p>
-<p><img alt="colorio-hue-linearity-ebner-fairchild-png" src="../../assets/screenshots/colorio-hue-linearity-ebner-fairchild.png" /></p>
-<p>CAM16 shows the best color circles and chroma lines:</p>
-<p><img alt="colorio-munsell-lightness-png" src="../../assets/screenshots/colorio-munsell-lightness.png" /></p>
-<p>And the reason for Google to use CIELab as the method to calculate lightness:</p>
-<p><img alt="colorio-lightness-png" src="../../assets/screenshots/colorio-lightness.png" /></p>
+<p>With Material 3 for Android 12, Google introduces a new color system, called <a href="https://github.com/material-foundation/material-color-utilities/blob/main/typescript/hct/hct.ts">HCT</a>.
+<br>HCT is short for:</p>
+<ul>
+<li><b>H</b>ue, ie the color in degrees (0..360)</li>
+<li><b>C</b>hroma, ie the colorfulness, and</li>
+<li><b>T</b>one, ie the lightness from white (100%)to black (0%).</li>
+</ul>
 <div class="admonition success">
-<p class="admonition-title">The mix from CIELab and CAM16 seems to be a great choice for the new Material guidelines</p>
-<p>It uses the best from CIELab - Lightness, and the best from CAM16 - Hue and Chroma!</p>
+<p class="admonition-title">The HCT color system combines the best from CIE-Lab and CAM16 color spaces</p>
+<p>It is built using CAM16 for Hue and Chroma, and Lightness (L*) from CIE-Lab.</p>
 </div>
+<p>The lightness in CIE-Lab is in line with human perception, allowing for very accurate color tones. It is <em>the</em> reason why Material 3 can guarantee contrast differences, and thus the accessibility. The contrast difference between background and foreground is one of the most important factors in the <a href="https://www.w3.org/WAI/standards-guidelines/wcag/">WCAG guidelines</a>.</p>
+<p>Where the contrast ratio is non-linear, CIE-L* is. It means that HCT can use differences to guarantee the contrast ratio. A difference of 40 in HCT tone guarantees a contrast ratio &gt;= 3.0, and a difference of 50 guarantees a contrast ratio &gt;= 4.5.
+<br>If you look at the light and dark themes, you see these differences in the background and foreground colors. Material 3 uses a minimum difference of 60 to accomplish a great contrast ratio.</p>
+<p>So, once again: Below you see the two examples as to why the combination of CIE-Lab and CAM16 is such a great idea:</p>
+<p><img alt="colorio-hue-linearity-ebner-fairchild-png" src="../../assets/screenshots/colorio-hue-linearity-ebner-fairchild.png" /></p>
+<p><em>CAM16 shows the best Hue linearity</em></p>
+<p><br><img alt="colorio-munsell-lightness-png" src="../../assets/screenshots/colorio-munsell-lightness.png" /></p>
+<p><em>CAM16 shows the best color circles and chroma lines</em></p>
+<p><br><img alt="colorio-lightness-png" src="../../assets/screenshots/colorio-lightness.png" />
+<em>And the CIELab model with the best lightness prediction</em></p>
 <p>(screenshots taken from <a href="https://github.com/nschloe/colorio/blob/main/README.md">Colorio README</a>)</p>
 <!--- References to pictures... --->
 
