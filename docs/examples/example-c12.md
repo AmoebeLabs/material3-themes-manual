@@ -14,13 +14,13 @@ This theme uses CIE Magenta as the primary color.
 
 <!--- References to pictures... --->
 
-[M3 Palettes]: ../assets/screenshots/m3-theme-c12-palettes.png
-[M3 Surfaces]: ../assets/screenshots/m3-theme-c12-surfaces.png
-[M3 Light]: ../assets/screenshots/m3-theme-c12-light.png
-[M3 Dark]: ../assets/screenshots/m3-theme-c12-dark.png
+[AmoebeLabs Material 3 Theme Palettes]: ../assets/screenshots/m3-theme-c12-palettes.png
+[AmoebeLabs Material 3 Theme Surfaces]: ../assets/screenshots/m3-theme-c12-surfaces.png
+[AmoebeLabs Material 3 Theme Light]: ../assets/screenshots/m3-theme-c12-light.png
+[AmoebeLabs Material 3 Theme Dark]: ../assets/screenshots/m3-theme-c12-dark.png
 
-[M3 Example Light]: ../assets/screenshots/m3-example-c12-light.png
-[M3 Example Dark]: ../assets/screenshots/m3-example-c12-dark.png
+[AmoebeLabs Material 3 Theme Example Light]: ../assets/screenshots/m3-example-c12-light.png
+[AmoebeLabs Material 3 Theme Example Dark]: ../assets/screenshots/m3-example-c12-dark.png
 
 <!--- References to external links... --->
 

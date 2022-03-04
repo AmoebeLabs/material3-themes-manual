@@ -14,13 +14,13 @@ This theme uses Teal Blue as the primary color.
 
 <!--- References to pictures... -->
 
-[M3 Example Light]: ../assets/screenshots/m3-example-d06-light.png
-[M3 Example Dark]: ../assets/screenshots/m3-example-d06-dark.png
+[AmoebeLabs Material 3 Theme Example Light]: ../assets/screenshots/m3-example-d06-light.png
+[AmoebeLabs Material 3 Theme Example Dark]: ../assets/screenshots/m3-example-d06-dark.png
 
-[M3 Palettes]: ../assets/screenshots/m3-theme-d06-palettes.png
-[M3 Surfaces]: ../assets/screenshots/m3-theme-d06-surfaces.png
-[M3 Light]: ../assets/screenshots/m3-theme-d06-light.png
-[M3 Dark]: ../assets/screenshots/m3-theme-d06-dark.png
+[AmoebeLabs Material 3 Theme Palettes]: ../assets/screenshots/m3-theme-d06-palettes.png
+[AmoebeLabs Material 3 Theme Surfaces]: ../assets/screenshots/m3-theme-d06-surfaces.png
+[AmoebeLabs Material 3 Theme Light]: ../assets/screenshots/m3-theme-d06-light.png
+[AmoebeLabs Material 3 Theme Dark]: ../assets/screenshots/m3-theme-d06-dark.png
 
 <!--- References to external links... -->
 

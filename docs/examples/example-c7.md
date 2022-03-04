@@ -14,13 +14,13 @@ This theme uses CIE Green as the primary color.
 
 <!--- References to pictures... --->
 
-[M3 Palettes]: ../assets/screenshots/m3-theme-c07-palettes.png
-[M3 Surfaces]: ../assets/screenshots/m3-theme-c07-surfaces.png
-[M3 Light]: ../assets/screenshots/m3-theme-c07-light.png
-[M3 Dark]: ../assets/screenshots/m3-theme-c07-dark.png
+[AmoebeLabs Material 3 Theme Palettes]: ../assets/screenshots/m3-theme-c07-palettes.png
+[AmoebeLabs Material 3 Theme Surfaces]: ../assets/screenshots/m3-theme-c07-surfaces.png
+[AmoebeLabs Material 3 Theme Light]: ../assets/screenshots/m3-theme-c07-light.png
+[AmoebeLabs Material 3 Theme Dark]: ../assets/screenshots/m3-theme-c07-dark.png
 
-[M3 Example Light]: ../assets/screenshots/m3-example-c07-light.png
-[M3 Example Dark]: ../assets/screenshots/m3-example-c07-dark.png
+[AmoebeLabs Material 3 Theme Example Light]: ../assets/screenshots/m3-example-c07-light.png
+[AmoebeLabs Material 3 Theme Example Dark]: ../assets/screenshots/m3-example-c07-dark.png
 
 <!--- References to external links... --->
 

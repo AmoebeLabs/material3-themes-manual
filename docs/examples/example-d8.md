@@ -16,13 +16,13 @@ This theme uses Red as the primary color.
   References to pictures...
 --->
 
-[M3 Palettes]: ../assets/screenshots/m3-theme-d08-palettes.png
-[M3 Surfaces]: ../assets/screenshots/m3-theme-d08-surfaces.png
-[M3 Light]: ../assets/screenshots/m3-theme-d08-light.png
-[M3 Dark]: ../assets/screenshots/m3-theme-d08-dark.png
+[AmoebeLabs Material 3 Theme Palettes]: ../assets/screenshots/m3-theme-d08-palettes.png
+[AmoebeLabs Material 3 Theme Surfaces]: ../assets/screenshots/m3-theme-d08-surfaces.png
+[AmoebeLabs Material 3 Theme Light]: ../assets/screenshots/m3-theme-d08-light.png
+[AmoebeLabs Material 3 Theme Dark]: ../assets/screenshots/m3-theme-d08-dark.png
 
-[M3 Example Light]: ../assets/screenshots/m3-example-d08-light.png
-[M3 Example Dark]: ../assets/screenshots/m3-example-d08-dark.png
+[AmoebeLabs Material 3 Theme Example Light]: ../assets/screenshots/m3-example-d08-light.png
+[AmoebeLabs Material 3 Theme Example Dark]: ../assets/screenshots/m3-example-d08-dark.png
 
 <!---
   References to external links...
