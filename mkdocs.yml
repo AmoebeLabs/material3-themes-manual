@@ -148,3 +148,6 @@ nav:
       - Theme C10 - GeekBlue: examples/example-c10.md
       - Theme C11 - Purple: examples/example-c11.md
       - Theme C12 - Magenta: examples/example-c12.md
+  - Helpers:
+    - Introduction: helpers/introduction.md
+    - Pallette generators: helpers/palette-generators.md
