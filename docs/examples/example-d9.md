@@ -1,5 +1,6 @@
 ---
 template: main.html
+description: Material 3 light and dark ready-made theme for Home Assistant. Example D09 is based on Indigo as the primary color. Check the screenshots and theme config!
 ---
 
 This theme uses Indigo as the primary color.

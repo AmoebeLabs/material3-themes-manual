@@ -1,5 +1,6 @@
 ---
 template: main.html
+description: Material 3 light and dark ready-made theme for Home Assistant. Example C09 is based on Blue as the primary color. Check the screenshots and theme config!
 ---
 
 This theme uses CIE Blue as the primary color.

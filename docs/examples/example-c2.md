@@ -1,5 +1,6 @@
 ---
 template: main.html
+description: Material 3 light and dark ready-made theme for Home Assistant. Example C02 is based on Volcano as the primary color. Check the screenshots and theme config!
 ---
 
 This theme uses CIE Volcano as the primary color.

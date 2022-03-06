@@ -1,5 +1,6 @@
 ---
 template: main.html
+description: Material 3 light and dark ready-made theme for Home Assistant. Example D05 is based on Brown as the primary color. Check the screenshots and theme config!
 ---
 
 This theme uses Brown as the primary color.

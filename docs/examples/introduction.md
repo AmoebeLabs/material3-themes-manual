@@ -1,26 +1,27 @@
 ---
 template: main.html
+title: Examples Introduction
 ---
 
-I have made several example themes to give you an idea of ​​the looks & possibilities:
+I've created several sample themes to give you an idea of ​​the looks & possibilities:
 
-- 10 examples are made with the 'Dynamic' feature of the Figma Material Theme Builder, which uses an image to determine the colors.
-- The other 12 colors were created using the 'Custom' function of the Figma Material Theme Builder, where I specified the primary color. I used the rainbow colors from the [CIElab.io][cielab-io-url] website: red, volcano, orange, gold, yellow, lime, green, cyan, blue, geekblue, purple and magenta.
+- 10 themes are created with the 'Dynamic' feature of the Figma Material Theme Builder, which uses an image to determine the colors.
+- The other 12 themes are created using the 'Custom' function of the Figma Material Theme Builder, where I specified the primary color. I used the rainbow colors from the website [CIElab.io][cielab-io-url]: red, volcano, orange, gold, yellow, lime, green, cyan, blue, geek blue, purple, and magenta.
+
 <!--
 <br><br>The 12 colors (excluding grey) from the CIELab site:
   # ![cielab-io-colors-png]
 -->
-
-All these examples are available on Github and HACS. Each example contains a link to the resources.
 
 !!! warning "At this moment not all examples are already available in GitHub, nor in HACS"
     You can see it on the example page where "No repository found" is displayed.
 
 ##:material-home-floor-3: Examples in order of the color wheel
 
-All examples show [example view \#12][sak-example-12-url] of the Swiss Army Knife custom card.
+All examples show [example view \#12][sak-example-12-url] of the Swiss Army Knife custom card:
 
-Examples created with the 'Dynamic' theme builder feature have the prefix 'D' and examples created with the 'Custom' theme builder feature have the prefix 'C'.
+- Examples created with the 'Dynamic' theme builder feature have the prefix 'D'
+- Examples created with the 'Custom' theme builder feature have the prefix 'C'.
 
 You may see some similarities between the examples below as a result of the Material 3 calculations :smile:
 

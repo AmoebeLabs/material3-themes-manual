@@ -1,5 +1,6 @@
 ---
 template: main.html
+description: Material 3 light and dark ready-made theme for Home Assistant. Example C08 is based on Cyan as the primary color. Check the screenshots and theme config!
 ---
 
 This theme uses CIE Cyan as the primary color.

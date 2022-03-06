@@ -1,5 +1,6 @@
 ---
 template: main.html
+description: Material 3 light and dark ready-made theme for Home Assistant. Example C05 is based on Yellow as the primary color. Check the screenshots and theme config!
 ---
 
 This theme uses CIE Yellow as the primary color.

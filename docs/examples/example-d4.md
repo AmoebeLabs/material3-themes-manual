@@ -1,5 +1,6 @@
 ---
 template: main.html
+description: Material 3 light and dark ready-made theme for Home Assistant. Example D04 is based on Magenta as the primary color. Check the screenshots and theme config!
 ---
 
 This theme uses Magenta as the primary color.

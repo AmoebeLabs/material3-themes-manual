@@ -1,5 +1,6 @@
 ---
 template: main.html
+description: Material 3 light and dark ready-made theme for Home Assistant. Example C10 is based on GeekBlue as the primary color. Check the screenshots and theme config!
 ---
 
 This theme uses CIE GeekBlue as the primary color.

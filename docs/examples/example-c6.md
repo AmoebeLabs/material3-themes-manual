@@ -1,5 +1,6 @@
 ---
 template: main.html
+description: Material 3 light and dark ready-made theme for Home Assistant. Example C06 is based on Lime as the primary color. Check the screenshots and theme config!
 ---
 
 This theme uses CIE Lime as the primary color.

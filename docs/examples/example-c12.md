@@ -1,5 +1,6 @@
 ---
 template: main.html
+description: Material 3 light and dark ready-made theme for Home Assistant. Example C12 is based on Magenta as the primary color. Check the screenshots and theme config!
 ---
 
 This theme uses CIE Magenta as the primary color.
