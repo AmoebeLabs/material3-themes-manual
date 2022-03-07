@@ -39,6 +39,10 @@ extra:
   social:
     - icon: bmc/bmc-logo
       link: https://www.buymeacoffee.com/amoebelabs 
+    - icon: amoebelabs/al-logo-social
+      link: https://amoebelabs.com
+    - icon: sak/sak-logo-social
+      link: https://swiss-army-knife.docs.amoebelabs.com
     - icon: fontawesome/brands/github
       link: https://github.com/amoebelabs  
     - icon: fontawesome/brands/instagram
