@@ -1,7 +1,7 @@
 ---
 template: main.html
 ---
-\#TODO
+\#Still TODO. Describe all the steps needed to create theme
 
 ##:material-home-floor-3: Where to start?
 So, you came here to read how to design your own theme. That's good!
