@@ -40,17 +40,17 @@ extra_css:
 extra:
   social:
     - icon: bmc/bmc-logo
-      link: https://www.buymeacoffee.com/amoebelabs 
+      link: https://www.buymeacoffee.com/amoebelabs/
     - icon: amoebelabs/al-logo-social
-      link: https://amoebelabs.com
+      link: https://amoebelabs.com/
     - icon: sak/sak-logo-social
-      link: https://swiss-army-knife.docs.amoebelabs.com
+      link: https://swiss-army-knife.docs.amoebelabs.com/
     - icon: fontawesome/brands/github
-      link: https://github.com/amoebelabs  
+      link: https://github.com/amoebelabs/
     - icon: fontawesome/brands/instagram
-      link: https://instagram.com/amoebelabs  
+      link: https://www.instagram.com/amoebelabs/
     - icon: fontawesome/brands/twitter
-      link: https://twitter.com/amoebelabs  
+      link: https://twitter.com/amoebelabs/
 
   analytics:
     provider: google
