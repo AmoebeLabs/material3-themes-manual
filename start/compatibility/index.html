@@ -6,20 +6,20 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="With Material 3 Themes for Home Assistant you can create beautiful combined dark and light themes with minimal work and great results!">
+        <meta name="description" content="Any Home Assistant Material 3 theme should be 100% compatible with Home Assistant itself and its built-in cards. HAM3 maps all definitions to existing HA color definitions.">
       
       
         <meta name="author" content="Marco">
       
       
-        <link rel="canonical" href="https://ha-m3-themes.docs.amoebelabs.com/basics/m3-color-system/">
+        <link rel="canonical" href="https://ha-m3-themes.docs.amoebelabs.com/start/compatibility/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.9">
     
     
       
-        <title>The Color System - Material 3 Themes for Home Assistant</title>
+        <title>Compatibility - Material 3 Themes for Home Assistant</title>
       
     
     
@@ -96,7 +96,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#material-3-color-design-aspects" class="md-skip">
+        <a href="#a-word-on-compatibility" class="md-skip">
           Skip to content
         </a>
       
@@ -150,7 +150,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              The Color System
+              Compatibility
             
           </span>
         </div>
@@ -230,13 +230,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../../start/introduction/" class="md-tabs__link">
+      <a href="../introduction/" class="md-tabs__link md-tabs__link--active">
         Getting started
       </a>
     </li>
@@ -252,8 +254,8 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../using/compatibility/" class="md-tabs__link">
-        Using HAM3
+      <a href="../../basics/color-spaces/" class="md-tabs__link">
+        Basics
       </a>
     </li>
   
@@ -262,19 +264,13 @@
         
   
   
-    
-  
 
 
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../color-spaces/" class="md-tabs__link md-tabs__link--active">
-        Basics
-      </a>
-    </li>
-  
+  <li class="md-tabs__item">
+    <a href="../../using/using-ham3-in-cards/" class="md-tabs__link">
+      Using HA Material 3
+    </a>
+  </li>
 
       
         
@@ -318,7 +314,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../helpers/introduction/" class="md-tabs__link">
+      <a href="../../helpers/palette-generators/" class="md-tabs__link">
         Helpers
       </a>
     </li>
@@ -395,12 +391,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" data-md-state="indeterminate" type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
       
       
       
@@ -423,7 +421,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../start/introduction/" class="md-nav__link">
+      <a href="../introduction/" class="md-nav__link">
         Introduction
       </a>
     </li>
@@ -437,7 +435,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../start/installation/" class="md-nav__link">
+      <a href="../installation/" class="md-nav__link">
         Installation
       </a>
     </li>
@@ -449,11 +447,93 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../changelog/changelog/" class="md-nav__link">
-        Changelog
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Compatibility
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Compatibility
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#in-general-compatibility-should-be-100" class="md-nav__link">
+     In general, compatibility should be 100%
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#home-assistants-main-ui-and-built-in-cards" class="md-nav__link">
+     Home Assistant's main UI and built-in cards
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#custom-cards" class="md-nav__link">
+     Custom Cards
+  </a>
+  
+    <nav class="md-nav" aria-label=" Custom Cards">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#theme-mode-compatible-custom-cards" class="md-nav__link">
+     Theme mode compatible custom cards
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#any-other-case" class="md-nav__link">
+     Any other case...
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#note-on-custom-card-styling" class="md-nav__link">
+     Note on custom card styling
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -482,76 +562,12 @@
       
       
         <label class="md-nav__link" for="__nav_3">
-          Using HAM3
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Using HAM3" data-md-level="1">
-        <label class="md-nav__title" for="__nav_3">
-          <span class="md-nav__icon md-icon"></span>
-          Using HAM3
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../using/compatibility/" class="md-nav__link">
-        Compatibility
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../using/in-cards/" class="md-nav__link">
-        Use in Cards
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-    
-  
-  
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_4">
           Basics
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Basics" data-md-level="1">
-        <label class="md-nav__title" for="__nav_4">
+        <label class="md-nav__title" for="__nav_3">
           <span class="md-nav__icon md-icon"></span>
           Basics
         </label>
@@ -563,7 +579,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../color-spaces/" class="md-nav__link">
+      <a href="../../basics/color-spaces/" class="md-nav__link">
         Color Spaces
       </a>
     </li>
@@ -575,97 +591,11 @@
               
   
   
-    
-  
-  
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_2" type="checkbox" id="__nav_4_2" checked>
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_4_2">
-          Introducing Material 3
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Introducing Material 3" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_2">
-          <span class="md-nav__icon md-icon"></span>
-          Introducing Material 3
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-    
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          The Color System
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        The Color System
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#material-3-color-design-aspects" class="md-nav__link">
-     Material 3 color design aspects...
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
   
     <li class="md-nav__item">
-      <a href="../m3-dynamic-color/" class="md-nav__link">
-        Dynamic Color aka You!
+      <a href="../../basics/introducing-m3-color-system/" class="md-nav__link">
+        Introducing Material 3
       </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
     </li>
   
 
@@ -680,18 +610,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_3" data-md-state="indeterminate" type="checkbox" id="__nav_4_3" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" data-md-state="indeterminate" type="checkbox" id="__nav_3_3" checked>
       
       
       
       
-        <label class="md-nav__link" for="__nav_4_3">
+        <label class="md-nav__link" for="__nav_3_3">
           Material 3 Analysis
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Material 3 Analysis" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_3">
+        <label class="md-nav__title" for="__nav_3_3">
           <span class="md-nav__icon md-icon"></span>
           Material 3 Analysis
         </label>
@@ -703,7 +633,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../m3-analysis-introduction/" class="md-nav__link">
+      <a href="../../basics/m3-analysis-introduction/" class="md-nav__link">
         A new color space
       </a>
     </li>
@@ -717,7 +647,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../m3-analysis-hue-picker/" class="md-nav__link">
+      <a href="../../basics/m3-analysis-hue-picker/" class="md-nav__link">
         Picking the Hue
       </a>
     </li>
@@ -731,7 +661,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../m3-analysis-palettes/" class="md-nav__link">
+      <a href="../../basics/m3-analysis-palettes/" class="md-nav__link">
         Theme Palettes
       </a>
     </li>
@@ -755,18 +685,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4" data-md-state="indeterminate" type="checkbox" id="__nav_4_4" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_4" data-md-state="indeterminate" type="checkbox" id="__nav_3_4" checked>
       
       
       
       
-        <label class="md-nav__link" for="__nav_4_4">
+        <label class="md-nav__link" for="__nav_3_4">
           HAM3 Implementation
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="HAM3 Implementation" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_4">
+        <label class="md-nav__title" for="__nav_3_4">
           <span class="md-nav__icon md-icon"></span>
           HAM3 Implementation
         </label>
@@ -778,7 +708,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ha-m3-introduction/" class="md-nav__link">
+      <a href="../../basics/ha-m3-introduction/" class="md-nav__link">
         Introduction
       </a>
     </li>
@@ -792,7 +722,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ha-m3-implementation/" class="md-nav__link">
+      <a href="../../basics/ha-m3-implementation/" class="md-nav__link">
         Implementation
       </a>
     </li>
@@ -806,7 +736,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ha-m3-theme-structure/" class="md-nav__link">
+      <a href="../../basics/ha-m3-theme-structure/" class="md-nav__link">
         Theme structure
       </a>
     </li>
@@ -820,7 +750,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ha-m3-theme-colors/" class="md-nav__link">
+      <a href="../../basics/ha-m3-theme-colors/" class="md-nav__link">
         Theme colors
       </a>
     </li>
@@ -837,6 +767,21 @@
           
         </ul>
       </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../using/using-ham3-in-cards/" class="md-nav__link">
+        Using HA Material 3
+      </a>
     </li>
   
 
@@ -1373,20 +1318,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../helpers/introduction/" class="md-nav__link">
-        Introduction
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../helpers/palette-generators/" class="md-nav__link">
         Pallette generators
       </a>
@@ -1418,6 +1349,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1426,9 +1359,50 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#material-3-color-design-aspects" class="md-nav__link">
-     Material 3 color design aspects...
+  <a href="#in-general-compatibility-should-be-100" class="md-nav__link">
+     In general, compatibility should be 100%
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#home-assistants-main-ui-and-built-in-cards" class="md-nav__link">
+     Home Assistant's main UI and built-in cards
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#custom-cards" class="md-nav__link">
+     Custom Cards
+  </a>
+  
+    <nav class="md-nav" aria-label=" Custom Cards">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#theme-mode-compatible-custom-cards" class="md-nav__link">
+     Theme mode compatible custom cards
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#any-other-case" class="md-nav__link">
+     Any other case...
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#note-on-custom-card-styling" class="md-nav__link">
+     Note on custom card styling
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1446,47 +1420,39 @@
                 
 
 
-  <h1>The Color System</h1>
-
-<p>The Material 3 color system breaks with the previous Material Design version in many ways. It contains a number of important new features. All these features are described on the <a href="https://m3.material.io/styles/color/overview">Material 3 website.</a></p>
-<p>The most important aspects are described below.</p>
-<h2 id="material-3-color-design-aspects"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 3 10 9h-3v8H5v-8H2l10-9m3 8.5V10a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5Z"/></svg></span> Material 3 color design aspects...<a class="headerlink" href="#material-3-color-design-aspects" title="Permanent link">&para;</a></h2>
-<p>The table below shows the 3 design aspects that Material 3 introduces:</p>
+<!-- GT/GMY -->
+<h1 id="a-word-on-compatibility">A word on compatibility<a class="headerlink" href="#a-word-on-compatibility" title="Permanent link">&para;</a></h1>
+<h2 id="in-general-compatibility-should-be-100"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 3 10 9h-3v8H5v-8H2l10-9m3 8.5V10a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5Z"/></svg></span> In general, compatibility should be 100%<a class="headerlink" href="#in-general-compatibility-should-be-100" title="Permanent link">&para;</a></h2>
+<p>Home Assistant has <em>no</em> idea that a Material 3 theme is used!</p>
+<p>HAM3 integrates Material 3 color definitions with the Home Assistant theme definitions by mapping the Material 2 and Home Assistant CSS definitions to the Material 3 definitions.</p>
+<h2 id="home-assistants-main-ui-and-built-in-cards"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 3 10 9h-3v8H5v-8H2l10-9m3 8.5V10a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5Z"/></svg></span> Home Assistant's main UI and built-in cards<a class="headerlink" href="#home-assistants-main-ui-and-built-in-cards" title="Permanent link">&para;</a></h2>
+<p>Since the introduction of light and dark theme modes, the Home Assistant UI takes full advantage of the theme definitions. Therefore, and because of the mapping of Material 3 definitions to Material 2 definitions, a HAM3-based theme should integrate seamlessly with the Home Assistant user interface, but with all the capabilities that HAM3 offers:</p>
 <ul>
-<li>Dynamic color, so an Android user can use an image to generate a matching theme</li>
-<li>Design tokens. These are important for app developers: they should use them, otherwise the theme won't work in their app</li>
-<li>Accessibility. The last point, but the one with the most impact. This is what really sets Material 3 apart from previous versions!</li>
+<li>Seemless compatibility between HAM3 themes</li>
+<li>Keeping readability between dark and light modes</li>
+<li>The ability to create a theme from your favorite image</li>
 </ul>
-<table>
-<thead>
-<tr>
-<th><strong>Dynamic color</strong></th>
-<th>.</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>The color system in M3 enables user preferences and needs to interact with an app’s colors. <br><br>Dynamic color specifically describes the convergence of user settings with the system UI and in-app color experiences</td>
-<td><img alt="dynamic color" src="https://lh3.googleusercontent.com/NGUL0eR9CX4ztNMVnfEoDODDlNqWKc0SzdKBIyzVNmPwmqwSRJj0gXXiM8f0TwUfnmWZiVreM9Vy-p_r8ThO2ThXVH1DJr_5s6L1V1J3pEnA=s0" /></td>
-</tr>
-<tr>
-<td><strong>Design tokens &amp; tool</strong></td>
-<td></td>
-</tr>
-<tr>
-<td>Design tokens enable flexibility and consistency across a product by allowing designers to assign an element's color role in a UI, rather than a set value.<br><br>Tokens act as a bridge between an element's assigned role and the chosen color value for a role. With the addition of tokens, designing for relationships of elements is more fundamental than selecting specific colors</td>
-<td><img alt="tokens" src="https://lh3.googleusercontent.com/6AeOFxLCf_u2S5X9xTe7BjB7f7-b8FN4ypCMoJKBO7eUTHjSkXqc0F1kykSBYwze9Rdn9-dggVszNj68iyciGH6z9qLXZbYF5gsDXUCncOfA=s0" /></td>
-</tr>
-<tr>
-<td><strong>Accessibility</strong></td>
-<td></td>
-</tr>
-<tr>
-<td>Dynamic color is designed to meet accessibility standards for color contrast. The system of tonal palettes is central to making any color scheme accessible by default. <br><br>Combining color based on tonality, rather than hex value or hue, is one of the key systems that make any color output accessible. Products using dynamic color will meet requirements because <em>the algorithmic combinations that an end-user can experience are designed to meet accessibility standards.</em></td>
-<td><img alt="access" src="https://lh3.googleusercontent.com/aF8CvgyX659D64Wim3zFsTgd63wXh1HBQ_XTyaMX6lARG7VEDkH-0KhmQmPgBOpqOwS6RMQZHRXUQ8qZITmaI4hF7vfexRA7kZhAAE61nd1Mxg=s0" /></td>
-</tr>
-</tbody>
-</table>
+<p>As with the main UI, the built-in cards should integrate seamlessly with any HAM3 Theme.</p>
+<div class="admonition warning">
+<p class="admonition-title">I did not test ALL the built-in cards, so there might still be some bugs present!</p>
+</div>
+<h2 id="custom-cards"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 3 10 9h-3v8H5v-8H2l10-9m3 8.5V10a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5Z"/></svg></span> Custom Cards<a class="headerlink" href="#custom-cards" title="Permanent link">&para;</a></h2>
+<h3 id="theme-mode-compatible-custom-cards"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 3 10 9h-3v8H5v-8H2l10-9m3 8.5V10a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5Z"/></svg></span> Theme mode compatible custom cards<a class="headerlink" href="#theme-mode-compatible-custom-cards" title="Permanent link">&para;</a></h3>
+<p>If the custom card is already fully compatible with dark and light theme modes, then, as with Home Assistant itself and the built-in cards, I wouldn't expect any problems with the HAM3 themes, unless the custom card requires its own dedicated theme.</p>
+<h3 id="any-other-case"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 3 10 9h-3v8H5v-8H2l10-9m3 8.5V10a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5Z"/></svg></span> Any other case...<a class="headerlink" href="#any-other-case" title="Permanent link">&para;</a></h3>
+<p>If the custom card is not compatible with light and dark modes, it highly depends on what the custom card is using:</p>
+<ul>
+<li>Its own CSS variables that you should adapt to light and dark modes</li>
+<li>Fixed colors that won't adapt to light and dark modes</li>
+</ul>
+<p>The last case is a difficult one, and can only be changed by the developer of the custom card. But if the card is using its own CSS variables, you can define a light and dark variant in the M3 theme.</p>
+<h3 id="note-on-custom-card-styling"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 3 10 9h-3v8H5v-8H2l10-9m3 8.5V10a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5Z"/></svg></span> Note on custom card styling<a class="headerlink" href="#note-on-custom-card-styling" title="Permanent link">&para;</a></h3>
+<p>If you use a custom card to style the CSS of your card, it depends how the styling is done:</p>
+<ul>
+<li>Your own CSS variables that you should adapt to light and dark modes</li>
+<li>Fixed colors that won't adapt to light and dark modes</li>
+</ul>
+<p>The problem is the same as above: you should use CSS variables, and define them in the light and dark modes of the theme.</p>
 
               
             </article>
@@ -1505,7 +1471,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../color-spaces/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Color Spaces" rel="prev">
+        <a href="../installation/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Installation" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -1514,20 +1480,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Color Spaces
+              Installation
             </div>
           </div>
         </a>
       
       
         
-        <a href="../m3-dynamic-color/" class="md-footer__link md-footer__link--next" aria-label="Next: Dynamic Color aka You!" rel="next">
+        <a href="../../basics/color-spaces/" class="md-footer__link md-footer__link--next" aria-label="Next: Color Spaces" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Dynamic Color aka You!
+              Color Spaces
             </div>
           </div>
           <div class="md-footer__button md-icon">
