@@ -1,5 +1,6 @@
 ---
 template: main.html
+description: Welcome to the Home Assistant Material 3 theme documentation. Check the how to proceed paragraph on how to install and use HAM3 in Home Assistant, or create your own.
 ---
 <!-- GT/GMY -->
 
@@ -17,17 +18,19 @@ Material 3 is a common design language, with colors, typography, and UI elements
 
 The _You_ part refers to the fact that _You_ can now use a photo to create a theme!
 
-The Material 3 Themes for Home Assistant or _HAM3_ will only use the color section and extend and adapt these guidelines to create themes for Home Assistant.
+The Material 3 Themes for Home Assistant or _HAM3_ will only use the color section and extend and adapt these guidelines to create Material 3 based themes for Home Assistant that should be [100% compatible][compatibility-section-md] with the currently used default day and night theme definitions.
 
 ##:material-home-floor-3: How to proceed
 
 If you only want to use one of the available sample themes, go to Installation. You can check out the [examples section][examples-section-md] with 22 pre-made Material 3 based themes.
 
-If you want to learn more, even design your own Material 3 themes and how to use them in Home Assistant, read more at [Basics][basics-section-md] and [Design Your Own Theme][design-section-md].
+If you want to learn more, even design your own Material 3 themes and how to use them in Home Assistant, read more at [Material 3 Basics][basics-section-md], [using the Material 3 theme][using-section-md] and [Design Your Own Theme][design-section-md].
 
 Happy Theming!
 
 [examples-section-md]: ../examples/introduction.md
-[basics-section-md]: ../basics/m3-color-system.md
+[basics-section-md]: ../basics/introducing-m3-color-system.md
 [design-section-md]: ../design/introduction.md
+[using-section-md]: ../using/using-ham3-in-cards.md
+[compatibility-section-md]: ../start/compatibility.md
 

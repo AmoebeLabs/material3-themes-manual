@@ -1,22 +1,23 @@
 ---
 template: main.html
+description: Any Home Assistant Material 3 theme should be 100% compatible with Home Assistant itself and its built-in cards. HAM3 maps all definitions to existing HA color definitions.
 ---
 <!-- GT/GMY -->
+#A word on compatibility
 
-##:material-home-floor-3: Home Assistant
+##:material-home-floor-3: In general, compatibility should be 100%
+Home Assistant has _no_ idea that a Material 3 theme is used!
 
-###:material-home-floor-3: Home Assistant's main UI
+HAM3 integrates Material 3 color definitions with the Home Assistant theme definitions by mapping the Material 2 and Home Assistant CSS definitions to the Material 3 definitions.
 
-Home Assistant has no idea that a Material 3 theme is used.
-<br>HAM3 integrates Material 3 color definitions with the Home Assistant themes by mapping the Material 2 and Home Assistant CSS definitions to the Material 3 definitions.
+##:material-home-floor-3: Home Assistant's main UI and built-in cards
 
-Since the introduction of light and dark theme modes, the Home Assistant UI takes full advantage of these definitions. Therefore, and because of the mapping of Material 3 definitions to Material 2 definitions, a HAM3-based theme should integrate seamlessly with the Home Assistant user interface, but with all the capabilities that HAM3 offers:
+Since the introduction of light and dark theme modes, the Home Assistant UI takes full advantage of the theme definitions. Therefore, and because of the mapping of Material 3 definitions to Material 2 definitions, a HAM3-based theme should integrate seamlessly with the Home Assistant user interface, but with all the capabilities that HAM3 offers:
 
 - Seemless compatibility between HAM3 themes
 - Keeping readability between dark and light modes
 - The ability to create a theme from your favorite image
 
-###:material-home-floor-3: Home Assistant built-in cards
 As with the main UI, the built-in cards should integrate seamlessly with any HAM3 Theme.
 
 !!! Warning "I did not test ALL the built-in cards, so there might still be some bugs present!"

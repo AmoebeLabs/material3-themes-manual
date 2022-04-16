@@ -1,5 +1,6 @@
 ---
 template: main.html
+description: How to use Home Assistant Material 3 themes in your views and cards. Start by using the standard light and dark theme definitions, and extend this with specific colors.
 ---
 \#TODO
 

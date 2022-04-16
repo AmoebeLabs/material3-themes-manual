@@ -1,5 +1,6 @@
 ---
 template: main.html
+description: Use these color palette generators to create colors that are compatible with the Material 3 themes that match the lightness and WCAG contrast guidelines to make your card stand out!
 ---
 
 [paletton-com]: ../assets/screenshots/paletton-com.png
@@ -7,8 +8,11 @@ template: main.html
 [colordesigner-io]: ../assets/screenshots/colordesigner-io-full.png
 [accessible-palette-com]: ../assets/screenshots/accessible-palette-com-screenshot.png
 
-##:material-home-floor-3: Accessible Palette
-With this website, Accessible palette, you can create Material Design color systems with consistent lightness and contrast. Nice for your custom colors to create matching pairs!
+#Color Palette generators
+Use these color palette generators to create colors that are compatible with your Home Assistant Material 3 theme that matches the lightness and WCAG contrast guidelines to make your card stand out!
+
+##:sak-sak-logo: Accessible Palette Color System Generator
+With the Accessible palette website, you can create Material Design color systems with consistent lightness and contrast. Nice for your custom colors to create matching pairs!
 
 This is your go-to tool for creating lightness compatible colors to add to your Material 3 theme!
 
@@ -16,14 +20,16 @@ URL: https://accessiblepalette.com/
 
 ![accessible-palette-com]
 
-##:material-home-floor-3: Color Designer
+##:sak-sak-logo: Color Designer to Create Tints and Shades
 Color Designer is great for creating tints and shades, among a few other color combinations.
+
+These tints and shades use the HSL (Hue, Saturation, Lightness) representation of the RGB color model. These are not fully accurate compared to the human perception of lightness. Use the previous one, the accessible palette generator for a better match!
 
 URL: https://colordesigner.io/
 
 [![colordesigner-io]][colordesigner-io]
 
-##:material-home-floor-3: Paletton
+##:sak-sak-logo: Paletton Color Palette Generator
 Paletton is one of the nice color palette generators around.
 
 URL: https://paletton.com/

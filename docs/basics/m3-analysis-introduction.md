@@ -3,25 +3,7 @@ template: main.html
 ---
 
 <!-- GT/GMY -->
-
-##:material-home-floor-3: Material 3 analyzed!
-
-This chapter is about some experiments to see if I can understand how Material 3 works and if it does what it promises.
-
-For this, I used the 22 examples I created to analyze some of the Material 3 aspects.
-
-**TL;DR**
-!!! Quote "From the examples, I can conclude that all themes with different colors give excellent displays with consistent readability and contrast."
-    That makes the 22 themes interchangeable without any change to the view and card configuration if you use theme colors of course!
-    <br><br>This, and the fact that I can almost generate a theme, makes me very happy with M3, as it also saves a _lot_ of time creating a theme.
-
-But then again, it raised enough questions about what Material 3 does in some cases.
-
-Read on, if you're interested :smile:
-
-##:material-home-floor-3: But before, that, the basis of Material 3...
-
-<!-- https://bootcamp.uxdesign.cc/perception-based-color-palettes-for-customizable-ui-themes-33f596faf23d -->
+#A new color space called HCT
 
 With Material 3 for Android 12, Google introduces a new color system, called [HCT][m3-hct-source-url].
 <br>HCT is short for:
@@ -32,6 +14,26 @@ With Material 3 for Android 12, Google introduces a new color system, called [HC
 
 !!! Success "The HCT color system combines the best from CIE-Lab and CAM16 color spaces"
     It is built using CAM16 for Hue and Chroma, and Lightness (L\*) from CIE-Lab.
+    
+##:material-home-floor-3: How does it work. Why is it so special?
+
+The next two pages are about some experiments to see if I can understand how Material 3 works and if it does what it promises.
+
+For this, I used the 22 examples I created to analyze some of the Material 3 aspects.
+
+**TL;DR**
+!!! Quote "From the examples, I can conclude that all themes with different colors give excellent displays with consistent readability and contrast."
+    That makes the 22 themes interchangeable without any change to the Lovelace view and (custom) card configuration, assuming you use the Material 3 theme color definitions of course!
+    <br><br>This, and the fact that I can generate a theme with Figma and a bit of Javascript, makes me very happy with M3, as this higly automated way of creating a theme also saves a _lot_ of time!
+
+But then again, it raised enough questions about what Material 3 does in some cases.
+
+Read on, if you're interested :smile:
+
+##:material-home-floor-3: But before, that, the basis of Material 3...
+
+<!-- https://bootcamp.uxdesign.cc/perception-based-color-palettes-for-customizable-ui-themes-33f596faf23d -->
+The newly introduced HCT color system combines both CIE-Lab and CAM16 color spaces. The best of both worlds.
 
 The lightness in CIE-Lab is in line with human perception, allowing for very accurate color tones. It is _the_ reason why Material 3 can guarantee contrast differences, and thus the accessibility. The contrast difference between background and foreground is one of the most important factors in the [WCAG guidelines][wcag-guidelines-url].
 

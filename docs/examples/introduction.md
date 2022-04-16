@@ -2,7 +2,7 @@
 template: main.html
 title: Examples Introduction
 ---
-
+#Introducing 22 Example themes
 I've created several sample themes to give you an idea of ​​the looks & possibilities:
 
 - 10 themes are created with the 'Dynamic' feature of the Figma Material Theme Builder, which uses an image to determine the colors.
@@ -24,6 +24,7 @@ All examples show [example view \#12][sak-example-12-url] of the Swiss Army Knif
 - Examples created with the 'Custom' theme builder feature have the prefix 'C'.
 
 You may see some similarities between the examples below as a result of the Material 3 calculations :smile:
+The Material 3 color picker can create the same primary color, altough different colors are picked by the user. I have shown some examples [here][material-3-analysis-picking-the-hue-url]
 
 | **Light variant** | **Dark variant**|
 | ------------ | ---------------- |
@@ -128,6 +129,8 @@ You may see some similarities between the examples below as a result of the Mate
 [example-c10-md]: ../examples/example-c10.md
 [example-c11-md]: ../examples/example-c11.md
 [example-c12-md]: ../examples/example-c12.md
+
+[material-3-analysis-picking-the-hue-url]: ../../basics/m3-analysis-hue-picker/
 
 <!--- References to external links... --->
 

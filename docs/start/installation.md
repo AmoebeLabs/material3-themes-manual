@@ -1,15 +1,16 @@
 ---
 template: main.html
+description: Installation of any Home Assistant Material 3 theme can be done either using HACS or a manual install. Both are easy and put the theme in the same folder.
 ---
 The installation can be done in two ways:
 
 - Install using HACS
 - Manual install
 
-## Installation via HACS
+##:material-home-floor-3: Installation via HACS
 Go to the HACS panel in your Home Assistant installation, choose frontend / themes, and search for the Material 3 themes, and install the one you want.
 
-## Manual Installation
+##:material-home-floor-3: Manual Installation
 Get the Material 3 theme yaml file from the `themes` folder in Github and put it into your Home Assistant `themes` folder.
 
 If you have the following in your `configuration.yaml`:
