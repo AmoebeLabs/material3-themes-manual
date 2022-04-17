@@ -130,7 +130,7 @@ The Material 3 color picker can create the same primary color, altough different
 [example-c11-md]: ../examples/example-c11.md
 [example-c12-md]: ../examples/example-c12.md
 
-[material-3-analysis-picking-the-hue-url]: ../../basics/m3-analysis-hue-picker/
+[material-3-analysis-picking-the-hue-url]: ../basics/m3-analysis-hue-picker.md
 
 <!--- References to external links... --->
 
