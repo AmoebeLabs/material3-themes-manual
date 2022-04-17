@@ -156,11 +156,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ha-m3-themes.docs.amoebelabs.com/examples/example-d6/</loc>
-         <lastmod>2022-04-17</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://ha-m3-themes.docs.amoebelabs.com/examples/example-d7/</loc>
          <lastmod>2022-04-17</lastmod>
          <changefreq>daily</changefreq>
@@ -177,6 +172,11 @@
     </url>
     <url>
          <loc>https://ha-m3-themes.docs.amoebelabs.com/examples/example-include/</loc>
+         <lastmod>2022-04-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://ha-m3-themes.docs.amoebelabs.com/examples/example-theme-d06-tealblue/</loc>
          <lastmod>2022-04-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
