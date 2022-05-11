@@ -1451,6 +1451,8 @@
                 
 
 
+<!--- 2022.05.11 Volgens seobility, 399 words. Advies is minimaal 800, al gaat 600 woorden ook al snel goed -->
+
 <h1 id="using-home-assistant-material-3-themes">Using Home Assistant Material 3 themes<a class="headerlink" href="#using-home-assistant-material-3-themes" title="Permanent link">&para;</a></h1>
 <h2 id="use-the-theme"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 3 10 9h-3v8H5v-8H2l10-9m3 8.5V10a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5Z"/></svg></span> Use the Theme!<a class="headerlink" href="#use-the-theme" title="Permanent link">&para;</a></h2>
 <p>The most important point in using all the features of the HAM3 themes is to <em>use</em> the theme color definitions where possible and applicable. In this case, your card will follow the theme in both light and dark mode!</p>
@@ -1479,7 +1481,7 @@
 <h2 id="using-standard-material-colors"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 3 10 9h-3v8H5v-8H2l10-9m3 8.5V10a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5Z"/></svg></span> Using standard material colors<a class="headerlink" href="#using-standard-material-colors" title="Permanent link">&para;</a></h2>
 <p>The Material 3 themes map the color definitions to the standard material color definitions Home Assistant is using.
 This means you can use the Primary and secondary font and background colors as before to style your cards.</p>
-<p>If fonts use the <code>var(--primary-text-color)</code> css variable, both light and dark themes should work out of the box!</p>
+<p>If fonts use the <code>var(--primary-text-color)</code> CSS variable, both light and dark themes should work out of the box!</p>
 <div class="admonition info">
 <p class="admonition-title">The above example uses these default font and background colors for the cards background and text parts.</p>
 </div>
@@ -1487,23 +1489,23 @@ This means you can use the Primary and secondary font and background colors as b
 <p>In some cases you can't use the Theme colors, you need to use dedicated colors. Traffic light colors or the Airvisual colors are a good example of that use case.</p>
 <p>You have 3 options to use dedicated colors in your cards:</p>
 <ul>
-<li>Use hard coded colors (hex, rgb, hsl, etc.)</li>
+<li>Use hard coded colors (HEX, RGB, HSL, etc.)</li>
 <li>Clone the theme you want to use, and define the colors in the theme, and use those custom color names in your cards.
   <br><br>Say you define them as
   <div class="highlight"><pre><span></span><code><span class="nt">traffic-light-red</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">red</span><span class="w"></span>
 <span class="nt">traffic-light-yellow</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">yellow</span><span class="w"></span>
 <span class="nt">traffic-light-green</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">green</span><span class="w"></span>
 </code></pre></div>
-  You can use the colors in the card using the css variable <code>var(--traffic-light-red)</code></li>
-<li>If the card is made with the <a href="https://swiss-army-knife.docs.amoebelabs.com/">Swiss Army Knife custom card</a>, you can define those colors in the user css definitions, and use them in your card as css variables. </li>
+  You can use the colors in the card using the CSS variable <code>var(--traffic-light-red)</code></li>
+<li>If the card is made with the <a href="https://swiss-army-knife.docs.amoebelabs.com/">Swiss Army Knife custom card</a>, you can define those colors in the user CSS definitions, and use them in your card as CSS variables. </li>
 </ul>
 <div class="admonition info">
 <p class="admonition-title">The above example uses dedicated colors (green, yellow, orange, red, purple) for the AirVisual representation in the first wide card.</p>
 </div>
 <h2 id="using-material-3-colors"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 3 10 9h-3v8H5v-8H2l10-9m3 8.5V10a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5Z"/></svg></span> Using Material 3 colors<a class="headerlink" href="#using-material-3-colors" title="Permanent link">&para;</a></h2>
 <p>The Material 3 themes define more colors: primary, secondary, tertiary and error reference and system color palettes and surface elevation colors.</p>
-<p>All these colors can be used as css variables.</p>
-<p>All Material 3 themes support light and dark mode. It does this by redefining the <code>system</code> colors with theme mode dependant <code>reference</code> colors.</p>
+<p>All these colors can be used as CSS variables.</p>
+<p>All Material 3 themes support light and dark mode. It does this by redefining the <code>system</code> colors with theme mode dependent <code>reference</code> colors.</p>
 <div class="admonition note">
 <p class="admonition-title">If you use Material 3 color names in your cards, non Material 3 themes will show fallback colors (mostly black and white)</p>
 </div>
