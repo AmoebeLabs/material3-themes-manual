@@ -1,5 +1,6 @@
 ---
 template: main.html
+title: Theme Design Introduction
 ---
 \#Still TODO. Describe all the steps needed to create theme
 

@@ -1,6 +1,7 @@
 ---
 template: main.html
-description: Welcome to the Home Assistant Material 3 theme documentation. Check the how to proceed paragraph on how to install and use HAM3 in Home Assistant, or create your own.
+title: Getting Started
+description: Welcome to the Home Assistant Material 3 theme documentation. Check the how to proceed paragraph on how to install and use HAM3 in Home Assistant.
 ---
 <!-- GT/GMY -->
 

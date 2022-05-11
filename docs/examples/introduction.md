@@ -24,7 +24,7 @@ All examples show [example view \#12][sak-example-12-url] of the Swiss Army Knif
 - Examples created with the 'Custom' theme builder feature have the prefix 'C'.
 
 You may see some similarities between the examples below as a result of the Material 3 calculations :smile:
-The Material 3 color picker can create the same primary color, altough different colors are picked by the user. I have shown some examples [here][material-3-analysis-picking-the-hue-url]
+The Material 3 color picker can create the same primary color, although different colors are picked by the user. I have shown some examples [here][material-3-analysis-picking-the-hue-url]
 
 | **Light variant** | **Dark variant**|
 | ------------ | ---------------- |

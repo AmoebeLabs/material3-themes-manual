@@ -2,6 +2,8 @@
 template: main.html
 description: How to use Home Assistant Material 3 themes in your views and cards. Start by using the standard light and dark theme definitions, and extend this with specific colors.
 ---
+<!--- 2022.05.11 Volgens seobility, 399 words. Advies is minimaal 800, al gaat 600 woorden ook al snel goed -->
+
 #Using Home Assistant Material 3 themes
 
 ##:material-home-floor-3: Use the Theme!
@@ -34,7 +36,7 @@ _The dark variant._
 The Material 3 themes map the color definitions to the standard material color definitions Home Assistant is using.
 This means you can use the Primary and secondary font and background colors as before to style your cards.
 
-If fonts use the `var(--primary-text-color)` css variable, both light and dark themes should work out of the box!
+If fonts use the `var(--primary-text-color)` CSS variable, both light and dark themes should work out of the box!
 
 !!! Info "The above example uses these default font and background colors for the cards background and text parts."
 
@@ -43,7 +45,7 @@ In some cases you can't use the Theme colors, you need to use dedicated colors. 
 
 You have 3 options to use dedicated colors in your cards:
 
-- Use hard coded colors (hex, rgb, hsl, etc.)
+- Use hard coded colors (HEX, RGB, HSL, etc.)
 - Clone the theme you want to use, and define the colors in the theme, and use those custom color names in your cards.
   <br><br>Say you define them as
   ```yaml
@@ -51,8 +53,8 @@ You have 3 options to use dedicated colors in your cards:
   traffic-light-yellow: yellow
   traffic-light-green: green
   ```
-  You can use the colors in the card using the css variable `var(--traffic-light-red)`
-- If the card is made with the [Swiss Army Knife custom card][swiss-army-knife-documentation-url], you can define those colors in the user css definitions, and use them in your card as css variables. 
+  You can use the colors in the card using the CSS variable `var(--traffic-light-red)`
+- If the card is made with the [Swiss Army Knife custom card][swiss-army-knife-documentation-url], you can define those colors in the user CSS definitions, and use them in your card as CSS variables. 
 
 !!! Info "The above example uses dedicated colors (green, yellow, orange, red, purple) for the AirVisual representation in the first wide card."
 
@@ -60,9 +62,9 @@ You have 3 options to use dedicated colors in your cards:
 ##:material-home-floor-3: Using Material 3 colors
 The Material 3 themes define more colors: primary, secondary, tertiary and error reference and system color palettes and surface elevation colors.
 
-All these colors can be used as css variables.
+All these colors can be used as CSS variables.
 
-All Material 3 themes support light and dark mode. It does this by redefining the `system` colors with theme mode dependant `reference` colors.
+All Material 3 themes support light and dark mode. It does this by redefining the `system` colors with theme mode dependent `reference` colors.
 
 !!! Note "If you use Material 3 color names in your cards, non Material 3 themes will show fallback colors (mostly black and white)"
 

@@ -199,7 +199,7 @@ Primary to tertiary color:
 !!! Success "Material 3 is using some special CIE-Lch(\*) calculation to determine secondary and tertiary tonal palettes"
     The secondary color shows that especially with its right/left direction. The tertiary color is always to the right. Both secondary and tertiary colors show a nonlinear difference though!
 
-!!! Fail "Even CIE-Lch(uv) shows different Hue differences, altough this wheel should have evenly distributed colors"
+!!! Fail "Even CIE-Lch(uv) shows different Hue differences, although this wheel should have evenly distributed colors"
 
 ###:material-home-floor-3: Experiment 4: do color wheels show something?
 
