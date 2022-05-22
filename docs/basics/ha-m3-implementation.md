@@ -1,5 +1,12 @@
 ---
 template: main.html
+title: Home Assistant Material 3 implementation
+description: The Material 3 implementation for Home Assistant themes are 100% compatible. It further extends the M3 color system to make it more usable in views/cards. 
+tags:
+  - M3
+  - Material 3
+  - Themes
+  - Implementation
 ---
 
 <!-- GT/GML -->
@@ -23,7 +30,7 @@ Below is an overview of the features and extensions that HAM3 provides for Home 
 
 ##:material-home-floor-3: The resulting theme colors
 
-The resulting theme colors are shown below. The theme is rendered using several [Swiss Army Knife][sak-docs-url] cards and templates. The example uses the dynamic [`M3-07-DarkOliveGreen`][example-d7-md] theme. This theme is generated from the AmoebeLabs logo :smile:
+The resulting theme colors are shown below. The theme is rendered using several [Swiss Army Knife][sak-docs-url] custom cards and templates. The example uses the dynamic [`M3-07-DarkOliveGreen`][example-d7-md] theme. This theme is generated from the AmoebeLabs logo :smile:
 
 [![M3 Palettes]][M3 Palettes]
 _Primary, secondary, tertiary and error pallettes ranging from white (100) to black (0)_

@@ -33,6 +33,7 @@ theme:
 
 plugins:
   - search
+  - tags
   
 extra_css:
   - assets/stylesheets/extra.css

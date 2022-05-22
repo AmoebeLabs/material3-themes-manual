@@ -1,9 +1,12 @@
 ---
 template: main.html
-title: Examples Introduction
+title: Introducing 22 Example Themes
+description: 22 Example themes. 10 themes are created with the 'Dynamic' feature of the Figma Material Theme Builder and 12 using the 'Custom' color function.
+tags:
+  - Examples
 ---
 #Introducing 22 Example themes
-I've created several sample themes to give you an idea of ​​the looks & possibilities:
+I've created several sample themes based on the [Material 3 concepts][Material 3 Home Assistant concepts] and [Material 3 implementation][Material 3 Home Assistant implementation] to give you an idea of ​​the looks & possibilities:
 
 - 10 themes are created with the 'Dynamic' feature of the Figma Material Theme Builder, which uses an image to determine the colors.
 - The other 12 themes are created using the 'Custom' function of the Figma Material Theme Builder, where I specified the primary color. I used the rainbow colors from the website [CIElab.io][cielab-io-url]: red, volcano, orange, gold, yellow, lime, green, cyan, blue, geek blue, purple, and magenta.
@@ -18,7 +21,7 @@ I've created several sample themes to give you an idea of ​​the looks & poss
 
 ##:material-home-floor-3: Examples in order of the color wheel
 
-All examples show [example view \#12][sak-example-12-url] of the Swiss Army Knife custom card:
+All examples show [example view \#12][AmoebeLabs Swiss Army Knife Example 12] of the Swiss Army Knife custom card:
 
 - Examples created with the 'Dynamic' theme builder feature have the prefix 'D'
 - Examples created with the 'Custom' theme builder feature have the prefix 'C'.
@@ -130,9 +133,11 @@ The Material 3 color picker can create the same primary color, although differen
 [example-c11-md]: ../examples/example-c11.md
 [example-c12-md]: ../examples/example-c12.md
 
-[material-3-analysis-picking-the-hue-url]: ../basics/m3-analysis-hue-picker.md
+[material-3-analysis-picking-the-hue-url]: ../../basics/m3-analysis-hue-picker/
+[Material 3 Home Assistant implementation]: ../../basics/ha-m3-implementation/
+[Material 3 Home Assistant concepts]: ../../basics/ha-m3-introduction/
 
 <!--- References to external links... --->
 
-[sak-example-12-url]: https://swiss-army-knife.docs.amoebelabs.com/examples/example-12/
+[AmoebeLabs Swiss Army Knife Example 12]: https://swiss-army-knife.docs.amoebelabs.com/examples/example-12/
 [cielab-io-url]: https://cielab.io

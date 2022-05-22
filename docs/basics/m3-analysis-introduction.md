@@ -1,5 +1,12 @@
 ---
 template: main.html
+title: A new color space called HCT
+description: With Material 3 for Android 12, Google introduces a new color system, called HCT, Hue / Chroma / Tone.
+tags:
+  - M3
+  - Material 3
+  - Colorspace
+  - Analysis
 ---
 
 <!-- GT/GMY -->
@@ -19,12 +26,12 @@ With Material 3 for Android 12, Google introduces a new color system, called [HC
 
 The next two pages are about some experiments to see if I can understand how Material 3 works and if it does what it promises.
 
-For this, I used the 22 examples I created to analyze some of the Material 3 aspects.
+For this, I used the [22 examples][AmoebeLabs Material 3 Example introduction] I created to analyze some of the Material 3 aspects.
 
 **TL;DR**
 !!! Quote "From the examples, I can conclude that all themes with different colors give excellent displays with consistent readability and contrast."
     That makes the 22 themes interchangeable without any change to the Lovelace view and (custom) card configuration, assuming you use the Material 3 theme color definitions of course!
-    <br><br>This, and the fact that I can generate a theme with Figma and a bit of Javascript, makes me very happy with M3, as this higly automated way of creating a theme also saves a _lot_ of time!
+    <br><br>This, and the fact that I can generate a theme with Figma and a bit of Javascript, makes me very happy with M3, as this highly automated way of creating a theme also saves a _lot_ of time!
 
 But then again, it raised enough questions about what Material 3 does in some cases.
 
@@ -62,6 +69,9 @@ _And the CIELab model with the best lightness prediction_
 [colorio-hue-linearity-ebner-fairchild-png]: ../assets/screenshots/colorio-hue-linearity-ebner-fairchild.png
 [colorio-munsell-lightness-png]: ../assets/screenshots/colorio-munsell-lightness.png
 [colorio-lightness-png]: ../assets/screenshots/colorio-lightness.png
+
+<!--- Internal links... --->
+[AmoebeLabs Material 3 Example introduction]: ../../examples/introduction/
 
 <!--- External links... --->
 
