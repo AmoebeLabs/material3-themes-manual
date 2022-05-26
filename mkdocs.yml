@@ -123,7 +123,7 @@ nav:
       - Implementation: basics/ha-m3-implementation.md
       - Theme structure: basics/ha-m3-theme-structure.md
       - Theme colors: basics/ha-m3-theme-colors.md
-  - Using HA Material 3: using/using-ham3-in-cards.md
+  - How to use Material 3 themes: using/using-ham3-in-cards.md
   - Design your OWN:
     - Introduction: design/introduction.md
     - Create an M3 Theme: design/create-m3-theme.md

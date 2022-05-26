@@ -1,7 +1,7 @@
 ---
 template: main.html
 title: A new color space called HCT
-description: With Material 3 for Android 12, Google introduces a new color system, called HCT, Hue / Chroma / Tone.
+description: With Material 3, Google introduces a new color system, called HCT, Hue / Chroma / Tone. A much better color system than Material Design used.
 tags:
   - M3
   - Material 3

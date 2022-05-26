@@ -1,6 +1,6 @@
 ---
 template: main.html
-title: Home Assistant Material 3 implementation
+title: Material 3 implementation
 description: The Material 3 implementation for Home Assistant themes are 100% compatible. It further extends the M3 color system to make it more usable in views/cards. 
 tags:
   - M3
