@@ -16,6 +16,8 @@ I've created several sample themes based on the [Material 3 concepts][Material 3
   # ![cielab-io-colors-png]
 -->
 
+You can [install][Material 3 Theme Installation] each example using HACS or manually.
+
 !!! warning "At this moment not all examples are already available in GitHub, nor in HACS"
     You can see it on the example page where "No repository found" is displayed.
 
@@ -136,6 +138,7 @@ The Material 3 color picker can create the same primary color, although differen
 [material-3-analysis-picking-the-hue-url]: ../../basics/m3-analysis-hue-picker/
 [Material 3 Home Assistant implementation]: ../../basics/ha-m3-implementation/
 [Material 3 Home Assistant concepts]: ../../basics/ha-m3-introduction/
+[Material 3 Theme Installation]: ../../start/installation/
 
 <!--- References to external links... --->
 

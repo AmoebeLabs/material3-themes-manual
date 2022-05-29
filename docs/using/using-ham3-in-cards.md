@@ -15,7 +15,7 @@ Once you have [installed][Material 3 Theme Installation] one of the Material 3 t
 To make full use of these theme color definitions, either the (custom) card itself should offer CSS styling functionality, or via a custom plugin that makes it possible to style parts of the card. 
 
 ##:material-home-floor-3: Start to use the Theme color definitions!
-The most important point in using all the features of the Home Assistant Material 3 themes is to _use_ the theme color definitions where possible and applicable. In that case, your card will follow the theme in both light and dark mode!
+The key point in using all the features of the Home Assistant Material 3 themes is to _use_ the theme color definitions whenever possible and appropriate. In that case, your card will follow the theme in both light and dark mode!
 
 === "Do"
     ```yaml
@@ -45,7 +45,7 @@ _The light variant._
 _The dark variant._
 
 ##:material-home-floor-3: How to use the standard material colors
-The Material 3 themes map the color definitions to the standard Material Design color definitions Home Assistant is using.
+The Material 3 themes map the color definitions to the [standard Material Design color definitions Home Assistant is using][Material 3 compatibility].
 This means you can use the standard Material Design primary and secondary font and background colors as before to style your cards.
 
 If fonts use the `var(--primary-text-color)` CSS variable, both light and dark themes should work out of the box!
@@ -224,6 +224,7 @@ Check the [Theme colors page][ha-m3-theme-colors-url] for these 264 `reference` 
 [example-d06-md]: ../examples/example-theme-d06-tealblue.md
 [Material 3 Theme Color definitions]: ../../basics/ha-m3-theme-colors/
 [Material 3 Theme Installation]: ../../start/installation/
+[Material 3 compatibility]: ../../start/compatibility/
 
 <!--- References to pictures... -->
 
