@@ -22,3 +22,13 @@ frontend:
 The theme will be available automatically once you reload the themes with the Home Assistant 'Developer Tools' > 'Services' > 'frontend.reload_themes' service.
 
 Or just restart Home Assistant!
+
+##:material-home-floor-3: How to use these themes to style your (custom) cards
+
+Once installed, learn how to use the full functionality of the Material 3 themes in your cards [here][How to use Material 3 themes].
+
+For one of the 22 available example themes, check [this page][Material 3 example themes].
+
+<!--- Internal References... -->
+[How to use Material 3 themes]: ../../using/using-ham3-in-cards/
+[Material 3 example themes]: ../../examples/introduction/

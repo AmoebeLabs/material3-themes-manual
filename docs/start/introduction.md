@@ -23,7 +23,7 @@ The Material 3 Themes for Home Assistant or _HAM3_ will only use the color secti
 
 ##:material-home-floor-3: How to proceed
 
-If you only want to use one of the available sample themes, go to Installation. You can check out the [examples section][examples-section-md] with 22 pre-made Material 3 based themes.
+If you only want to use one of the available sample themes, go to [Installation][Material 3 theme installation]. You can check out the [examples section][examples-section-md] with 22 pre-made Material 3 based themes.
 
 If you want to learn more, even design your own Material 3 themes and how to use them in Home Assistant, read more at [Material 3 Basics][basics-section-md], [using the Material 3 theme][using-section-md] and [Design Your Own Theme][design-section-md].
 
@@ -34,4 +34,5 @@ Happy Theming!
 [design-section-md]: ../design/introduction.md
 [using-section-md]: ../using/using-ham3-in-cards.md
 [compatibility-section-md]: ../start/compatibility.md
+[Material 3 theme installation]: ../installation/
 

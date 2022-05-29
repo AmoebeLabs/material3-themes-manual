@@ -10,11 +10,16 @@ tags:
 
 #How to use Material 3 themes
 
+Once you have [installed][Material 3 Theme Installation] one of the Material 3 themes, you can use all the color definitions the theme offers in your Home Assistant (custom) cards.
+
+To make full use of these theme color definitions, either the (custom) card itself should offer CSS styling functionality, or via a custom plugin that makes it possible to style parts of the card. 
+
 ##:material-home-floor-3: Start to use the Theme color definitions!
-The most important point in using all the features of the Home Assistant Material 3 themes is to _use_ the theme color definitions where possible and applicable. In this case, your card will follow the theme in both light and dark mode!
+The most important point in using all the features of the Home Assistant Material 3 themes is to _use_ the theme color definitions where possible and applicable. In that case, your card will follow the theme in both light and dark mode!
 
 === "Do"
     ```yaml
+      # Note: below is from Swiss Army Knife tool "style" YAML section
       style:
         fill: var(--primary-text-color)           # Material text color
         stroke: var(--theme-sys-color-primary60)  # M3 theme system color
@@ -22,6 +27,7 @@ The most important point in using all the features of the Home Assistant Materia
 
 === "Do'nt"
     ```yaml
+      # Note: below is from Swiss Army Knife tool "style" YAML section
       style:
         fill: red                                 # Hard coded red color
         stroke: #456712                           # Hard coded hex color
@@ -66,6 +72,24 @@ You have 3 options to use dedicated colors in your cards:
 
 !!! Info "The above example uses dedicated colors (green, yellow, orange, red, purple) for the AirVisual representation in the first wide card."
 
+```yaml linenums="1"  hl_lines="5-10" title="AirVisual color definitions for Swiss Army Knife segmented arc tool"
+  segments:
+    colorstops:
+      gap: 0.1
+      colors:
+        0: '#A8E05F'    # Green
+        51: '#FDD74B'   # Yellow
+        101: '#FE9B57'
+        151: '#FE6A69'
+        201: '#A97ABC'
+        301: '#A87383'
+  styles:
+    foreground:
+      fill: darkgrey
+    background:
+      fill: var(--theme-sys-elevation-surface-neutral5)
+```
+
 
 ##:material-home-floor-3: How to use the Material 3 colors
 The Material 3 themes define [more colors][Material 3 Theme Color definitions]: primary, secondary, tertiary and error reference and system color palettes and surface elevation colors.
@@ -93,6 +117,66 @@ System colors are used throughout this example:
 
 Check the [Theme colors page][ha-m3-theme-colors-url] for these `system` colors you can use.
 
+```yaml linenums="1" hl_lines="14" title="System color example 'Hall' (4th) card for Swiss Army Knife circle tool (half circle in first column)"
+  - toolset: color1
+    position:
+      cx: 0
+      cy: 50
+    tools:
+      # ------------------------------------------------------------
+      - type: circle
+        position:
+          cx: 50
+          cy: 50
+          radius: 50
+        styles:
+          circle:
+            fill: var(--theme-sys-elevation-surface-neutral4)
+            stroke: none
+```
+
+```yaml linenums="1"  hl_lines="4-8" title="Hestia color definitions for first Swiss Army Knife segmented arc tool"
+  segments:
+    colorlist:
+      gap: 1
+      colors: &4-colors                       # Define YAML template
+        - var(--theme-sys-palette-primary50)
+        - var(--theme-sys-palette-primary45)
+        - var(--theme-sys-palette-primary40)
+        - var(--theme-sys-palette-primary35)
+  styles:
+    foreground:
+      fill: darkgrey
+    background:
+      fill: var(--theme-sys-elevation-surface-neutral4)
+      opacity: 1
+```
+
+```yaml linenums="1"  hl_lines="4" title="Hestia color definitions re-using YAML template"
+  segments:
+    colorlist:
+      gap: 1
+      colors: *4-colors                     # Use YAML template
+  styles:
+    foreground:
+      fill: darkgrey
+    background:
+      fill: var(--theme-sys-elevation-surface-neutral4)
+      opacity: 1
+```
+```yaml linenums="1" hl_lines="5 10" title="System color battery example using tertiary foreground color and neutral background color"
+  segments:
+    colorlist:
+      gap: 1
+      colors:
+        - var(--theme-sys-palette-tertiary45)
+  styles:
+    foreground:
+      fill: darkgrey
+    background:
+      fill: var(--theme-sys-elevation-surface-neutral4)
+      opacity: 1
+```
 
 ###:material-home-floor-3: Material 3 Reference colors
 The Material 3 `reference` colors are independent of the theme mode (light or dark). Use this colors if you want to keep the same color.
@@ -107,6 +191,28 @@ Reference colors are used only in the last card (hardly visible in the lower rig
 
 Check the [Theme colors page][ha-m3-theme-colors-url] for these 264 `reference` colors you can use.
 
+```yaml linenums="1" hl_lines="5-14" title="Reference color example 'Illuminance' card for Swiss Army Knife segmented arc tool"
+  segments:
+    colorlist:
+      gap: 1
+      colors:
+        - var(--theme-ref-palette-primary30)    # Primary ..
+        - var(--theme-ref-palette-primary35)    # ..reference colors ..
+        - var(--theme-ref-palette-primary40)    # ..from dark ..
+        - var(--theme-ref-palette-primary45)    # ..(30% lightness) ..
+        - var(--theme-ref-palette-primary50)
+        - var(--theme-ref-palette-primary60)
+        - var(--theme-ref-palette-primary65)
+        - var(--theme-ref-palette-primary70)
+        - var(--theme-ref-palette-primary75)    # ..to lighter color ..
+        - var(--theme-ref-palette-primary80)    # ..(80% lightness)
+  styles:
+    foreground:
+      fill: darkgrey
+    background:
+      fill: var(--theme-sys-elevation-surface-neutral4)
+      opacity: 1
+```
 
 <!--- References to external sites... -->
 
@@ -117,6 +223,7 @@ Check the [Theme colors page][ha-m3-theme-colors-url] for these 264 `reference` 
 [ha-m3-theme-colors-url]: ../../basics/ha-m3-theme-colors/
 [example-d06-md]: ../examples/example-theme-d06-tealblue.md
 [Material 3 Theme Color definitions]: ../../basics/ha-m3-theme-colors/
+[Material 3 Theme Installation]: ../../start/installation/
 
 <!--- References to pictures... -->
 

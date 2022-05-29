@@ -35,7 +35,7 @@ For this, I used the [22 examples][AmoebeLabs Material 3 Example introduction] I
 
 But then again, it raised enough questions about what Material 3 does in some cases.
 
-Read on, if you're interested :smile:
+[Read on][Material 3 Analysis Hue Picker], if you're interested :smile:
 
 ##:material-home-floor-3: But before, that, the basis of Material 3...
 
@@ -72,7 +72,7 @@ _And the CIELab model with the best lightness prediction_
 
 <!--- Internal links... --->
 [AmoebeLabs Material 3 Example introduction]: ../../examples/introduction/
-
+[Material 3 Analysis Hue Picker]: ../m3-analysis-hue-picker/
 <!--- External links... --->
 
 [m3-hct-source-url]: https://github.com/material-foundation/material-color-utilities/blob/main/typescript/hct/hct.ts
