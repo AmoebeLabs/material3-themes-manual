@@ -1,6 +1,9 @@
 ---
 template: main.html
-title: Material 3 implementation Introduction
+title: Material 3 and Home Assistant Introduction
+description: Material 3 for Home Assistant themes translates Material 3 color definitions into Home Assistant themes for ease of use and 100% compatibility.
+tags:
+  - Theme Colors
 ---
 <!-- GT/GML -->
 

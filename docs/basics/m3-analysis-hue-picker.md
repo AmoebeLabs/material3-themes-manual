@@ -1,5 +1,10 @@
 ---
 template: main.html
+title: Material 3 Hue Picker
+description: The free Figma Material Theme Builder plugin provides both dynamic color-based primary color selection and custom color selection. Let's see what they do!
+tags:
+  - Hue Picker
+  - M3 Analysis
 ---
 <!-- GT/GMY -->
 

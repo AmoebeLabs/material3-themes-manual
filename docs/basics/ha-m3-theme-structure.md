@@ -1,5 +1,10 @@
 ---
 template: main.html
+title: Material 3 Theme Structure
+description: Each Home Assistant dark/light theme follows the same structure. It has color definitions for both dark and light mode. Material 3 themes too.
+tags:
+  - Theme
+  - Structure
 ---
 <!-- GT/GMY -->
 

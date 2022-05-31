@@ -1,5 +1,9 @@
 ---
 template: main.html
+title: Theme color definitions
+description: Material 3 for Home Assistant themes give you reference, system, and surface colors to create interchangeable light and dark themes.
+tags:
+  - Theme Colors
 ---
 
 ##:material-home-floor-3: HAM3 Theme colors

@@ -1,5 +1,9 @@
 ---
 template: main.html
+title: Intro to Color Spaces
+description: To ensure you understand what Material 3 is all about, it helps to understand how color spaces work, as these are a very important part of Material 3.
+tags:
+  - Color Spaces
 ---
 ##:material-home-floor-3: An introduction
 

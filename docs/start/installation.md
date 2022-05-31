@@ -1,6 +1,10 @@
 ---
 template: main.html
+title: Theme Installation
 description: Installation of any Home Assistant Material 3 theme can be done either using HACS or a manual install. Both are easy and put the theme in the same folder.
+tags:
+  - Installation
+  - Theme
 ---
 The installation can be done in two ways:
 

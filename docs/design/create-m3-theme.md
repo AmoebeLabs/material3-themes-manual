@@ -1,5 +1,11 @@
 ---
 template: main.html
+title: Create the Material 3 Theme
+description: Create your own Material 3 theme using the free Figma Material 3 builder using an image or by defining your own primary color. Then export it.
+tags:
+  - Theme Design
+  - Figma
+  - Color definitions
 ---
 
 ##:material-home-floor-3: A step by step approach!

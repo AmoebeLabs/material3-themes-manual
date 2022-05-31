@@ -1,5 +1,10 @@
 ---
 template: main.html
+title: Analysis of Theme palettes
+description: One of the main highlights of Material 3 is the tonal palettes that should meet WCGA standards. This analysis page does some checks on this.
+tags:
+  - M3 Analysis
+  - Palettes
 ---
 <!-- GT/GMY -->
 
