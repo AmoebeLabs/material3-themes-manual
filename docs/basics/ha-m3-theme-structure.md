@@ -30,10 +30,10 @@ Each Home Assistant dark/light theme follows the same structure. It has definiti
         css-text-color: white
 ```
 
-##:material-home-floor-3: HAM3 Theme Structure
-The HAM3 theme structure is no different, it has to comply with the HA structure.
+##:material-home-floor-3: Home Assistant Material 3 Theme Structure
+The HAM3 theme structure is no different, it has to comply with the Home Assistant theme structure.
 
-An M3 theme is divided into 3 blocks:
+An Home Assistant Material 3 theme is divided into 3 blocks:
 
 ```yaml title="Block 1 - Copy/paste Material 3 Theme generated definitions" linenums="1" hl_lines="1 19"
   Theme Name:
@@ -48,7 +48,7 @@ An M3 theme is divided into 3 blocks:
 
     ...
 ```
-_Block with the M3 Theme definitions_
+_Block with the Material 3 Theme definitions_
 
 ```yaml title="Block 2 - Generic Dark/Light mappings of the reference colors using Material 3 guidelines" linenums="1" hl_lines="10 16"
     #
@@ -56,8 +56,8 @@ _Block with the M3 Theme definitions_
     # Derived from theme-ref-palette-* definitions
     #
     # NOT to be changed on a per theme basis.
-    # The Light and Dark modes map a M3 reference color
-    # to a M3 system color!
+    # The Light and Dark modes map a Material 3 reference color
+    # to a Material 3 system color!
     #
     modes:
       light:
@@ -65,16 +65,16 @@ _Block with the M3 Theme definitions_
         theme-sys-palette-* light theme definitions
         theme-sys-elevation-* light theme definitions
 
-        theme-* definitions for use with Material 2 / HA
+        theme-* definitions for use with Material 2 / Home Assistant
       dark:
         theme-sys-color-* dark theme definitions
         theme-sys-palette-* dark theme definitions
         theme-sys-elevation-* dark theme definitions
 
-        theme-* definitions for use with Material 2 / HA
+        theme-* definitions for use with Material 2 / Home Assistant
     ...
 ```
-_Block with the Dark/Light mode mappings, including dark mode modifications for some HA colors_
+_Block with the Dark/Light mode mappings, including dark mode modifications for some Home Assistant theme colors_
 
 ```yaml title="Block 3 - Mapping of Material 2 and Home Assistant CSS variables" linenums="1"
     #
@@ -87,7 +87,7 @@ _Block with the Dark/Light mode mappings, including dark mode modifications for 
 ```
 _Block with the Material 2 and Home Assistant color mappings._
 
-##:material-home-floor-3: HAM3 Theme Template
+##:material-home-floor-3: Home Assistant Material 3 Theme Template
 
 :material-github: [Github repository][ha-m3-template-url]
 

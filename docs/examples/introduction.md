@@ -6,11 +6,12 @@ tags:
   - Examples
 ---
 #Introducing 22 Example themes
-I've created several sample themes based on the [Material 3 concepts][Material 3 Home Assistant concepts] and [Material 3 implementation][Material 3 Home Assistant implementation] to give you an idea of ​​the looks & possibilities:
+I've created several themes based on the [Material 3 concepts][Material 3 Home Assistant concepts] and [Material 3 implementation][Material 3 Home Assistant implementation] to give you an idea of ​​the looks & possibilities:
 
 - 10 themes are created with the 'Dynamic' feature of the Figma Material Theme Builder, which uses an image to determine the colors.
 - The other 12 themes are created using the 'Custom' function of the Figma Material Theme Builder, where I specified the primary color. I used the rainbow colors from the website [CIElab.io][cielab-io-url]: red, volcano, orange, gold, yellow, lime, green, cyan, blue, geek blue, purple, and magenta.
 
+The steps to create these themes are described in "[Design your Own][Material 3 Design Your Own Theme]".
 <!--
 <br><br>The 12 colors (excluding grey) from the CIELab site:
   # ![cielab-io-colors-png]
@@ -139,6 +140,7 @@ The Material 3 color picker can create the same primary color, although differen
 [Material 3 Home Assistant implementation]: ../../basics/ha-m3-implementation/
 [Material 3 Home Assistant concepts]: ../../basics/ha-m3-introduction/
 [Material 3 Theme Installation]: ../../start/installation/
+[Material 3 Design Your Own Theme]: ../../design/prerequisites/
 
 <!--- References to external links... --->
 

@@ -34,7 +34,16 @@ theme:
 plugins:
   - search
   - tags
-  
+  - minify:
+      minify_html: true
+  # Todo for pages that I want to rename etc. without loosing Google / Bing indexing...
+  # This is using a HTML refresh with 0 seconds, so should be followed by search engines!
+  - redirects:
+      redirect_maps:
+        'design/introduction.md': 'design/prerequisites.md'
+        'design/create-m3-theme.md': 'design/create-material3-theme.md'
+        'design/convert-ha-theme.md': 'design/convert-to-homeassistant-theme.md'
+        
 extra_css:
   - assets/stylesheets/extra.css
   
@@ -118,16 +127,16 @@ nav:
       - A new color space: basics/m3-analysis-introduction.md
       - Picking the Hue: basics/m3-analysis-hue-picker.md
       - Theme Palettes: basics/m3-analysis-palettes.md
-    - HAM3 Implementation:
+    - Home Assistant Material 3 Themes:
       - Introduction: basics/ha-m3-introduction.md
       - Implementation: basics/ha-m3-implementation.md
       - Theme structure: basics/ha-m3-theme-structure.md
       - Theme colors: basics/ha-m3-theme-colors.md
   - How to use Material 3 themes: using/using-ham3-in-cards.md
   - Design your OWN:
-    - Introduction: design/introduction.md
-    - Create an M3 Theme: design/create-m3-theme.md
-    - Convert to HA Theme: design/convert-ha-theme.md
+    - Prerequisites: design/prerequisites.md
+    - Create Material 3 Theme: design/create-material3-theme.md
+    - Convert to Home Assistant Theme: design/convert-to-homeassistant-theme.md
   - Examples:
     - Introduction: examples/introduction.md
     - Examples from picture:

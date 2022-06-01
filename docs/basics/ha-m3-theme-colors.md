@@ -6,7 +6,7 @@ tags:
   - Theme Colors
 ---
 
-##:material-home-floor-3: HAM3 Theme colors
+##:material-home-floor-3: Home Assistant Material 3 Theme colors
 HAM3 contains the same basic things as any Material 3 theme:
 
 - Reference color palettes
@@ -32,7 +32,7 @@ Palette color schemes use 24 colors per palette and are available for:
 - Tertiary colors
 - Error colors
 
-??? "M3 Reference palette colors (from example theme 07):"
+??? "Material 3 Reference palette colors (from example theme D07):"
     ```yaml linenums="1"
     theme-ref-palette-primary100: '#ffffff'
     theme-ref-palette-primary99: '#fbffda'
@@ -194,7 +194,7 @@ Surface color schemes are available for:
 - Neutral base color mixed with the error color
 
 
-??? "M3 Reference elevation surface colors (from example theme 07):"
+??? "Material 3 Reference elevation surface colors (from example theme D07):"
     ```yaml linenums="1"
     theme-ref-elevation-surface-neutral1-light: rgb(249,247,239)
     theme-ref-elevation-surface-neutral2-light: rgb(246,244,236)
@@ -324,9 +324,9 @@ M3 System colors are by definition **independent** of the theme mode. Their actu
 
 The `theme-sys-color-` definitions make up the theme.
 
-###:material-home-floor-3: Standard M3 light and dark system colors
+###:material-home-floor-3: Standard Material 3 light and dark system colors
 
-??? "M3 System colors mapping for LIGHT mode"
+??? "Material 3 System colors mapping for LIGHT mode"
     ```yaml linenums="1"
     # light theme...
     #
@@ -372,7 +372,7 @@ The `theme-sys-color-` definitions make up the theme.
 
     ```
     
-??? "M3 System colors mapping for DARK mode"
+??? "Material 3 System colors mapping for DARK mode"
     ```yaml linenums="1"
     # dark theme...
     #
@@ -418,9 +418,9 @@ The `theme-sys-color-` definitions make up the theme.
       # No idea with this one...
       theme-sys-color-shadow: black
     ```
-###:material-home-floor-3: Standard M3 elevation surface light and dark colors
+###:material-home-floor-3: Standard Material 3 elevation surface light and dark colors
 
-??? "M3 elevation surface color mapping for LIGHT mode"
+??? "Material 3 elevation surface color mapping for LIGHT mode"
     ```yaml linenums="1"
       # Surfaces
       # -----------------------------------------------------------------------
@@ -482,7 +482,7 @@ The `theme-sys-color-` definitions make up the theme.
 
     ```
 
-??? "M3 elevation surface color mapping for DARK mode"
+??? "Material 3 elevation surface color mapping for DARK mode"
     ```yaml linenums="1"
       # Surfaces
       # -----------------------------------------------------------------------
@@ -543,11 +543,11 @@ The `theme-sys-color-` definitions make up the theme.
       theme-sys-elevation-surface-error10: var(--theme-ref-elevation-surface-error10-dark)
     ```
 
-##:material-home-floor-3: M3 Mapping to HA/Material 2 color names
+##:material-home-floor-3: Material 3 Mapping to HA/Material 2 color names
 
 Home Assistant uses both Material and dedicated CSS variables to define the used colors.
 
-HAM3 maps the M3 colors to these colors. This way, Home Assistant just works with these themes.
+HAM3 maps the Material 3 colors to these colors. This way, Home Assistant just works with these themes.
 
 Some examples of these color mappings are:
 
@@ -563,4 +563,4 @@ Some examples of these color mappings are:
 - card-background-color
 - box-shadow-light/dark-color
 
-And more, like icons, switches, labels and the colors used by the energy dashboard: these are more subdued for the dark theme as advised by Material 3.
+And more, like icons, switches, labels and the colors used by the energy dashboard: these are more subdued for the dark theme as advised by the Material 3 Design Specifications from Google.

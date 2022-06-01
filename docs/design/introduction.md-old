@@ -1,7 +1,7 @@
 ---
 template: main.html
-title: Theme Design Introduction
-description: You can design your own Material 3 theme for Home Assistant, if you follow this tutorial to create a theme and convert it for Home Assistant.
+title: Prerequisites
+description: Before you can design your own Material 3 theme for Home Assistant, you should register a free Figma account en install the Theme builder plugin.
 tags:
   - Theme Design
   - Figma

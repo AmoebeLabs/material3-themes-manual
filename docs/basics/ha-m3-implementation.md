@@ -1,6 +1,6 @@
 ---
 template: main.html
-title: Material 3 implementation
+title: Home Assistant Material 3 implementation
 description: The Material 3 implementation for Home Assistant themes are 100% compatible. It further extends the M3 color system to make it more usable in views/cards. 
 tags:
   - M3
@@ -17,7 +17,7 @@ HAM3 series themes are usually 100% Material 3 compatible. In addition, it exten
 
 Below is an overview of the features and extensions that HAM3 provides for Home Assistant themes.
 
-##:material-home-floor-3: The HA implementation
+##:material-home-floor-3: The Material 3 for Home Assistant implementation
 
 | What | Material 3 | HAM3 implementation |
 | ---- | ---------- |  ------------------- |
@@ -30,20 +30,20 @@ Below is an overview of the features and extensions that HAM3 provides for Home 
 
 ##:material-home-floor-3: The resulting theme colors
 
-The resulting theme colors are shown below. The theme is rendered using several [Swiss Army Knife][sak-docs-url] custom cards and templates. The example uses the dynamic [`M3-07-DarkOliveGreen`][example-d7-md] theme. This theme is generated from the AmoebeLabs logo :smile:
+The resulting theme colors are shown below. The theme is rendered using several [Swiss Army Knife][sak-docs-url] custom cards and templates. The example uses the dynamic [`Material 3 D07, DarkOliveGreen`][example-d7-md] theme. This theme is generated from the AmoebeLabs logo :smile:
 
-[![M3 Palettes]][M3 Palettes]
+[![Material 3 Theme Palettes]][Material 3 Theme Palettes]
 _Primary, secondary, tertiary and error pallettes ranging from white (100) to black (0)_
 
 
-<br>[![M3 Surfaces]][M3 Surfaces]
+<br>[![Material 3 Theme Surfaces]][Material 3 Theme Surfaces]
 _The 5 light and dark surfaces with 10 elevation levels each_
 
 
-<br>[![M3 Light]][M3 Light]
+<br>[![Material 3 Theme Light]][Material 3 Theme Light]
 _The resulting light theme color selection_
 
-<br>[![M3 Dark]][M3 Dark]
+<br>[![Material 3 Theme Dark]][Material 3 Theme Dark]
 _The resulting dark theme color selection_
 
 
@@ -59,21 +59,25 @@ You see the following aspects of the theme:
 
 All the above colors adapt to the theme mode. The only exception is (barely) visible in the last row: that row uses reference colors that are the same in dark and light mode.
 
-[![M3 Example Light]][M3 Example Light]
-_A light theme example card (d07)_
+[![Material 3 Theme Example Light]][Material 3 Theme Example Light]
+_A light theme example card ([Theme D07 - DarkOliveGreen][example-d7-md])_
 
-<br>[![M3 Example Dark]][M3 Example Dark]
-_A dark theme example card (d07)_
+<br>[![Material 3 Theme Example Dark]][Material 3 Theme Example Dark]
+_A dark theme example card ([Theme D07 - DarkOliveGreen][example-d7-md])_
 
+<!-- Image References -->
 
-[M3 Palettes]: ../assets/screenshots/m3-theme-d07-palettes.png
-[M3 Surfaces]: ../assets/screenshots/m3-theme-d07-surfaces.png
-[M3 Light]: ../assets/screenshots/m3-theme-d07-light.png
-[M3 Dark]: ../assets/screenshots/m3-theme-d07-dark.png
+[Material 3 Theme Palettes]: ../assets/screenshots/m3-theme-d07-palettes.png
+[Material 3 Theme Surfaces]: ../assets/screenshots/m3-theme-d07-surfaces.png
+[Material 3 Theme Light]: ../assets/screenshots/m3-theme-d07-light.png
+[Material 3 Theme Dark]: ../assets/screenshots/m3-theme-d07-dark.png
 
-[M3 Example Light]: ../assets/screenshots/m3-example-d07-light.png
-[M3 Example Dark]: ../assets/screenshots/m3-example-d07-dark.png
+[Material 3 Theme Example Light]: ../assets/screenshots/m3-example-d07-light.png
+[Material 3 Theme Example Dark]: ../assets/screenshots/m3-example-d07-dark.png
 
+<!-- Internal References -->
+[example-d7-md]: ../examples/example-d7.md
+
+<!-- External References -->
 [sak-docs-url]: https://swiss-army-knife.docs.amoebelabs.com
 [sak-docs-example-12-url]: https://swiss-army-knife.docs.amoebelabs.com/examples/example-12/
-[example-d7-md]: ../examples/example-d7.md
