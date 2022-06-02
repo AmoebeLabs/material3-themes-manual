@@ -76,7 +76,7 @@ _A dark theme example card ([Theme D07 - DarkOliveGreen][example-d7-md])_
 [Material 3 Theme Example Dark]: ../assets/screenshots/m3-example-d07-dark.png
 
 <!-- Internal References -->
-[example-d7-md]: ../examples/example-d7.md
+[example-d7-md]: ../examples/material3-example-theme-d07-darkolivegreen.md
 
 <!-- External References -->
 [sak-docs-url]: https://swiss-army-knife.docs.amoebelabs.com

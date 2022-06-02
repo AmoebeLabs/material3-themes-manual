@@ -43,6 +43,31 @@ plugins:
         'design/introduction.md': 'design/prerequisites.md'
         'design/create-m3-theme.md': 'design/create-material3-theme.md'
         'design/convert-ha-theme.md': 'design/convert-to-homeassistant-theme.md'
+        'examples/example-1.md': 'examples/material3-example-theme-d01-purple.md'
+        'examples/example-2.md': 'examples/material3-example-theme-d02-cadmiumgreen.md'
+        'examples/example-d1.md': 'examples/material3-example-theme-d01-purple.md'
+        'examples/example-d2.md': 'examples/material3-example-theme-d02-cadmiumgreen.md'
+        'examples/example-d3.md': 'examples/material3-example-theme-d03-porcupine.md'
+        'examples/example-d4.md': 'examples/material3-example-theme-d04-magenta.md'
+        'examples/example-d5.md': 'examples/material3-example-theme-d05-brown.md'
+        'examples/example-d6.md': 'examples/material3-example-theme-d06-tealblue.md'
+        'examples/example-theme-d06-tealblue.md': 'examples/material3-example-theme-d06-tealblue.md'
+        'examples/example-d7.md': 'examples/material3-example-theme-d07-darkolivegreen.md'
+        'examples/example-d8.md': 'examples/material3-example-theme-d08-red.md'
+        'examples/example-d9.md': 'examples/material3-example-theme-d09-indigoblue.md'
+        'examples/example-d10.md': 'examples/material3-example-theme-d10-green.md'
+        'examples/example-c1.md': 'examples/material3-example-theme-c01-red.md'
+        'examples/example-c2.md': 'examples/material3-example-theme-c02-volcano.md'
+        'examples/example-c3.md': 'examples/material3-example-theme-c03-orange.md'
+        'examples/example-c4.md': 'examples/material3-example-theme-c04-gold.md'
+        'examples/example-c5.md': 'examples/material3-example-theme-c05-yellow.md'
+        'examples/example-c6.md': 'examples/material3-example-theme-c06-lime.md'
+        'examples/example-c7.md': 'examples/material3-example-theme-c07-green.md'
+        'examples/example-c8.md': 'examples/material3-example-theme-c08-cyan.md'
+        'examples/example-c9.md': 'examples/material3-example-theme-c09-blue.md'
+        'examples/example-c10.md': 'examples/material3-example-theme-c10-geekblue.md'
+        'examples/example-c10.md': 'examples/material3-example-theme-c11-purple.md'
+        'examples/example-c10.md': 'examples/material3-example-theme-c12-magenta.md'
         
 extra_css:
   - assets/stylesheets/extra.css
@@ -140,29 +165,29 @@ nav:
   - Examples:
     - Introduction: examples/introduction.md
     - Examples from picture:
-      - Theme D01 - Purple: examples/example-d1.md
-      - Theme D02 - CadmiumGreen: examples/example-d2.md
-      - Theme D03 - Porcupine: examples/example-d3.md
-      - Theme D04 - Magenta: examples/example-d4.md
-      - Theme D05 - Brown: examples/example-d5.md
-      - Theme D06 - TealBlue: examples/example-theme-d06-tealblue.md
-      - Theme D07 - DarkOliveGreen: examples/example-d7.md
-      - Theme D08 - Red: examples/example-d8.md
-      - Theme D09 - Indigo Blue: examples/example-d9.md
-      - Theme D10 - Green: examples/example-d10.md
+      - Theme D01 - Purple: examples/material3-example-theme-d01-purple.md
+      - Theme D02 - CadmiumGreen: examples/material3-example-theme-d02-cadmiumgreen.md
+      - Theme D03 - Porcupine: examples/material3-example-theme-d03-porcupine.md
+      - Theme D04 - Magenta: examples/material3-example-theme-d04-magenta.md
+      - Theme D05 - Brown: examples/material3-example-theme-d05-brown.md
+      - Theme D06 - TealBlue: examples/material3-example-theme-d06-tealblue.md
+      - Theme D07 - DarkOliveGreen: examples/material3-example-theme-d07-darkolivegreen.md
+      - Theme D08 - Red: examples/material3-example-theme-d08-red.md
+      - Theme D09 - Indigo Blue: examples/material3-example-theme-d09-indigoblue.md
+      - Theme D10 - Green: examples/material3-example-theme-d10-green.md
     - Examples from CIElab colors:
-      - Theme C01 - Red: examples/example-c1.md
-      - Theme C02 - Volcano: examples/example-c2.md
-      - Theme C03 - Orange: examples/example-c3.md
-      - Theme C04 - Gold: examples/example-c4.md
-      - Theme C05 - Yellow: examples/example-c5.md
-      - Theme C06 - Lime: examples/example-c6.md
-      - Theme C07 - Green: examples/example-c7.md
-      - Theme C08 - Cyan: examples/example-c8.md
-      - Theme C09 - Blue: examples/example-c9.md
-      - Theme C10 - GeekBlue: examples/example-c10.md
-      - Theme C11 - Purple: examples/example-c11.md
-      - Theme C12 - Magenta: examples/example-c12.md
+      - Theme C01 - Red: examples/material3-example-theme-c01-red.md
+      - Theme C02 - Volcano: examples/material3-example-theme-c02-volcano.md
+      - Theme C03 - Orange: examples/material3-example-theme-c03-orange.md
+      - Theme C04 - Gold: examples/material3-example-theme-c04-gold.md
+      - Theme C05 - Yellow: examples/material3-example-theme-c05-yellow.md
+      - Theme C06 - Lime: examples/material3-example-theme-c06-lime.md
+      - Theme C07 - Green: examples/material3-example-theme-c07-green.md
+      - Theme C08 - Cyan: examples/material3-example-theme-c08-cyan.md
+      - Theme C09 - Blue: examples/material3-example-theme-c09-blue.md
+      - Theme C10 - GeekBlue: examples/material3-example-theme-c10-geekblue.md
+      - Theme C11 - Purple: examples/material3-example-theme-c11-purple.md
+      - Theme C12 - Magenta: examples/material3-example-theme-c12-magenta.md
   - Helpers:
 #    - Introduction: helpers/introduction.md
     - Pallette generators: helpers/palette-generators.md

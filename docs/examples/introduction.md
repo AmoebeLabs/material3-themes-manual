@@ -112,29 +112,29 @@ The Material 3 color picker can create the same primary color, although differen
 
 <!--- References to internal links... --->
 
-[example-d01-md]: ../examples/example-d1.md
-[example-d2-md]: ../examples/example-d2.md
-[example-d3-md]: ../examples/example-d3.md
-[example-d4-md]: ../examples/example-d4.md
-[example-d5-md]: ../examples/example-d5.md
-[example-d6-md]: ../examples/example-theme-d06-tealblue.md
-[example-d7-md]: ../examples/example-d7.md
-[example-d8-md]: ../examples/example-d8.md
-[example-d9-md]: ../examples/example-d9.md
-[example-d10-md]: ../examples/example-d10.md
+[example-d01-md]: ../examples/material3-example-theme-d01-purple.md
+[example-d2-md]: ../examples/material3-example-theme-d02-cadmiumgreen.md
+[example-d3-md]: ../examples/material3-example-theme-d03-porcupine.md
+[example-d4-md]: ../examples/material3-example-theme-d04-magenta.md
+[example-d5-md]: ../examples/material3-example-theme-d05-brown.md
+[example-d6-md]: ../examples/material3-example-theme-d06-tealblue.md
+[example-d7-md]: ../examples/material3-example-theme-d07-darkolivegreen.md
+[example-d8-md]: ../examples/material3-example-theme-d08-red.md
+[example-d9-md]: ../examples/material3-example-theme-d09-indigoblue.md
+[example-d10-md]: ../examples/material3-example-theme-d10-green.md
 
-[example-c1-md]: ../examples/example-c1.md
-[example-c2-md]: ../examples/example-c2.md
-[example-c3-md]: ../examples/example-c3.md
-[example-c4-md]: ../examples/example-c4.md
-[example-c5-md]: ../examples/example-c5.md
-[example-c6-md]: ../examples/example-c6.md
-[example-c7-md]: ../examples/example-c7.md
-[example-c8-md]: ../examples/example-c8.md
-[example-c9-md]: ../examples/example-c9.md
-[example-c10-md]: ../examples/example-c10.md
-[example-c11-md]: ../examples/example-c11.md
-[example-c12-md]: ../examples/example-c12.md
+[example-c1-md]: ../examples/material3-example-theme-c01-red.md
+[example-c2-md]: ../examples/material3-example-theme-c02-volcano.md
+[example-c3-md]: ../examples/material3-example-theme-c03-orange.md
+[example-c4-md]: ../examples/material3-example-theme-c04-gold.md
+[example-c5-md]: ../examples/material3-example-theme-c05-yellow.md
+[example-c6-md]: ../examples/material3-example-theme-c06-lime.md
+[example-c7-md]: ../examples/material3-example-theme-c07-green.md
+[example-c8-md]: ../examples/material3-example-theme-c08-cyan.md
+[example-c9-md]: ../examples/material3-example-theme-c09-blue.md
+[example-c10-md]: ../examples/material3-example-theme-c10-geekblue.md
+[example-c11-md]: ../examples/material3-example-theme-c11-purple.md
+[example-c12-md]: ../examples/material3-example-theme-c12-magenta.md
 
 [material-3-analysis-picking-the-hue-url]: ../../basics/m3-analysis-hue-picker/
 [Material 3 Home Assistant implementation]: ../../basics/ha-m3-implementation/

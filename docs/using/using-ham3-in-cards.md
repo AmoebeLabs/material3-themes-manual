@@ -221,7 +221,7 @@ Check the [Theme colors page][ha-m3-theme-colors-url] for these 264 `reference` 
 
 <!--- Internal References... -->
 [ha-m3-theme-colors-url]: ../../basics/ha-m3-theme-colors/
-[example-d06-md]: ../examples/example-theme-d06-tealblue.md
+[example-d06-md]: ../examples/material3-example-theme-d06-tealblue.md
 [Material 3 Theme Color definitions]: ../../basics/ha-m3-theme-colors/
 [Material 3 Theme Installation]: ../../start/installation/
 [Material 3 compatibility]: ../../start/compatibility/
