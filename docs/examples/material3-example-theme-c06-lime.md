@@ -11,17 +11,17 @@ This theme uses CIE Lime as the primary color.
 [![release][release-badge]][release-url]
 ![downloads][downloads-badge]
 
---8<-- "docs/examples/example-include.md"
+--8<-- "docs/examples/example-include.mdi"
 
 <!--- References to pictures... --->
 
-[AmoebeLabs Material 3 Theme Palettes]: ../assets/screenshots/m3-theme-c06-palettes.png
-[AmoebeLabs Material 3 Theme Surfaces]: ../assets/screenshots/m3-theme-c06-surfaces.png
-[AmoebeLabs Material 3 Theme Light]: ../assets/screenshots/m3-theme-c06-light.png
-[AmoebeLabs Material 3 Theme Dark]: ../assets/screenshots/m3-theme-c06-dark.png
+[AmoebeLabs Material 3 Theme Palettes]: ../assets/screenshots/m3-theme-c06-palettes.png "Material3 Theme palette definition for C06, Lime"
+[AmoebeLabs Material 3 Theme Surfaces]: ../assets/screenshots/m3-theme-c06-surfaces.png "Material3 Theme surface definition for C06, Lime"
+[AmoebeLabs Material 3 Theme Light]: ../assets/screenshots/m3-theme-c06-light.png "Material3 Light Theme definition for C06, Lime"
+[AmoebeLabs Material 3 Theme Dark]: ../assets/screenshots/m3-theme-c06-dark.png "Material3 Dark Theme definition for C06, Lime"
 
-[AmoebeLabs Material 3 Theme Example Light]: ../assets/screenshots/m3-example-c06-light.png
-[AmoebeLabs Material 3 Theme Example Dark]: ../assets/screenshots/m3-example-c06-dark.png
+[AmoebeLabs Material 3 Theme Example Light]: ../assets/screenshots/m3-example-c06-light.png "Material3 Light Theme example card for C06, Lime"
+[AmoebeLabs Material 3 Theme Example Dark]: ../assets/screenshots/m3-example-c06-dark.png "Material3 Dark Theme example card for C06, Lime"
 
 <!--- References to external links... --->
 

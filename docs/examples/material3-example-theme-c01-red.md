@@ -11,17 +11,17 @@ This theme uses CIE Red as the primary color.
 [![release][release-badge]][release-url]
 ![downloads][downloads-badge]
 
---8<-- "docs/examples/example-include.md"
+--8<-- "docs/examples/example-include.mdi"
 
 <!--- References to pictures... --->
 
-[AmoebeLabs Material 3 Theme Palettes]: ../assets/screenshots/m3-theme-c01-palettes.png
-[AmoebeLabs Material 3 Theme Surfaces]: ../assets/screenshots/m3-theme-c01-surfaces.png
-[AmoebeLabs Material 3 Theme Light]: ../assets/screenshots/m3-theme-c01-light.png
-[AmoebeLabs Material 3 Theme Dark]: ../assets/screenshots/m3-theme-c01-dark.png
+[AmoebeLabs Material 3 Theme Palettes]: ../assets/screenshots/m3-theme-c01-palettes.png "Material3 Theme palette definition for C01, Red"
+[AmoebeLabs Material 3 Theme Surfaces]: ../assets/screenshots/m3-theme-c01-surfaces.png "Material3 Theme surface definition for C01, Red"
+[AmoebeLabs Material 3 Theme Light]: ../assets/screenshots/m3-theme-c01-light.png "Material3 Light Theme definition for C01, Red"
+[AmoebeLabs Material 3 Theme Dark]: ../assets/screenshots/m3-theme-c01-dark.png "Material3 Dark Theme definition for C01, Red"
 
-[AmoebeLabs Material 3 Theme Example Light]: ../assets/screenshots/m3-example-c01-light.png
-[AmoebeLabs Material 3 Theme Example Dark]: ../assets/screenshots/m3-example-c01-dark.png
+[AmoebeLabs Material 3 Theme Example Light]: ../assets/screenshots/m3-example-c01-light.png "Material3 Light Theme example card for C01, Red"
+[AmoebeLabs Material 3 Theme Example Dark]: ../assets/screenshots/m3-example-c01-dark.png "Material3 Dark Theme example card for C01, Red"
 
 <!--- References to external links... --->
 

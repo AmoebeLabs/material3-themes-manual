@@ -11,7 +11,7 @@ This theme uses CIE Blue as the primary color.
 [![release][release-badge]][release-url]
 ![downloads][downloads-badge]
 
---8<-- "docs/examples/example-include.md"
+--8<-- "docs/examples/example-include.mdi"
 
 <!--- References to pictures... --->
 
