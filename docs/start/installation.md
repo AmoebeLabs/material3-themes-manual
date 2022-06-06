@@ -33,6 +33,6 @@ Once installed, learn how to use the full functionality of the Material 3 themes
 
 For one of the 22 available example themes, check [this page][Material 3 example themes].
 
-<!--- Internal References... -->
+<!-- Internal references -->
 [How to use Material 3 themes]: ../../using/using-ham3-in-cards/
 [Material 3 example themes]: ../../examples/introduction/

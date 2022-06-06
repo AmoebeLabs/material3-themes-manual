@@ -50,7 +50,7 @@ Once you are ready, go to the "Custom" tab of the Material Theme Builder, and cl
 ![Figma Material Theme Builder Export Theme]
 
 
-<!--- References to pictures... --->
+<!-- Image references -->
 
 [mtb-blue-1-png]: ../assets/screenshots/material-theme-builder-blue.png
 [mtb-blue-2-png]: ../assets/screenshots/material-theme-builder-blue2.png

@@ -57,8 +57,9 @@ This card is (ab)used to convert the resulting tokens file.
 [Figma Found Material Theme Builder plugin]: ../assets/screenshots/figma-found-material-theme-builder.png
 [Figma Install Material Theme Builder plugin]: ../assets/screenshots/figma-install-material-theme-builder.png
 
-<!---
+<!-- External references -->
 
+<!--
 | Theme | primary | secondary | diff | tertiary | diffp | diffs | neutral | diff | variant | diff |
 | ----- |----- |----- |----- |----- |----- |----- |----- |----- |-----|-----
 | Cadmium Green | 160| 147 | -13 | 196 | 36 | 49 | 120 | 40 | 135 | 25 |
@@ -233,4 +234,4 @@ Neither Lab or Luv are "truly" uniform in terms of hue and chroma, but Lab is ma
 
 The uv of Luv makes up the more modern spectral locus which is a better choice than the 1931 diagram. Luv has more stable hue when L* or C is changed (before clipping) than Lab, though Luv can be more susceptible to clipping. The distribution of Luv colors is also much more even than Lab.
 
---->
+-->

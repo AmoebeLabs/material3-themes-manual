@@ -32,18 +32,18 @@ Below is an overview of the features and extensions that HAM3 provides for Home 
 
 The resulting theme colors are shown below. The theme is rendered using several [Swiss Army Knife][sak-docs-url] custom cards and templates. The example uses the dynamic [`Material 3 D07, DarkOliveGreen`][example-d7-md] theme. This theme is generated from the AmoebeLabs logo :smile:
 
-[![Material 3 Theme Palettes]][Material 3 Theme Palettes]
+[![Home Assistant Material 3 Theme Palette]][Home Assistant Material 3 Theme Palette]
 _Primary, secondary, tertiary and error pallettes ranging from white (100) to black (0)_
 
 
-<br>[![Material 3 Theme Surfaces]][Material 3 Theme Surfaces]
+<br>[![Home Assistant Material 3 Theme Surface]][Home Assistant Material 3 Theme Surface]
 _The 5 light and dark surfaces with 10 elevation levels each_
 
 
-<br>[![Material 3 Theme Light]][Material 3 Theme Light]
+<br>[![Home Assistant Material 3 Theme Light]][Home Assistant Material 3 Theme Light]
 _The resulting light theme color selection_
 
-<br>[![Material 3 Theme Dark]][Material 3 Theme Dark]
+<br>[![Home Assistant Material 3 Theme Dark]][Home Assistant Material 3 Theme Dark]
 _The resulting dark theme color selection_
 
 
@@ -59,21 +59,21 @@ You see the following aspects of the theme:
 
 All the above colors adapt to the theme mode. The only exception is (barely) visible in the last row: that row uses reference colors that are the same in dark and light mode.
 
-[![Material 3 Theme Example Light]][Material 3 Theme Example Light]
+[![Home Assistant Material 3 Theme Example Light]][Home Assistant Material 3 Theme Example Light]
 _A light theme example card ([Theme D07 - DarkOliveGreen][example-d7-md])_
 
-<br>[![Material 3 Theme Example Dark]][Material 3 Theme Example Dark]
+<br>[![Home Assistant Material 3 Theme Example Dark]][Home Assistant Material 3 Theme Example Dark]
 _A dark theme example card ([Theme D07 - DarkOliveGreen][example-d7-md])_
 
 <!-- Image References -->
 
-[Material 3 Theme Palettes]: ../assets/screenshots/m3-theme-d07-palettes.png
-[Material 3 Theme Surfaces]: ../assets/screenshots/m3-theme-d07-surfaces.png
-[Material 3 Theme Light]: ../assets/screenshots/m3-theme-d07-light.png
-[Material 3 Theme Dark]: ../assets/screenshots/m3-theme-d07-dark.png
+[Home Assistant Material 3 Theme Palette]: ../assets/screenshots/m3-theme-d07-palettes.png "Home Assistant Material 3 Theme Palette definition for example D07, Dark Olive Green"
+[Home Assistant Material 3 Theme Surface]: ../assets/screenshots/m3-theme-d07-surfaces.png "Home Assistant Material 3 Theme Surface definitionfor example D07, Dark Olive Green"
+[Home Assistant Material 3 Theme Light]: ../assets/screenshots/m3-theme-d07-light.png "Home Assistant Material 3 Theme Light definition for example D07, Dark Olive Green"
+[Home Assistant Material 3 Theme Dark]: ../assets/screenshots/m3-theme-d07-dark.png "Home Assistant Material 3 Theme Dark definition for example D07, Dark Olive Green"
 
-[Material 3 Theme Example Light]: ../assets/screenshots/m3-example-d07-light.png
-[Material 3 Theme Example Dark]: ../assets/screenshots/m3-example-d07-dark.png
+[Home Assistant Material 3 Theme Example Light]: ../assets/screenshots/m3-example-d07-light.png "Home Assistant Material 3 Theme Light card example for D07, Dark Olive Green"
+[Home Assistant Material 3 Theme Example Dark]: ../assets/screenshots/m3-example-d07-dark.png "Home Assistant Material 3 Theme Dark card example for D07, Dark Olive Green"
 
 <!-- Internal References -->
 [example-d7-md]: ../examples/material3-example-theme-d07-darkolivegreen.md

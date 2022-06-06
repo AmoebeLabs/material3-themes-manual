@@ -64,16 +64,18 @@ _And the CIELab model with the best lightness prediction_
     
 (screenshots taken from [Colorio README][colorio-readme-url])
 
-<!--- References to pictures... --->
+<!-- Image references -->
 
 [colorio-hue-linearity-ebner-fairchild-png]: ../assets/screenshots/colorio-hue-linearity-ebner-fairchild.png
 [colorio-munsell-lightness-png]: ../assets/screenshots/colorio-munsell-lightness.png
 [colorio-lightness-png]: ../assets/screenshots/colorio-lightness.png
 
-<!--- Internal links... --->
+<!-- Internal  references -->
+
 [AmoebeLabs Material 3 Example introduction]: ../../examples/introduction/
 [Material 3 Analysis Hue Picker]: ../m3-analysis-hue-picker/
-<!--- External links... --->
+
+<!-- External references -->
 
 [m3-hct-source-url]: https://github.com/material-foundation/material-color-utilities/blob/main/typescript/hct/hct.ts
 [wcag-guidelines-url]: https://www.w3.org/WAI/standards-guidelines/wcag/

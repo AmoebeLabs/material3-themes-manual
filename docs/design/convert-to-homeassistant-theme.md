@@ -270,7 +270,7 @@ Then select your just created theme and start using it.
 You can validate the theme using the `sake99` view, as it displays the active Material 3 theme.
 
 
-<!--- Image References... --->
+<!-- Image references -->
 
 [SAK Material 3 converter Theme Card]: ../assets/screenshots/sak-view99-theme-card.png
 [SAK Material 3 converter Chrome Console Output]: ../assets/screenshots/sak-view99-console-output.png

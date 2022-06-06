@@ -295,7 +295,7 @@ For the secondary color I have no idea, because the direction is to the right in
 !!! Fail "It remains unknown how Material 3 is calculating secondary and tertiary colors on the CIE-Lch(ab) color wheel"
 -->
 
-<!--- References to pictures... --->
+<!-- Image references -->
 
 [mtb-blue-1-png]: ../assets/screenshots/material-theme-builder-blue.png
 [mtb-blue-2-png]: ../assets/screenshots/material-theme-builder-blue2.png
@@ -316,7 +316,7 @@ For the secondary color I have no idea, because the direction is to the right in
 [hsv-lch-colorwheel-jpg]: ../assets/screenshots/hsv-lch-colorwheel.jpg
 [cielab-colorwheel-png]:  ../assets/screenshots/cielab-colorwheel.png
 
-<!--- External links... --->
+<!-- External references -->
 
 [colormine-url]: http://colormine.org/color-converter
 [css-land-lch-color-picker-url]: https://css.land/lch/

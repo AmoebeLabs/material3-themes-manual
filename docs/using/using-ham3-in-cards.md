@@ -6,8 +6,6 @@ tags:
   - Themes
   - Colors
 ---
-<!--- 2022.05.11 Volgens seobility, 399 words. Advies is minimaal 800, al gaat 600 woorden ook al snel goed -->
-
 #How to use Material 3 themes
 
 Once you have [installed][Material 3 Theme Installation] one of the Material 3 themes, you can use all the color definitions the theme offers in your Home Assistant (custom) cards.
@@ -214,19 +212,19 @@ Check the [Theme colors page][ha-m3-theme-colors-url] for these 264 `reference` 
       opacity: 1
 ```
 
-<!--- References to external sites... -->
+<!-- External references -->
 
 [swiss-army-knife-documentation-url]: https://swiss-army-knife.docs.amoebelabs.com/
 [swiss-army-knife-documentation-example-12-url]: https://swiss-army-knife.docs.amoebelabs.com/examples/example-12/
 
-<!--- Internal References... -->
+<!-- Internal references -->
 [ha-m3-theme-colors-url]: ../../basics/ha-m3-theme-colors/
 [example-d06-md]: ../examples/material3-example-theme-d06-tealblue.md
 [Material 3 Theme Color definitions]: ../../basics/ha-m3-theme-colors/
 [Material 3 Theme Installation]: ../../start/installation/
 [Material 3 compatibility]: ../../start/compatibility/
 
-<!--- References to pictures... -->
+<!-- Image references -->
 
 [AmoebeLabs Material 3 Theme Example D06 Light]: ../assets/screenshots/m3-example-d06-light.png
 [AmoebeLabs Material 3 Theme Example D06 Dark]: ../assets/screenshots/m3-example-d06-dark.png

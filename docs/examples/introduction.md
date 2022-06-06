@@ -58,7 +58,7 @@ The Material 3 color picker can create the same primary color, although differen
 | **[Example c12, Magenta Light][example-c12-md]:** [![m3-example-c12-light-png]][example-c12-md] | **[Example c12, Magenta Dark][example-c12-md]:** [![m3-example-c12-dark-png]][example-c12-md] |
 
 
-<!--- References to pictures... --->
+<!-- Image references -->
 
 [m3-example-d01-light-png]: ../assets/screenshots/m3-example-d01-light.png
 [m3-example-d02-light-png]: ../assets/screenshots/m3-example-d02-light.png
@@ -110,7 +110,7 @@ The Material 3 color picker can create the same primary color, although differen
 
 [cielab-io-colors-png]: ../assets/screenshots/cielab-io-colors.png
 
-<!--- References to internal links... --->
+<!-- Internal references -->
 
 [example-d01-md]: ../examples/material3-example-theme-d01-purple.md
 [example-d2-md]: ../examples/material3-example-theme-d02-cadmiumgreen.md
@@ -142,7 +142,7 @@ The Material 3 color picker can create the same primary color, although differen
 [Material 3 Theme Installation]: ../../start/installation/
 [Material 3 Design Your Own Theme]: ../../design/prerequisites/
 
-<!--- References to external links... --->
+<!-- External references -->
 
 [AmoebeLabs Swiss Army Knife Example 12]: https://swiss-army-knife.docs.amoebelabs.com/examples/example-12/
 [cielab-io-url]: https://cielab.io

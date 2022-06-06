@@ -82,13 +82,13 @@ On the left, the custom color, and on the right the extracted source color by HC
 !!! Success "Material 3 is NOT using the exact hue from your custom color input, but again some HCT-fu"
     The WHY remains unknown (haven't checked the sources at this moment), but the difference is not that noticable...
 
-<!--- References to pictures... --->
+<!-- Image references -->
 
 [mtb-blue-1-png]: ../assets/screenshots/material-theme-builder-blue.png
 [mtb-blue-2-png]: ../assets/screenshots/material-theme-builder-blue2.png
 [mtb-blue-3-png]: ../assets/screenshots/material-theme-builder-blue3.png
 
-<!--- External links... --->
+<!-- External references -->
 
 [colormine-url]: http://colormine.org/color-converter
 [css-land-lch-color-picker-url]: https://css.land/lch/
