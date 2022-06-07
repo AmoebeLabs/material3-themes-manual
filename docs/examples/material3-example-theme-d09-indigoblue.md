@@ -36,9 +36,9 @@ This theme uses Indigo as the primary color. I used the [dynamic color][picking-
 <!-- Badge references -->
 
 [hacs-url]: https://github.com/hacs/default
-[hacs-badge]: https://img.shields.io/badge/HACS-Default-41BDF5.svg?style=for-the-badge
-[release-badge]: https://img.shields.io/github/v/release/AmoebeLabs/HA-Theme_M3-09-Indigo?style=for-the-badge
-[downloads-badge]: https://img.shields.io/github/downloads/AmoebeLabs/HA-Theme_M3-09-Indigo/total?style=for-the-badge
+[hacs-badge]: https://img.shields.io/badge/HACS-Default-41BDF5.svg?style=for-the-badge&logo=homeassistantcommunitystore
+[release-badge]: https://img.shields.io/github/v/release/AmoebeLabs/HA-Theme_M3-09-Indigo?style=for-the-badge&logo=github
+[downloads-badge]: https://img.shields.io/github/downloads/AmoebeLabs/HA-Theme_M3-09-Indigo/total?style=for-the-badge&logo=github
 
 <!-- Internal references -->
 
