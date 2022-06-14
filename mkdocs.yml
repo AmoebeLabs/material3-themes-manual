@@ -9,8 +9,8 @@ site_description: >-
   
 
 # Repository
-repo_name: amoebelabs/ha-m3-themes
-repo_url: https://github.com/amoebelabs/ha-m3-themes
+repo_name: amoebelabs/material3-themes-manual
+repo_url: https://github.com/amoebelabs/material3-themes-manual
 edit_uri: ""
 
 copyright: Copyright &copy; 2021 - 2022 Marco@AmoebeLabs
