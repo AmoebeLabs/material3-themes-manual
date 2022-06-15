@@ -1,207 +1,207 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://ha-m3-themes.docs.amoebelabs.com/</loc>
+         <loc>https://material3-themes-manual.amoebelabs.com/</loc>
          <lastmod>2022-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ha-m3-themes.docs.amoebelabs.com/basics/color-spaces/</loc>
+         <loc>https://material3-themes-manual.amoebelabs.com/basics/color-spaces/</loc>
          <lastmod>2022-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ha-m3-themes.docs.amoebelabs.com/basics/ha-m3-implementation/</loc>
+         <loc>https://material3-themes-manual.amoebelabs.com/basics/ha-m3-implementation/</loc>
          <lastmod>2022-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ha-m3-themes.docs.amoebelabs.com/basics/ha-m3-introduction/</loc>
+         <loc>https://material3-themes-manual.amoebelabs.com/basics/ha-m3-introduction/</loc>
          <lastmod>2022-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ha-m3-themes.docs.amoebelabs.com/basics/ha-m3-theme-colors/</loc>
+         <loc>https://material3-themes-manual.amoebelabs.com/basics/ha-m3-theme-colors/</loc>
          <lastmod>2022-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ha-m3-themes.docs.amoebelabs.com/basics/ha-m3-theme-structure/</loc>
+         <loc>https://material3-themes-manual.amoebelabs.com/basics/ha-m3-theme-structure/</loc>
          <lastmod>2022-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ha-m3-themes.docs.amoebelabs.com/basics/introducing-m3-color-system/</loc>
+         <loc>https://material3-themes-manual.amoebelabs.com/basics/introducing-m3-color-system/</loc>
          <lastmod>2022-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ha-m3-themes.docs.amoebelabs.com/basics/m3-analysis-hue-picker/</loc>
+         <loc>https://material3-themes-manual.amoebelabs.com/basics/m3-analysis-hue-picker/</loc>
          <lastmod>2022-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ha-m3-themes.docs.amoebelabs.com/basics/m3-analysis-introduction/</loc>
+         <loc>https://material3-themes-manual.amoebelabs.com/basics/m3-analysis-introduction/</loc>
          <lastmod>2022-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ha-m3-themes.docs.amoebelabs.com/basics/m3-analysis-palettes/</loc>
+         <loc>https://material3-themes-manual.amoebelabs.com/basics/m3-analysis-palettes/</loc>
          <lastmod>2022-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ha-m3-themes.docs.amoebelabs.com/design/convert-to-homeassistant-theme/</loc>
+         <loc>https://material3-themes-manual.amoebelabs.com/design/convert-to-homeassistant-theme/</loc>
          <lastmod>2022-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ha-m3-themes.docs.amoebelabs.com/design/create-material3-theme/</loc>
+         <loc>https://material3-themes-manual.amoebelabs.com/design/create-material3-theme/</loc>
          <lastmod>2022-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ha-m3-themes.docs.amoebelabs.com/design/prerequisites/</loc>
+         <loc>https://material3-themes-manual.amoebelabs.com/design/prerequisites/</loc>
          <lastmod>2022-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ha-m3-themes.docs.amoebelabs.com/examples/introduction/</loc>
+         <loc>https://material3-themes-manual.amoebelabs.com/examples/introduction/</loc>
          <lastmod>2022-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ha-m3-themes.docs.amoebelabs.com/examples/material3-example-theme-c01-red/</loc>
+         <loc>https://material3-themes-manual.amoebelabs.com/examples/material3-example-theme-c01-red/</loc>
          <lastmod>2022-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ha-m3-themes.docs.amoebelabs.com/examples/material3-example-theme-c02-volcano/</loc>
+         <loc>https://material3-themes-manual.amoebelabs.com/examples/material3-example-theme-c02-volcano/</loc>
          <lastmod>2022-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ha-m3-themes.docs.amoebelabs.com/examples/material3-example-theme-c03-orange/</loc>
+         <loc>https://material3-themes-manual.amoebelabs.com/examples/material3-example-theme-c03-orange/</loc>
          <lastmod>2022-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ha-m3-themes.docs.amoebelabs.com/examples/material3-example-theme-c04-gold/</loc>
+         <loc>https://material3-themes-manual.amoebelabs.com/examples/material3-example-theme-c04-gold/</loc>
          <lastmod>2022-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ha-m3-themes.docs.amoebelabs.com/examples/material3-example-theme-c05-yellow/</loc>
+         <loc>https://material3-themes-manual.amoebelabs.com/examples/material3-example-theme-c05-yellow/</loc>
          <lastmod>2022-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ha-m3-themes.docs.amoebelabs.com/examples/material3-example-theme-c06-lime/</loc>
+         <loc>https://material3-themes-manual.amoebelabs.com/examples/material3-example-theme-c06-lime/</loc>
          <lastmod>2022-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ha-m3-themes.docs.amoebelabs.com/examples/material3-example-theme-c07-green/</loc>
+         <loc>https://material3-themes-manual.amoebelabs.com/examples/material3-example-theme-c07-green/</loc>
          <lastmod>2022-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ha-m3-themes.docs.amoebelabs.com/examples/material3-example-theme-c08-cyan/</loc>
+         <loc>https://material3-themes-manual.amoebelabs.com/examples/material3-example-theme-c08-cyan/</loc>
          <lastmod>2022-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ha-m3-themes.docs.amoebelabs.com/examples/material3-example-theme-c09-blue/</loc>
+         <loc>https://material3-themes-manual.amoebelabs.com/examples/material3-example-theme-c09-blue/</loc>
          <lastmod>2022-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ha-m3-themes.docs.amoebelabs.com/examples/material3-example-theme-c10-geekblue/</loc>
+         <loc>https://material3-themes-manual.amoebelabs.com/examples/material3-example-theme-c10-geekblue/</loc>
          <lastmod>2022-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ha-m3-themes.docs.amoebelabs.com/examples/material3-example-theme-c11-purple/</loc>
+         <loc>https://material3-themes-manual.amoebelabs.com/examples/material3-example-theme-c11-purple/</loc>
          <lastmod>2022-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ha-m3-themes.docs.amoebelabs.com/examples/material3-example-theme-c12-magenta/</loc>
+         <loc>https://material3-themes-manual.amoebelabs.com/examples/material3-example-theme-c12-magenta/</loc>
          <lastmod>2022-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ha-m3-themes.docs.amoebelabs.com/examples/material3-example-theme-d01-purple/</loc>
+         <loc>https://material3-themes-manual.amoebelabs.com/examples/material3-example-theme-d01-purple/</loc>
          <lastmod>2022-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ha-m3-themes.docs.amoebelabs.com/examples/material3-example-theme-d02-cadmiumgreen/</loc>
+         <loc>https://material3-themes-manual.amoebelabs.com/examples/material3-example-theme-d02-cadmiumgreen/</loc>
          <lastmod>2022-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ha-m3-themes.docs.amoebelabs.com/examples/material3-example-theme-d03-porcupine/</loc>
+         <loc>https://material3-themes-manual.amoebelabs.com/examples/material3-example-theme-d03-porcupine/</loc>
          <lastmod>2022-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ha-m3-themes.docs.amoebelabs.com/examples/material3-example-theme-d04-magenta/</loc>
+         <loc>https://material3-themes-manual.amoebelabs.com/examples/material3-example-theme-d04-magenta/</loc>
          <lastmod>2022-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ha-m3-themes.docs.amoebelabs.com/examples/material3-example-theme-d05-brown/</loc>
+         <loc>https://material3-themes-manual.amoebelabs.com/examples/material3-example-theme-d05-brown/</loc>
          <lastmod>2022-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ha-m3-themes.docs.amoebelabs.com/examples/material3-example-theme-d06-tealblue/</loc>
+         <loc>https://material3-themes-manual.amoebelabs.com/examples/material3-example-theme-d06-tealblue/</loc>
          <lastmod>2022-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ha-m3-themes.docs.amoebelabs.com/examples/material3-example-theme-d07-darkolivegreen/</loc>
+         <loc>https://material3-themes-manual.amoebelabs.com/examples/material3-example-theme-d07-darkolivegreen/</loc>
          <lastmod>2022-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ha-m3-themes.docs.amoebelabs.com/examples/material3-example-theme-d08-red/</loc>
+         <loc>https://material3-themes-manual.amoebelabs.com/examples/material3-example-theme-d08-red/</loc>
          <lastmod>2022-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ha-m3-themes.docs.amoebelabs.com/examples/material3-example-theme-d09-indigoblue/</loc>
+         <loc>https://material3-themes-manual.amoebelabs.com/examples/material3-example-theme-d09-indigoblue/</loc>
          <lastmod>2022-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ha-m3-themes.docs.amoebelabs.com/examples/material3-example-theme-d10-green/</loc>
+         <loc>https://material3-themes-manual.amoebelabs.com/examples/material3-example-theme-d10-green/</loc>
          <lastmod>2022-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ha-m3-themes.docs.amoebelabs.com/helpers/palette-generators/</loc>
+         <loc>https://material3-themes-manual.amoebelabs.com/helpers/palette-generators/</loc>
          <lastmod>2022-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ha-m3-themes.docs.amoebelabs.com/start/compatibility/</loc>
+         <loc>https://material3-themes-manual.amoebelabs.com/start/compatibility/</loc>
          <lastmod>2022-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ha-m3-themes.docs.amoebelabs.com/start/installation/</loc>
+         <loc>https://material3-themes-manual.amoebelabs.com/start/installation/</loc>
          <lastmod>2022-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ha-m3-themes.docs.amoebelabs.com/start/introduction/</loc>
+         <loc>https://material3-themes-manual.amoebelabs.com/start/introduction/</loc>
          <lastmod>2022-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ha-m3-themes.docs.amoebelabs.com/using/using-ham3-in-cards/</loc>
+         <loc>https://material3-themes-manual.amoebelabs.com/using/using-ham3-in-cards/</loc>
          <lastmod>2022-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
