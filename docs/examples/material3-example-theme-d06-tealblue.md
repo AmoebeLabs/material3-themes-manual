@@ -25,13 +25,13 @@ This theme uses Teal Blue as the primary color. I used the [dynamic color][picki
 
 <!-- External references -->
 
-[sak-example-12-url]: https://swiss-army-knife.docs.amoebelabs.com/examples/example-12/
+[sak-example-12-url]: https://swiss-army-knife-card-manual.amoebelabs.com/examples/example-12/
 [m3-theme-github-url]: https://github.com/AmoebeLabs/HA-Theme_M3-D06-TealBlue
 [home-assistant]: https://www.home-assistant.io/
 [home-assitant-theme-docs]: https://www.home-assistant.io/integrations/frontend/#defining-themes
 [hacs]: https://hacs.xyz
 [release-url]: https://github.com/AmoebeLabs/HA-Theme_M3-D06-TealBlue/releases
-[sak-docs-url]: https://swiss-army-knife.docs.amoebelabs.com/
+[sak-docs-url]: https://swiss-army-knife-card-manual.amoebelabs.com/
 
 <!-- Badge references -->
 

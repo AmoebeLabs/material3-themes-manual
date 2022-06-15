@@ -214,8 +214,8 @@ Check the [Theme colors page][ha-m3-theme-colors-url] for these 264 `reference` 
 
 <!-- External references -->
 
-[swiss-army-knife-documentation-url]: https://swiss-army-knife.docs.amoebelabs.com/
-[swiss-army-knife-documentation-example-12-url]: https://swiss-army-knife.docs.amoebelabs.com/examples/example-12/
+[swiss-army-knife-documentation-url]: https://swiss-army-knife-card-manual.amoebelabs.com/
+[swiss-army-knife-documentation-example-12-url]: https://swiss-army-knife-card-manual.amoebelabs.com/examples/example-12/
 
 <!-- Internal references -->
 [ha-m3-theme-colors-url]: ../../basics/ha-m3-theme-colors/

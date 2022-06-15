@@ -144,5 +144,5 @@ The Material 3 color picker can create the same primary color, although differen
 
 <!-- External references -->
 
-[AmoebeLabs Swiss Army Knife Example 12]: https://swiss-army-knife.docs.amoebelabs.com/examples/example-12/
+[AmoebeLabs Swiss Army Knife Example 12]: https://swiss-army-knife-card-manual.amoebelabs.com/examples/example-12/
 [cielab-io-url]: https://cielab.io
