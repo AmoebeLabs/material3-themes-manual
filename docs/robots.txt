@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ha-m3-themes.docs.amoebelabs.com/sitemap.xml
+Sitemap: https://material3-themes-manual.amoebelabs.com/sitemap.xml
