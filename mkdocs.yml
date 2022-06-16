@@ -43,6 +43,7 @@ plugins:
         'design/introduction.md': 'design/prerequisites.md'
         'design/create-m3-theme.md': 'design/create-material3-theme.md'
         'design/convert-ha-theme.md': 'design/convert-to-homeassistant-theme.md'
+        'using/using-ham3-in-cards.md': 'using/how-to-use-material3-themes.md'
         'examples/example-1.md': 'examples/material3-example-theme-d01-purple.md'
         'examples/example-2.md': 'examples/material3-example-theme-d02-cadmiumgreen.md'
         'examples/example-d1.md': 'examples/material3-example-theme-d01-purple.md'
@@ -157,7 +158,7 @@ nav:
       - Implementation: basics/ha-m3-implementation.md
       - Theme structure: basics/ha-m3-theme-structure.md
       - Theme colors: basics/ha-m3-theme-colors.md
-  - How to use Material 3 themes: using/using-ham3-in-cards.md
+  - How to use Material 3 themes: using/how-to-use-material3-themes.md
   - Design your OWN:
     - Prerequisites: design/prerequisites.md
     - Create Material 3 Theme: design/create-material3-theme.md
