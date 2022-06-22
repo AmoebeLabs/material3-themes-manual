@@ -9,7 +9,7 @@ site_description: >-
   
 
 # Repository
-repo_name: Material 3 Themes Manual #amoebelabs/material3-themes-manual
+repo_name: Material 3 Themes Manual
 repo_url: https://github.com/amoebelabs/material3-themes-manual
 edit_uri: ""
 
@@ -36,8 +36,9 @@ plugins:
   - tags
   - minify:
       minify_html: true
-  # Todo for pages that I want to rename etc. without loosing Google / Bing indexing...
-  # This is using a HTML refresh with 0 seconds, so should be followed by search engines!
+  # Redirect pages pages that I want to rename etc. without loosing Google / Bing indexing...
+  # And users getting a 404 while clicking on an old link of course!
+  # This is using a HTML refresh with 0 seconds and contains a "no-index" for the old page.
   - redirects:
       redirect_maps:
         'design/introduction.md': 'design/prerequisites.md'
