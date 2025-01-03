@@ -8,6 +8,13 @@ tags:
   - Swiss Army Knife
 ---
 
+!!! Warning "The Material Theme Builder does not export DSP files anymore"
+    Therefore, the export/import as described here does **NOT** work anymore!
+
+    As an added bonus, the `tokens.json` file is incompatible with the new `.json` export~~
+
+    I'm investigating if the new format can be converted to the old format, and thus into an M3 theme for Home Assistant.
+    
 ##:material-home-floor-3: Introduction
 As I don't create a theme every day, the conversion is a bit primitive, but it works for me!
 

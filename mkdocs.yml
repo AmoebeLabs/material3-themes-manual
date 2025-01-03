@@ -13,14 +13,38 @@ repo_name: Material 3 Themes Manual
 repo_url: https://github.com/amoebelabs/material3-themes-manual
 edit_uri: ""
 
-copyright: Copyright &copy; 2021 - 2022 Marco@AmoebeLabs
+copyright: Copyright &copy; 2021 - 2025 Marco@AmoebeLabs
 
 theme:
   name: material
   palette:
     # primary: blue grey
-    primary: amoebelabs
-    accent: amoebelabs
+    #primary: amoebelabs
+    #accent: amoebelabs
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      primary: amoebelabs-light
+      accent: amoebelabs-light
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      primary: amoebelabs-light
+      accent: amoebelabs-light
+#      scheme: default 
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: amoebelabs-dark
+      accent: amoebelabs-dark
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference  
   logo: assets/logo/m3-logo.svg
   custom_dir: overrides
   features:

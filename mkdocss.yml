@@ -1,0 +1,218 @@
+
+# Project information
+site_name: Material 3 Themes for Home Assistant
+site_url: https://material3-themes-manual.amoebelabs.com/
+site_author: Marco
+site_description: >-
+  With Material 3 Themes for Home Assistant you can create beautiful combined dark and light themes
+  with minimal work and great results!
+  
+
+# Repository
+repo_name: Material 3 Themes Manual
+repo_url: https://github.com/amoebelabs/material3-themes-manual
+edit_uri: ""
+
+copyright: Copyright &copy; 2021 - 2025 Marco@AmoebeLabs
+
+theme:
+  name: material
+  palette:
+    # primary: blue grey
+    #primary: amoebelabs
+    #accent: amoebelabs
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      primary: amoebelabs-light
+      accent: amoebelabs-light
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      primary: amoebelabs-light
+      accent: amoebelabs-light
+#      scheme: default 
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: amoebelabs-dark
+      accent: amoebelabs-dark
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference    
+  logo: assets/logo/m3-logo.svg
+  custom_dir: overrides
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.expand
+    - navigation.top   
+    - search.suggest
+    - search.highlight
+
+plugins:
+  - search
+  - tags
+  - minify:
+      minify_html: true
+  # Redirect pages pages that I want to rename etc. without loosing Google / Bing indexing...
+  # And users getting a 404 while clicking on an old link of course!
+  # This is using a HTML refresh with 0 seconds and contains a "no-index" for the old page.
+  - redirects:
+      redirect_maps:
+        'design/introduction.md': 'design/prerequisites.md'
+        'design/create-m3-theme.md': 'design/create-material3-theme.md'
+        'design/convert-ha-theme.md': 'design/convert-to-homeassistant-theme.md'
+        'using/using-ham3-in-cards.md': 'using/how-to-use-material3-themes.md'
+        'examples/example-1.md': 'examples/material3-example-theme-d01-purple.md'
+        'examples/example-2.md': 'examples/material3-example-theme-d02-cadmiumgreen.md'
+        'examples/example-d1.md': 'examples/material3-example-theme-d01-purple.md'
+        'examples/example-d2.md': 'examples/material3-example-theme-d02-cadmiumgreen.md'
+        'examples/example-d3.md': 'examples/material3-example-theme-d03-porcupine.md'
+        'examples/example-d4.md': 'examples/material3-example-theme-d04-magenta.md'
+        'examples/example-d5.md': 'examples/material3-example-theme-d05-brown.md'
+        'examples/example-d6.md': 'examples/material3-example-theme-d06-tealblue.md'
+        'examples/example-theme-d06-tealblue.md': 'examples/material3-example-theme-d06-tealblue.md'
+        'examples/example-d7.md': 'examples/material3-example-theme-d07-darkolivegreen.md'
+        'examples/example-d8.md': 'examples/material3-example-theme-d08-red.md'
+        'examples/example-d9.md': 'examples/material3-example-theme-d09-indigoblue.md'
+        'examples/example-d10.md': 'examples/material3-example-theme-d10-green.md'
+        'examples/example-c1.md': 'examples/material3-example-theme-c01-red.md'
+        'examples/example-c2.md': 'examples/material3-example-theme-c02-volcano.md'
+        'examples/example-c3.md': 'examples/material3-example-theme-c03-orange.md'
+        'examples/example-c4.md': 'examples/material3-example-theme-c04-gold.md'
+        'examples/example-c5.md': 'examples/material3-example-theme-c05-yellow.md'
+        'examples/example-c6.md': 'examples/material3-example-theme-c06-lime.md'
+        'examples/example-c7.md': 'examples/material3-example-theme-c07-green.md'
+        'examples/example-c8.md': 'examples/material3-example-theme-c08-cyan.md'
+        'examples/example-c9.md': 'examples/material3-example-theme-c09-blue.md'
+        'examples/example-c10.md': 'examples/material3-example-theme-c10-geekblue.md'
+        'examples/example-c10.md': 'examples/material3-example-theme-c11-purple.md'
+        'examples/example-c10.md': 'examples/material3-example-theme-c12-magenta.md'
+        
+extra_css:
+  - assets/stylesheets/extra.css
+  
+extra:
+  social:
+    - icon: bmc/bmc-logo
+      link: https://www.buymeacoffee.com/amoebelabs/
+    - icon: amoebelabs/al-logo-social
+      link: https://amoebelabs.com/
+    - icon: sak/sak-logo-social
+      link: https://swiss-army-knife-card-manual.amoebelabs.com/
+    - icon: fontawesome/brands/github
+      link: https://github.com/amoebelabs/
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/amoebelabs/
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/amoebelabs/
+
+  analytics:
+    provider: google
+    property: G-DN0MYXC2JZ
+
+markdown_extensions:
+  - admonition
+  - abbr
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      options:
+        custom_icons:
+          - overrides/.icons
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid-experimental
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  
+# Page tree
+nav:
+  - Home: index.md
+  - Getting started:
+    - Introduction: start/introduction.md
+    - Installation: start/installation.md
+    - Compatibility: start/compatibility.md
+#    - Changelog: changelog/changelog.md
+  - Basics:
+    - Color Spaces: basics/color-spaces.md
+    - Introducing Material 3: basics/introducing-m3-color-system.md
+#      - The Color System: basics/m3-color-system.md
+#      - Dynamic Color aka You!: basics/m3-dynamic-color.md
+    - Material 3 Analysis:
+      - A new color space: basics/m3-analysis-introduction.md
+      - Picking the Hue: basics/m3-analysis-hue-picker.md
+      - Theme Palettes: basics/m3-analysis-palettes.md
+    - Home Assistant Material 3 Themes:
+      - Introduction: basics/ha-m3-introduction.md
+      - Implementation: basics/ha-m3-implementation.md
+      - Theme structure: basics/ha-m3-theme-structure.md
+      - Theme colors: basics/ha-m3-theme-colors.md
+  - How to use Material 3 themes: using/how-to-use-material3-themes.md
+  - Design your OWN:
+    - Prerequisites: design/prerequisites.md
+    - Create Material 3 Theme: design/create-material3-theme.md
+    - Convert to Home Assistant Theme: design/convert-to-homeassistant-theme.md
+  - Examples:
+    - Introduction: examples/introduction.md
+    - Examples from picture:
+      - Theme D01 - Purple: examples/material3-example-theme-d01-purple.md
+      - Theme D02 - CadmiumGreen: examples/material3-example-theme-d02-cadmiumgreen.md
+      - Theme D03 - Porcupine: examples/material3-example-theme-d03-porcupine.md
+      - Theme D04 - Magenta: examples/material3-example-theme-d04-magenta.md
+      - Theme D05 - Brown: examples/material3-example-theme-d05-brown.md
+      - Theme D06 - TealBlue: examples/material3-example-theme-d06-tealblue.md
+      - Theme D07 - DarkOliveGreen: examples/material3-example-theme-d07-darkolivegreen.md
+      - Theme D08 - Red: examples/material3-example-theme-d08-red.md
+      - Theme D09 - Indigo Blue: examples/material3-example-theme-d09-indigoblue.md
+      - Theme D10 - Green: examples/material3-example-theme-d10-green.md
+    - Examples from CIElab colors:
+      - Theme C01 - Red: examples/material3-example-theme-c01-red.md
+      - Theme C02 - Volcano: examples/material3-example-theme-c02-volcano.md
+      - Theme C03 - Orange: examples/material3-example-theme-c03-orange.md
+      - Theme C04 - Gold: examples/material3-example-theme-c04-gold.md
+      - Theme C05 - Yellow: examples/material3-example-theme-c05-yellow.md
+      - Theme C06 - Lime: examples/material3-example-theme-c06-lime.md
+      - Theme C07 - Green: examples/material3-example-theme-c07-green.md
+      - Theme C08 - Cyan: examples/material3-example-theme-c08-cyan.md
+      - Theme C09 - Blue: examples/material3-example-theme-c09-blue.md
+      - Theme C10 - GeekBlue: examples/material3-example-theme-c10-geekblue.md
+      - Theme C11 - Purple: examples/material3-example-theme-c11-purple.md
+      - Theme C12 - Magenta: examples/material3-example-theme-c12-magenta.md
+  - Helpers:
+#    - Introduction: helpers/introduction.md
+    - Pallette generators: helpers/palette-generators.md
