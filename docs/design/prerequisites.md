@@ -43,8 +43,8 @@ Now click install and the plugin is installed, You made it!
 This card is (ab)used to convert the resulting tokens file.
 
 <!-- Internal References -->
-[Create Material 3 Theme]: ../create-material3-theme/
-[Convert to Home Assistant Theme]: ../convert-to-homeassistant-theme/
+[Create Material 3 Theme]: create-material3-theme.md
+[Convert to Home Assistant Theme]: convert-to-homeassistant-theme.md
 
 <!-- External References -->
 [figma-url]: https://www.figma.com/

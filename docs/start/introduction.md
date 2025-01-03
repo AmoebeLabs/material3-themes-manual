@@ -36,6 +36,6 @@ Happy Theming!
 [basics-section-md]: ../basics/introducing-m3-color-system.md
 [design-section-md]: ../design/prerequisites.md
 [using-section-md]: ../using/how-to-use-material3-themes.md
-[compatibility-section-md]: ../start/compatibility.md
-[Material 3 theme installation]: ../installation/
+[compatibility-section-md]: compatibility.md
+[Material 3 theme installation]: installation.md
 

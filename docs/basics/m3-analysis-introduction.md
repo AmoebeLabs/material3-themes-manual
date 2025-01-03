@@ -72,8 +72,8 @@ _And the CIELab model with the best lightness prediction_
 
 <!-- Internal  references -->
 
-[AmoebeLabs Material 3 Example introduction]: ../../examples/introduction/
-[Material 3 Analysis Hue Picker]: ../m3-analysis-hue-picker/
+[AmoebeLabs Material 3 Example introduction]: ../examples/introduction.md
+[Material 3 Analysis Hue Picker]: m3-analysis-hue-picker.md
 
 <!-- External references -->
 

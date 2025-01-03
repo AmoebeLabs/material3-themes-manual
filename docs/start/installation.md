@@ -34,5 +34,5 @@ Once installed, learn how to use the full functionality of the Material 3 themes
 For one of the 22 available example themes, check [this page][Material 3 example themes].
 
 <!-- Internal references -->
-[How to use Material 3 themes]: ../../using/using-ham3-in-cards/
-[Material 3 example themes]: ../../examples/introduction/
+[How to use Material 3 themes]: ../using/how-to-use-material3-themes.md
+[Material 3 example themes]: ../examples/introduction.md

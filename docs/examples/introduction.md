@@ -136,11 +136,11 @@ The Material 3 color picker can create the same primary color, although differen
 [example-c11-md]: ../examples/material3-example-theme-c11-purple.md
 [example-c12-md]: ../examples/material3-example-theme-c12-magenta.md
 
-[material-3-analysis-picking-the-hue-url]: ../../basics/m3-analysis-hue-picker/
-[Material 3 Home Assistant implementation]: ../../basics/ha-m3-implementation/
-[Material 3 Home Assistant concepts]: ../../basics/ha-m3-introduction/
-[Material 3 Theme Installation]: ../../start/installation/
-[Material 3 Design Your Own Theme]: ../../design/prerequisites/
+[material-3-analysis-picking-the-hue-url]: ../basics/m3-analysis-hue-picker.md
+[Material 3 Home Assistant implementation]: ../basics/ha-m3-implementation.md
+[Material 3 Home Assistant concepts]: ../basics/ha-m3-introduction.md
+[Material 3 Theme Installation]: ../start/installation.md
+[Material 3 Design Your Own Theme]: ../design/prerequisites.md
 
 <!-- External references -->
 

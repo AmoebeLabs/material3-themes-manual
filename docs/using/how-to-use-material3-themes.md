@@ -218,11 +218,11 @@ Check the [Theme colors page][ha-m3-theme-colors-url] for these 264 `reference` 
 [swiss-army-knife-documentation-example-12-url]: https://swiss-army-knife-card-manual.amoebelabs.com/examples/example-12/
 
 <!-- Internal references -->
-[ha-m3-theme-colors-url]: ../../basics/ha-m3-theme-colors/
+[ha-m3-theme-colors-url]: ../basics/ha-m3-theme-colors.md
 [example-d06-md]: ../examples/material3-example-theme-d06-tealblue.md
-[Material 3 Theme Color definitions]: ../../basics/ha-m3-theme-colors/
-[Material 3 Theme Installation]: ../../start/installation/
-[Material 3 compatibility]: ../../start/compatibility/
+[Material 3 Theme Color definitions]: ../basics/ha-m3-theme-colors.md
+[Material 3 Theme Installation]: ../start/installation.md
+[Material 3 compatibility]: ../start/compatibility.md
 
 <!-- Image references -->
 

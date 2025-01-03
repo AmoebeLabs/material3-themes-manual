@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://material3-themes-manual.amoebelabs.com/sitemap.xml
