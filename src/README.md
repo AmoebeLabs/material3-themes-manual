@@ -4,7 +4,7 @@ The output has to be inserted at the same position as with the other converter.
 
 ##Usage
 
-`python json2theme.py exported.json converted.txt`
+`python json2theme.py exported.json themedef.txt`
 
 Copy/paste the output between:
 
