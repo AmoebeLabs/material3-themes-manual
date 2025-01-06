@@ -8,12 +8,9 @@ tags:
   - Swiss Army Knife
 ---
 
-!!! Warning "The Material Theme Builder does not export DSP files anymore"
-    Therefore, the export/import as described here does **NOT** work anymore!
+!!! Warning "This conversion is based on the new JSON format"
+    The old DSP format is not supported anymore by the Material Theme Builder as an export option!
 
-    As an added bonus, the `tokens.json` file is incompatible with the new `.json` export~~
-
-    I'm investigating if the new format can be converted to the old format, and thus into an M3 theme for Home Assistant.
     
 ##:material-home-floor-3: Introduction
 As I don't create a theme every day, the conversion is a bit primitive, but it works for me!
@@ -23,205 +20,81 @@ Using this method, I was able to create & convert about 7 themes per hour. Norma
 ##:material-home-floor-3: The short version of the how-to
 The conversion uses the following steps, which are explained more visually further on:
 
-Step 1:
+**Step 1:**
 
-- Get the `tokens.json` from `material\theme\data` folder inside the zip file.
+- Get the Python conversion script `json2theme.py` from [Github][json2theme-script].
 
-Step 2:
+**Step 2:**
 
-- Add to `m3.yaml` template file in `sak_templates` folder and save.
+- Run the script `Python json2theme.py material-theme.json output.txt`
 
+**Step 3:**
 
-Step 3:
+- Copy the translated theme definitions in the `output.txt` file into the new theme and save.
 
-- Select the `view-sake99.yaml` in Home Assistant. This view shows the _active_ Material 3 theme.
-- Hit ctrl-F5 to refresh/reload Home Assistant. This includes the `m3.yaml` template.
-
-Step 4:
-
-- Check the Chrome console for the output of the converter
-- You can see a large block, with a "copy" button as the list is long (thank you Chrome for this!)
-- Copy the translated theme definitions into the theme and save.
-
-Step 5:
+**Step 4:**
 
 - Reload Home Assistant themes 
-- And now you can select the newly created theme. The sake99 view should now display your new theme!
+- And now you can select the newly created theme. The `sake99` view should now display your new theme!
 
 ##:material-home-floor-3: The long version of the how-to
 
-###:material-home-floor-3: Step 1: Open the exported ZIP file to get the tokens.json file
+###:material-home-floor-3: Step 1: Get the Python conversion script `json2theme.py` from [Github][json2theme-script].
 
-```
-Exported zip file/
-.
-├─ material-theme/
-│  └─ data/
-│     └─ tokens.json
-```
+You can open that file with any editor. It contains the theme definitions in json format.
 
-You can open that file with any editor. It contains the design tokens definitions.
-
-```JSON title="tokens.json excerpt"
+```JSON title="material-theme.json excerpt"
 {
-  "dsp_spec_version": "0.0.1",
-  "last_updated_by": "Material",
-  "last_updated": "Wed, 16 Feb 2022 10:46:10 GMT",
-  "entities": [
-    {
-      "class": "token",
-      "type": "color",
-      "id": "md.sys.color.primary.light",
-      "name": "md.sys.color.primary.light",
-      "value": "#bb1826",
-      "description": "",
-      "category_id": "sys.color.light",
-      "last_updated_by": "Material",
-      "last_updated": "Wed, 16 Feb 2022 10:46:10 GMT",
-      "tags": [
-        "md",
-        "sys",
-        "color",
-        "primary",
-        "light",
-        "color"
-      ]
+    "description": "TYPE: CUSTOM\nMaterial Theme Builder export 2025-01-03 04:51:47",
+    "seed": "#93DDFF",
+    "coreColors": {
+        "primary": "#93DDFF",
+        "secondary": "#84939B",
+        "tertiary": "#908EAA",
+        "error": "#FF5449",
+        "neutral": "#909192",
+        "neutralVariant": "#8C9195"
     },
+    "extendedColors": [],
+    "schemes": {
+        "light": {
 
     ...
 
-  ],
-  "categories": [
-    {
-      "id": "sys.color.light",
-      "label": "Light"
-    },
-    {
-      "id": "sys.color.dark",
-      "label": "Dark"
-    },
-    {
-      "id": "sys.color",
-      "label": "Default"
-    },
-    {
-      "id": "ref.palette",
-      "label": "Palette"
+          },
+        "neutral-variant": {
+            "0": "#000000",
+            "5": "#111111",
+            "10": "#1B1B1C",
+            "15": "#262626",
+            "20": "#303031",
+            "25": "#3C3B3B",
+            "30": "#474747",
+            "35": "#535252",
+            "40": "#5F5E5E",
+            "50": "#787777",
+            "60": "#929090",
+            "70": "#ADABAB",
+            "80": "#C8C6C6",
+            "90": "#E5E2E2",
+            "95": "#F3F0F0",
+            "98": "#FCF9F8",
+            "99": "#FFFBFB",
+            "100": "#FFFFFF"
+        }
     }
-  ]
-}    
-```
-###:material-home-floor-3: Step 2: Open/Create the m3.yaml file and copy the tokens into that file
-
-```YAML
-#
-# Project   : M3 token to theme converter.
-#             Uses the Swiss Army Knife custom card for Home Assistant.
-#
-# Repository: https://github.com/AmoebeLabs/m3-themes
-#
-# Author    : Mars @ AmoebeLabs.com
-# 
-# License   : CC BY-SA, https://creativecommons.org/licenses/by/4.0/
-#
-# -----
-# Description:
-# This is the SAK template file that is used to convert the tokens.json file 
-# from a Figma M3 theme DSP export.
-#
-# The tokens.json is in <zip file>/material-theme/data folder.
-# - Copy the contents of the tokens.json into this file below the m3: tags
-# - indent with 2 spaces!
-# - save this so called template into the SAK_Templates/templates/ folder
-# - reload Lovelace to load the m3.yaml file
-# - At this moment: use view-sake99.yml as the view to convert the m3.yaml
-#   to Home Assistant CSS theme vars.
-# - output is in the Chrome console: copy this block and insert it into the theme!
-#   Use right-mouse / Inspect to go to the Chrome console.
-#
-# Refs:
-#   
-################################################################################
-m3:
-  {
-    "dsp_spec_version": "0.0.1",
-    "last_updated_by": "Material",
-    "last_updated": "Wed, 16 Feb 2022 10:46:10 GMT",
-    "entities": [
-      {
-        "class": "token",
-        "type": "color",
-        "id": "md.sys.color.primary.light",
-        "name": "md.sys.color.primary.light",
-        "value": "#bb1826",
-        "description": "",
-        "category_id": "sys.color.light",
-        "last_updated_by": "Material",
-        "last_updated": "Wed, 16 Feb 2022 10:46:10 GMT",
-        "tags": [
-          "md",
-          "sys",
-          "color",
-          "primary",
-          "light",
-          "color"
-        ]
-      },
-
-      ...
-
-    ],
-    "categories": [
-      {
-        "id": "sys.color.light",
-        "label": "Light"
-      },
-      {
-        "id": "sys.color.dark",
-        "label": "Dark"
-      },
-      {
-        "id": "sys.color",
-        "label": "Default"
-      },
-      {
-        "id": "ref.palette",
-        "label": "Palette"
-      }
-    ]
-  }    
-
-```
-###:material-home-floor-3: Step 3: Go to the SAKE99 view, and hit ctrl-F5 to reload Lovelace
-
-The refresh should force Home Assistant to reload everything, including the newly created/updated `m3.yaml` template.
-
-!!! Note "I use the SAKE99 view, but ANY SAK card can do this if it has the `m3: true` debug flag set"
-    That debug flag triggers the Material 3 conversion to the console!
+}
     
-```YAML linenums="1" hl_lines="8"
-    - type: 'custom:dev-swiss-army-knife-card'
+```
+###:material-home-floor-3: Step 2: Use the Python script to convert the json file
 
-      # Define aspect ratio
-      aspectratio: 3.05/1.75
-
-      dev:
-        debug: false
-        m3: true
+```console
+Python json2theme.py material-theme.json output.txt
 ```
 
-The view looks like this:
+###:material-home-floor-3: Step 4: Copy the output.txt into the new theme
 
-![SAK Material 3 converter Theme Card]
-
-###:material-home-floor-3: Step 4: Copy the console output
-And once you have hit ctrl-F5 to refresh, you should see this kind of output in the Chrome console.
-
-Now copy (look at the copy button) this data.
-
-![SAK Material 3 converter Chrome Console Output]
-
-And paste it into a Material 3 theme template file between the START and END markers.
+Open both your theme and the `output.txt` file and copy and paste the contents of the `output.txt` file into a Material 3 theme template file between the START and END markers.
 
 !!! Warning "Make sure that you've got your indentation right with 2 spaces!"
 
@@ -245,7 +118,8 @@ And paste it into a Material 3 theme template file between the START and END mar
 ###############################################################################
 #
 M3-07-DarkOliveGreen:
-  # Colors generated via Material Design 3 (Material You) DSP export of figma
+  # Colors generated via Material Design 3 (Material You) JSON export
+  # of figma Material Theme Builder and converted by json2theme.py script.
   #
   # --------------------------------------------------------------------------
   # ==================== START of M3 copy/paste configuration ================
@@ -276,15 +150,20 @@ Then select your just created theme and start using it.
 
 You can validate the theme using the `sake99` view, as it displays the active Material 3 theme.
 
+![SAK Material 3 converter Theme Card Light]
+![SAK Material 3 converter Theme Card Dark]
 
 <!-- Image references -->
 
-[SAK Material 3 converter Theme Card]: ../assets/screenshots/sak-view99-theme-card.png
+[SAK Material 3 converter Theme Card Light]: ../assets/screenshots/sak-view99-theme-card-light.png#only-light
+[SAK Material 3 converter Theme Card Dark]: ../assets/screenshots/sak-view99-theme-card-dark.png#only-dark
+
 [SAK Material 3 converter Chrome Console Output]: ../assets/screenshots/sak-view99-console-output.png
 
 <!-- Internal References -->
-[Create Material 3 Theme]: ../create-material3-theme/
-[Convert to Home Assistant Theme]: ../convert-to-homeassistant-theme/
+[Create Material 3 Theme]: create-material3-theme.md
+[Convert to Home Assistant Theme]: convert-to-homeassistant-theme.md
 
 <!-- External References -->
 [figma-url]: https://www.figma.com/
+[json2theme-script]: https://github.com/AmoebeLabs/material3-themes-manual/tree/master/src
