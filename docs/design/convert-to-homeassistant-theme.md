@@ -2,6 +2,7 @@
 template: main.html
 title: Convert M3 theme to Home Assistant
 description: Import the Figma export, and use the Swiss Army Knife to convert the Figma export to a Material 3 theme for Home Assistant.
+status: new
 tags:
   - Theme Design
   - Figma

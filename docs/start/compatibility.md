@@ -6,11 +6,16 @@ description: Any Home Assistant Material 3 theme should be 100% compatible with 
 #A word on compatibility
 
 ##:material-home-floor-3: In general, compatibility should be 100%
+
+!!! Success "Material 3 is 100% compatible with Home Assistant themes"
+
 Home Assistant has _no_ idea that a Material 3 theme is used!
 
 HAM3 integrates Material 3 color definitions with the Home Assistant theme definitions by mapping the Material 2 and Home Assistant CSS definitions to the Material 3 definitions.
 
 ##:material-home-floor-3: Home Assistant's main UI and built-in cards
+
+!!! Success "Material 3 supports Light and Dark mode out-of-the-box"
 
 Since the introduction of light and dark theme modes, the Home Assistant UI takes full advantage of the theme definitions. Therefore, and because of the mapping of Material 3 definitions to Material 2 definitions, a HAM3-based theme should integrate seamlessly with the Home Assistant user interface, but with all the capabilities that HAM3 offers:
 
@@ -20,7 +25,7 @@ Since the introduction of light and dark theme modes, the Home Assistant UI take
 
 As with the main UI, the built-in cards should integrate seamlessly with any HAM3 Theme.
 
-!!! Warning "I did not test ALL the built-in cards, so there might still be some bugs present!"
+!!! Question "I did not test ALL the built-in cards, so there might still be some bugs present!"
 
 ##:material-home-floor-3: Custom Cards
 

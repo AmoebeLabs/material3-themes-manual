@@ -47,28 +47,33 @@ The lightness in CIE-Lab is in line with human perception, allowing for very acc
 Where the contrast ratio is non-linear, CIE-L\* is. It means that HCT can use differences to guarantee the contrast ratio. A difference of 40 in HCT tone guarantees a contrast ratio >= 3.0, and a difference of 50 guarantees a contrast ratio >= 4.5.
 <br>If you look at the light and dark themes, you see these differences in the background and foreground colors. Material 3 uses a minimum difference of 60 to accomplish a great contrast ratio.
 
-So, once again: Below you see the two examples as to why the combination of CIE-Lab and CAM16 is such a great idea:
+So, once again: Below you see the two examples as to why the combination of CIE-Lab (lightness) and CAM16 (Hue and Chroma) is such a great idea:
 
+!!! Success "_CAM16 shows the best Hue linearity_"
 ![colorio-hue-linearity-ebner-fairchild-png]
+![colorio-hue-linearity-ebner-fairchild-dark-png]
 
-_CAM16 shows the best Hue linearity_
+!!! Success "_CAM16 shows the best color circles and chroma lines_"
+![colorio-munsell-lightness-png]
+![colorio-munsell-lightness-dark-png]
 
-<br>![colorio-munsell-lightness-png]
+!!! Success "_And the CIELab model has the best lightness prediction_"
+![colorio-lightness-png]
+![colorio-lightness-dark-png]
 
-_CAM16 shows the best color circles and chroma lines_
-
-<br>![colorio-lightness-png]
-_And the CIELab model with the best lightness prediction_
-
-
-    
+   
 (screenshots taken from [Colorio README][colorio-readme-url])
 
 <!-- Image references -->
 
-[colorio-hue-linearity-ebner-fairchild-png]: ../assets/screenshots/colorio-hue-linearity-ebner-fairchild.png
-[colorio-munsell-lightness-png]: ../assets/screenshots/colorio-munsell-lightness.png
-[colorio-lightness-png]: ../assets/screenshots/colorio-lightness.png
+[colorio-hue-linearity-ebner-fairchild-png]: ../assets/screenshots/colorio-hue-linearity-ebner-fairchild.png#only-light
+[colorio-hue-linearity-ebner-fairchild-dark-png]: ../assets/screenshots/colorio-hue-linearity-ebner-fairchild-dark.png#only-dark
+
+[colorio-munsell-lightness-png]: ../assets/screenshots/colorio-munsell-lightness.png#only-light
+[colorio-munsell-lightness-dark-png]: ../assets/screenshots/colorio-munsell-lightness-dark.png#only-dark
+
+[colorio-lightness-png]: ../assets/screenshots/colorio-lightness.png#only-light
+[colorio-lightness-dark-png]: ../assets/screenshots/colorio-lightness-dark.png#only-dark
 
 <!-- Internal  references -->
 

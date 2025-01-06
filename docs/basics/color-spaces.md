@@ -50,13 +50,16 @@ The CIEL* models also have a color wheel variant, comparable to HSB/HSL. It is c
 
 To give you an idea how these modern models perform, I included some screenshots.
 
-![colorio-hue-linearity-ebner-fairchild-img]
+![colorio-hue-linearity-ebner-fairchild-png]
+![colorio-hue-linearity-ebner-fairchild-dark-png]
 _Hue linearity: diagrams should be balanced. Winner: CAM16_
 
-<br>![colorio-munsell-lightness-img]
+<br>![colorio-munsell-lightness-png]
+![colorio-munsell-lightness-dark-png]
 _Color prediction: diagrams should be circles at best. Winner: CAM16_
 
-<br>![colorio-lightness-img]
+<br>![colorio-lightness-png]
+![colorio-lightness-dark-png]
 _Lightness prediction: diagrams should follow the Fairchild-Chen data. Winner: CIELAB_
 
 ##:material-home-floor-3: Conclusion
@@ -72,7 +75,12 @@ And why did I like it so much, that I wanted to use this for Home Assistant them
 [cie-1931-diagram-img]: ../assets/screenshots/cie-1931_diagram.jpg
 [color-spaces-img]: ../assets/screenshots/color-spaces.jpg
 
-[colorio-hue-linearity-ebner-fairchild-img]: ../assets/screenshots/colorio-hue-linearity-ebner-fairchild.png
-[colorio-munsell-lightness-img]: ../assets/screenshots/colorio-munsell-lightness.png
-[colorio-lightness-img]: ../assets/screenshots/colorio-lightness.png
+[colorio-hue-linearity-ebner-fairchild-png]: ../assets/screenshots/colorio-hue-linearity-ebner-fairchild.png#only-light
+[colorio-hue-linearity-ebner-fairchild-dark-png]: ../assets/screenshots/colorio-hue-linearity-ebner-fairchild-dark.png#only-dark
+
+[colorio-munsell-lightness-png]: ../assets/screenshots/colorio-munsell-lightness.png#only-light
+[colorio-munsell-lightness-dark-png]: ../assets/screenshots/colorio-munsell-lightness-dark.png#only-dark
+
+[colorio-lightness-png]: ../assets/screenshots/colorio-lightness.png#only-light
+[colorio-lightness-dark-png]: ../assets/screenshots/colorio-lightness-dark.png#only-dark
 

@@ -220,3 +220,4 @@ nav:
   - Helpers:
 #    - Introduction: helpers/introduction.md
     - Pallette generators: helpers/palette-generators.md
+    - HCT Tonal Palette Generator: helpers/hct-tonal-palette-generator.md
