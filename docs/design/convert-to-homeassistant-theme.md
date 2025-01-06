@@ -9,8 +9,8 @@ tags:
   - Swiss Army Knife
 ---
 
-!!! Warning "This conversion is based on the new JSON format"
-    The old DSP format is not supported anymore by the Material Theme Builder as an export option!
+!!! Success "The steps in this manua are based on the new Material Theme Builder JSON export format"
+    The old DSP format is not supported anymore by the Material Theme Builder v2 as an export option!
 
     
 ##:material-home-floor-3: Introduction

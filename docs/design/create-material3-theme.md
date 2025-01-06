@@ -9,13 +9,9 @@ tags:
   - Color definitions
 ---
 
-!!! Warning "The Material Theme Builder does not export DSP files anymore"
-    Therefore, the export/import as described here does **NOT** work anymore!
-
-    As an added bonus, the `tokens.json` file is incompatible with the new `.json` export~~
-
-    I'm investigating if the new format can be converted to the old format, and thus into an M3 theme for Home Assistant.
-    
+!!! Success "The steps in this manua are based on the new Material Theme Builder JSON export format"
+    The old DSP format is not supported anymore by the Material Theme Builder v2 as an export option!
+        
 ##:material-home-floor-3: Step 1: Open the plugin
 
 Open the Material Theme Builder plugin from the menu
