@@ -9,40 +9,36 @@ tags:
   - Swiss Army Knife
 ---
 
-!!! Success "The steps in this manua are based on the new Material Theme Builder JSON export format"
+!!! Success "The steps in this manual are based on the new Material Theme Builder JSON export format"
     The old DSP format is not supported anymore by the Material Theme Builder v2 as an export option!
 
     
 ##:material-home-floor-3: Introduction
-As I don't create a theme every day, the conversion is a bit primitive, but it works for me!
+The conversion is straight-forward: it converts the Material Theme export format to YAML format that the Theme definition for Home Assistant expects.
 
-Using this method, I was able to create & convert about 7 themes per hour. Normally I need several hours to create a theme.
+Using this method, I was able to create & convert about 7 themes per hour. Normally I needed several hours to hand-craft a theme.
 
 ##:material-home-floor-3: The short version of the how-to
 The conversion uses the following steps, which are explained more visually further on:
 
-**Step 1:**
+!!! Info "You did already get the Python conversion script `json2theme.py` from [Github][json2theme-script]?"
 
-- Get the Python conversion script `json2theme.py` from [Github][json2theme-script].
-
-**Step 2:**
-
-- Run the script `Python json2theme.py material-theme.json output.txt`
-
-**Step 3:**
-
-- Copy the translated theme definitions in the `output.txt` file into the new theme and save.
-
-**Step 4:**
-
-- Reload Home Assistant themes 
-- And now you can select the newly created theme. The `sake99` view should now display your new theme!
+| Step # | What do do |
+| ------ | ---------- |
+| **Step 1** | <ol><li>Run the script `Python json2theme.py material-theme.json output.txt`</li></ol> |
+| **Step 2** | <ol><li>Copy the translated theme definitions from the `output.txt` file into the new theme and save.</li></ol>|
+| **Step 3** | <ol><li>Reload Home Assistant themes</li><li>And now you can select the newly created theme. The `sake99` view should now display your new theme!</li></ol> |
 
 ##:material-home-floor-3: The long version of the how-to
 
-###:material-home-floor-3: Step 1: Get the Python conversion script `json2theme.py` from [Github][json2theme-script].
+###:material-home-floor-3: Step 1: Use the Python script to convert the json file
+!!! Info "You did already get the Python conversion script `json2theme.py` from [Github][json2theme-script]?"
 
-You can open that file with any editor. It contains the theme definitions in json format.
+```console
+Python json2theme.py material-theme.json output.txt
+```
+
+The `material-theme.json` file should look like the following excerpt:
 
 ```JSON title="material-theme.json excerpt"
 {
@@ -87,13 +83,7 @@ You can open that file with any editor. It contains the theme definitions in jso
 }
     
 ```
-###:material-home-floor-3: Step 2: Use the Python script to convert the json file
-
-```console
-Python json2theme.py material-theme.json output.txt
-```
-
-###:material-home-floor-3: Step 4: Copy the output.txt into the new theme
+###:material-home-floor-3: Step 2: Copy the output.txt into the new theme
 
 Open both your theme and the `output.txt` file and copy and paste the contents of the `output.txt` file into a Material 3 theme template file between the START and END markers.
 
@@ -144,12 +134,12 @@ M3-07-DarkOliveGreen:
   # --------------------------------------------------------------------------
 ```
 
-###:material-home-floor-3: Step 5: Reload themes and enjoy!
+###:material-home-floor-3: Step 3: Reload themes and enjoy!
 Now reload the Home Assistant themes with the Developer Tools' > 'Services' > 'frontend.reload_themes' service.
 
 Then select your just created theme and start using it.
 
-You can validate the theme using the `sake99` view, as it displays the active Material 3 theme.
+You can validate the theme using the `sake99` view from the Swiss Army Knife Custom card, as it displays the active Material 3 theme.
 
 ![SAK Material 3 converter Theme Card Light]
 ![SAK Material 3 converter Theme Card Dark]

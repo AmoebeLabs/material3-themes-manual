@@ -9,7 +9,7 @@ tags:
   - Color definitions
 ---
 
-!!! Success "The steps in this manua are based on the new Material Theme Builder JSON export format"
+!!! Success "The steps in this manual are based on the new Material Theme Builder JSON export format"
     The old DSP format is not supported anymore by the Material Theme Builder v2 as an export option!
         
 ##:material-home-floor-3: Step 1: Open the plugin

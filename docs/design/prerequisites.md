@@ -11,10 +11,12 @@ tags:
 ##:material-home-floor-3: Where to start?
 So, you came here to read how to design your own theme. That's good!
 
-There are two prerequisites to create a Material 3 theme and convert it to an Home Assistant dark / light theme.
+There are a few prerequisites to create a Material 3 theme and convert it to an Home Assistant dark / light theme.
 
 - Google has made a Material Theme Builder plugin on its [Figma platform][figma-url]. You can make a free account which is enough to [create Material 3 themes][Create Material 3 Theme].
-- You need the Swiss Army Knife custom card installed, as this custom card is used to [convert the Figma export][Convert to Home Assistant Theme].
+- You need the [Python conversion script][json2theme-script] to convert the exported JSON file form the Material Theme Builder to something Home Assistant will understand.
+- You need the Swiss Army Knife custom card installed if you want to display the generated Material 3 theme
+- For DSP exports (old/depricated), you also need this card as this custom card is used to [convert the Figma export][Convert to Home Assistant Theme DSP].
 
 ##:material-home-floor-3: Step 1: Create a free Figma Account
 
@@ -39,15 +41,26 @@ Now click install and the plugin is installed, You made it!
 
 ![Figma Install Material Theme Builder plugin]
 
+##:material-home-floor-3: You need the Python conversion script
+!!! Info "You will need Python installed to use this script"
+    Either a full install or an embedded install is required.
+    
+Download the script from [Github][json2theme-script]
+
 ##:material-home-floor-3: You need the Swiss Army Knife custom card
-This card is (ab)used to convert the resulting tokens file.
+!!! Info "This is optional since the JSON export"
+    If you don't want to verify the theme, you won't need this step.
+
+This `sake99` card/dashboard is used to display the full Material 3 theme.
+
 
 <!-- Internal References -->
 [Create Material 3 Theme]: create-material3-theme.md
-[Convert to Home Assistant Theme]: convert-to-homeassistant-theme.md
+[Convert to Home Assistant Theme DSP]: convert-to-homeassistant-theme-dsp.md
 
 <!-- External References -->
 [figma-url]: https://www.figma.com/
+[json2theme-script]: https://github.com/AmoebeLabs/material3-themes-manual/tree/master/src
 
 <!-- Image References -->
 
